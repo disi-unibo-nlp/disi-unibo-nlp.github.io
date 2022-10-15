@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Se3 | DISI UniBo NLP</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Se3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Se3" />
+<meta property="og:description" content="Se3" />
+<link rel="canonical" href="/web_apps/se3/" />
+<meta property="og:url" content="/web_apps/se3/" />
+<meta property="og:site_name" content="DISI UniBo NLP" />
+<meta property="og:image" content="https://i.ibb.co/0ntnWLV/se3-overview.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-15T00:27:28+00:00" />
+<script type="application/ld+json">
+{"description":"Se3","headline":"Se3","dateModified":"2022-10-15T00:27:28+00:00","datePublished":"2022-10-15T00:27:28+00:00","url":"/web_apps/se3/","@type":"BlogPosting","image":"https://i.ibb.co/0ntnWLV/se3-overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"/web_apps/se3/"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                DISI UniBo NLP
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <a href="/people/" class="navbar-item ">People</a>
+                    
+                
+                    
+                    <a href="/publications/" class="navbar-item ">Publications</a>
+                    
+                
+                    
+                    <a href="/web_apps/" class="navbar-item ">Web Apps</a>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Se3</h1>
+            <p class="subtitle is-3">Semantic Self-Segmentation for Abstractive Summarization of Long Documents in Low-Resource Regimes</p>
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+                    
+                    
+                    <div class="columns is-multiline">
+
+    <div class="column is-6">
+        <figure class="image is-4by3">
+            <img src="https://i.ibb.co/0ntnWLV/se3-overview.png" />
+        </figure>
+    </div>
+
+    <div class="column is-6">
+        <p class="title is-3">Se3</p>
+        <p class="subtitle is-3">Semantic Self-Segmentation for Abstractive Summarization of Long Documents in Low-Resource Regimes</p>
+        <p class="subtitle is-4 is-italic">Gianluca Moro, Luca Ragazzi</p>
+        
+        
+       
+        
+        
+        <div class="content">
+            
+            <p>
+                <span>Proceedings of the 36th AAAI Conference on Artificial Intelligence (AAAI-22)</span></p>
+            
+        </div>
+        
+    </div>
+
+    <div class="column is-12">
+        <p class="title is-4">Description</p>
+        <div class="content">
+            
+    
+            <p>The quadratic memory complexity of transformers prevents long document summarization in low computational resource scenarios. State-of-the-art models need to apply input truncation, thus discarding and ignoring potential summary-relevant contents, leading to a performance drop. Furthermore, this loss is generally destructive for semantic text analytics in high-impact domains such as the legal one. In this paper, we propose a novel semantic self-segmentation (Se3) approach for long document summarization to address the critical problems of low-resource regimes, namely to process longer inputs than the GPU memory capacity and produce accurate summaries despite the availability of only a few dozens of training instances. Se3 segments a long input into semantically coherent chunks, allowing transformers to summarize very long documents without truncation by summarizing each chunk and concatenating the results. Experimental outcomes show that our approach significantly improves the performance of abstractive summarization transformers, even with just a dozen of labeled data, achieving new state-of-the-art results on two legal datasets of different domains and content. Finally, we perform ablations to study how the various components of our method contribute to the performance gain.</p>
+
+<p>Keywords: long document summarization; abstractive summarization; low-resource; transformers; NLP; legal analytics.</p>
+
+<h3 id="citing">Citing</h3>
+
+<p>If you use <code class="language-plaintext highlighter-rouge">Se3</code> in your research, please cite <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21357">Semantic Self-Segmentation for Abstractive Summarization of Long Documents in Low-Resource Regimes</a>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+@article{Moro_Ragazzi_2022, 
+  title={Semantic Self-Segmentation for Abstractive Summarization of Long Documents in Low-Resource Regimes}}, 
+  volume={36}, 
+  url={https://ojs.aaai.org/index.php/AAAI/article/view/21357}, 
+  DOI={10.1609/aaai.v36i10.21357}, 
+  abstractNote={The quadratic memory complexity of transformers prevents long document summarization in low computational resource scenarios. State-of-   the-art models need to apply input truncation, thus discarding and ignoring potential summary-relevant contents, leading to a performance drop. Furthermore, this loss is generally destructive for semantic text analytics in high-impact domains such as the legal one. In this paper, we propose a novel semantic self-segmentation (Se3) approach for long document summarization to address the critical problems of low-resource regimes, namely to process inputs longer than the GPU memory capacity and produce accurate summaries despite the availability of only a few dozens of training instances. Se3 segments a long input into semantically coherent chunks, allowing transformers to summarize very long documents without truncation by summarizing each chunk and concatenating the results. Experimental outcomes show the approach significantly improves the performance of abstractive summarization transformers, even with just a dozen of labeled data, achieving new state-of-the-art results on two legal datasets of different domains and contents. Finally, we report ablation studies to evaluate each contribution of the components of our method to the performance gain.}, 
+  number={10}, 
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+  author={Moro, Gianluca and Ragazzi, Luca}, 
+  year={2022}, 
+  month={Jun.}, 
+  pages={11085-11093} 
+}
+
+</code></pre></div></div>
+
+
+        </div>
+        
+        <a class="button is-link is-outlined"href=http://137.204.107.42:37338/> Try Me </a>
+        
+        
+        <a class="button is-link is-outlined"href=https://drive.google.com/drive/folders/1KXai-s_0iBYkyQWIz0X__kNezCcKVpph?usp=sharing> Data </a>
+        
+        
+        
+    </div>
+
+</div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Email contact: gianluca.moro[at]unibo.it</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>
