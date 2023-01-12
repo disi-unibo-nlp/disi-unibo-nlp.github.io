@@ -21,20 +21,20 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Damen | DISI UniBo NLP</title>
+<title>BioQAGNN | DISI UniBo NLP</title>
 <meta name="generator" content="Jekyll v3.8.7" />
-<meta property="og:title" content="Damen" />
+<meta property="og:title" content="BioQAGNN" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="MDS for biomedical literature" />
-<meta property="og:description" content="MDS for biomedical literature" />
-<link rel="canonical" href="/projects/damen/" />
-<meta property="og:url" content="/projects/damen/" />
+<meta name="description" content="Combining pre-trained language models and graph neural networks on top of retrieved subgraphs for multi-hop question answering" />
+<meta property="og:description" content="Combining pre-trained language models and graph neural networks on top of retrieved subgraphs for multi-hop question answering" />
+<link rel="canonical" href="/projects/bioqagnn/" />
+<meta property="og:url" content="/projects/bioqagnn/" />
 <meta property="og:site_name" content="DISI UniBo NLP" />
-<meta property="og:image" content="https://i.ibb.co/3cs7mz3/damen.png" />
+<meta property="og:image" content="https://snap.stanford.edu/qagnn/qagnn_files/fig_task.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-01-12T20:13:47+00:00" />
 <script type="application/ld+json">
-{"description":"MDS for biomedical literature","url":"/projects/damen/","headline":"Damen","@type":"BlogPosting","dateModified":"2023-01-12T20:13:47+00:00","datePublished":"2023-01-12T20:13:47+00:00","image":"https://i.ibb.co/3cs7mz3/damen.png","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/damen/"},"@context":"https://schema.org"}</script>
+{"description":"Combining pre-trained language models and graph neural networks on top of retrieved subgraphs for multi-hop question answering","url":"/projects/bioqagnn/","headline":"BioQAGNN","@type":"BlogPosting","dateModified":"2023-01-12T20:13:47+00:00","datePublished":"2023-01-12T20:13:47+00:00","image":"https://snap.stanford.edu/qagnn/qagnn_files/fig_task.png","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/bioqagnn/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts --></head>
@@ -84,8 +84,8 @@
         <section class="hero  is-medium  is-bold is-primary" >
     <div class="hero-body ">
         <div class="container">
-            <h1 class="title is-2">Damen</h1>
-            <p class="subtitle is-3">Discriminative Marginalized Probabilistic Neural Method for Multi-Document Summarization of Medical Literature</p>
+            <h1 class="title is-2">BioQAGNN</h1>
+            <p class="subtitle is-3">Reasoning with Language Models and Knowledge Graphs for Biomedical Open-Domain Question Answering</p>
             
         </div>
     </div>
@@ -107,14 +107,14 @@
 
     <div class="column is-6">
         <figure class="image is-4by3">
-            <img src="https://i.ibb.co/3cs7mz3/damen.png" />
+            <img src="https://snap.stanford.edu/qagnn/qagnn_files/fig_task.png" />
         </figure>
     </div>
 
     <div class="column is-6">
-        <p class="title is-3">Damen</p>
-        <p class="subtitle is-3">Discriminative Marginalized Probabilistic Neural Method for Multi-Document Summarization of Medical Literature</p>
-        <p class="subtitle is-4 is-italic">Gianluca Moro, Luca Ragazzi, Lorenzo Valgimigli, Davide Freddi</p>
+        <p class="title is-3">BioQAGNN</p>
+        <p class="subtitle is-3">Reasoning with Language Models and Knowledge Graphs for Biomedical Open-Domain Question Answering</p>
+        <p class="subtitle is-4 is-italic">Giacomo Frisoni, Enrico Gnagnarella, Luca Ragazzi, Gianluca Moro, Antonella Carbonaro</p>
         
         
        
@@ -123,7 +123,7 @@
         <div class="content">
             
             <p>
-                <span>Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL-22)</span></p>
+                <span>Next to be submitted at Oxford Bioinformatics 2023</span></p>
             
         </div>
         
@@ -134,9 +134,14 @@
         <div class="content">
             
     
-            <p>Although current state-of-the-art Transformer-based solutions succeeded in a wide range for single-document NLP tasks, they still struggle to address multi-input tasks such as multi-document summarization. Many solutions truncate the inputs, thus ignoring potential summary-relevant contents, which is unacceptable in the medical domain where each information can be vital. Others leverage linear model approximations to apply multi-input concatenation, worsening the results because all information is considered, even if it is conflicting or noisy with respect to a shared background. Despite the importance and social impact of medicine, there are no ad-hoc solutions for multi-document summarization. For this reason, we propose a novel discriminative marginalized probabilistic method (DAMEN) trained to discriminate critical information from a cluster of topic-related medical documents and generate a multi-document summary via token probability marginalization. Results prove we outperform the previous state-of-the-art on a biomedical dataset for multi-document summarization of systematic literature reviews. Moreover, we perform extensive ablation studies to motivate the design choices and prove the importance of each module of our method.</p>
+            <p>Injecting world or domain-specific structured knowledge into pre-trained language models (PLMs) is becoming an increasingly popular approach for solving problems such as biases, hallucinations, huge architectural sizes, and explainability lack—critical for real-world natural language processing applications in sensitive fields like bioinformatics. One recent work that has garnered much attention in Neuro-symbolic AI is QA-GNN by Yasunaga et al. (2021), an end-to-end model for multiple-choice open-domain question answering (MCOQA) tasks via interpretable text-graph reasoning. Unlike previous publications, QA-GNN mutually informs PLMs and graph neural networks (GNNs) on top of relevant facts retrieved from knowledge graphs (KGs). However, taking a more holistic view, existing PLM+KG contributions mainly consider commonsense benchmarks and ignore or shallowly analyze performances on biomedical datasets.
+This paper proposes a deep investigation of QA-GNN for biomedicine, comparing existing or brand-new PLMs, KGs, edge-aware GNNs, preprocessing techniques, and initialization strategies. By combining the insights emerged in our study, we introduce Bio-QA-GNN, a new state-of-the-art MCOQA model on biomedical/clinical text, largely outperforming the original one. Our findings also contribute to a better understanding of the explanation degree allowed by joint text-graph reasoning architectures and their effectiveness on different medical subjects and reasoning types.</p>
+
+<p><b>Keywords:</b> open-domain question answering, biomedical natural language processing, neuro-symbolic, subgraph retrieval, graph neural network.</p>
 
         </div>
+        
+        <a class="button is-link is-outlined"href=http://137.204.107.40:37340/> Try Me </a>
         
         
         
