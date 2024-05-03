@@ -36,9 +36,9 @@
 <meta property="og:url" content="/publications/moro_piscaglia_ragazzi_italiani_ai_law_2023/" />
 <meta property="og:site_name" content="DISI UniBo NLP" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-05-02T16:55:16+00:00" />
+<meta property="article:published_time" content="2024-05-03T09:36:26+00:00" />
 <script type="application/ld+json">
-{"description":"The DISI Unibo Natural Language Understanding Group (DISI Unibo NLU), led by prof. Gianluca Moro, includes a large team of Ph.D. students and researchers which are part of the Department of Computer Science and Engineering (DISI) of the University of Bologna.","url":"/publications/moro_piscaglia_ragazzi_italiani_ai_law_2023/","@type":"BlogPosting","headline":"Multi-Language Transfer Learning for Low-Resource Legal Case Summarization","dateModified":"2024-05-02T16:55:16+00:00","datePublished":"2024-05-02T16:55:16+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/publications/moro_piscaglia_ragazzi_italiani_ai_law_2023/"},"@context":"https://schema.org"}</script>
+{"description":"The DISI Unibo Natural Language Understanding Group (DISI Unibo NLU), led by prof. Gianluca Moro, includes a large team of Ph.D. students and researchers which are part of the Department of Computer Science and Engineering (DISI) of the University of Bologna.","url":"/publications/moro_piscaglia_ragazzi_italiani_ai_law_2023/","@type":"BlogPosting","headline":"Multi-Language Transfer Learning for Low-Resource Legal Case Summarization","dateModified":"2024-05-03T09:36:26+00:00","datePublished":"2024-05-03T09:36:26+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/publications/moro_piscaglia_ragazzi_italiani_ai_law_2023/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts -->
@@ -148,12 +148,23 @@
   <!-- Only way to create a list in Liquid is to split strings -->
   
   
-  <button class="filter-button" data-year="all">All</button>
-  <button class="filter-button" data-year="2024">2024</button>
-  <button class="filter-button" data-year="2023">2023</button>
-  <button class="filter-button" data-year="2022">2022</button>
-  <button class="filter-button" data-year="2021">2021</button>
-  <button class="filter-button" data-year="2020">2020</button>
+  <div class="filter-buttons">
+    <button class="filter-button active" data-year="all">All</button>
+    <button class="filter-button" data-year="2024">2024</button>
+    <button class="filter-button" data-year="2023">2023</button>
+    <button class="filter-button" data-year="2022">2022</button>
+    <button class="filter-button" data-year="2021">2021</button>
+    <button class="filter-button" data-year="2020">2020</button>
+  </div>
+  <div class="filter-buttons-type"> 
+      <button class="filter-button active" data-type="all-type">All</button>
+      <button class="filter-button" data-type="conference">Conference</button>
+      <button class="filter-button" data-type="journal">Journal</button>
+  </div>
+
+    <div class="no-publications-message" style="display: none;">
+        No publications found for the selected year and type.
+    </div>
   
   <h2 class="publication-type-header">HIGHLIGHTS</h2>
   <ul class="publication-list">
@@ -241,7 +252,7 @@
         
         
         
-          <li class="publication-item 2022"  id="111">
+          <li class="publication-item highlights 2022 conference" id="111">
             <div class="publication-details">
               <div class="authors">
                   
@@ -332,7 +343,7 @@
         
         
         
-          <li class="publication-item 2022"  id="888">
+          <li class="publication-item highlights 2022 conference" id="888">
             <div class="publication-details">
               <div class="authors">
                   
@@ -392,7 +403,7 @@
         
         
         
-          <li class="publication-item 2022"  id="999">
+          <li class="publication-item highlights 2022 conference" id="999">
             <div class="publication-details">
               <div class="authors">
                   
@@ -466,7 +477,7 @@
         
         
         
-          <li class="publication-item 2021"  id="222">
+          <li class="publication-item highlights 2021 journal" id="222">
             <div class="publication-details">
               <div class="authors">
                   
@@ -562,7 +573,7 @@
         
         
         
-          <li class="publication-item 2024" id="111">
+          <li class="publication-item 2024 conference" id="111">
             <div class="publication-details">
               <div class="authors">
                   
@@ -626,7 +637,7 @@
         
         
         
-          <li class="publication-item 2023" id="222">
+          <li class="publication-item 2023 conference" id="222">
             <div class="publication-details">
               <div class="authors">
                   
@@ -696,7 +707,7 @@
         
         
         
-          <li class="publication-item 2023" id="444">
+          <li class="publication-item 2023 conference" id="444">
             <div class="publication-details">
               <div class="authors">
                   
@@ -758,7 +769,7 @@
         
         
         
-          <li class="publication-item 2023" id="555">
+          <li class="publication-item 2023 conference" id="555">
             <div class="publication-details">
               <div class="authors">
                   
@@ -841,7 +852,7 @@
         
         
         
-          <li class="publication-item 2023" id="999">
+          <li class="publication-item 2023 conference" id="999">
             <div class="publication-details">
               <div class="authors">
                   
@@ -906,7 +917,7 @@
         
         
         
-          <li class="publication-item 2023" id="101010">
+          <li class="publication-item 2023 conference" id="101010">
             <div class="publication-details">
               <div class="authors">
                   
@@ -978,7 +989,7 @@
         
         
         
-          <li class="publication-item 2022" id="111">
+          <li class="publication-item 2022 conference" id="111">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1044,7 +1055,7 @@
         
         
         
-          <li class="publication-item 2022" id="333">
+          <li class="publication-item 2022 conference" id="333">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1105,7 +1116,7 @@
         
         
         
-          <li class="publication-item 2022" id="444">
+          <li class="publication-item 2022 conference" id="444">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1156,7 +1167,7 @@
         
         
         
-          <li class="publication-item 2022" id="555">
+          <li class="publication-item 2022 conference" id="555">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1220,7 +1231,7 @@
         
         
         
-          <li class="publication-item 2022" id="666">
+          <li class="publication-item 2022 conference" id="666">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1278,7 +1289,7 @@
         
         
         
-          <li class="publication-item 2022" id="777">
+          <li class="publication-item 2022 conference" id="777">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1346,7 +1357,7 @@
         
         
         
-          <li class="publication-item 2022" id="888">
+          <li class="publication-item 2022 conference" id="888">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1406,7 +1417,7 @@
         
         
         
-          <li class="publication-item 2022" id="999">
+          <li class="publication-item 2022 conference" id="999">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1491,7 +1502,7 @@
         
         
         
-          <li class="publication-item 2020" id="111">
+          <li class="publication-item 2020 conference" id="111">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1557,7 +1568,7 @@
         
         
         
-          <li class="publication-item 2020" id="333">
+          <li class="publication-item 2020 conference" id="333">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1623,7 +1634,7 @@
         
         
         
-          <li class="publication-item 2020" id="444">
+          <li class="publication-item 2020 conference" id="444">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1710,7 +1721,7 @@
         
         
         
-          <li class="publication-item 2023" id="111">
+          <li class="publication-item 2023 journal" id="111">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1771,7 +1782,7 @@
         
         
         
-          <li class="publication-item 2023" id="333">
+          <li class="publication-item 2023 journal" id="333">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1835,7 +1846,7 @@
         
         
         
-          <li class="publication-item 2023" id="666">
+          <li class="publication-item 2023 journal" id="666">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1889,7 +1900,7 @@
         
         
         
-          <li class="publication-item 2023" id="777">
+          <li class="publication-item 2023 journal" id="777">
             <div class="publication-details">
               <div class="authors">
                   
@@ -1946,7 +1957,7 @@
         
         
         
-          <li class="publication-item 2023" id="888">
+          <li class="publication-item 2023 journal" id="888">
             <div class="publication-details">
               <div class="authors">
                   
@@ -2018,7 +2029,7 @@
         
         
         
-          <li class="publication-item 2023" id="111111">
+          <li class="publication-item 2023 journal" id="111111">
             <div class="publication-details">
               <div class="authors">
                   
@@ -2085,7 +2096,7 @@
         
         
         
-          <li class="publication-item 2022" id="222">
+          <li class="publication-item 2022 journal" id="222">
             <div class="publication-details">
               <div class="authors">
                   
@@ -2181,7 +2192,7 @@
         
         
         
-          <li class="publication-item 2022" id="101010">
+          <li class="publication-item 2022 journal" id="101010">
             <div class="publication-details">
               <div class="authors">
                   
@@ -2250,7 +2261,7 @@
         
         
         
-          <li class="publication-item 2021" id="111">
+          <li class="publication-item 2021 journal" id="111">
             <div class="publication-details">
               <div class="authors">
                   
@@ -2314,7 +2325,7 @@
         
         
         
-          <li class="publication-item 2021" id="222">
+          <li class="publication-item 2021 journal" id="222">
             <div class="publication-details">
               <div class="authors">
                   
@@ -2377,7 +2388,7 @@
         
         
         
-          <li class="publication-item 2020" id="222">
+          <li class="publication-item 2020 journal" id="222">
             <div class="publication-details">
               <div class="authors">
                   
@@ -2464,55 +2475,112 @@
   }
 
   document.addEventListener("DOMContentLoaded", function() {
-    const filterButtons = document.querySelectorAll(".filter-button");
+    const filterButtonsYear = document.querySelectorAll(".filter-buttons button[data-year]");
+    const filterButtonsType = document.querySelectorAll(".filter-buttons-type button[data-type]");
 
-    filterButtons.forEach(button => {
-        button.addEventListener("click", function() {
+    filterButtonsYear.forEach(button => {
+      button.addEventListener("click", function() {
             const year = this.getAttribute("data-year");
-            filterPublications(year);
+            const type = document.querySelector(".filter-buttons-type .active").getAttribute("data-type");
+            filterPublications(year, type);
             // Update button styling to indicate active state
-            filterButtons.forEach(btn => {
+            filterButtonsYear.forEach(btn => {
+                btn.classList.remove("active");
+            });
+            this.classList.add("active");
+        });
+    });
+
+    filterButtonsType.forEach(button => {
+      button.addEventListener("click", function() {
+            const type = this.getAttribute("data-type");
+            const year = document.querySelector(".filter-buttons .active").getAttribute("data-year");
+            filterPublications(year, type);
+            // Update button styling to indicate active state
+            filterButtonsType.forEach(btn => {
                 btn.classList.remove("active");
             });
             this.classList.add("active");
         });
     });
     
-    function filterPublications(year) {
+    function filterPublications(year, type) {
         const publicationItems = document.querySelectorAll(".publication-item");
         let hasPublicationsForYear = false; // Variable to track if there are any publications for the selected year
+        let showHeader = false; // Variable to track if the header should be shown
+        let hasPublicationsForYearAndType = false;
+        let showHighlights = true; 
+        
         publicationItems.forEach(item => {
             // Splitting the classes into an array
-            const classes = item.classList;
-            let yearItem = null
-            // Iterating over the classes to find the one that starts with a year
-            classes.forEach(className => {
-                if (className.match(/^\d{4}$/)) {
-                    // If the class matches the year format (YYYY), assign it to year
-                    yearItem = parseInt(className);
+            const classes = Array.from(item.classList);
+            let typeItem = classes[classes.length - 1];
+            let yearItem = classes[classes.length - 2];
+
+            if ((year === "all" || yearItem === year) && (type === "all-type" || typeItem === type)) {
+                hasPublicationsForYearAndType = true; // Set to true if there are any publications for the selected year and type
+            if (year === "all" || type === "all-type") {
+                hasPublicationsForYear = true; // Set to true if there are any publications for the selected year or type
+            }
+            if (type !== "all-type") {
+                showHighlights = false; 
+            }
+            if (item.classList.contains('highlights')) {
+              if (showHighlights) {
+                 item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            }
+            else {
+              item.style.display = "block"; // Show publication item
+            }
+            
+        } else {
+            item.style.display = "none"; // Hide publication item
+        }
+
+        });
+
+      // Show or hide the type header based on whether there are publications for each type when type is "all-type"
+    const headers = document.querySelectorAll(".publication-type-header");
+    if (type === "all-type") {
+        if (year === "all" || hasPublicationsForYear) {
+            headers.forEach(header => {
+                // Check if there are any publications for the corresponding type
+                const typeClass = header.textContent.toLowerCase();
+                const typePublications = document.querySelectorAll(`.publication-item.${typeClass}`);
+                const hasPublicationsForType = Array.from(typePublications).some(item => item.style.display !== "none");
+                
+                if (hasPublicationsForType) {
+                    header.style.display = "block";
+                } else {
+                    header.style.display = "none";
                 }
             });
-            
-            if (year === "all" || yearItem === parseInt(year)) {
-                item.style.display = "block"; // Show publication item
-                // Check if the publication is within the "HIGHLIGHTS" section
-                const highlightsSection = document.querySelector(".publication-list");
-                if (item.closest('.publication-list') === highlightsSection) {
-                    hasPublicationsForYear = true;
-                }
-            } else {
-                item.style.display = "none"; // Hide publication item
-            }
-        });
-        // Show or hide the "Highlights" header based on whether there are highlights for the selected year
-        const highlightsHeader = document.querySelector(".publication-type-header");
-        if (hasPublicationsForYear) {
-            highlightsHeader.style.display = "block";
         } else {
-            highlightsHeader.style.display = "none";
+            headers.forEach(header => {
+                header.style.display = "none";
+            });
         }
+    } else {
+        headers.forEach(header => {
+            header.style.display = "none";
+        });
+    }
+
+    
+        // Show or hide the message based on whether there are publications for the selected year and type
+    const messageElement = document.querySelector(".no-publications-message");
+    if (!hasPublicationsForYearAndType && (year !== "all" && type !== "all-type")) {
+        messageElement.style.display = "block"; // Show message if no publications are found for the selected year and type
+    } else {
+        messageElement.style.display = "none"; // Hide message if publications are found or if "All" options are selected
+    }
+      
     }
 });
+
 </script>
 
                     </div>
