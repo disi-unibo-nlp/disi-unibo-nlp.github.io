@@ -36,9 +36,9 @@
 <meta property="og:url" content="/publications/moro_diluca_dardari_frisoni_sensors_2022/" />
 <meta property="og:site_name" content="DISI UniBo NLP" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-05-03T12:30:36+00:00" />
+<meta property="article:published_time" content="2024-05-03T14:39:19+00:00" />
 <script type="application/ld+json">
-{"description":"The DISI Unibo Natural Language Understanding Group (DISI Unibo NLU), led by prof. Gianluca Moro, includes a large team of Ph.D. students and researchers which are part of the Department of Computer Science and Engineering (DISI) of the University of Bologna.","url":"/publications/moro_diluca_dardari_frisoni_sensors_2022/","@type":"BlogPosting","headline":"Human Being Detection from UWB NLOS Signals: Accuracy and Generality of Advanced Machine Learning Models","dateModified":"2024-05-03T12:30:36+00:00","datePublished":"2024-05-03T12:30:36+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/publications/moro_diluca_dardari_frisoni_sensors_2022/"},"@context":"https://schema.org"}</script>
+{"description":"The DISI Unibo Natural Language Understanding Group (DISI Unibo NLU), led by prof. Gianluca Moro, includes a large team of Ph.D. students and researchers which are part of the Department of Computer Science and Engineering (DISI) of the University of Bologna.","url":"/publications/moro_diluca_dardari_frisoni_sensors_2022/","@type":"BlogPosting","headline":"Human Being Detection from UWB NLOS Signals: Accuracy and Generality of Advanced Machine Learning Models","dateModified":"2024-05-03T14:39:19+00:00","datePublished":"2024-05-03T14:39:19+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/publications/moro_diluca_dardari_frisoni_sensors_2022/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts -->
@@ -162,6 +162,24 @@
       <button class="filter-button" data-type="journal">Journal</button>
   </div>
 
+  <!-- Dropdown menus for mobile -->
+<div class="filter-dropdowns">
+  <select class="filter-dropdown" id="year-dropdown">
+    <option data-year="all">All Years</option>
+    <option data-year="2024">2024</option>
+    <option data-year="2023">2023</option>
+    <option data-year="2022">2022</option>
+    <option data-year="2021">2021</option>
+    <option data-year="2020">2020</option>
+  </select>
+
+  <select class="filter-dropdown" id="type-dropdown">
+    <option data-type="all-type">All Types</option>
+    <option data-type="conference">Conference</option>
+    <option data-type="journal">Journal</option>
+  </select>
+</div>
+
     <div class="no-publications-message" style="display: none;">
         No publications found for the selected year and type.
     </div>
@@ -280,6 +298,7 @@
             <div class="publication-details">
               <div>
                   <span class="venue_complete">Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing</span>
+                  <span class="venue-year-mobile"> EMNLP 2022 </span>
               </div>
               <div class="buttons-div">
                   <a class="buttons" target="_blank" href="https://aclanthology.org/2022.emnlp-main.390/">Read</a>
@@ -373,6 +392,7 @@
             <div class="publication-details">
               <div>
                   <span class="venue_complete">Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</span>
+                  <span class="venue-year-mobile"> ACL 2022 </span>
               </div>
               <div class="buttons-div">
                   <a class="buttons" target="_blank" href="https://aclanthology.org/2022.acl-long.15/">Read</a>
@@ -431,6 +451,7 @@
             <div class="publication-details">
               <div>
                   <span class="venue_complete">Proceedings of the 36th AAAI Conference on Artificial Intelligence (AAAI 2022)</span>
+                  <span class="venue-year-mobile"> AAAI 2022 </span>
               </div>
               <div class="buttons-div">
                   <a class="buttons" target="_blank" href="https://ojs.aaai.org/index.php/AAAI/article/view/21357">Read</a>
@@ -509,6 +530,7 @@
             <div class="publication-details">
               <div>
                   <span class="venue_complete">IEEE Access</span>
+                  <span class="venue-year-mobile"> IEEE Access 2021 </span>
               </div>
               <div class="buttons-div">
                   <a class="buttons" target="_blank" href="https://ieeexplore.ieee.org/document/9627684">Read</a>
@@ -2485,6 +2507,18 @@
   document.addEventListener("DOMContentLoaded", function() {
     const filterButtonsYear = document.querySelectorAll(".filter-buttons button[data-year]");
     const filterButtonsType = document.querySelectorAll(".filter-buttons-type button[data-type]");
+    const yearDropdown = document.getElementById("year-dropdown");
+    const typeDropdown = document.getElementById("type-dropdown");
+
+    // Event listener for dropdowns change
+    yearDropdown.addEventListener("change", handleDropdownChange);
+    typeDropdown.addEventListener("change", handleDropdownChange);
+
+    function handleDropdownChange() {
+        const year = yearDropdown.options[yearDropdown.selectedIndex].getAttribute("data-year");
+        const type = typeDropdown.options[typeDropdown.selectedIndex].getAttribute("data-type");
+        filterPublications(year, type);
+    }
 
     filterButtonsYear.forEach(button => {
       button.addEventListener("click", function() {
@@ -2578,7 +2612,7 @@
     }
 
     
-        // Show or hide the message based on whether there are publications for the selected year and type
+    // Show or hide the message based on whether there are publications for the selected year and type
     const messageElement = document.querySelector(".no-publications-message");
     if (!hasPublicationsForYearAndType && (year !== "all" && type !== "all-type")) {
         messageElement.style.display = "block"; // Show message if no publications are found for the selected year and type
