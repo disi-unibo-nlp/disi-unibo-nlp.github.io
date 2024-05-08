@@ -37,9 +37,9 @@
 <meta property="og:url" content="/publications/moro_ragazzi_valgimigli_ecai_2023/" />
 <meta property="og:site_name" content="DISI UniBo NLP" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-05-08T15:26:35+00:00" />
+<meta property="article:published_time" content="2024-05-08T15:53:10+00:00" />
 <script type="application/ld+json">
-{"description":"The DISI Unibo Natural Language Understanding Group (DISI Unibo NLU), led by prof. Gianluca Moro, includes a large team of Ph.D. students and researchers which are part of the Department of Computer Science and Engineering (DISI) of the University of Bologna.","url":"/publications/moro_ragazzi_valgimigli_ecai_2023/","@type":"BlogPosting","headline":"Graph-based Summarization of Extracted Essential Knowledge for Low-Resource Scenarios","dateModified":"2024-05-08T15:26:35+00:00","datePublished":"2024-05-08T15:26:35+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/publications/moro_ragazzi_valgimigli_ecai_2023/"},"@context":"https://schema.org"}</script>
+{"description":"The DISI Unibo Natural Language Understanding Group (DISI Unibo NLU), led by prof. Gianluca Moro, includes a large team of Ph.D. students and researchers which are part of the Department of Computer Science and Engineering (DISI) of the University of Bologna.","url":"/publications/moro_ragazzi_valgimigli_ecai_2023/","@type":"BlogPosting","headline":"Graph-based Summarization of Extracted Essential Knowledge for Low-Resource Scenarios","dateModified":"2024-05-08T15:53:10+00:00","datePublished":"2024-05-08T15:53:10+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/publications/moro_ragazzi_valgimigli_ecai_2023/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts -->
@@ -145,11 +145,6 @@
 
                         <div class="columns is-multiline">
 
-    <div class="column is-12">
-        
-
-    </div>
-
     <!-- Group publications by year (descending order) -->
     
     
@@ -157,9 +152,18 @@
     <!-- Only way to create a list in Liquid is to split strings -->
     
 
+    
+    
     <!-- Button menus for desktop -->
     <!-- Buttons for publication year -->
-    <div class="filter-container">
+    
+    <div class="column is-half is-offset-one-quarter">
+        <p class="control">
+            <input class="input search-input" type="text" id="publication-search" placeholder="Search by title or author..." />
+        </p>
+    </div>
+    
+    <div class="filter-container column is-8">
         <div class="filter-buttons">
             <button class="filter-button active" data-year="all">All</button>
             <button class="filter-button" data-year="2024">2024</button>
@@ -174,13 +178,7 @@
             </div>
         </div>
     </div>
-
-    <div class="search-bar">
-        <input type="text" id="publication-search" class="search-input" placeholder="Search by title or author...">
-    </div>
-
-
-    <!-- Dropdown menus for mobile -->
+    
     <div class="filter-dropdowns">
         <!-- Dropdown options for publication year -->
         <select class="filter-dropdown" id="year-dropdown">
@@ -199,15 +197,29 @@
         </select>
     </div>
 
-    <div class="award-checkbox-container">
-        <span class="filter-checkbox-container">
-            <input type="checkbox" id="award-checkbox" class="styled-checkbox">
-            <label for="award-checkbox" class="award-label">Award-winning</label>
-        </span>
+    <div class="column is-2">
+        <div class="q1-checkbox-container">
+            <span>
+                <input type="checkbox" id="q1-checkbox" class="styled-checkbox">
+                <label for="q1-checkbox" class="award-label">&gt; A+ / Q1</label>
+            </span>
+        </div>
     </div>
-
-    <div class="publication-counter">Found <span id="publication-count">0</span> publications</div>
-
+    
+    <div class="column is-2">
+        <div class="award-checkbox-container">
+            <span>
+                <input type="checkbox" id="award-checkbox" class="styled-checkbox">
+                <label for="award-checkbox" class="award-label">Award-winning</label>
+            </span>
+        </div>
+    </div>
+    
+    <div class="column is-3 content">
+        <blockquote class="publication-counter" style="padding: 5px 10px;">
+            Found <span id="publication-count">0</span> publications
+        </blockquote>
+    </div>
 
 
     <!-- LOOP 1: PUBLICATION TYPE -->
@@ -255,7 +267,7 @@
                     <span class="venue-year">ICLR 2024</span>
                     <span class="venue_complete">Proceedings of The Second Tiny Papers Track at ICLR 2024</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -337,7 +349,7 @@
                     <span class="venue-year">SISAP 2023</span>
                     <span class="venue_complete">Proceedings of the 16th International Conference on Similarity Search and Applications</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -393,77 +405,6 @@
         
         <li class="publication-item 2023 conference" id="444">
             <!-- PUBLICATION TITLE -->
-            <h1 class="publication-title">Cogito Ergo Summ: Abstractive Summarization of Biomedical Papers via Semantic Parsing Graphs and Consistency Rewards</h1>
-            <!-- PUBLICATION AUTHORS -->
-            <div class="authors">
-                
-                
-                <span class="author">Giacomo Frisoni,</span>
-                
-                <span class="author">Paolo Italiani,</span>
-                
-                <span class="author">Stefano Salvatori,</span>
-                
-                <span class="author">Gianluca Moro</span>
-                
-            </div>
-            <!-- PUBLICATION BADGE - VENUE - BUTTONS -->
-            <div class="venue-container">
-                <div class="venue-info">
-                    <span class="venue-year">NSA @ IJCAI 2023</span>
-                    <span class="venue_complete">Neuro-Symbolic Agents Workshop (NSA) @ International Joint Conference on Artificial Intelligence</span>
-                </div>
-                <div class="publication-details">
-                    <div class="buttons-div">
-                        <!-- WEBAPP -->
-                        
-                        <!-- CODE -->
-                        
-                        <a target="_blank" href="https://github.com/disi-unibo-nlp/cogito-ergo-summ">
-                            <div class="document-icon-container">
-                                <img class="buttons-icon"
-                                    src="https://cdn.icon-icons.com/icons2/2428/PNG/512/github_black_logo_icon_147128.png"
-                                    alt="GitHub Icon">
-                                <span class="label">Code</span>
-                            </div>
-                        </a>
-                        
-                        <!-- CITE -->
-                        
-                        <!-- READ -->
-                        <a target="_blank" href="https://nsa-wksp.github.io/#papers">
-                            <div class="document-icon-container">
-                                <img class="buttons-icon"
-                                    src="https://cdn.icon-icons.com/icons2/292/PNG/512/PDF_30915.png"
-                                    alt="Document Icon">
-                                <span class="label">Read</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="abstract-content">
-                <p class="short-text">
-                    The automatic synthesis of biomedical publications catalyzes a profound research interest elicited by literature congestion. Current sequence-to-sequence models mainly rely on the lexical surface and seldom consider the deep semantic interconnections between the entities mentioned in the source document. Such superficiality translates into fabricated, poorly informative, redundant, and near-extractive summaries that severely restrict their real-world application in biomedicine, where the specialized jargon and the convoluted facts further emphasize task complexity. To fill this gap, we argue that the summarizer should acquire semantic interpretation over input, exploiting structured and unambiguous representations to capture and conserve the most relevant parts of the text content. This paper presents CogitoErgoSumm, the first framework for biomedical abstractive summarization equipping large pre-trained language models with rich semantic graphs. Precisely, we infuse graphs from two complementary semantic parsing techniques with different goals and granularities—Event Extraction and Abstract Meaning Representation, also designing a reward signal to maximize information content preservation through reinforcement learning. Extensive quantitative and qualitative evaluations on the CDSR dataset show that our solution achieves competitive performance according to multiple metrics, despite using 2.5x fewer parameters. Results and ablation studies indicate that our joint text-graph model generates more enlightening, readable, and consistent summaries. <!-- Full abstract -->
-                    <a href="#" class="read-more">More</a>
-                </p>
-                <p class="full-text" style="display: none;">
-                    The automatic synthesis of biomedical publications catalyzes a profound research interest elicited by literature congestion. Current sequence-to-sequence models mainly rely on the lexical surface and seldom consider the deep semantic interconnections between the entities mentioned in the source document. Such superficiality translates into fabricated, poorly informative, redundant, and near-extractive summaries that severely restrict their real-world application in biomedicine, where the specialized jargon and the convoluted facts further emphasize task complexity. To fill this gap, we argue that the summarizer should acquire semantic interpretation over input, exploiting structured and unambiguous representations to capture and conserve the most relevant parts of the text content. This paper presents CogitoErgoSumm, the first framework for biomedical abstractive summarization equipping large pre-trained language models with rich semantic graphs. Precisely, we infuse graphs from two complementary semantic parsing techniques with different goals and granularities—Event Extraction and Abstract Meaning Representation, also designing a reward signal to maximize information content preservation through reinforcement learning. Extensive quantitative and qualitative evaluations on the CDSR dataset show that our solution achieves competitive performance according to multiple metrics, despite using 2.5x fewer parameters. Results and ablation studies indicate that our joint text-graph model generates more enlightening, readable, and consistent summaries. <!-- Full abstract -->
-                    <a href="#" class="read-less">Less</a>
-                </p>
-            </div>
-            
-        </li>
-        
-        
-        
-        
-        
-        
-        <li class="publication-item 2023 conference" id="555">
-            <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Graph-based Summarization of Extracted Essential Knowledge for Low-Resource Scenarios</h1>
             <!-- PUBLICATION AUTHORS -->
             <div class="authors">
@@ -482,7 +423,7 @@
                     <span class="venue-year">ECAI 2023</span>
                     <span class="venue_complete">Proceedings of the 26th European Conference on Artificial Intelligence</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -546,7 +487,7 @@
         
         
         
-        <li class="publication-item 2023 conference" id="999">
+        <li class="publication-item 2023 conference" id="888">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Carburacy: Summarization Models Tuning and Comparison in Eco-Sustainable Regimes with a Novel Carbon-Aware Accuracy</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -566,7 +507,7 @@
                     <span class="venue-year">AAAI 2023</span>
                     <span class="venue_complete">Proceedings of the 37th AAAI Conference on Artificial Intelligence (AAAI 2023)</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -615,7 +556,7 @@
         
         
         
-        <li class="publication-item 2023 conference" id="101010">
+        <li class="publication-item 2023 conference" id="999">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Cogito Ergo Summ: Abstractive Summarization of Biomedical Papers via Semantic Parsing Graphs and Consistency Rewards</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -637,7 +578,7 @@
                     <span class="venue-year">AAAI 2023</span>
                     <span class="venue_complete">Proceedings of the 37th AAAI Conference on Artificial Intelligence (AAAI 2023)</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -728,7 +669,7 @@
                     <span class="venue-year">EMNLP 2022</span>
                     <span class="venue_complete">Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -815,7 +756,7 @@
                     <span class="venue-year">SISAP 2022</span>
                     <span class="venue_complete">Proceedings of the 15th International Conference on Similarity Search and Applications</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -882,7 +823,7 @@
                     <span class="venue-year">SISAP 2022</span>
                     <span class="venue_complete">Proceedings of the 15th International Conference on Similarity Search and Applications</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -955,7 +896,7 @@
                     <span class="venue-year">COLING 2022</span>
                     <span class="venue_complete">Proceedings of the 29th International Conference on Computational Linguistics (COLING 2022)</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1033,7 +974,7 @@
                     <span class="venue-year">COLING 2022</span>
                     <span class="venue_complete">Proceedings of the 29th International Conference on Computational Linguistics (COLING 2022)</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1113,7 +1054,7 @@
                     <span class="venue-year">DATA 2022</span>
                     <span class="venue_complete">Proceedings of the 11th International Conference on Data Science, Technology and Applications</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1192,7 +1133,7 @@
                     <span class="venue-year">ACL 2022</span>
                     <span class="venue_complete">Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1259,7 +1200,7 @@
                     <span class="venue-year">AAAI 2022</span>
                     <span class="venue_complete">Proceedings of the 36th AAAI Conference on Artificial Intelligence (AAAI 2022)</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1373,7 +1314,7 @@
                     <span class="venue-year">KDIR 2020</span>
                     <span class="venue_complete">Proceedings of the 12th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1447,7 +1388,7 @@
                     <span class="venue-year">DATA 2020</span>
                     <span class="venue_complete">Proceedings of the 9th International Conference on Data Science, Technology and Applications</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1524,7 +1465,7 @@
                     <span class="venue-year">RIIFORUM 2020</span>
                     <span class="venue_complete">Research and Innovation Forum 2020 - Disruptive Technologies in Times of Change</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1626,7 +1567,7 @@
                     <span class="venue-year">Neurocomputing 2023</span>
                     <span class="venue_complete">Neurocomputing</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1702,7 +1643,7 @@
                     <span class="venue-year">AI&Law 2023</span>
                     <span class="venue_complete">Artificial Intelligence and Law</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1756,12 +1697,7 @@
         
         
         
-        
-        
-        
-        
-        
-        <li class="publication-item 2023 journal" id="666">
+        <li class="publication-item 2023 journal" id="555">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Align-Then-Abstract Representation Learning for Low-Resource Summarization</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -1779,7 +1715,7 @@
                     <span class="venue-year">Neurocomputing 2023</span>
                     <span class="venue_complete">Neurocomputing</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1828,6 +1764,81 @@
         
         
         
+        <li class="publication-item 2023 journal" id="666">
+            <!-- PUBLICATION TITLE -->
+            <h1 class="publication-title">Efficient Memory-Enhanced Transformer for Long-Document Summarization in Low-Resource Regimes</h1>
+            <!-- PUBLICATION AUTHORS -->
+            <div class="authors">
+                
+                
+                <span class="author">Gianluca Moro,</span>
+                
+                <span class="author">Luca Ragazzi,</span>
+                
+                <span class="author">Lorenzo Valgimigli,</span>
+                
+                <span class="author">Giacomo Frisoni,</span>
+                
+                <span class="author">Claudio Sartori,</span>
+                
+                <span class="author">Gustavo Marfia</span>
+                
+            </div>
+            <!-- PUBLICATION BADGE - VENUE - BUTTONS -->
+            <div class="venue-container">
+                <div class="venue-info">
+                    <span class="venue-year">Sensors 2023</span>
+                    <span class="venue_complete">Sensors</span>
+                </div>
+                <div class="publication-details  q1 ">
+                    <div class="buttons-div">
+                        <!-- WEBAPP -->
+                        
+                        <!-- CODE -->
+                        
+                        <!-- CITE -->
+                        
+                        <a target="_blank" href="https://dblp.uni-trier.de/rec/journals/sensors/MoroRVFSM23.html?view=bibtex">
+                            <div class="document-icon-container">
+                                <img class="buttons-icon"
+                                    src="https://cdn.iconscout.com/icon/free/png-256/free-dblp-3521374-2944818.png"
+                                    alt="Cite Icon">
+                                <span class="label">Cite</span>
+                            </div>
+                        </a>
+                        
+                        <!-- READ -->
+                        <a target="_blank" href="https://www.mdpi.com/1424-8220/23/7/3542">
+                            <div class="document-icon-container">
+                                <img class="buttons-icon"
+                                    src="https://cdn.icon-icons.com/icons2/292/PNG/512/PDF_30915.png"
+                                    alt="Document Icon">
+                                <span class="label">Read</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="abstract-content">
+                <p class="short-text">
+                    Long document summarization poses obstacles to current generative transformer-based models because of the broad context to process and understand. Indeed, detecting long-range dependencies is still challenging for today’s state-of-the-art solutions, usually requiring model expansion at the cost of an unsustainable demand for computing and memory capacities. This paper introduces Emma, a novel efficient memory-enhanced transformer-based architecture. By segmenting a lengthy input into multiple text fragments, our model stores and compares the current chunk with previous ones, gaining the capability to read and comprehend the entire context over the whole document with a fixed amount of GPU memory. This method enables the model to deal with theoretically infinitely long documents, using less than 18 and 13 GB of memory for training and inference, respectively. We conducted extensive performance analyses and demonstrate that Emma achieved competitive results on two datasets of different domains while consuming significantly less GPU memory than competitors do, even in low-resource settings. <!-- Full abstract -->
+                    <a href="#" class="read-more">More</a>
+                </p>
+                <p class="full-text" style="display: none;">
+                    Long document summarization poses obstacles to current generative transformer-based models because of the broad context to process and understand. Indeed, detecting long-range dependencies is still challenging for today’s state-of-the-art solutions, usually requiring model expansion at the cost of an unsustainable demand for computing and memory capacities. This paper introduces Emma, a novel efficient memory-enhanced transformer-based architecture. By segmenting a lengthy input into multiple text fragments, our model stores and compares the current chunk with previous ones, gaining the capability to read and comprehend the entire context over the whole document with a fixed amount of GPU memory. This method enables the model to deal with theoretically infinitely long documents, using less than 18 and 13 GB of memory for training and inference, respectively. We conducted extensive performance analyses and demonstrate that Emma achieved competitive results on two datasets of different domains while consuming significantly less GPU memory than competitors do, even in low-resource settings. <!-- Full abstract -->
+                    <a href="#" class="read-less">Less</a>
+                </p>
+            </div>
+            
+        </li>
+        
+        
+        
+        
+        
+        
         <li class="publication-item 2023 journal" id="777">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Efficient Text-Image Semantic Search: a Multi-modal Vision-Language Approach for Fashion Retrieval</h1>
@@ -1848,7 +1859,7 @@
                     <span class="venue-year">Neurocomputing 2023</span>
                     <span class="venue_complete">Neurocomputing</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -1906,75 +1917,6 @@
         
         
         
-        <li class="publication-item 2023 journal" id="888">
-            <!-- PUBLICATION TITLE -->
-            <h1 class="publication-title">Efficient Memory-Enhanced Transformer for Long-Document Summarization in Low-Resource Regimes</h1>
-            <!-- PUBLICATION AUTHORS -->
-            <div class="authors">
-                
-                
-                <span class="author">Gianluca Moro,</span>
-                
-                <span class="author">Luca Ragazzi,</span>
-                
-                <span class="author">Lorenzo Valgimigli,</span>
-                
-                <span class="author">Giacomo Frisoni,</span>
-                
-                <span class="author">Claudio Sartori,</span>
-                
-                <span class="author">Gustavo Marfia</span>
-                
-            </div>
-            <!-- PUBLICATION BADGE - VENUE - BUTTONS -->
-            <div class="venue-container">
-                <div class="venue-info">
-                    <span class="venue-year">Sensors 2023</span>
-                    <span class="venue_complete">Sensors</span>
-                </div>
-                <div class="publication-details">
-                    <div class="buttons-div">
-                        <!-- WEBAPP -->
-                        
-                        <!-- CODE -->
-                        
-                        <!-- CITE -->
-                        
-                        <a target="_blank" href="https://dblp.uni-trier.de/rec/journals/sensors/MoroRVFSM23.html?view=bibtex">
-                            <div class="document-icon-container">
-                                <img class="buttons-icon"
-                                    src="https://cdn.iconscout.com/icon/free/png-256/free-dblp-3521374-2944818.png"
-                                    alt="Cite Icon">
-                                <span class="label">Cite</span>
-                            </div>
-                        </a>
-                        
-                        <!-- READ -->
-                        <a target="_blank" href="https://www.mdpi.com/1424-8220/23/7/3542">
-                            <div class="document-icon-container">
-                                <img class="buttons-icon"
-                                    src="https://cdn.icon-icons.com/icons2/292/PNG/512/PDF_30915.png"
-                                    alt="Document Icon">
-                                <span class="label">Read</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="abstract-content">
-                <p class="short-text">
-                    Long document summarization poses obstacles to current generative transformer-based models because of the broad context to process and understand. Indeed, detecting long-range dependencies is still challenging for today’s state-of-the-art solutions, usually requiring model expansion at the cost of an unsustainable demand for computing and memory capacities. This paper introduces Emma, a novel efficient memory-enhanced transformer-based architecture. By segmenting a lengthy input into multiple text fragments, our model stores and compares the current chunk with previous ones, gaining the capability to read and comprehend the entire context over the whole document with a fixed amount of GPU memory. This method enables the model to deal with theoretically infinitely long documents, using less than 18 and 13 GB of memory for training and inference, respectively. We conducted extensive performance analyses and demonstrate that Emma achieved competitive results on two datasets of different domains while consuming significantly less GPU memory than competitors do, even in low-resource settings. <!-- Full abstract -->
-                    <a href="#" class="read-more">More</a>
-                </p>
-                <p class="full-text" style="display: none;">
-                    Long document summarization poses obstacles to current generative transformer-based models because of the broad context to process and understand. Indeed, detecting long-range dependencies is still challenging for today’s state-of-the-art solutions, usually requiring model expansion at the cost of an unsustainable demand for computing and memory capacities. This paper introduces Emma, a novel efficient memory-enhanced transformer-based architecture. By segmenting a lengthy input into multiple text fragments, our model stores and compares the current chunk with previous ones, gaining the capability to read and comprehend the entire context over the whole document with a fixed amount of GPU memory. This method enables the model to deal with theoretically infinitely long documents, using less than 18 and 13 GB of memory for training and inference, respectively. We conducted extensive performance analyses and demonstrate that Emma achieved competitive results on two datasets of different domains while consuming significantly less GPU memory than competitors do, even in low-resource settings. <!-- Full abstract -->
-                    <a href="#" class="read-less">Less</a>
-                </p>
-            </div>
-            
-        </li>
         
         
         
@@ -1985,13 +1927,7 @@
         
         
         
-        
-        
-        
-        
-        
-        
-        <li class="publication-item 2023 journal" id="111111">
+        <li class="publication-item 2023 journal" id="101010">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Graph-Enhanced Biomedical Abstractive Summarization via Factual Evidence Extraction</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -2011,7 +1947,7 @@
                     <span class="venue-year">DATA (Revised Selected Papers) 2023</span>
                     <span class="venue_complete">SN Computer Science</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -2104,7 +2040,7 @@
                     <span class="venue-year">Electronics 2022</span>
                     <span class="venue_complete">Electronics</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -2219,7 +2155,7 @@
                     <span class="venue-year">Sensors 2022</span>
                     <span class="venue_complete">Sensors</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -2305,7 +2241,7 @@
                     <span class="venue-year">Sensors 2021</span>
                     <span class="venue_complete">Sensors</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -2383,7 +2319,7 @@
                     <span class="venue-year">IEEE Access 2021</span>
                     <span class="venue_complete">IEEE Access</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details  q1 ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -2461,7 +2397,7 @@
                     <span class="venue-year">DATA (Revised Selected Papers) 2020</span>
                     <span class="venue_complete">Proceedings of the 9th International Conference on Data Management Technologies and Applications</span>
                 </div>
-                <div class="publication-details">
+                <div class="publication-details ">
                     <div class="buttons-div">
                         <!-- WEBAPP -->
                         
@@ -2587,7 +2523,9 @@
         const filterButtonsType = document.querySelectorAll(".filter-buttons-type button[data-type]");
         const yearDropdown = document.getElementById("year-dropdown");
         const typeDropdown = document.getElementById("type-dropdown");
+        
         const awardCheckbox = document.getElementById("award-checkbox");
+        const q1Checkbox = document.getElementById("q1-checkbox");
 
         updatePublicationCounter();
 
@@ -2715,7 +2653,6 @@
         } 
 
         document.getElementById('award-checkbox').addEventListener('change', function() {
-                console.log("works")
                 let count = 0;
                 var showOnlyAwarded = document.getElementById('award-checkbox').checked;
                 var publications = document.querySelectorAll('.publication-item');
@@ -2781,16 +2718,86 @@
                 }
             });
 
+            document.getElementById('q1-checkbox').addEventListener('change', function() {
+                let count = 0;
+                var showOnlyQ1 = document.getElementById('q1-checkbox').checked;
+                var publications = document.querySelectorAll('.publication-item');
+                var awardCheckbox = document.getElementById('award-checkbox');
+                const q1Checkbox = this;
+                
+                const allButtons = document.querySelectorAll('.filter-button');
+
+                const headers = document.querySelectorAll('.publication-type-header');
+
+                // Disable all buttons initially
+                allButtons.forEach(button => {
+                    button.setAttribute('disabled', 'disabled');
+                });
+
+                headers.forEach(function(header) {
+                    if (q1Checkbox.checked) {
+                        header.style.display = 'none';
+                    } else {
+                        header.style.display = 'block';
+                    }
+                });
+        
+                publications.forEach(function(publication) {
+                    var hasQ1 = publication.querySelector('.q1') !== null; // Check if publication has an award
+                    console.log(hasQ1);
+                    if (showOnlyQ1 && !hasQ1) {
+                        publication.style.display = 'none';
+                    } else {
+                        publication.style.display = 'block';
+                        count++;
+                    }
+                    updatePublicationCounter(count);
+                });
+                
+                // Enable/disable all buttons based on checkbox state
+                allButtons.forEach(button => {
+                    if (q1Checkbox.checked) {
+                        button.setAttribute('disabled', 'disabled');
+                    } else {
+                        button.removeAttribute('disabled');
+                    }
+                });
+
+                // Reset year buttons to "All" when checkbox is checked
+                if (q1Checkbox.checked) {
+                    document.querySelectorAll('.filter-buttons .filter-button').forEach(button => {
+                        if (button.getAttribute('data-year') === 'all') {
+                            button.classList.add('active');
+                        } else {
+                            button.classList.remove('active');
+                        }
+                    });
+                }
+
+                // Reset type buttons to "All" when checkbox is checked
+                if (q1Checkbox.checked) {
+                    document.querySelectorAll('.filter-buttons-type .filter-button').forEach(button => {
+                        if (button.getAttribute('data-type') === 'all-type') {
+                            button.classList.add('active');
+                        } else {
+                            button.classList.remove('active');
+                        }
+                    });
+                }
+            });
+
     });
 
     document.addEventListener("DOMContentLoaded", function () {
         const publicationSearch = document.getElementById("publication-search");
         const awardCheckbox = document.getElementById("award-checkbox");
+        const q1Checkbox = document.getElementById("q1-checkbox");
         let showHeader = false; // Variable to track if the header should be shown
         
         publicationSearch.addEventListener("input", function () {
             const searchQuery = this.value.trim().toLowerCase();
             awardCheckbox.checked = false; 
+            q1Checkbox.checked = false; 
             filterPublicationsSearch(searchQuery);
             updatePublicationCounter();
         });
@@ -2803,6 +2810,7 @@
             const typeDropdown = document.getElementById("type-dropdown");
 
             const award = document.querySelector(".award-checkbox");
+            const q1 = document.querySelector(".q1-checkbox");
 
             // Disable all buttons initially
             allButtons.forEach(button => {
