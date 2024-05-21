@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: http://nlp.apice.unibo.it/sitemap.xml
