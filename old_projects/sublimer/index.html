@@ -1,0 +1,222 @@
+<!doctype html>
+
+
+
+
+<html
+    dir="ltr"
+    lang="en"
+    class=" "
+>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link
+        rel="shortcut icon"
+        type="image/png"
+        
+            href="/favicon.png"
+        
+    >
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Sublimer | UniboNLP</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Sublimer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Sublimer" />
+<meta property="og:description" content="Sublimer" />
+<link rel="canonical" href="http://nlp.apice.unibo.it/old_projects/sublimer/" />
+<meta property="og:url" content="http://nlp.apice.unibo.it/old_projects/sublimer/" />
+<meta property="og:site_name" content="UniboNLP" />
+<meta property="og:image" content="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/8512538/bin/sensors-21-06430-g003.jpg" />
+<script type="application/ld+json">
+{"description":"Sublimer","url":"http://nlp.apice.unibo.it/old_projects/sublimer/","@type":"WebPage","headline":"Sublimer","image":"https://www.ncbi.nlm.nih.gov/pmc/articles/instance/8512538/bin/sensors-21-06430-g003.jpg","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts -->
+</head>
+
+    <body>
+        
+        <nav
+    class="navbar is-primary "
+    x-data="{ openNav: false }"
+>
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                UniboNLP
+            </a>
+            <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                    
+                        
+                            <a
+                                href="/people/"
+                                class="navbar-item "
+                            >People</a>
+                        
+                    
+                        
+                            <a
+                                href="/publications/"
+                                class="navbar-item "
+                            >Publications</a>
+                        
+                    
+                        
+                            <a
+                                href="/projects/"
+                                class="navbar-item "
+                            >Projects</a>
+                        
+                    
+                        
+                            <a
+                                href="/theses/"
+                                class="navbar-item "
+                            >Theses</a>
+                        
+                    
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+            <section
+    class="hero  is-medium  is-bold is-primary"
+    
+>
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Sublimer</h1>
+            <p class="subtitle is-3">Efficient self-supervised metric information retrieval for COVID19 literature</p>
+            
+        </div>
+    </div>
+</section>
+
+        
+        
+
+        <section class="section">
+            <div class="container">
+                <div class="columns is-multiline">
+                    
+                    <div class="column is-12">
+                        
+
+                        
+
+                        
+
+                        
+
+                        <div class="columns is-multiline">
+
+    <div class="column is-6">
+        <figure class="image is-4by3">
+            <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/8512538/bin/sensors-21-06430-g003.jpg" />
+        </figure>
+    </div>
+
+    <div class="column is-6">
+        <p class="title is-3">Sublimer</p>
+        <p class="subtitle is-3">Efficient self-supervised metric information retrieval for COVID19 literature</p>
+        <p class="subtitle is-4 is-italic">Prof. Gianluca Moro, Lorenzo Valgimigli</p>
+        
+        
+        <a href=https://www.mdpi.com/1424-8220/21/19/6430 class="button is-link">Paper</p></a>
+        
+       
+        
+        
+        <div class="content">
+            
+            <p>
+                <span>Entirelly self-supervised</span></p>
+            
+            <p>
+                <span>Outperforms previous state-of-the-art competitors</span></p>
+            
+            <p>
+                <span>It uses 10 times less parameters</span></p>
+            
+        </div>
+        
+    </div>
+
+    <div class="column is-12">
+        <p class="title is-4">Description</p>
+        <div class="content">
+            
+    
+            <p>The literature on coronaviruses counts more than 300,000 publications. Finding relevant papers concerning arbitrary queries is essential to discovery helpful knowledge. Current best information retrieval (IR) use deep learning approaches and need supervised training sets with labeled data, namely to know a priori the queries and their corresponding relevant papers. Creating such labeled datasets is time-expensive and requires prominent experts’ efforts, resources insufficiently available under a pandemic time pressure. We present a new self-supervised solution, called SUBLIMER, that does not require labels to learn to search on corpora of scientific papers for most relevant against arbitrary queries. SUBLIMER is a novel efficient IR engine trained on the unsupervised COVID-19 Open Research Dataset (CORD19), using deep metric learning. The core point of our self-supervised approach is that it uses no labels, but exploits the bibliography citations from papers to create a latent space where their spatial proximity is a metric of semantic similarity; for this reason, it can also be applied to other domains of papers corpora. SUBLIMER, despite is self-supervised, outperforms the Precision@5 (P@5) and Bpref of the state-of-the-art competitors on CORD19, which, differently from our approach, require both labeled datasets and a number of trainable parameters that is an order of magnitude higher than our.</p>
+
+<p>Keywords: COVID-19; NLP; healthcare; information retrieval; language model; metric learning; self-supervised learning.</p>
+
+
+        </div>
+        
+        <a class="button is-link is-outlined"href=http://137.204.107.153:50000/> Try Me </a>
+        
+        
+        
+        
+    </div>
+
+</div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+            <footer class="footer">
+    <div class="container">
+        
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Email contact: gianluca.moro[at]unibo.it</p>
+        </div>
+    </div>
+</footer>
+
+        
+        <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts -->
+</body>
+</html>
