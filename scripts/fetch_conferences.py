@@ -9,7 +9,7 @@ GITHUB_RAW_BASE = "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/c
 # GitHub repo page where files are listed
 GITHUB_PAGE = "https://github.com/ccfddl/ccf-deadlines/tree/main/conference/AI"
 # Output YAML file
-OUTPUT_FILE = "_data/conferences.yml"
+OUTPUT_FILE = "docs/_data/conferences.yml"
 # Get the current year dynamically
 CURRENT_YEAR = datetime.now().year
 
