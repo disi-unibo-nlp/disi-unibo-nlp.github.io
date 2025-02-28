@@ -1,64 +1,140 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://nlp.apice.unibo.it/feed.xml" rel="self" type="application/atom+xml" /><link href="http://nlp.apice.unibo.it/" rel="alternate" type="text/html" /><updated>2025-02-27T22:20:14+00:00</updated><id>http://nlp.apice.unibo.it/feed.xml</id><title type="html">UniboNLP</title><subtitle>The Unibo Natural Language Processing Group (UniboNLP), led by prof. Gianluca Moro, includes a large team of Ph.D. students and researchers which are part of the Department of Computer Science and Engineering (DISI) of the University of Bologna.</subtitle><entry><title type="html">EMNLP 2024</title><link href="http://nlp.apice.unibo.it/development/2024/10/17/emnlp24/" rel="alternate" type="text/html" title="EMNLP 2024" /><published>2024-10-17T22:25:00+00:00</published><updated>2024-10-17T22:25:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2024/10/17/emnlp24</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2024/10/17/emnlp24/">&lt;p&gt;We are proud to announce that our group will be at EMNLP 2024 with an accepted long paper in the Main Track!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://nlp.apice.unibo.it/feed.xml" rel="self" type="application/atom+xml" /><link href="http://nlp.apice.unibo.it/" rel="alternate" type="text/html" /><updated>2025-02-28T17:43:17+00:00</updated><id>http://nlp.apice.unibo.it/feed.xml</id><title type="html">UniboNLP</title><subtitle>The Unibo Natural Language Processing Group (UniboNLP), led by prof. Gianluca Moro, includes a large team of Ph.D. students and researchers which are part of the Department of Computer Science and Engineering (DISI) of the University of Bologna.</subtitle><entry><title type="html">UniboNLP @ NAACL 2025</title><link href="http://nlp.apice.unibo.it/development/2025/01/23/naacl25/" rel="alternate" type="text/html" title="UniboNLP @ NAACL 2025" /><published>2025-01-23T13:55:00+00:00</published><updated>2025-01-23T13:55:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2025/01/23/naacl25</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2025/01/23/naacl25/">&lt;p&gt;We are proud to announce that our group will be at NAACL 2025 with &lt;b&gt;1 long paper in the Findings Track!&lt;/b&gt; Catch us in &lt;b&gt;Albuquerque, New Mexico&lt;/b&gt; to learn more about &lt;b&gt;open-domain biomedical NER&lt;/b&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;OpenBioNER: Lightweight Open-Domain Biomedical Named Entity Recognition Through Entity Type Description&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by A. Cocchieri, G. Frisoni, M. Martinez Galindo, G. Moro, G. Tagliavini, and F. Candoli&lt;/p&gt;
+&lt;p&gt;
+Biomedical Named Entity Recognition (BioNER) faces significant challenges in real-world applications due to limited annotated data and the constant emergence of new entity types, making zero-shot learning capabilities crucial. While Large Language Models (LLMs) possess extensive domain knowledge necessary for specialized fields like biomedicine, their computational costs often make them impractical. To address these challenges, we introduce OpenBioNER, a lightweight BERT-based cross-encoder architecture that can identify any biomedical entity using only its description, eliminating the need for retraining on new, unseen entity types. Through comprehensive evaluation on established biomedical benchmarks, we demonstrate that OpenBioNER surpasses state-of-the-art baselines, including specialized 7B NER LLMs and GPT-4o, achieving up to 10% higher F1 scores while using 110M parameters only. Moreover, OpenBioNER outperforms existing small-scale models that match textual spans with entity types rather than descriptions, both in terms of accuracy and computational efficiency.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;i&gt;The paper will be available soon!&lt;/i&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group will be at NAACL 2025 with 1 long paper in the Findings Track! Catch us in Albuquerque, New Mexico to learn more about open-domain biomedical NER.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://2025.naacl.org/assets/images/venue/balloons.jpg" /><media:content medium="image" url="https://2025.naacl.org/assets/images/venue/balloons.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Springer - AI and Law</title><link href="http://nlp.apice.unibo.it/development/2025/01/17/ailaw/" rel="alternate" type="text/html" title="Springer - AI and Law" /><published>2025-01-17T00:00:00+00:00</published><updated>2025-01-17T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2025/01/17/ailaw</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2025/01/17/ailaw/">&lt;p&gt;UniboNLP has &lt;b&gt;1 long paper published in Artificial Intelligence and Law 2025.&lt;/b&gt; Read to learn more on &lt;b&gt;knowledge distillation and data generation from LLMs for real-world legal QA&lt;/b&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;Enhancing Legal Question Answering with Data Generation and Knowledge Distillation from Large Language Models&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by P. Italiani, L. Ragazzi, and G. Moro&lt;/p&gt;
+
+&lt;p&gt;
+Legal question answering (LQA) relies on supervised methods to automatically handle law-related queries. These solutions require a significant amount of carefully annotated data for training, which makes the process very costly. Although large language models (LLMs) show promise in zero-shot QA, their computational demands limit their practical use, making specialized small language models (SLMs) more favorable. Furthermore, the growing interest in synthetic data generation has recently surged, spurred by the impressive generation capabilities of LLMs. This paper presents Ace-Attorney, an LLM distillation approach devised to develop LQA data and supervised models without human annotation. Given a textual prompt, a frozen LLM generates artificial examples that are used as knowledge to train a student SLM with an order of magnitude fewer parameters. Taking into account a realistic retrieval-based scenario to fetch the correct document for answer generation, we propose Selective Generative Paradigm, a novel approach designed to improve retrieval efficacy. Extensive experiments demonstrate the effectiveness and efficiency of distilled models on Syn-LeQA, our human-free synthetic dataset, and a public expert-annotated corpus. Notably, by using only a few dozen training samples, our best SLM achieves LLM-comparable performance with ≈1200% less CO2 emissions.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;i&gt;The paper will be available soon!&lt;/i&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">UniboNLP has 1 long paper published in Artificial Intelligence and Law 2025. Read to learn more on knowledge distillation and data generation from LLMs for real-world legal QA.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i0.wp.com/algorithmxlab.com/wp-content/uploads/2019/06/Top-10-Applications-of-Artificial-Intelligence-in-Law.jpg?fit=1900%2C1055&amp;ssl=1" /><media:content medium="image" url="https://i0.wp.com/algorithmxlab.com/wp-content/uploads/2019/06/Top-10-Applications-of-Artificial-Intelligence-in-Law.jpg?fit=1900%2C1055&amp;ssl=1" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">IEEE/ACM - TASLP</title><link href="http://nlp.apice.unibo.it/development/2025/01/03/taslp/" rel="alternate" type="text/html" title="IEEE/ACM - TASLP" /><published>2025-01-03T00:00:00+00:00</published><updated>2025-01-03T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2025/01/03/taslp</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2025/01/03/taslp/">&lt;p&gt;UniboNLP has &lt;b&gt;1 long paper published in IEEE/ACM Transactions on Audio, Speech, and Language Processing 2025.&lt;/b&gt; Read to learn more on &lt;b&gt;multi-document summarization with graphs&lt;/b&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;Cross-Document Distillation via Graph-Based Summarization of Extracted Essential Knowledge&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by L. Ragazzi, G. Moro, L. Valgimigli, and R. Fiorani&lt;/p&gt;
+
+&lt;p&gt;
+Abstractive multi-document summarization aims to generate a comprehensive summary that encapsulates crucial content derived from multiple input documents. Despite the proficiency exhibited by language models in text summarization, challenges persist in capturing and aggregating salient information dispersed across a cluster of lengthy sources. To accommodate more input, existing solutions prioritize sparse attention mechanisms, relying on sequence truncation without incorporating graph-based modeling of multiple semantic units to locate essential facets. Furthermore, the limited availability of training examples adversely impacts performance, thereby compromising summarization quality in real-world few-shot scenarios. In this paper, we present G-Seek-2, a graph-enhanced approach designed to distill multiple topic-related documents by pinpointing and processing solely the pertinent information. We use a heterogeneous graph to model the input cluster, interconnecting various encoded entities via informative semantic edges. Then, a graph neural network locates the most salient sentences that are provided to a language model to generate the summary. We extensively evaluate G-Seek-2 across seven datasets spanning various domains—including news articles, lawsuits, government reports, and scientific texts—under few-shot settings with a limited training sample size of only 100 examples. The experimental findings demonstrate that our model consistently outperforms advanced summarization baselines, achieving improvements as measured by syntactic and semantic metrics.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://ieeexplore.ieee.org/document/10740791?denied=&quot;&gt;Check out the paper!&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">UniboNLP has 1 long paper published in IEEE/ACM Transactions on Audio, Speech, and Language Processing 2025. Read to learn more on multi-document summarization with graphs.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.prod.website-files.com/656a6f5ca4824808211181c5/6577922ef7937fd8426a089b_An-Introduction-to-Audio-Speech-and-Language-Processing-cropped-1-1.jpeg" /><media:content medium="image" url="https://cdn.prod.website-files.com/656a6f5ca4824808211181c5/6577922ef7937fd8426a089b_An-Introduction-to-Audio-Speech-and-Language-Processing-cropped-1-1.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UniboNLP @ EMNLP 2024</title><link href="http://nlp.apice.unibo.it/development/2024/10/17/emnlp24/" rel="alternate" type="text/html" title="UniboNLP @ EMNLP 2024" /><published>2024-10-17T22:25:00+00:00</published><updated>2024-10-17T22:25:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2024/10/17/emnlp24</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2024/10/17/emnlp24/">&lt;p&gt;We are glad to share that that our group will be at EMNLP 2024 with &lt;b&gt;1 long paper in the Main Track!&lt;/b&gt; Catch us in &lt;b&gt;Miami, Florida&lt;/b&gt; to learn more about &lt;b&gt;data generation for multimodal computational fact-checking&lt;/b&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h4&gt;Unknown Claims: Generation of Fact-Checking Training Examples from Unstructured and Structured Data&lt;/h4&gt;
-&lt;h5&gt;by JF Bussotti, L. Ragazzi, G. Frisoni, G. Moro and P. Papotti&lt;/h5&gt;
-
-&lt;p&gt;We will attend in presence in Miami and present &lt;b&gt;Unown&lt;/b&gt;, a novel domain-agnostic data generation framework for fact-checking systems that integrate both textual and tabular content.&lt;/p&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by JF Bussotti, L. Ragazzi, G. Frisoni, G. Moro, and P. Papotti&lt;/p&gt;
 &lt;p&gt;
 Computational fact-checking (FC) relies on supervised models to verify claims based on given evidence, requiring a resource-intensive process to annotate large volumes of training data. We introduce Unown, a novel framework that generates training instances for FC systems automatically using both textual and tabular content. Unown selects relevant evidence and generates supporting and refuting claims with advanced negation artifacts. Designed to be flexible, Unown accommodates various strategies for evidence selection and claim generation, offering unparalleled adaptability. We comprehensively evaluate Unown on both text-only and table+text benchmarks, including Feverous, SciFact, and MMFC, a new multi-modal FC dataset. Our results prove that Unown examples are of comparable quality to expert-labeled data, even enabling models to achieve up to 5% higher accuracy. The code, data, and models are available at https://github.com/disi-unibo-nlp/unown.
-&lt;/p&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group will be at EMNLP 2024 with an accepted long paper in the Main Track!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://github.com/acl-org/emnlp-2024/blob/main/assets/images/miami/EMNLP_2024_Website_Image.png?raw=true" /><media:content medium="image" url="https://github.com/acl-org/emnlp-2024/blob/main/assets/images/miami/EMNLP_2024_Website_Image.png?raw=true" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ACL 2024</title><link href="http://nlp.apice.unibo.it/development/2024/05/17/acl24/" rel="alternate" type="text/html" title="ACL 2024" /><published>2024-05-17T00:00:00+00:00</published><updated>2024-05-17T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2024/05/17/acl24</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2024/05/17/acl24/">&lt;p&gt;We are proud to announce that our group will be at ACL 2024 with two accepted papers in the Main Track and Findings!&lt;/p&gt;
-
-&lt;p&gt;Here’s the list of the papers:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;To Generate or to Retrieve? On the Effectiveness of Artificial Contexts for Medical Open-Domain Question Answering&lt;/li&gt;
-  &lt;li&gt;What Are You Token About? Differentiable Perturbed Top-k Token Selection for Scientific Document Summarization&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://aclanthology.org/2024.emnlp-main.675/&quot;&gt;Check out the paper!&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are glad to share that that our group will be at EMNLP 2024 with 1 long paper in the Main Track! Catch us in Miami, Florida to learn more about data generation for multimodal computational fact-checking.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://github.com/acl-org/emnlp-2024/blob/main/assets/images/miami/EMNLP_2024_Website_Image.png?raw=true" /><media:content medium="image" url="https://github.com/acl-org/emnlp-2024/blob/main/assets/images/miami/EMNLP_2024_Website_Image.png?raw=true" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Springer - AI and Law</title><link href="http://nlp.apice.unibo.it/development/2024/09/29/ailaw/" rel="alternate" type="text/html" title="Springer - AI and Law" /><published>2024-09-29T00:00:00+00:00</published><updated>2024-09-29T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2024/09/29/ailaw</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2024/09/29/ailaw/">&lt;p&gt;UniboNLP has &lt;b&gt;2 long papers published in Artificial Intelligence and Law 2024.&lt;/b&gt; Read to learn more on &lt;b&gt;Italian text summarization of constitutional articles&lt;/b&gt; and &lt;b&gt;multilingual case summarization&lt;/b&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;LAWSUIT: a LArge expert-Written SUmmarization dataset of ITalian constitutional court verdicts&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by L. Ragazzi, G. Moro, S. Guidi, and G. Frisoni&lt;/p&gt;
+
+&lt;p&gt;
+Large-scale public datasets are vital for driving the progress of abstractive summarization, especially in law, where documents have highly specialized jargon. However, the available resources are English-centered, limiting research advancements in other languages. This paper introduces LAWSUIT, a collection of 14K Italian legal verdicts with expert-authored abstractive maxims drawn from the Constitutional Court of the Italian Republic. LAWSUIT presents an arduous task with lengthy source texts and evenly distributed salient content. We offer extensive experiments with sequence-to-sequence and segmentation-based approaches, revealing that the latter achieve better results in full and few-shot settings. We openly release LAWSUIT to foster the development and automation of real-world legal applications.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://link.springer.com/article/10.1007/s10506-024-09414-w&quot;&gt;Check out the paper!&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;Multi-Language Transfer Learning for Low-Resource Legal Case Summarization&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Moro, N. Piscaglia, L. Ragazzi, and P. Italiani&lt;/p&gt;
+
+&lt;p&gt;
+Analyzing and evaluating legal case reports are labor-intensive tasks for judges and lawyers, who usually base their decisions on report abstracts, legal principles, and commonsense reasoning. Thus, summarizing legal documents is time-consuming and requires excellent human expertise. Moreover, public legal corpora of specific languages are almost unavailable. This paper proposes a transfer learning approach with extractive and abstractive techniques to cope with the lack of labeled legal summarization datasets, namely a low-resource scenario. In particular, we conducted extensive multi- and cross-language experiments. The proposed work outperforms the state-of-the-art results of extractive summarization on the Australian Legal Case Reports dataset and sets a new baseline for abstractive summarization. Finally, syntactic and semantic metrics assessments have been carried out to evaluate the accuracy and the factual consistency of the machine-generated legal summaries.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://link.springer.com/article/10.1007/s10506-023-09373-8&quot;&gt;Check out the paper!&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">UniboNLP has 2 long papers published in Artificial Intelligence and Law 2024. Read to learn more on Italian text summarization of constitutional articles and multilingual case summarization.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i0.wp.com/algorithmxlab.com/wp-content/uploads/2019/06/Top-10-Applications-of-Artificial-Intelligence-in-Law.jpg?fit=1900%2C1055&amp;ssl=1" /><media:content medium="image" url="https://i0.wp.com/algorithmxlab.com/wp-content/uploads/2019/06/Top-10-Applications-of-Artificial-Intelligence-in-Law.jpg?fit=1900%2C1055&amp;ssl=1" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UniboNLP @ ACL 2024</title><link href="http://nlp.apice.unibo.it/development/2024/05/17/acl24/" rel="alternate" type="text/html" title="UniboNLP @ ACL 2024" /><published>2024-05-17T13:55:00+00:00</published><updated>2024-05-17T13:55:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2024/05/17/acl24</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2024/05/17/acl24/">&lt;p&gt;We are delighted to announce that we will be at ACL 2024 with &lt;b&gt;2 long papers in the Main and Findings Track!&lt;/b&gt; Catch us in &lt;b&gt;Bangkok, Thailand&lt;/b&gt; to learn more about &lt;b&gt;open-domain QA&lt;/b&gt; and &lt;b&gt;scientific text summarization&lt;/b&gt;.&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;h4&gt;To Generate or to Retrieve? On the Effectiveness of Artificial Contexts for Medical Open-Domain Question Answering&lt;/h4&gt;
-&lt;h5&gt;by G. Frisoni, A. Cocchieri, A. Presepi, G. Moro and Z. Meng&lt;/h5&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Frisoni, A. Cocchieri, A. Presepi, G. Moro, and Z. Meng&lt;/p&gt;
+
 &lt;p&gt;
-Medical open-domain question answering demands substantial access to specialized knowledge. Recent efforts have sought to decouple knowledge from model parameters, counteracting architectural scaling and allowing for training on common low-resource hardware. The retrieve-then-read paradigm has become ubiquitous, with model predictions grounded on relevant knowledge pieces from external repositories such as PubMed, textbooks, and UMLS. An alternative path, still under-explored but made possible by the advent of domain-specific large language models, entails constructing artificial contexts through prompting. As a result, 'to generate or to retrieve' is the modern equivalent of Hamlet’s dilemma. This paper presents MEDGENIE, the first generate-then-read framework for multiple-choice question answering in medicine. We conduct extensive experiments on MedQA-USMLE, MedMCQA, and MMLU, incorporating a practical perspective by assuming a maximum of 24GB VRAM. MEDGENIE sets a new state-of-the- art (SOTA) in the open-book setting of each testbed, even allowing a small-scale reader to outcompete zero-shot closed-book 175B baselines while using up to 706× fewer parameters. Overall, our findings reveal that generated passages are more effective than retrieved counterparts in attaining higher accuracy.
+Medical open-domain question answering demands substantial access to specialized knowledge. Recent efforts have sought to decouple knowledge from model parameters, counteracting architectural scaling and allowing for training on common low-resource hardware. The retrieve-then-read paradigm has become ubiquitous, with model predictions grounded on relevant knowledge pieces from external repositories such as PubMed, textbooks, and UMLS. An alternative path, still under-explored but made possible by the advent of domain-specific large language models, entails constructing artificial contexts through prompting. As a result, “to generate or to retrieve” is the modern equivalent of Hamlet’s dilemma. This paper presents MedGENIE, the first generate-then-read framework for multiple-choice question answering in medicine. We conduct extensive experiments on MedQA-USMLE, MedMCQA, and MMLU, incorporating a practical perspective by assuming a maximum of 24GB VRAM. MedGENIE sets a new state-of-the-art in the open-book setting of each testbed, allowing a small-scale reader to outcompete zero-shot closed-book 175B baselines while using up to 706x fewer parameters. Our findings reveal that generated passages are more effective than retrieved ones in attaining higher accuracy.
 &lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;a class=&quot;link&quot; href=&quot;https://arxiv.org/pdf/2403.01924&quot;&gt;Check out the paper!&lt;/a&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://aclanthology.org/2024.acl-long.533/&quot;&gt;Check out the paper!&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;/p&gt;
+
 &lt;hr /&gt;
 
 &lt;h4&gt;What Are You Token About? Differentiable Perturbed Top-k Token Selection for Scientific Document Summarization&lt;/h4&gt;
-&lt;h5&gt;by L. Ragazzi, P. Italiani, G. Moro and M. Panni&lt;/h5&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by L. Ragazzi, P. Italiani, G. Moro, and M. Panni&lt;/p&gt;
+
 &lt;p&gt;
-Scientific document summarization (SDS) aims to condense complex and long articles in both technical and plain-language terms to facilitate the accessibility and dissemination of scientific findings. Existing datasets lack source heterogeneity, hindering effective model training and generalizability. First, we introduce SciLay, a novel dataset that includes documents from multiple natural science journals with expert-authored technical and lay summaries. Second, we propose PrunePert, a new transformer-based model that incorporates a differentiable perturbed top-k encoder layer to prune irrelevant tokens in end-to-end learning. Experimental results show that our model achieves a nearly 2x speed-up compared to a state-of-the-art linear transformer, remaining comparable in effectiveness. Additional examinations underscore the importance of employing a training dataset that includes different sources to enhance the generalizability of the models. Code is available at https://anonymous.4open.science/r/sci-lay-2511/.
+Scientific document summarization aims to condense complex and long articles in both technical and plain-language terms to facilitate the accessibility and dissemination of scientific findings. Existing datasets suffer from a deficiency in source heterogeneity, as their data predominantly stem from a single common resource, hindering effective model training and generalizability. First, we introduce SciLay, a novel dataset that includes documents from multiple natural science journals with expert-authored technical and lay summaries. Second, we propose PrunePert, a new transformer-based model that incorporates a differentiable perturbed top-k encoder layer to prune irrelevant tokens in end-to-end learning. Experimental results show that our model achieves a nearly 2x speed-up compared to a state-of-the-art linear transformer, remaining comparable in effectiveness. Additional examinations underscore the importance of employing a training dataset that includes different sources to enhance the generalizability of the models. Code is available at https://github.com/disi-unibo-nlp/sci-lay.
 &lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;a class=&quot;link&quot; href=&quot;https://aclanthology.org/2024.findings-acl.561/&quot;&gt;Check out the paper!&lt;/a&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://aclanthology.org/2024.findings-acl.561/&quot;&gt;Check out the paper!&lt;/a&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group will be at ACL 2024 with two accepted papers in the Main Track and Findings!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://github.com/acl-org/acl-2024/blob/main/assets/images/bangkok/bangkok-banner.jpeg?raw=true" /><media:content medium="image" url="https://github.com/acl-org/acl-2024/blob/main/assets/images/bangkok/bangkok-banner.jpeg?raw=true" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">LLM Slide Deck</title><link href="http://nlp.apice.unibo.it/development/2024/04/17/llm-slides/" rel="alternate" type="text/html" title="LLM Slide Deck" /><published>2024-04-17T00:00:00+00:00</published><updated>2024-04-17T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2024/04/17/llm-slides</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2024/04/17/llm-slides/">&lt;p&gt;🤖 Dive into the cutting-edge world of Large Language Models (LLMs) with our latest slide deck!&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are delighted to announce that we will be at ACL 2024 with 2 long papers in the Main and Findings Track! Catch us in Bangkok, Thailand to learn more about open-domain QA and scientific text summarization.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://github.com/acl-org/acl-2024/blob/main/assets/images/bangkok/bangkok-banner.jpeg?raw=true" /><media:content medium="image" url="https://github.com/acl-org/acl-2024/blob/main/assets/images/bangkok/bangkok-banner.jpeg?raw=true" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">LLM Slide Deck</title><link href="http://nlp.apice.unibo.it/development/2024/04/17/llm-slides/" rel="alternate" type="text/html" title="LLM Slide Deck" /><published>2024-04-17T00:00:00+00:00</published><updated>2024-04-17T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2024/04/17/llm-slides</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2024/04/17/llm-slides/">&lt;p&gt;🤖 We are proud to share that our group has curated a &lt;b&gt;short review of the state-of-the-art within the Large Language Model (LLM) literature&lt;/b&gt;. Dive into the cutting-edge world of LLMs with our latest slide deck!&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Developed in Text Mining and NLP, LLMs are driving a breakthrough in AI and human-machine interaction. They impact a multitude of tasks and domains and are poised to revolutionize society as a whole. In a future where tokens function as currency, mastering and implementing these subjects is an imperative skill in academic and industrial contexts.&lt;/p&gt;
 
-&lt;p&gt;Our research group has curated a short review of the state of the art within the LLM literature.&lt;/p&gt;
-
-&lt;p&gt;🔎 Explore topics such as:&lt;/p&gt;
+&lt;p&gt;🔎 In our review, explore topics such as:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;LLM applications&lt;/li&gt;
-  &lt;li&gt;Preliminaries (e.g., transformers, scaling laws, emerging abilities)&lt;/li&gt;
-  &lt;li&gt;Open issues (e.g., black-box behavior, training costs, hallucinations, knowledge recency and editing, lexical superficiality, human reporting bias, reasoning inconsistency)&lt;/li&gt;
-  &lt;li&gt;Developer perspective
+  &lt;li&gt;&lt;strong&gt;LLM applications&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Preliminaries&lt;/strong&gt; (e.g., transformers, scaling laws, emerging abilities)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open issues&lt;/strong&gt; (e.g., black-box behavior, training costs, hallucinations, knowledge recency and editing, lexical superficiality, human reporting bias, reasoning inconsistency)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Developer perspective&lt;/strong&gt;
     &lt;ul&gt;
-      &lt;li&gt;Models&lt;/li&gt;
-      &lt;li&gt;Datasets&lt;/li&gt;
-      &lt;li&gt;Prompting&lt;/li&gt;
-      &lt;li&gt;Training techniques (e.g., instruction fine-tuning, adapter fine-tuning, mixture-of-experts)&lt;/li&gt;
-      &lt;li&gt;Optimization&lt;/li&gt;
-      &lt;li&gt;Retrieval-augmented generation&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Models&lt;/em&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Datasets&lt;/em&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Prompting&lt;/em&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Training techniques&lt;/em&gt; (e.g., instruction fine-tuning, adapter fine-tuning, mixture-of-experts)&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Optimization&lt;/em&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Retrieval-augmented generation&lt;/em&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -77,94 +153,79 @@ Scientific document summarization (SDS) aims to condense complex and long articl
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;#NLP #AI #GenerativeAI #LLMs #Research #Innovation&lt;/p&gt;</content><author><name></name></author><summary type="html">🤖 Dive into the cutting-edge world of Large Language Models (LLMs) with our latest slide deck!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drive.google.com/thumbnail?sz=w1920&amp;id=1eVN7Cw3mBZfrQXwYGT0jNjoAMMfPsnt5" /><media:content medium="image" url="https://drive.google.com/thumbnail?sz=w1920&amp;id=1eVN7Cw3mBZfrQXwYGT0jNjoAMMfPsnt5" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ICLR 2024</title><link href="http://nlp.apice.unibo.it/development/2024/02/16/iclr24/" rel="alternate" type="text/html" title="ICLR 2024" /><published>2024-02-16T00:00:00+00:00</published><updated>2024-02-16T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2024/02/16/iclr24</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2024/02/16/iclr24/">&lt;p&gt;We are proud to announce that our group has one paper accepted at ICLR 2024 in the Tiny Track!&lt;/p&gt;
+&lt;p&gt;#NLP #AI #GenerativeAI #LLMs #Research #Innovation&lt;/p&gt;</content><author><name></name></author><summary type="html">🤖 We are proud to share that our group has curated a short review of the state-of-the-art within the Large Language Model (LLM) literature. Dive into the cutting-edge world of LLMs with our latest slide deck!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drive.google.com/thumbnail?sz=w1920&amp;id=1eVN7Cw3mBZfrQXwYGT0jNjoAMMfPsnt5" /><media:content medium="image" url="https://drive.google.com/thumbnail?sz=w1920&amp;id=1eVN7Cw3mBZfrQXwYGT0jNjoAMMfPsnt5" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UniboNLP @ ICLR 2024</title><link href="http://nlp.apice.unibo.it/development/2024/02/16/iclr24/" rel="alternate" type="text/html" title="UniboNLP @ ICLR 2024" /><published>2024-02-16T00:00:00+00:00</published><updated>2024-02-16T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2024/02/16/iclr24</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2024/02/16/iclr24/">&lt;p&gt;We are proud to share that our group be at ICLR 2024 with &lt;b&gt;1 paper in the Tiny Track!&lt;/b&gt; Get in touch with us to learn more about &lt;b&gt;interpretable long-form question answering&lt;/b&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h4&gt;Revelio: Interpretable Long-Form Question Answering&lt;/h4&gt;
-&lt;h5&gt;by G. Moro, L. Ragazzi, L. Valgimigli, F. Vincenzi, and D. Freddi&lt;/h5&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Moro, L. Ragazzi, L. Valgimigli, F. Vincenzi, and D. Freddi&lt;/p&gt;
+
 &lt;p&gt;
 The black-box architecture of pretrained language models (PLMs) hinders the interpretability of lengthy responses in long-form question answering (LFQA). Prior studies use knowledge graphs (KGs) to enhance output transparency, but mostly focus on non-generative or short-form QA. We present Revelio, a new layer that maps PLM's inner working onto a KG walk. Tests on two LFQA datasets show that Revelio supports PLM-generated answers with reasoning paths presented as rationales while retaining performance and time akin to their vanilla counterparts.
-
-
-&lt;/p&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group has one paper accepted at ICLR 2024 in the Tiny Track!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://media.iclr.cc/Conferences/ICLR2024/img/prater.jpg" /><media:content medium="image" url="https://media.iclr.cc/Conferences/ICLR2024/img/prater.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Neurocomputing</title><link href="http://nlp.apice.unibo.it/development/2023/09/30/neurocomputing/" rel="alternate" type="text/html" title="Neurocomputing" /><published>2023-09-30T00:00:00+00:00</published><updated>2023-09-30T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2023/09/30/neurocomputing</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2023/09/30/neurocomputing/">&lt;p&gt;We are proud to announce that our group has two long papers accepted at the Neurocomputing journal!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“Align-Then-Abstract Representation Learning for Low-Resource Summarization” (&lt;a class=&quot;link&quot; href=&quot;https://www.sciencedirect.com/science/article/pii/S0925231223004794?via%3Dihub&quot;&gt;paper&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;“Efficient Text-Image Semantic Search: a Multi-modal Vision-Language Approach for Fashion Retrieval” (&lt;a class=&quot;link&quot; href=&quot;https://www.sciencedirect.com/science/article/pii/S092523122300303X?via%3Dihub&quot;&gt;paper&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group has two long papers accepted at the Neurocomputing journal!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ars.els-cdn.com/content/image/X09252312.jpg" /><media:content medium="image" url="https://ars.els-cdn.com/content/image/X09252312.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ECAI 2023</title><link href="http://nlp.apice.unibo.it/development/2023/09/30/ecai23/" rel="alternate" type="text/html" title="ECAI 2023" /><published>2023-09-30T00:00:00+00:00</published><updated>2023-09-30T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2023/09/30/ecai23</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2023/09/30/ecai23/">&lt;p&gt;We are proud to announce that our group will be at ECAI 2023 with an accepted long paper in the Main Track!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“Graph-Based Abstractive Summarization of Extracted Essential Knowledge for Low-Resource Scenarios” (Main Track)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you are interested check https://github.com/disi-unibo-nlp/gseek.&lt;/p&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group will be at ECAI 2023 with an accepted long paper in the Main Track!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://groups.google.com/group/ml-news/attach/1dc190f261d93/image001.png?part=0.1&amp;view=1" /><media:content medium="image" url="https://groups.google.com/group/ml-news/attach/1dc190f261d93/image001.png?part=0.1&amp;view=1" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Artificial Intelligence and Law</title><link href="http://nlp.apice.unibo.it/development/2023/09/29/ailaw/" rel="alternate" type="text/html" title="Artificial Intelligence and Law" /><published>2023-09-29T00:00:00+00:00</published><updated>2023-09-29T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2023/09/29/ailaw</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2023/09/29/ailaw/">&lt;p&gt;We are proud to announce that our group has one long paper accepted at AI&amp;amp;Law!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“Multi-language transfer learning for low-resource legal case summarization”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a class=&quot;link&quot; href=&quot;https://link.springer.com/article/10.1007/s10506-023-09373-8&quot;&gt;Check out the paper!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group has one long paper accepted at AI&amp;amp;Law!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://media.springernature.com/full/springer-static/cover-hires/journal/10506" /><media:content medium="image" url="https://media.springernature.com/full/springer-static/cover-hires/journal/10506" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AAAI 2023</title><link href="http://nlp.apice.unibo.it/development/2023/02/07/aaai23/" rel="alternate" type="text/html" title="AAAI 2023" /><published>2023-02-07T10:50:07+00:00</published><updated>2023-02-07T10:50:07+00:00</updated><id>http://nlp.apice.unibo.it/development/2023/02/07/aaai23</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2023/02/07/aaai23/">&lt;p&gt;We are proud to announce that our group will be at AAAI 2023 in Washington with two accepted long paper in the Main Track and AI for Social Impact!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“Cogito Ergo Summ: Abstractive Summarization of Biomedical Papers via Semantic Parsing Graphs and Consistency Rewards” (Main Track)&lt;/li&gt;
-  &lt;li&gt;“Carburacy: Summarization Models Tuning and Comparison in Eco-Sustainable Regimes with a Novel Carbon-Aware Accuracy” (Artificial Intelligence for Social Impact track)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you are interested check https://github.com/disi-unibo-nlp/cogito-ergo-summ and https://github.com/disi-unibo-nlp/carburacy.&lt;/p&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group will be at AAAI 2023 in Washington with two accepted long paper in the Main Track and AI for Social Impact!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://aaai-23.aaai.org/wp-content/uploads/2022/12/AAAI-23-Website-Banner_2560x593-min.png" /><media:content medium="image" url="https://aaai-23.aaai.org/wp-content/uploads/2022/12/AAAI-23-Website-Banner_2560x593-min.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">EMNLP 2022</title><link href="http://nlp.apice.unibo.it/development/2022/12/07/emnlp22/" rel="alternate" type="text/html" title="EMNLP 2022" /><published>2022-12-07T23:25:00+00:00</published><updated>2022-12-07T23:25:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2022/12/07/emnlp22</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2022/12/07/emnlp22/">&lt;p&gt;We are proud to announce that our group will be at EMNLP 2022 with an accepted long paper in the Main Track!&lt;/p&gt;
-
-&lt;h4&gt;BioReader: a Retrieval-Enhanced Text-to-Text Transformer for Biomedical Literature&lt;/h4&gt;
-&lt;h5&gt;by G. Frisoni, M. Mizutani, G. Moro and L. Valgimigli&lt;/h5&gt;
-
-&lt;p&gt;We will attend in presence and present &lt;b&gt;BioReader&lt;/b&gt;, the first retrieval-enhanced transformer for biomedical literature.&lt;/p&gt;
-&lt;p&gt;
-The latest batch of research has equipped language models with the ability to attend over relevant and factual information from non-parametric external sources, drawing a complementary path to architectural scaling. Besides mastering language, exploiting and contextualizing the latent world knowledge is crucial in complex domains like biomedicine. However, most works in the field rely on general-purpose models supported by databases like Wikipedia and Books. We introduce BioReader, the first retrieval-enhanced text-to-text model for biomedical natural language processing. Our domain-specific T5-based solution augments the input prompt by fetching and assembling relevant scientific literature chunks from a neural database with ≈60 million tokens centered on PubMed. We fine-tune and evaluate BioReader on a broad array of downstream tasks, significantly outperforming several state-of-the-art methods despite using up to 3x fewer parameters. In tandem with extensive ablation studies, we show that domain knowledge can be easily altered or supplemented to make the model generate correct predictions bypassing the retraining step and thus addressing the literature overload issue.
 &lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;a class=&quot;link&quot; href=&quot;https://aclanthology.org/2022.emnlp-main.390/&quot;&gt;Check out the paper!&lt;/a&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://openreview.net/forum?id=fyvEJXsaQf&quot;&gt;Check out the paper!&lt;/a&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group will be at EMNLP 2022 with an accepted long paper in the Main Track!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.vinai.io/wp-content/uploads/2022/10/EMNLP.png" /><media:content medium="image" url="https://www.vinai.io/wp-content/uploads/2022/10/EMNLP.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">COLING 2022</title><link href="http://nlp.apice.unibo.it/development/2022/09/30/coling22/" rel="alternate" type="text/html" title="COLING 2022" /><published>2022-09-30T23:25:00+00:00</published><updated>2022-09-30T23:25:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2022/09/30/coling22</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2022/09/30/coling22/">&lt;p&gt;We are proud to announce that our group will be at COLING 2022 with two accepted long papers in the Main Track!&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are proud to share that our group be at ICLR 2024 with 1 paper in the Tiny Track! Get in touch with us to learn more about interpretable long-form question answering.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://media.iclr.cc/Conferences/ICLR2024/img/prater.jpg" /><media:content medium="image" url="https://media.iclr.cc/Conferences/ICLR2024/img/prater.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">UniboNLP @ ECAI 2023</title><link href="http://nlp.apice.unibo.it/development/2023/09/30/ecai23/" rel="alternate" type="text/html" title="UniboNLP @ ECAI 2023" /><published>2023-09-30T00:00:00+00:00</published><updated>2023-09-30T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2023/09/30/ecai23</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2023/09/30/ecai23/">&lt;p&gt;We are happy to announce that we will be at ECAI 2023 with &lt;b&gt;1 long paper in the Main Track!&lt;/b&gt; Catch us in &lt;b&gt;Kraków, Poland&lt;/b&gt; to learn more about &lt;b&gt;graph-enhanced abstractive summarization for low-resource scenarios&lt;/b&gt;.&lt;/p&gt;
 
-&lt;p&gt;Here’s the list of the papers:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Text-to-Text Extraction and Verbalization of Biomedical Event Graphs&lt;/li&gt;
-  &lt;li&gt;NLG-Metricverse: An End-to-End Library for Evaluating Natural Language Generation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;h4&gt;Text-to-Text Extraction and Verbalization of Biomedical Event Graphs&lt;/h4&gt;
-&lt;h5&gt;by G. Frisoni, G. Moro and L. Balzani&lt;/h5&gt;
-&lt;p&gt;We will present our works on &lt;b&gt;Event Extraction&lt;/b&gt;, &lt;b&gt;Graph Verbalization&lt;/b&gt;, and &lt;b&gt;Natural Language Generation Evaluation&lt;/b&gt;.&lt;/p&gt;
+&lt;h4&gt;Graph-Based Abstractive Summarization of Extracted Essential Knowledge for Low-Resource Scenarios&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Moro, L. Ragazzi, and L. Valgimigli&lt;/p&gt;
 
 &lt;p&gt;
-Biomedical events represent complex, graphical, and semantically rich interactions expressed in the scientific literature. Almost all contributions in the event realm orbit around semantic parsing, usually employing discriminative architectures and cumbersome multi-step pipelines limited to a small number of target interaction types. We present the first lightweight framework to solve both event extraction and event verbalization with a unified text-to-text approach, allowing us to fuse all the resources so far designed for different tasks. To this end, we present a new event graph linearization technique and release highly comprehensive event-text paired datasets, covering more than 150 event types from multiple biology subareas (English language). By streamlining parsing and generation to translations, we propose baseline transformer model results according to multiple biomedical text mining benchmarks and natural language generation metrics. Our extractive models achieve greater state-of-the-art performance than single-task competitors and show promising capabilities for the controlled generation of coherent natural language utterances from structured data.
+Although current summarization models can process increasingly long text sequences, they still struggle to capture salient related information spread across the lengthy size of inputs with few labeled training instances. Today’s research still relies on standard input truncation without considering graph-based modeling of multiple semantic units to summarize only crucial facets. This paper proposes G-SEEK, a graph-based summarization of extracted essential knowledge. By representing the long source with a heterogeneous graph, our method extracts and provides salient sentences to an abstractive summarization model to generate the summary. Experimental results in low-resource scenarios, distinguished by data scarcity, reveal that G-SEEK consistently improves both the long- and multi-document summarization performance and accuracy across several datasets.
 &lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;a class=&quot;link&quot; href=&quot;https://aclanthology.org/2022.coling-1.238/&quot;&gt;Check out the paper!&lt;/a&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://ebooks.iospress.nl/doi/10.3233/FAIA230460&quot;&gt;Check out the paper!&lt;/a&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are happy to announce that we will be at ECAI 2023 with 1 long paper in the Main Track! Catch us in Kraków, Poland to learn more about graph-enhanced abstractive summarization for low-resource scenarios.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://ecai2023.eu/conf-data/ecai2023/images/Ulotka.png" /><media:content medium="image" url="https://ecai2023.eu/conf-data/ecai2023/images/Ulotka.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Elsevier - Neurocomputing</title><link href="http://nlp.apice.unibo.it/development/2023/09/30/neurocomputing/" rel="alternate" type="text/html" title="Elsevier - Neurocomputing" /><published>2023-09-30T00:00:00+00:00</published><updated>2023-09-30T00:00:00+00:00</updated><id>http://nlp.apice.unibo.it/development/2023/09/30/neurocomputing</id><content type="html" xml:base="http://nlp.apice.unibo.it/development/2023/09/30/neurocomputing/">&lt;p&gt;UniboNLP has &lt;b&gt;3 long papers published in Neurocomputing 2023.&lt;/b&gt; Read to learn more on &lt;b&gt;dialog and long text summarization in data-scarcity scenarios&lt;/b&gt; and &lt;b&gt;multimodal retrieval for fashion products&lt;/b&gt;.&lt;/p&gt;
+
 &lt;hr /&gt;
 
-&lt;h4&gt;NLG-Metricverse: An End-to-End Library for Evaluating Natural Language Generation&lt;/h4&gt;
-&lt;h5&gt;by G. Frisoni, A. Carbonaro, G. Moro, A. Zammarchi and M. Avagnano&lt;/h5&gt;
+&lt;h4&gt;Align-Then-Abstract Representation Learning for Low-Resource Summarization&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Moro and L. Ragazzi&lt;/p&gt;
+
 &lt;p&gt;
-Driven by deep learning breakthroughs, natural language generation (NLG) models have been at the center of steady progress in the last few years, with a ubiquitous task influence. However, since our ability to generate human-indistinguishable artificial text lags behind our capacity to assess it, it is paramount to develop and apply even better automatic evaluation metrics. To facilitate researchers to judge the effectiveness of their models broadly, we introduce NLG-Metricverse—an end-to-end open-source library for NLG evaluation based on Python. Our framework provides a living collection of NLG metrics in a unified and easy-to-use environment, supplying tools to efficiently apply, analyze, compare, and visualize them. This includes (i) the extensive support to heterogeneous automatic metrics with n-arity management, (ii) the meta-evaluation upon individual performance, metric-metric and metric-human correlations, (iii) graphical interpretations for helping humans better gain score intuitions, (iv) formal categorization and convenient documentation to accelerate metrics understanding. NLG-Metricverse aims to increase the comparability and replicability of NLG research, hopefully stimulating new contributions in the area.
+Generative transformer-based models have achieved state-of-the-art performance in text summarization. Nevertheless, they still struggle in real-world scenarios with long documents when trained in low-resource settings of a few dozen labeled training instances, namely in low-resource summarization (LRS). This paper bridges the gap by addressing two key research challenges when summarizing long documents, i.e., long-input processing and document representation, in one coherent model trained for LRS. Specifically, our novel align-then-abstract representation learning model (Athena) jointly trains a segmenter and a summarizer by maximizing the alignment between the chunk-target pairs in output from the text segmentation. Extensive experiments reveal that Athena outperforms the current state-of-the-art approaches in LRS on multiple long document summarization datasets from different domains.
 &lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;a class=&quot;link&quot; href=&quot;https://aclanthology.org/2022.coling-1.306/&quot;&gt;Check out the paper!&lt;/a&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://www.sciencedirect.com/science/article/pii/S0925231223004794&quot;&gt;Check out the paper!&lt;/a&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group will be at COLING 2022 with two accepted long papers in the Main Track!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://static1.s123-cdn-static-a.com/uploads/4165719/800_62fc19c314a5c.jpg" /><media:content medium="image" url="https://static1.s123-cdn-static-a.com/uploads/4165719/800_62fc19c314a5c.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;Efficient Text-Image Semantic Search: a Multi-modal Vision-Language Approach for Fashion Retrieval&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Moro, S. Salvatori, and G. Frisoni&lt;/p&gt;
+
+&lt;p&gt;
+In this paper, we address the problem of multi-modal retrieval of fashion products. State-of-the-art (SOTA) works proposed in literature use vision-and-language transformers to assign similarity scores to joint text-image pairs, then used for sorting the results during a retrieval phase. However, this approach is inefficient since it requires coupling a query with every record in the dataset and computing a forward pass for each sample at runtime, precluding scalability to large-scale datasets. We thus propose a solution that overcomes the above limitation by combining transformers and deep metric learning to create a latent space where texts and images are separately embedded, and their spatial proximity translates into semantic similarity. Our architecture does not use convolutional neural networks to process images, allowing us to test different levels of image-processing details and metric learning losses. We vastly improve retrieval accuracy results on the FashionGen benchmark (+18.71% and +9.22% Rank@1 on Image-to-Text and Text-to-Image, respectively) while being up to 512x faster. Finally, we analyze the speed-up obtainable by different approximate nearest neighbor retrieval strategies—an optimization precluded to current SOTA contributions. We release our solution as a web application available at https://disi-unibo-nlp.github.io/projects/fashion_retrieval/.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://www.sciencedirect.com/science/article/pii/S092523122300303X&quot;&gt;Check out the paper!&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;Evidence, my Dear Watson: Abstractive Dialogue Summarization on Learnable Relevant Utterances&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by P. Italiani, G. Frisoni, G. Moro, A. Carbonaro, and C. Sartori&lt;/p&gt;
+
+&lt;p&gt;
+Abstractive dialogue summarization requires distilling and rephrasing key information from noisy multi-speaker documents. Combining pre-trained language models with input augmentation techniques has recently led to significant research progress. However, existing solutions still struggle to select relevant chat segments, primarily relying on open-domain and unsupervised annotators not tailored to the actual needs of the summarization task. In this paper, we propose DearWatson, a task-aware utterance-level annotation framework for improving the effectiveness and interpretability of pre-trained dialogue summarization models. Precisely, we learn relevant utterances in the source document and mark them with special tags, that then act as supporting evidence for the generated summary. Quantitative experiments are conducted on two datasets made up of real-life messenger conversations. The results show that DearWatson allows model attention to focus on salient tokens, achieving new state-of-the-art results in three evaluation metrics, including semantic and factuality measures. Human evaluation proves the superiority of our solution in semantic consistency and recall. Finally, extensive ablation studies confirm each module’s importance, also exploring different annotation strategies and parameter-efficient fine-tuning of large generative language models.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://www.sciencedirect.com/science/article/pii/S0925231223012559&quot;&gt;Check out the paper!&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">UniboNLP has 3 long papers published in Neurocomputing 2023. Read to learn more on dialog and long text summarization in data-scarcity scenarios and multimodal retrieval for fashion products.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://neurocomputinglab.com/wp-content/uploads/2020/03/neurocomp-1.jpg" /><media:content medium="image" url="https://neurocomputinglab.com/wp-content/uploads/2020/03/neurocomp-1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

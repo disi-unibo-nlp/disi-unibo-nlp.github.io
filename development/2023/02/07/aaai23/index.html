@@ -35,9 +35,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>AAAI 2023 | UniboNLP</title>
+<title>UniboNLP @ AAAI 2023 | UniboNLP</title>
 <meta name="generator" content="Jekyll v3.8.7" />
-<meta property="og:title" content="AAAI 2023" />
+<meta property="og:title" content="UniboNLP @ AAAI 2023" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="We are proud to announce that our group has two paper accepted at AAAI 23" />
 <meta property="og:description" content="We are proud to announce that our group has two paper accepted at AAAI 23" />
@@ -48,7 +48,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-02-07T10:50:07+00:00" />
 <script type="application/ld+json">
-{"description":"We are proud to announce that our group has two paper accepted at AAAI 23","headline":"AAAI 2023","dateModified":"2023-02-07T10:50:07+00:00","datePublished":"2023-02-07T10:50:07+00:00","url":"https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html"},"image":"https://aaai-23.aaai.org/wp-content/uploads/2022/12/AAAI-23-Website-Banner_2560x593-min.png","@context":"https://schema.org"}</script>
+{"description":"We are proud to announce that our group has two paper accepted at AAAI 23","headline":"UniboNLP @ AAAI 2023","dateModified":"2023-02-07T10:50:07+00:00","datePublished":"2023-02-07T10:50:07+00:00","url":"https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.csrhymes.com/development/2018/05/28/why-use-a-static-site-generator.html"},"image":"https://aaai-23.aaai.org/wp-content/uploads/2022/12/AAAI-23-Website-Banner_2560x593-min.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts -->
@@ -150,7 +150,7 @@
 >
     <div class="hero-body ">
         <div class="container">
-            <h1 class="title is-2">AAAI 2023</h1>
+            <h1 class="title is-2">UniboNLP @ AAAI 2023</h1>
             <p class="subtitle is-3"></p>
             
         </div>
@@ -177,19 +177,39 @@
     
         <p>Published: Feb 7, 2023</p>
     
-
     
-
-    <p>We are proud to announce that our group will be at AAAI 2023 in Washington with two accepted long paper in the Main Track and AI for Social Impact!</p>
+    
+    <p>We are proud to share that we will be at AAAI 2023 with <b>2 long papers in the Main and AI for Social Impact Track!</b> Catch us in <b>Washington, USA</b> to learn more on <b>medical summarization</b> and <b>ecosustainability</b>.</p>
 
 <hr />
 
+<h4>Cogito Ergo Summ: Abstractive Summarization of Biomedical Papers via Semantic Parsing Graphs and Consistency Rewards</h4>
+<p style="color:gray; margin-top:-10px;">by G. Frisoni, P. Italiani, S. Salvatori, and G. Moro</p>
+
+<p>
+The automatic synthesis of biomedical publications catalyzes a profound research interest elicited by literature congestion. Current sequence-to-sequence models mainly rely on the lexical surface and seldom consider the deep semantic interconnections between the entities mentioned in the source document. Such superficiality translates into fabricated, poorly informative, redundant, and near-extractive summaries that severely restrict their real-world application in biomedicine, where the specialized jargon and the convoluted facts further emphasize task complexity. To fill this gap, we argue that the summarizer should acquire semantic interpretation over input, exploiting structured and unambiguous representations to capture and conserve the most relevant parts of the text content. This paper presents CogitoErgoSumm, the first framework for biomedical abstractive summarization equipping large pre-trained language models with rich semantic graphs. Precisely, we infuse graphs from two complementary semantic parsing techniques with different goals and granularities—Event Extraction and Abstract Meaning Representation, also designing a reward signal to maximize information content preservation through reinforcement learning. Extensive quantitative and qualitative evaluations on the CDSR dataset show that our solution achieves competitive performance according to multiple metrics, despite using 2.5x fewer parameters. Results and ablation studies indicate that our joint text-graph model generates more enlightening, readable, and consistent summaries. Code available at: https://github.com/disi-unibo-nlp/cogito-ergo-summ.
+</p>
+<p></p>
 <ul>
-  <li>“Cogito Ergo Summ: Abstractive Summarization of Biomedical Papers via Semantic Parsing Graphs and Consistency Rewards” (Main Track)</li>
-  <li>“Carburacy: Summarization Models Tuning and Comparison in Eco-Sustainable Regimes with a Novel Carbon-Aware Accuracy” (Artificial Intelligence for Social Impact track)</li>
+  <li>
+    <a target="_blank" class="link" href="https://ojs.aaai.org/index.php/AAAI/article/view/26503">Check out the paper!</a>
+  </li>
 </ul>
 
-<p>If you are interested check https://github.com/disi-unibo-nlp/cogito-ergo-summ and https://github.com/disi-unibo-nlp/carburacy.</p>
+<hr />
+
+<h4>Carburacy: Summarization Models Tuning and Comparison in Eco-Sustainable Regimes with a Novel Carbon-Aware Accuracy</h4>
+<p style="color:gray; margin-top:-10px;">by G. Moro, L. Ragazzi, and L. Valgimigli</p>
+
+<p>
+Generative transformer-based models have reached cutting-edge performance in long document summarization. Nevertheless, this task is witnessing a paradigm shift in developing ever-increasingly computationally-hungry solutions, focusing on effectiveness while ignoring the economic, environmental, and social costs of yielding such results. Accordingly, such extensive resources impact climate change and raise barriers to small and medium organizations distinguished by low-resource regimes of hardware and data. As a result, this unsustainable trend has lifted many concerns in the community, which directs the primary efforts on the proposal of tools to monitor models' energy costs. Despite their importance, no evaluation measure considering models' eco-sustainability exists yet. In this work, we propose Carburacy, the first carbon-aware accuracy measure that captures both model effectiveness and eco-sustainability. We perform a comprehensive benchmark for long document summarization, comparing multiple state-of-the-art quadratic and linear transformers on several datasets under eco-sustainable regimes. Finally, thanks to Carburacy, we found optimal combinations of hyperparameters that let models be competitive in effectiveness with significantly lower costs.
+</p>
+<p></p>
+<ul>
+  <li>
+    <a target="_blank" class="link" href="https://ojs.aaai.org/index.php/AAAI/article/view/26686">Check out the paper!</a>
+  </li>
+</ul>
 
 </div>
 
