@@ -1,1 +1,1 @@
-Sitemap: http://nlp.apice.unibo.it/sitemap.xml
+Sitemap: https://disi-unibo-nlp.github.io/sitemap.xml
