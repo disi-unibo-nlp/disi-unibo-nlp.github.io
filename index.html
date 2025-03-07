@@ -6,7 +6,7 @@
 <html
     dir="ltr"
     lang="en"
-    class=" "
+    class=" has-navbar-fixed-top  "
 >
     <head>
     <meta charset="utf-8">
@@ -62,13 +62,12 @@
 
 
         
-        <nav
-    class="navbar is-primary "
-    x-data="{ openNav: false }"
->
+        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }">
     <div class="container navigation">
+        
+        <!-- Logo on the Left -->
         <div class="navbar-brand">
-            <a href="/" class="navbar-item is-active">
+            <a href="/" class="navbar-item">
                 <img src="/assets/css/logo.svg" alt="Logo" class="navbar-logo">
             </a>
             <a
@@ -85,68 +84,46 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-start">
-                
-                    
-                        
-                            <a
-                                href="/people/"
-                                class="navbar-item "
-                            >People</a>
-                        
-                    
-                        
-                            <a
-                                href="/publications/"
-                                class="navbar-item "
-                            >Publications</a>
-                        
-                    
-                        
-                            <a
-                                href="/applications/"
-                                class="navbar-item "
-                            >Applications</a>
-                        
-                    
-                        
-                            <a
-                                href="/projects/"
-                                class="navbar-item "
-                            >Projects</a>
-                        
-                    
-                        
-                            <a
-                                href="/datasets/"
-                                class="navbar-item "
-                            >Datasets</a>
-                        
-                    
-                        
-                            <a
-                                href="/theses/"
-                                class="navbar-item "
-                            >Theses</a>
-                        
-                    
-                        
-                            <a
-                                href="/deadlines/"
-                                class="navbar-item "
-                            >Deadlines</a>
-                        
-                    
-                
-            </div>
 
-            <div class="navbar-end">
+        <!-- Navigation Menu (Toggle for Mobile) -->
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-end"> <!-- Ensures items align to the right -->
+                
+                    
+                        
+                            <a href="/people/" class="navbar-item ">People</a>
+                        
+                    
+                        
+                            <a href="/publications/" class="navbar-item ">Publications</a>
+                        
+                    
+                        
+                            <a href="/applications/" class="navbar-item ">Applications</a>
+                        
+                    
+                        
+                            <a href="/projects/" class="navbar-item ">Projects</a>
+                        
+                    
+                        
+                            <a href="/datasets/" class="navbar-item ">Datasets</a>
+                        
+                    
+                        
+                            <a href="/theses/" class="navbar-item ">Theses</a>
+                        
+                    
+                        
+                            <a href="/deadlines/" class="navbar-item ">Deadlines</a>
+                        
+                    
                 
             </div>
         </div>
     </div>
 </nav>
+
         
             
 <section
@@ -160,69 +137,95 @@
             
             <div class="columns is-multiline is-centered">
                 
-                    <div class="column is-3 has-text-centered">
-                        
-                            <div class="icon callout-icon">
+                    <div class="column is-12-mobile is-3-tablet has-text-left callout-container">
+                        <div class="callout-flex">
+                            
+                                <div class="icon callout-icon">
+                                    
+                                        <i class="fas fad fa-users fa-4x"></i>
+                                    
+                                </div>
+                            
+                            <div class="callout-content">
+                                <p class="title is-4 call-title">UniboNLP</p>
+                                <p class="subtitle is-5"><p>The <b>UniBo Natural Language Processing Group</b> at Cesena, led by Prof. <b>Gianluca Moro</b>, comprises researchers from the University of Bologna’s Department of Computer Science and Engineering</p></p>
+            
                                 
-                                    <i class="fas fad fa-users fa-4x"></i>
+            
                                 
                             </div>
-                        
-                        <p class="title is-5">UniboNLP</p>
-                        <p class="subtitle is-5"><p>The <b>UniBo Natural Language Processing Group</b> at Cesena, led by Prof. <b>Gianluca Moro</b>, comprises researchers from the University of Bologna’s Department of Computer Science and Engineering</p></p>
-
-                        
-
-                        
+                        </div>
                     </div>
+                    
+                        <hr class="mobile-separator"> 
+                    
                 
-                    <div class="column is-3 has-text-centered">
-                        
-                            <div class="icon callout-icon">
+                    <div class="column is-12-mobile is-3-tablet has-text-left callout-container">
+                        <div class="callout-flex">
+                            
+                                <div class="icon callout-icon">
+                                    
+                                        <i class="fas fad fa-microchip fa-4x"></i>
+                                    
+                                </div>
+                            
+                            <div class="callout-content">
+                                <p class="title is-4 call-title">Tasks</p>
+                                <p class="subtitle is-5"><p>Chatbots, Document Summarization, Information Extraction/Retrieval, Question Answering, Image Segmentation, Fact-Checking, Classification</p></p>
+            
                                 
-                                    <i class="fas fad fa-microchip fa-4x"></i>
+            
                                 
                             </div>
-                        
-                        <p class="title is-5">Tasks</p>
-                        <p class="subtitle is-5"><p>Chatbots, Document Summarization, Information Extraction/Retrieval, Question Answering, Image Segmentation, Fact-Checking, Classification</p></p>
-
-                        
-
-                        
+                        </div>
                     </div>
+                    
+                        <hr class="mobile-separator"> 
+                    
                 
-                    <div class="column is-3 has-text-centered">
-                        
-                            <div class="icon callout-icon">
+                    <div class="column is-12-mobile is-3-tablet has-text-left callout-container">
+                        <div class="callout-flex">
+                            
+                                <div class="icon callout-icon">
+                                    
+                                        <i class="fab fad fa-brain fa-4x"></i>
+                                    
+                                </div>
+                            
+                            <div class="callout-content">
+                                <p class="title is-4 call-title">Topics</p>
+                                <p class="subtitle is-5"><p>Large Language Models, Graph Neural Networks, End-to-end Differentiability, Agents, Deep Metric Learning, Knowledge Injection, Prompt Learning, Explainable AI, Sparse Autoencoders, Neuro-Symbolic AI</p></p>
+            
                                 
-                                    <i class="fab fad fa-brain fa-4x"></i>
+            
                                 
                             </div>
-                        
-                        <p class="title is-5">Research Topics</p>
-                        <p class="subtitle is-5"><p>Large Language Models, Graph Neural Networks, End-to-end Differentiability, Agents, Deep Metric Learning, Knowledge Injection, Prompt Learning, Explainable AI, Sparse Autoencoders, Neuro-Symbolic AI</p></p>
-
-                        
-
-                        
+                        </div>
                     </div>
+                    
+                        <hr class="mobile-separator"> 
+                    
                 
-                    <div class="column is-3 has-text-centered">
-                        
-                            <div class="icon callout-icon">
+                    <div class="column is-12-mobile is-3-tablet has-text-left callout-container">
+                        <div class="callout-flex">
+                            
+                                <div class="icon callout-icon">
+                                    
+                                        <i class="fas fad fa-solar-system fa-4x"></i>
+                                    
+                                </div>
+                            
+                            <div class="callout-content">
+                                <p class="title is-4 call-title">Domains</p>
+                                <p class="subtitle is-5"><p>Long-time experience in biomedical, clinical, and legal applications, collaborating with leading companies and research groups</p></p>
+            
                                 
-                                    <i class="fas fad fa-solar-system fa-4x"></i>
+            
                                 
                             </div>
-                        
-                        <p class="title is-5">Domains</p>
-                        <p class="subtitle is-5"><p>Long-time experience in biomedical, clinical, and legal applications, collaborating with leading companies and research groups</p></p>
-
-                        
-
-                        
+                        </div>
                     </div>
+                    
                 
             </div>
         </div>
@@ -276,7 +279,7 @@
                                     
                                 </div>
                             
-                            <p class="title is-5">Research Topics</p>
+                            <p class="title is-5">Topics</p>
                             <p class="subtitle is-5"><p>Large Language Models, Graph Neural Networks, End-to-end Differentiability, Agents, Deep Metric Learning, Knowledge Injection, Prompt Learning, Explainable AI, Sparse Autoencoders, Neuro-Symbolic AI</p></p>
 
                             
