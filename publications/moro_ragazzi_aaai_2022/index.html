@@ -1,117 +1,109 @@
 <!doctype html>
 
-
-
-
-<html
-    dir="ltr"
-    lang="en"
-    class=" has-navbar-fixed-top  "
->
+<html dir="ltr" lang="en" class="has-navbar-fixed-top">
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
+    <!-- Preload critical assets for faster rendering -->
+    <link rel="preload" href="/assets/css/app.css" as="style">
     <link rel="stylesheet" href="/assets/css/app.css">
-    <link
-        rel="shortcut icon"
-        type="image/svg+xml"
-        
-            href="/assets/css/logo.svg"
-        
-    >
+    <!-- Favicon Handling -->
+    <link rel="icon" type="image/png" href="assets/css/logo.svg/assets/css/logo.svg" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/css/logo.svg/assets/css/logo.svg"> 
+    <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"
-    ></script>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    >
-    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
-    
-    <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Semantic Self-Segmentation for Abstractive Summarization of Long Documents in Low-Resource Regimes | UniboNLP</title>
-<meta name="generator" content="Jekyll v3.8.7" />
-<meta property="og:title" content="Semantic Self-Segmentation for Abstractive Summarization of Long Documents in Low-Resource Regimes" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="The Unibo Natural Language Processing Group" />
-<meta property="og:description" content="The Unibo Natural Language Processing Group" />
-<link rel="canonical" href="https://disi-unibo-nlp.github.io/publications/moro_ragazzi_aaai_2022/" />
-<meta property="og:url" content="https://disi-unibo-nlp.github.io/publications/moro_ragazzi_aaai_2022/" />
-<meta property="og:site_name" content="UniboNLP" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-03-07T13:12:02+00:00" />
-<script type="application/ld+json">
-{"description":"The Unibo Natural Language Processing Group","headline":"Semantic Self-Segmentation for Abstractive Summarization of Long Documents in Low-Resource Regimes","dateModified":"2025-03-07T13:12:02+00:00","datePublished":"2025-03-07T13:12:02+00:00","url":"https://disi-unibo-nlp.github.io/publications/moro_ragazzi_aaai_2022/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://disi-unibo-nlp.github.io/publications/moro_ragazzi_aaai_2022/"},"@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <!-- head scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <!-- FontAwesome Icons (Optimized for Performance) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
 </head>
-    <body>
-
-        
-
-
-        
+    <body>  
+            
         <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }">
-    <div class="container navigation">
-        
+    <div class="container navigation">  
         <!-- Logo on the Left -->
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
-                <img src="/assets/css/logo.svg" alt="Logo" class="navbar-logo">
+                <img 
+                    src="/assets/css/logo.svg" 
+                    alt="Website Logo" 
+                    class="navbar-logo"
+                    loading="lazy"
+                >
             </a>
-            <a
-                role="button"
+            <button
                 class="navbar-burger burger"
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="navMenu"
-                :class="{ 'is-active': openNav }"
-                x-on:click="openNav = !openNav"
+                aria-label="Toggle navigation"
+                :aria-expanded="openNav.toString()"
+                aria-controls="navMenu"
+                @click="openNav = !openNav"
             >
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </button>
         </div>
 
-        <!-- Navigation Menu (Toggle for Mobile) -->
+        <!-- Navigation Menu -->
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end"> <!-- Ensures items align to the right -->
+            <div class="navbar-end">
                 
                     
                         
-                            <a href="/people/" class="navbar-item ">People</a>
+                            <a 
+                                href="/people/" 
+                                class="navbar-item "
+                                
+                            >People</a>
                         
                     
                         
-                            <a href="/publications/" class="navbar-item ">Publications</a>
+                            <a 
+                                href="/publications/" 
+                                class="navbar-item "
+                                
+                            >Publications</a>
                         
                     
                         
-                            <a href="/applications/" class="navbar-item ">Applications</a>
+                            <a 
+                                href="/applications/" 
+                                class="navbar-item "
+                                
+                            >Applications</a>
                         
                     
                         
-                            <a href="/projects/" class="navbar-item ">Projects</a>
+                            <a 
+                                href="/projects/" 
+                                class="navbar-item "
+                                
+                            >Projects</a>
                         
                     
                         
-                            <a href="/datasets/" class="navbar-item ">Datasets</a>
+                            <a 
+                                href="/datasets/" 
+                                class="navbar-item "
+                                
+                            >Datasets</a>
                         
                     
                         
-                            <a href="/theses/" class="navbar-item ">Theses</a>
+                            <a 
+                                href="/theses/" 
+                                class="navbar-item "
+                                
+                            >Theses</a>
                         
                     
                         
-                            <a href="/deadlines/" class="navbar-item ">Deadlines</a>
+                            <a 
+                                href="/deadlines/" 
+                                class="navbar-item "
+                                
+                            >Deadlines</a>
                         
                     
                 
@@ -121,40 +113,28 @@
 </nav>
 
         
-            
-<section
-    class="prime hero  is-medium  is-bold is-primary "
+
+<section 
+    class="hero 
+        is-medium 
+        is-bold is-primary 
+        "
     
 >
     <div class="hero-body ">
         <div class="container">
             
-            <h1 class="title is-2">Semantic Self-Segmentation for Abstractive Summarization of Long Documents in Low-Resource Regimes</h1>
+                <h1 class="title is-2">Semantic Self-Segmentation for Abstractive Summarization of Long Documents in Low-Resource Regimes</h1>
             
+                  
             
-            
-            <div class="columns is-multiline is-centered">
-                
-            </div>
         </div>
     </div>
-</section>
-        
-        <!-- 
- -->
-        <section class="section">
+</section>     
+        <main class="section">
             <div class="container">
                 <div class="columns is-multiline">
-                    
-                    <div class="column is-12">
-                        
-
-                        
-
-                        
-
-                        
-
+                    <div class="column ">
                         <div class="columns is-multiline">
     
     <div class="column is-12">
@@ -3386,21 +3366,37 @@
                     
                 </div>
             </div>
-        </section>
-        
-            <footer class="footer">
+        </main>
+        <footer class="footer py-5 has-background-primary has-text-light">
     <div class="container">
-        
-        
+        <div class="columns is-vcentered is-mobile">
 
-        <!-- <div class="content is-small has-text-centered">
-            <p class="">Email contact: gianluca.moro[at]unibo.it</p>
-        </div> -->
+            <!-- Logo on the Left (Take Only Needed Space) -->
+            <div class="column is-narrow">
+                <a href="/">
+                    <img 
+                        src="/assets/css/logo.svg" 
+                        alt="UniboNLP Logo" 
+                        loading="lazy"
+                        class="navbar-logo"
+                    >
+                </a>
+            </div>
+
+            <!-- University Name on the Right -->
+            <div class="column has-text-right">
+                <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
+                    Department of Computer Science and Engineering (DISI),<br>
+                    University of Bologna,<br>
+                    Via dell'Università 50, I-47522 Cesena, Italy
+                </p>
+            </div>
+
+        </div>
     </div>
 </footer>
-
-        
-        <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts -->
-<script src="/assets/js/custom.js"></script>
+   
+        <script src="/assets/js/app.js" defer></script>
+        <script src="/assets/js/custom.js" defer></script>
     </body>
 </html>
