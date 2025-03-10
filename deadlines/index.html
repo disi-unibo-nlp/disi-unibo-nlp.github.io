@@ -11,6 +11,7 @@
     <!-- Favicon Handling -->
     <link rel="icon" type="image/png" href="assets/css/logo.svg/assets/css/logo.svg" sizes="32x32">
     <link rel="apple-touch-icon" href="assets/css/logo.svg/assets/css/logo.svg"> 
+    <link rel="shortcut icon" href="assets/css/logo.svg/assets/css/logo.svg">
     <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
@@ -32,17 +33,19 @@
                     loading="lazy"
                 >
             </a>
-            <button
+            <a
+                role="button"
                 class="navbar-burger burger"
-                aria-label="Toggle navigation"
-                :aria-expanded="openNav.toString()"
-                aria-controls="navMenu"
-                @click="openNav = !openNav"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
             >
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </button>
+            </a>
         </div>
 
         <!-- Navigation Menu -->
@@ -477,85 +480,6 @@
         
         
 
-        
-            
-                
-                    
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="NLP,CV,ML">
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.icdar2025.com/home" class="card-link">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title">ICDAR</h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle silver">
-                                                        A
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">International Conference on Document Analysis and Recognition</p>                                
-                                        <p style="margin-top: 5px;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Wuhan,
-                                                
-                                                
-                                            
-                                                
-                                                    China
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                September 17-21, 2025
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="NLP">NLP</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="ML">ML</span>
-                                                
-                                            
-                                        </div>
-                                        
-                                        
-                                        
-
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px;"></i>
-                                            <strong> March 07, 2025 <span style="color: gray; font-weight: bold;">
-                                                [UTC+0]
-                                            </span>
-                                            </strong>
-                                            
-                                            
-
-                                            <span style="color: red; font-weight: bold;">
-                                                
-                                                    (TODAY !!!)
-                                                    <!-- (in about 2 hours) -->
-                                                
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-            
               
     
 
@@ -566,81 +490,6 @@
         
         
 
-        
-            
-                
-                    
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="CV">
-                            <a target="_blank" rel="noopener noreferrer" href="https://iccv.thecvf.com/Conferences/2025" class="card-link">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title">ICCV</h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle gold">
-                                                        A*
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">IEEE International Conference on Computer Vision</p>                                
-                                        <p style="margin-top: 5px;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Honolulu,
-                                                
-                                                
-                                            
-                                                
-                                                    Hawaii
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                October 19-25, 2025
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
-                                                
-                                            
-                                        </div>
-                                        
-                                        
-                                        
-
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px;"></i>
-                                            <strong> March 08, 2025 <span style="color: gray; font-weight: bold;">
-                                                [UTC+0]
-                                            </span>
-                                            </strong>
-                                            
-                                            
-
-                                            <span style="color: red; font-weight: bold;">
-                                                
-                                                    (TODAY !!!)
-                                                    <!-- (in about 12 hours) -->
-                                                
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-            
               
     
 
@@ -742,9 +591,9 @@
                                             
                                             
 
-                                            <span style="color: red; font-weight: bold;">
+                                            <span class="mobile-newline" style="color: red; font-weight: bold;">
                                                 
-                                                    (in 60 days)
+                                                    (in 57 days)
                                                 
                                             </span>
                                         </p>
@@ -847,9 +696,9 @@
                                             
                                             
 
-                                            <span style="color: green; font-weight: bold;">
+                                            <span class="mobile-newline" style="color: green; font-weight: bold;">
                                                 
-                                                    (in 69 days)
+                                                    (in 66 days)
                                                 
                                             </span>
                                         </p>
@@ -931,9 +780,9 @@
                                             
                                             
 
-                                            <span style="color: green; font-weight: bold;">
+                                            <span class="mobile-newline" style="color: green; font-weight: bold;">
                                                 
-                                                    (in 73 days)
+                                                    (in 70 days)
                                                 
                                             </span>
                                         </p>
@@ -1983,12 +1832,154 @@
          
 
         
+            
+                
+                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                        <div class="conference-card" data-subtopics="NLP,CV,ML">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.icdar2025.com/home">
+                                <div class="card" style="background-color: #f5f5f5; opacity: 0.35; pointer-events: none;">
+                                    <div class="card-content">
+                                        <div class="venue-container">
+                                            <h1 class="conf-title" style="display: inline-block; color: #999;">
+                                                ICDAR
+                                            </h1>
+                                            <p>
+                                                
+                                                    <span class="rank-circle silver">
+                                                        A
+                                                    </span>
+                                                
+                                            </p>
+                                        </div>
+                                        <p class="conf-description">
+                                            International Conference on Document Analysis and Recognition
+                                        </p>
+                                        <p style="margin-top: 5px; color: #777;">
+                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
+                                            
+                                            
+                                                
+                                                    Wuhan,
+                                                
+                                                
+                                            
+                                                
+                                                    China
+                                                
+                                                
+                                            
+                                        </p>
+                                        <p style="margin-bottom: 10px; color: #777;">
+                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
+                                            
+                                                September 17-21, 2025
+                                            
+                                        </p>
+                                        <div class="tags" style="margin-top: 10px;">
+                                            
+                                                
+                                                    <span class="tag subtopic-tag" data-topic="NLP">NLP</span>
+                                                
+                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
+                                                
+                                                    <span class="tag subtopic-tag" data-topic="ML">ML</span>
+                                                
+                                            
+                                        </div>
+                                        <p>
+                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px; color: #777;"></i>
+                                            <strong style="color: #777;"> 
+                                                <del>
+                                                    March 07, 2025 
+                                                    <span style="color: gray; font-weight: bold;">
+                                                        [UTC+0]
+                                                    </span>
+                                                </del>
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                
+            
+        
     
         
         
 
          
 
+        
+            
+                
+                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                        <div class="conference-card" data-subtopics="CV">
+                            <a target="_blank" rel="noopener noreferrer" href="https://iccv.thecvf.com/Conferences/2025">
+                                <div class="card" style="background-color: #f5f5f5; opacity: 0.35; pointer-events: none;">
+                                    <div class="card-content">
+                                        <div class="venue-container">
+                                            <h1 class="conf-title" style="display: inline-block; color: #999;">
+                                                ICCV
+                                            </h1>
+                                            <p>
+                                                
+                                                    <span class="rank-circle gold">
+                                                        A*
+                                                    </span>
+                                                
+                                            </p>
+                                        </div>
+                                        <p class="conf-description">
+                                            IEEE International Conference on Computer Vision
+                                        </p>
+                                        <p style="margin-top: 5px; color: #777;">
+                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
+                                            
+                                            
+                                                
+                                                    Honolulu,
+                                                
+                                                
+                                            
+                                                
+                                                    Hawaii
+                                                
+                                                
+                                            
+                                        </p>
+                                        <p style="margin-bottom: 10px; color: #777;">
+                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
+                                            
+                                                October 19-25, 2025
+                                            
+                                        </p>
+                                        <div class="tags" style="margin-top: 10px;">
+                                            
+                                                
+                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
+                                                
+                                            
+                                        </div>
+                                        <p>
+                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px; color: #777;"></i>
+                                            <strong style="color: #777;"> 
+                                                <del>
+                                                    March 08, 2025 
+                                                    <span style="color: gray; font-weight: bold;">
+                                                        [UTC+0]
+                                                    </span>
+                                                </del>
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                
+            
         
     
         
@@ -2107,6 +2098,23 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const footer = document.querySelector(".footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
+                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const viewportHeight = window.innerHeight;
+
+        if (pageHeight <= viewportHeight) {
+            document.body.classList.add("short-content");
+        } else {
+            document.body.classList.remove("short-content");
+        }
+    });
+</script>
    
         <script src="/assets/js/app.js" defer></script>
         <script src="/assets/js/custom.js" defer></script>

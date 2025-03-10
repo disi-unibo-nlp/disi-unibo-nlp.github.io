@@ -11,6 +11,7 @@
     <!-- Favicon Handling -->
     <link rel="icon" type="image/png" href="assets/css/logo.svg/assets/css/logo.svg" sizes="32x32">
     <link rel="apple-touch-icon" href="assets/css/logo.svg/assets/css/logo.svg"> 
+    <link rel="shortcut icon" href="assets/css/logo.svg/assets/css/logo.svg">
     <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
@@ -32,17 +33,19 @@
                     loading="lazy"
                 >
             </a>
-            <button
+            <a
+                role="button"
                 class="navbar-burger burger"
-                aria-label="Toggle navigation"
-                :aria-expanded="openNav.toString()"
-                aria-controls="navMenu"
-                @click="openNav = !openNav"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
             >
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </button>
+            </a>
         </div>
 
         <!-- Navigation Menu -->
@@ -179,6 +182,23 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const footer = document.querySelector(".footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
+                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const viewportHeight = window.innerHeight;
+
+        if (pageHeight <= viewportHeight) {
+            document.body.classList.add("short-content");
+        } else {
+            document.body.classList.remove("short-content");
+        }
+    });
+</script>
    
         <script src="/assets/js/app.js" defer></script>
         <script src="/assets/js/custom.js" defer></script>
