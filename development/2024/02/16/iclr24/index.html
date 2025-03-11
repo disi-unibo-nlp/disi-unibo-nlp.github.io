@@ -8,10 +8,15 @@
     <!-- Preload critical assets for faster rendering -->
     <link rel="preload" href="/assets/css/app.css" as="style">
     <link rel="stylesheet" href="/assets/css/app.css">
-    <!-- Favicon Handling -->
-    <link rel="icon" type="image/png" href="assets/css/logo.svg/assets/css/logo.svg" sizes="32x32">
-    <link rel="apple-touch-icon" href="assets/css/logo.svg/assets/css/logo.svg"> 
-    <link rel="shortcut icon" href="assets/css/logo.svg/assets/css/logo.svg">
+    <!-- Favicon Handling --> 
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
+    <!-- Apple Touch Icon (For iOS Devices) -->
+    <link rel="apple-touch-icon" href="/assets/css/logo.png">
+    <!-- Mask Icon (For Safari Pinned Tabs) -->
+    <link rel="mask-icon" href="/assets/css/logo.svg" color="#000000">
+    <!-- Alternative SVG Icon for Browsers that Support It -->
+    <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
     <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
