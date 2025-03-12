@@ -26,7 +26,7 @@
 </head>
     <body>  
             
-        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }">
+        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);>
     <div class="container navigation">  
         <!-- Logo on the Left -->
         <div class="navbar-brand">
@@ -54,7 +54,7 @@
         </div>
 
         <!-- Navigation Menu -->
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             <div class="navbar-end" style="margin-right: 1.5rem;">
                 
                     
@@ -141,16 +141,16 @@
 <ul>
   <li><b>Abstractive:</b>
     <ul>
-      <li><a href="https://huggingface.co/datasets/FiscalNote/billsum" class="hover-link"><b>BillSum</b></a> [Kornilova and Eidelman, 2019, ACL]</li>
-      <li><a href="https://huggingface.co/datasets/ccdv/govreport-summarization" class="hover-link"><b>GovReport</b></a> [Huang et al., 2021, NAACL]</li>
-      <li><a href="https://huggingface.co/datasets/allenai/multi_lexsum" class="hover-link"><b>Multi-LexSum</b></a> [Shen et al., 2022, NeurIPS]</li>
-      <li><a href="https://huggingface.co/datasets/dennlinger/eur-lex-sum" class="hover-link"><b>EUR-Lex-Sum</b></a> [Aumiller et al., 2022, EMNLP]</li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/datasets/FiscalNote/billsum" class="hover-link"><b>BillSum</b></a> [Kornilova and Eidelman, 2019, ACL]</li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/datasets/ccdv/govreport-summarization" class="hover-link"><b>GovReport</b></a> [Huang et al., 2021, NAACL]</li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/datasets/allenai/multi_lexsum" class="hover-link"><b>Multi-LexSum</b></a> [Shen et al., 2022, NeurIPS]</li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/datasets/dennlinger/eur-lex-sum" class="hover-link"><b>EUR-Lex-Sum</b></a> [Aumiller et al., 2022, EMNLP]</li>
     </ul>
   </li>
 
   <li><b>Extractive:</b>
     <ul>
-      <li><a href="https://archive.ics.uci.edu/dataset/239/legal+case+reports" class="hover-link"><b>AUSTLII</b></a> [Galgani, 2010]</li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://archive.ics.uci.edu/dataset/239/legal+case+reports" class="hover-link"><b>AUSTLII</b></a> [Galgani, 2010]</li>
     </ul>
   </li>
 </ul>

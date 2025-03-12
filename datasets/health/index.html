@@ -26,7 +26,7 @@
 </head>
     <body>  
             
-        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }">
+        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);>
     <div class="container navigation">  
         <!-- Logo on the Left -->
         <div class="navbar-brand">
@@ -54,7 +54,7 @@
         </div>
 
         <!-- Navigation Menu -->
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             <div class="navbar-end" style="margin-right: 1.5rem;">
                 
                     
@@ -139,10 +139,10 @@
                         <div class="content">
     <p>Datasets for Biomedical Text Summarization:</p>
 <ul>
-  <li><a href="https://huggingface.co/datasets/ccdv/pubmed-summarization" class="hover-link"><b>PubMed</b></a> [Cohan et al., 2018, NAACL]</li>
-  <li><a href="https://huggingface.co/datasets/disi-unibo-nlp/SciLay" class="hover-link"><b>SciLay</b></a> [Ragazzi et al., 2024, ACL]</li>
-  <li><a href="https://huggingface.co/datasets/allenai/mslr2022" class="hover-link"><b>MS2</b></a> [DeYoung et al., 2021, EMNLP]</li>
-  <li><a href="https://huggingface.co/datasets/allenai/mslr2022" class="hover-link"><b>Cochrane</b></a> [Wallace et al., 2020, AMIA Annual Symposium]</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/datasets/ccdv/pubmed-summarization" class="hover-link"><b>PubMed</b></a> [Cohan et al., 2018, NAACL]</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/datasets/disi-unibo-nlp/SciLay" class="hover-link"><b>SciLay</b></a> [Ragazzi et al., 2024, ACL]</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/datasets/allenai/mslr2022/viewer/ms2" class="hover-link"><b>MS2</b></a> [DeYoung et al., 2021, EMNLP]</li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://huggingface.co/datasets/allenai/mslr2022" class="hover-link"><b>Cochrane</b></a> [Wallace et al., 2020, AMIA Annual Symposium]</li>
 </ul>
 
 </div>
