@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 518.04 104.69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed5024;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="45.33" cy="100.34" fx="45.33" fy="100.34" r="99.33" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#f05224"/>
+      <stop offset=".29" stop-color="#ea4e24"/>
+      <stop offset=".59" stop-color="#db4325"/>
+      <stop offset=".93" stop-color="#c13228"/>
+      <stop offset="1" stop-color="#bb2e29"/>
+    </radialGradient>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <polygon class="cls-2" points="241.04 88.92 226.85 88.92 214.94 44.97 228.16 41.39 241.04 88.92"/>
+    <path class="cls-2" d="M157.84,29.09v37.92c0,13.35-7.96,24.57-24.22,24.57s-24.31-11.14-24.31-24.57V29.09h11.4v37.92c0,8.04,4.24,13.97,12.91,13.97s12.99-6.01,12.99-13.97V29.09h11.23Z"/>
+    <path class="cls-2" d="M211.16,59.84v29.08h-11.31v-26.96c0-6.72-4.15-10.7-10.52-10.7-6.1.09-10.7,4.42-10.78,9.63v28.02h-11.23v-46.58h10.61v5.13c3.18-3.62,8.31-6.19,14.67-6.19,11.49,0,18.56,7.51,18.56,18.56Z"/>
+    <path class="cls-2" d="M255.59,48.07c3.62-3.89,9.24-6.79,15.42-6.79,13.35,0,22.81,10.43,22.81,24.4s-9.72,24.31-23.07,24.31c-6.54,0-11.76-2.56-15.38-6.98M282.59,65.68c0-8.31-5.66-14.41-13.35-14.41s-13.52,5.83-13.52,14.41,5.48,14.41,13.52,14.41,13.35-6.1,13.35-14.41Z"/>
+    <path class="cls-2" d="M299.86,65.68c0-13.97,10.25-24.4,24.84-24.4s24.84,10.43,24.84,24.4-10.34,24.31-24.84,24.31-24.84-10.43-24.84-24.31ZM338.23,65.59c0-8.31-5.39-14.23-13.44-14.23s-13.7,5.92-13.7,14.32,5.57,14.32,13.7,14.32,13.44-6.01,13.44-14.41Z"/>
+    <path class="cls-1" d="M409.78,29.09v62.49h-12.41l-24.28-36.51v36.51h-15.02V29.09h12.5l24.19,36.78V29.09h15.02Z"/>
+    <path class="cls-1" d="M463.19,78.19v13.4h-42.8V29.09h15.02v49.1h27.78Z"/>
+    <path class="cls-1" d="M518.04,49.23c0,12.14-8.72,20.05-22.21,20.05h-11.24v22.3h-15.02V29.09h26.26c13.67,0,22.21,7.91,22.21,20.14ZM502.76,49.23c0-4.05-2.52-7.01-7.82-7.01h-10.34v13.94h10.34c5.31,0,7.82-2.97,7.82-6.92Z"/>
+    <path class="cls-3" d="M79.49.67H11.17C5,.67,0,5.66,0,11.83v68.32c0,6.17,5,11.17,11.17,11.17h16.69c2.94,0,5.7,1.38,7.48,3.72l5.68,7.5c2.17,2.86,6.47,2.86,8.64,0l5.68-7.5c1.77-2.34,4.54-3.72,7.48-3.72h16.69c6.17,0,11.17-5,11.17-11.17V11.83c0-6.17-5-11.17-11.17-11.17Z"/>
+    <g>
+      <polygon class="cls-2" points="45.03 74.66 35.88 74.66 28.19 46.3 36.72 43.99 45.03 74.66"/>
+      <rect class="cls-2" x="28.19" y="74.66" width="33.69" height="2.89"/>
+    </g>
+    <rect id="Inferiata_1" data-name="Inferiata 1" class="cls-2" x="44.81" y="17.38" width="1.64" height="2.2"/>
+    <path class="cls-2" d="M53.12,22.28v22.47c.43.28.69.75.69,1.27v29.04h-8.83v-29.04c0-.51.26-.99.69-1.27v-22.47c0-.24-.2-.45-.45-.45h-.41v-3.4h9.17v3.4h-.41c-.24,0-.44.2-.44.45Z"/>
+    <rect id="Inferiata_1-2" data-name="Inferiata 1" class="cls-2" x="52.35" y="17.38" width="1.64" height="2.2"/>
+    <rect id="Inferiata_1-3" data-name="Inferiata 1" class="cls-2" x="47.33" y="17.38" width="1.64" height="2.2"/>
+    <rect id="Inferiata_1-4" data-name="Inferiata 1" class="cls-2" x="49.84" y="17.38" width="1.64" height="2.2"/>
+    <rect id="Inferiata_1-5" data-name="Inferiata 1" class="cls-2" x="241.27" width="2.8" height="3.41"/>
+    <path class="cls-2" d="M255.49,7.57v34.71c.73.43,1.17,1.16,1.17,1.96v44.86h-15.11v-44.86c0-.8.44-1.53,1.17-1.96V7.57c0-.38-.35-.69-.77-.69h-.69V1.62h15.68v5.25h-.7c-.41,0-.76.31-.76.69Z"/>
+    <rect id="Inferiata_1-6" data-name="Inferiata 1" class="cls-2" x="254.16" width="2.8" height="3.41"/>
+    <rect id="Inferiata_1-7" data-name="Inferiata 1" class="cls-2" x="245.58" width="2.8" height="3.41"/>
+    <rect id="Inferiata_1-8" data-name="Inferiata 1" class="cls-2" x="249.87" width="2.8" height="3.41"/>
+  </g>
+</svg>
