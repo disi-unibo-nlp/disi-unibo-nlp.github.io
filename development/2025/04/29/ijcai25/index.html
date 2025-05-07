@@ -103,7 +103,7 @@
                         
                             <a 
                                 href="/deadlines/" 
-                                class="navbar-item is-active"
+                                class="navbar-item "
                             >Deadlines</a>
                         
                     
@@ -125,10 +125,8 @@
     <div class="hero-body ">
         <div class="container">
             
-                <h1 class="title is-2">Deadlines</h1>
+                <h1 class="title is-2">IJCAI 2025</h1>
             
-            
-                <p class="subtitle is-3">Countdown to top AI conference submission deadlines.</p>
                   
             
         </div>
@@ -138,58 +136,34 @@
             <div class="container">
                 <div class="columns is-multiline">
                     <div class="column ">
-                        <div class="columns is-multiline">
-    <div class="legend-container column is-12">
-        <span class="legend-item"><span class="legend-color NLP"></span> Natural Language Processing</span>
-        <span class="legend-item"><span class="legend-color ML"></span> Machine Learning</span>
-        <span class="legend-item"><span class="legend-color CV"></span> Computer Vision</span>
-        <span class="legend-item"><span class="legend-color KR"></span> Knowledge Representation</span>
-        <span class="legend-item"><span class="legend-color SP"></span> Speech Processing</span>
-    </div>
+                        <div class="content">
+    
+        <p><i>Published: Apr 29, 2025</i></p>
     
     
+    
+    <p>We are glad to share that our group will be at IJCAI 2025 with <b>1 long paper in the Survey Track!</b> Catch us in <b>Montreal, Canada</b> to learn more about <b>neuro-symbolic artificial intelligence</b>.</p>
 
-    
+<hr />
 
+<h4>Neuro-Symbolic Artificial Intelligence: A Task-Directed Survey in the Black-Box Era</h4>
+<p style="color:gray; margin-top:-10px;">by G. P. Delvecchio, L. Molfetta, and G. Moro</p>
+<p>
+The integration of symbolic computing with neural networks has intrigued researchers since the first theorizations of Artificial intelligence (AI). The ability of Neuro-Symbolic (NeSy) methods to infer or exploit behavioral schema has been widely considered as one of the possible proxies for human-level intelligence. However, the limited semantic generalizability and the challenges in declining complex domains with pre-defined patterns and rules hinder their practical implementation in real-world scenarios. The unprecedented results achieved by connectionist systems since the last AI breakthrough in 2017 have raised questions about the competitiveness of NeSy solutions, with particular emphasis on the Natural Language Processing and Computer Vision fields. This survey examines task-specific advancements in the NeSy domain to explore how incorporating symbolic systems can enhance explainability and reasoning capabilities. Our findings are meant to serve as a resource for researchers exploring explainable NeSy methodologies for real-life tasks and applications. Reproducibility details and in-depth comments on each surveyed research work are made available at https://github.com/disi-unibo-nlp/task-oriented-neuro-symbolic.git.
+</p>
+<p></p>
+<ul>
+  <li>
+    <p><i>The paper will be available soon!</i></p>
+  </li>
+</ul>
 
-    
-    
-
-     
 </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const buttons = document.querySelectorAll(".filter-btn");
-        const conferences = document.querySelectorAll(".conference-card");
+<div class="tags">
     
-        buttons.forEach(button => {
-            button.addEventListener("click", function() {
-                document.querySelector(".filter-btn.active").classList.remove("active");
-                this.classList.add("active");
-                filterConferences();
-            });
-        });
-    
-        document.getElementById("searchBar").addEventListener("keyup", filterConferences);
-    
-        function filterConferences() {
-            let selectedTopic = document.querySelector(".filter-btn.active").getAttribute("data-filter");
-            let searchQuery = document.getElementById("searchBar").value.toLowerCase();
+</div>
 
-            conferences.forEach(conf => {
-                let confTopics = conf.getAttribute("data-subtopics").split(",");
-                let confTitle = conf.querySelector(".conf-title").innerText.toLowerCase();
-                let confDescription = conf.querySelector(".conf-description").innerText.toLowerCase();
-                
-                let topicMatch = (selectedTopic === "ALL") || confTopics.includes(selectedTopic);
-                let searchMatch = confTitle.includes(searchQuery) || confDescription.includes(searchQuery);
-
-                conf.style.display = (topicMatch && searchMatch) ? "block" : "none";
-            });
-        }
-    });
-</script>
                     </div>
                     
                 </div>
