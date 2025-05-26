@@ -127,7 +127,7 @@
     <div class="hero-body ">
         <div class="container">
             
-                <h1 class="title is-2">EMNLP 2024</h1>
+                <h1 class="title is-2">ACL 2025</h1>
             
                   
             
@@ -140,23 +140,39 @@
                     <div class="column ">
                         <div class="content">
     
-        <p><i>Published: Oct 17, 2024</i></p>
+        <p><i>Published: May 26, 2025</i></p>
     
     
     
-    <p>We are glad to share that that our group will be at EMNLP 2024 with <b>1 long paper in the Main Track!</b> Catch us in <b>Miami, Florida</b> to learn more about <b>data generation for multimodal computational fact-checking</b>.</p>
+    <p>We are delighted to announce that we will be at ACL 2025 with <b>2 long papers in the Main and Findings Track!</b> Catch us in <b>Vienna, Austria</b> to learn more about <b>humor QA</b> and <b>biomedical NER</b>.</p>
 
 <hr />
 
-<h4>Unknown Claims: Generation of Fact-Checking Training Examples from Unstructured and Structured Data</h4>
-<p style="color:gray; margin-top:-10px;">by JF Bussotti, L. Ragazzi, G. Frisoni, G. Moro, and P. Papotti</p>
+<h4>"What do you call a dog that is incontrovertibly true? Dogma": Testing LLM Generalization through Humor</h4>
+<p style="color:gray; margin-top:-10px;">by A. Cocchieri, L. Ragazzi, P. Italiani, G. Tagliavini, and G. Moro</p>
+
 <p>
-Computational fact-checking (FC) relies on supervised models to verify claims based on given evidence, requiring a resource-intensive process to annotate large volumes of training data. We introduce Unown, a novel framework that generates training instances for FC systems automatically using both textual and tabular content. Unown selects relevant evidence and generates supporting and refuting claims with advanced negation artifacts. Designed to be flexible, Unown accommodates various strategies for evidence selection and claim generation, offering unparalleled adaptability. We comprehensively evaluate Unown on both text-only and table+text benchmarks, including Feverous, SciFact, and MMFC, a new multi-modal FC dataset. Our results prove that Unown examples are of comparable quality to expert-labeled data, even enabling models to achieve up to 5% higher accuracy. The code, data, and models are available at https://github.com/disi-unibo-nlp/unown.
+Humor, requiring creativity and contextual understanding, is a hallmark of human intelligence, showcasing adaptability across linguistic scenarios. While recent advances in large language models (LLMs) demonstrate strong reasoning on various benchmarks, it remains unclear whether they truly adapt to new tasks like humans (i.e., generalize) or merely replicate memorized content. To explore this, we introduce Phunny, a new humor-based question-answering benchmark designed to assess LLMs' reasoning through carefully crafted puns. Our dataset is manually curated to ensure novelty and minimize data contamination, providing a robust evaluation of LLMs' linguistic comprehension. Experiments on pun comprehension, resolution, and generation reveal that most LLMs struggle with generalization, even on simple tasks, consistently underperforming the human baseline. Additionally, our detailed error analysis provides valuable insights to guide future research. The data is available at https://anonymous.4open.science/r/phunny/.
 </p>
 <p></p>
 <ul>
   <li>
-    <a target="_blank" class="link" href="https://aclanthology.org/2024.emnlp-main.675/">Check out the paper!</a>
+    <p><i>The paper will be available soon!</i></p>
+  </li>
+</ul>
+
+<hr />
+
+<h4>What Are You Token About? Differentiable Perturbed Top-k Token Selection for Scientific Document Summarization</h4>
+<p style="color:gray; margin-top:-10px;">by L. Ragazzi, P. Italiani, G. Moro, and M. Panni</p>
+
+<p>
+Scientific document summarization aims to condense complex and long articles in both technical and plain-language terms to facilitate the accessibility and dissemination of scientific findings. Existing datasets suffer from a deficiency in source heterogeneity, as their data predominantly stem from a single common resource, hindering effective model training and generalizability. First, we introduce SciLay, a novel dataset that includes documents from multiple natural science journals with expert-authored technical and lay summaries. Second, we propose PrunePert, a new transformer-based model that incorporates a differentiable perturbed top-k encoder layer to prune irrelevant tokens in end-to-end learning. Experimental results show that our model achieves a nearly 2x speed-up compared to a state-of-the-art linear transformer, remaining comparable in effectiveness. Additional examinations underscore the importance of employing a training dataset that includes different sources to enhance the generalizability of the models. Code is available at https://github.com/disi-unibo-nlp/sci-lay.
+</p>
+<p></p>
+<ul>
+  <li>
+    <p><i>The paper will be available soon!</i></p>
   </li>
 </ul>
 

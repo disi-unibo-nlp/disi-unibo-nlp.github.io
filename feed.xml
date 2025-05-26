@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://disi-unibo-nlp.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disi-unibo-nlp.github.io/" rel="alternate" type="text/html" /><updated>2025-05-20T18:09:53+00:00</updated><id>https://disi-unibo-nlp.github.io/feed.xml</id><title type="html">UniboNLP</title><subtitle>The Unibo Natural Language Processing Group</subtitle><entry><title type="html">IJCAI 2025</title><link href="https://disi-unibo-nlp.github.io/development/2025/04/29/ijcai25/" rel="alternate" type="text/html" title="IJCAI 2025" /><published>2025-04-29T13:55:00+00:00</published><updated>2025-04-29T13:55:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/04/29/ijcai25</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/04/29/ijcai25/">&lt;p&gt;We are glad to share that our group will be at IJCAI 2025 with &lt;b&gt;1 long paper in the Survey Track!&lt;/b&gt; Catch us in &lt;b&gt;Montreal, Canada&lt;/b&gt; to learn more about &lt;b&gt;neuro-symbolic artificial intelligence&lt;/b&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://disi-unibo-nlp.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disi-unibo-nlp.github.io/" rel="alternate" type="text/html" /><updated>2025-05-26T07:57:56+00:00</updated><id>https://disi-unibo-nlp.github.io/feed.xml</id><title type="html">UniboNLP</title><subtitle>The Unibo Natural Language Processing Group</subtitle><entry><title type="html">ACL 2025</title><link href="https://disi-unibo-nlp.github.io/development/2025/05/26/acl25/" rel="alternate" type="text/html" title="ACL 2025" /><published>2025-05-26T06:55:00+00:00</published><updated>2025-05-26T06:55:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/05/26/acl25</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/05/26/acl25/">&lt;p&gt;We are delighted to announce that we will be at ACL 2025 with &lt;b&gt;2 long papers in the Main and Findings Track!&lt;/b&gt; Catch us in &lt;b&gt;Vienna, Austria&lt;/b&gt; to learn more about &lt;b&gt;humor QA&lt;/b&gt; and &lt;b&gt;biomedical NER&lt;/b&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;&quot;What do you call a dog that is incontrovertibly true? Dogma&quot;: Testing LLM Generalization through Humor&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by A. Cocchieri, L. Ragazzi, P. Italiani, G. Tagliavini, and G. Moro&lt;/p&gt;
+
+&lt;p&gt;
+Humor, requiring creativity and contextual understanding, is a hallmark of human intelligence, showcasing adaptability across linguistic scenarios. While recent advances in large language models (LLMs) demonstrate strong reasoning on various benchmarks, it remains unclear whether they truly adapt to new tasks like humans (i.e., generalize) or merely replicate memorized content. To explore this, we introduce Phunny, a new humor-based question-answering benchmark designed to assess LLMs' reasoning through carefully crafted puns. Our dataset is manually curated to ensure novelty and minimize data contamination, providing a robust evaluation of LLMs' linguistic comprehension. Experiments on pun comprehension, resolution, and generation reveal that most LLMs struggle with generalization, even on simple tasks, consistently underperforming the human baseline. Additionally, our detailed error analysis provides valuable insights to guide future research. The data is available at https://anonymous.4open.science/r/phunny/.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;i&gt;The paper will be available soon!&lt;/i&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;What Are You Token About? Differentiable Perturbed Top-k Token Selection for Scientific Document Summarization&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by L. Ragazzi, P. Italiani, G. Moro, and M. Panni&lt;/p&gt;
+
+&lt;p&gt;
+Scientific document summarization aims to condense complex and long articles in both technical and plain-language terms to facilitate the accessibility and dissemination of scientific findings. Existing datasets suffer from a deficiency in source heterogeneity, as their data predominantly stem from a single common resource, hindering effective model training and generalizability. First, we introduce SciLay, a novel dataset that includes documents from multiple natural science journals with expert-authored technical and lay summaries. Second, we propose PrunePert, a new transformer-based model that incorporates a differentiable perturbed top-k encoder layer to prune irrelevant tokens in end-to-end learning. Experimental results show that our model achieves a nearly 2x speed-up compared to a state-of-the-art linear transformer, remaining comparable in effectiveness. Additional examinations underscore the importance of employing a training dataset that includes different sources to enhance the generalizability of the models. Code is available at https://github.com/disi-unibo-nlp/sci-lay.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;i&gt;The paper will be available soon!&lt;/i&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are delighted to announce that we will be at ACL 2025 with 2 long papers in the Main and Findings Track! Catch us in Vienna, Austria to learn more about humor QA and biomedical NER.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://nlp.jhu.edu/multivent/resources/acl.png" /><media:content medium="image" url="https://nlp.jhu.edu/multivent/resources/acl.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">IJCAI 2025</title><link href="https://disi-unibo-nlp.github.io/development/2025/04/29/ijcai25/" rel="alternate" type="text/html" title="IJCAI 2025" /><published>2025-04-29T13:55:00+00:00</published><updated>2025-04-29T13:55:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/04/29/ijcai25</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/04/29/ijcai25/">&lt;p&gt;We are glad to share that our group will be at IJCAI 2025 with &lt;b&gt;1 long paper in the Survey Track!&lt;/b&gt; Catch us in &lt;b&gt;Montreal, Canada&lt;/b&gt; to learn more about &lt;b&gt;neuro-symbolic artificial intelligence&lt;/b&gt;.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -24,7 +54,7 @@ Biomedical Named Entity Recognition (BioNER) faces significant challenges in rea
 &lt;p&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;i&gt;The paper will be available soon!&lt;/i&gt;&lt;/p&gt;
+    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://aclanthology.org/2025.findings-naacl.47/&quot;&gt;Check out the paper!&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">We are proud to announce that our group will be at NAACL 2025 with 1 long paper in the Findings Track! Catch us in Albuquerque, New Mexico to learn more about open-domain biomedical NER.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://2025.naacl.org/assets/images/venue/balloons.jpg" /><media:content medium="image" url="https://2025.naacl.org/assets/images/venue/balloons.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI and Law</title><link href="https://disi-unibo-nlp.github.io/development/2025/01/17/ailaw/" rel="alternate" type="text/html" title="AI and Law" /><published>2025-01-17T00:00:00+00:00</published><updated>2025-01-17T00:00:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/01/17/ailaw</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/01/17/ailaw/">&lt;p&gt;UniboNLP has &lt;b&gt;1 long paper published in Artificial Intelligence and Law 2025.&lt;/b&gt; Read to learn more on &lt;b&gt;knowledge distillation and data generation from LLMs for real-world legal QA&lt;/b&gt;.&lt;/p&gt;
 
@@ -182,49 +212,4 @@ The black-box architecture of pretrained language models (PLMs) hinders the inte
   &lt;li&gt;
     &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://openreview.net/forum?id=fyvEJXsaQf&quot;&gt;Check out the paper!&lt;/a&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are proud to share that our group will be at ICLR 2024 with 1 paper in the Tiny Track! Get in touch with us to learn more about interpretable long-form question answering.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://media.iclr.cc/Conferences/ICLR2024/img/prater.jpg" /><media:content medium="image" url="https://media.iclr.cc/Conferences/ICLR2024/img/prater.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Neurocomputing</title><link href="https://disi-unibo-nlp.github.io/development/2023/09/30/neurocomputing/" rel="alternate" type="text/html" title="Neurocomputing" /><published>2023-09-30T00:00:00+00:00</published><updated>2023-09-30T00:00:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2023/09/30/neurocomputing</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2023/09/30/neurocomputing/">&lt;p&gt;UniboNLP has &lt;b&gt;3 long papers published in Neurocomputing 2023.&lt;/b&gt; Read to learn more on &lt;b&gt;dialog and long text summarization in data-scarcity scenarios&lt;/b&gt; and &lt;b&gt;multimodal retrieval for fashion products&lt;/b&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4&gt;Align-Then-Abstract Representation Learning for Low-Resource Summarization&lt;/h4&gt;
-&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Moro and L. Ragazzi&lt;/p&gt;
-
-&lt;p&gt;
-Generative transformer-based models have achieved state-of-the-art performance in text summarization. Nevertheless, they still struggle in real-world scenarios with long documents when trained in low-resource settings of a few dozen labeled training instances, namely in low-resource summarization (LRS). This paper bridges the gap by addressing two key research challenges when summarizing long documents, i.e., long-input processing and document representation, in one coherent model trained for LRS. Specifically, our novel align-then-abstract representation learning model (Athena) jointly trains a segmenter and a summarizer by maximizing the alignment between the chunk-target pairs in output from the text segmentation. Extensive experiments reveal that Athena outperforms the current state-of-the-art approaches in LRS on multiple long document summarization datasets from different domains.
-&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://www.sciencedirect.com/science/article/pii/S0925231223004794&quot;&gt;Check out the paper!&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h4&gt;Efficient Text-Image Semantic Search: a Multi-modal Vision-Language Approach for Fashion Retrieval&lt;/h4&gt;
-&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Moro, S. Salvatori, and G. Frisoni&lt;/p&gt;
-
-&lt;p&gt;
-In this paper, we address the problem of multi-modal retrieval of fashion products. State-of-the-art (SOTA) works proposed in literature use vision-and-language transformers to assign similarity scores to joint text-image pairs, then used for sorting the results during a retrieval phase. However, this approach is inefficient since it requires coupling a query with every record in the dataset and computing a forward pass for each sample at runtime, precluding scalability to large-scale datasets. We thus propose a solution that overcomes the above limitation by combining transformers and deep metric learning to create a latent space where texts and images are separately embedded, and their spatial proximity translates into semantic similarity. Our architecture does not use convolutional neural networks to process images, allowing us to test different levels of image-processing details and metric learning losses. We vastly improve retrieval accuracy results on the FashionGen benchmark (+18.71% and +9.22% Rank@1 on Image-to-Text and Text-to-Image, respectively) while being up to 512x faster. Finally, we analyze the speed-up obtainable by different approximate nearest neighbor retrieval strategies—an optimization precluded to current SOTA contributions. We release our solution as a web application available at https://disi-unibo-nlp.github.io/projects/fashion_retrieval/.
-&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://www.sciencedirect.com/science/article/pii/S092523122300303X&quot;&gt;Check out the paper!&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h4&gt;Evidence, my Dear Watson: Abstractive Dialogue Summarization on Learnable Relevant Utterances&lt;/h4&gt;
-&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by P. Italiani, G. Frisoni, G. Moro, A. Carbonaro, and C. Sartori&lt;/p&gt;
-
-&lt;p&gt;
-Abstractive dialogue summarization requires distilling and rephrasing key information from noisy multi-speaker documents. Combining pre-trained language models with input augmentation techniques has recently led to significant research progress. However, existing solutions still struggle to select relevant chat segments, primarily relying on open-domain and unsupervised annotators not tailored to the actual needs of the summarization task. In this paper, we propose DearWatson, a task-aware utterance-level annotation framework for improving the effectiveness and interpretability of pre-trained dialogue summarization models. Precisely, we learn relevant utterances in the source document and mark them with special tags, that then act as supporting evidence for the generated summary. Quantitative experiments are conducted on two datasets made up of real-life messenger conversations. The results show that DearWatson allows model attention to focus on salient tokens, achieving new state-of-the-art results in three evaluation metrics, including semantic and factuality measures. Human evaluation proves the superiority of our solution in semantic consistency and recall. Finally, extensive ablation studies confirm each module’s importance, also exploring different annotation strategies and parameter-efficient fine-tuning of large generative language models.
-&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://www.sciencedirect.com/science/article/pii/S0925231223012559&quot;&gt;Check out the paper!&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">UniboNLP has 3 long papers published in Neurocomputing 2023. Read to learn more on dialog and long text summarization in data-scarcity scenarios and multimodal retrieval for fashion products.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://neurocomputinglab.com/wp-content/uploads/2020/03/neurocomp-1.jpg" /><media:content medium="image" url="https://neurocomputinglab.com/wp-content/uploads/2020/03/neurocomp-1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are proud to share that our group will be at ICLR 2024 with 1 paper in the Tiny Track! Get in touch with us to learn more about interpretable long-form question answering.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://media.iclr.cc/Conferences/ICLR2024/img/prater.jpg" /><media:content medium="image" url="https://media.iclr.cc/Conferences/ICLR2024/img/prater.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
