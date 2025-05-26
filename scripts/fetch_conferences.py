@@ -5,7 +5,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 
 # GitHub raw URL base
-GITHUB_RAW_BASE = "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/"
+GITHUB_RAW_BASE = "https://github.com/ccfddl/ccf-deadlines/blob/main/conference/AI/"
 # GitHub repo page where files are listed
 GITHUB_PAGE = "https://github.com/ccfddl/ccf-deadlines/tree/main/conference/AI"
 # Output YAML file
