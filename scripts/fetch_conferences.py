@@ -5,7 +5,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 
 # GitHub raw URL base
-GITHUB_RAW_BASE = "https://github.com/ccfddl/ccf-deadlines/blob/main/conference/AI/"
+GITHUB_RAW_BASE = "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference/AI/"
 # GitHub repo page where files are listed
 GITHUB_PAGE = "https://github.com/ccfddl/ccf-deadlines/tree/main/conference/AI"
 # Output YAML file
@@ -13,7 +13,7 @@ OUTPUT_FILE = "docs/_data/conferences.yml"
 # Get the current year dynamically
 CURRENT_YEAR = datetime.now().year
 
-def get_conference_files():
+def get_conference_files2():
     """Scrapes the GitHub AI directory to get the list of YAML files."""
     response = requests.get(GITHUB_PAGE)
     if response.status_code != 200:
@@ -31,6 +31,25 @@ def get_conference_files():
 
     print(f"✅ Found {len(files)} conference files.")
     return files
+
+def get_conference_files():
+    """Usa GitHub API per ottenere la lista dei file YAML nella directory AI."""
+    api_url = "https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference/AI"
+    headers = {"Accept": "application/vnd.github.v3+json"}
+    
+    response = requests.get(api_url, headers=headers)
+    if response.status_code != 200:
+        print("❌ Failed to fetch the directory listing via API.")
+        return []
+    
+    files = []
+    for item in response.json():
+        if item["name"].endswith(".yaml") or item["name"].endswith(".yml"):
+            files.append(item["name"])
+
+    print(f"✅ Found {len(files)} conference files.")
+    return files
+
 
 def download_yaml_file(filename):
     """Downloads an individual YAML file from GitHub."""
@@ -61,6 +80,7 @@ def process_conferences():
 
             for conf in data:
                 if "confs" in conf and isinstance(conf["confs"], list):
+                    #print(f"🔍 {conf['title']} has {len(conf['confs'])} entries")
                     # Filter to keep only the most recent year's conference
                     latest_conf = max(conf["confs"], key=lambda c: c["year"])
 
@@ -81,11 +101,22 @@ def process_conferences():
                             "abstract_deadline": latest_conf["timeline"][0].get("abstract_deadline", "N/A"),
                             "deadline": latest_conf["timeline"][0].get("deadline", "N/A"),
                         }
+                else:
+                    print(f"⚠️ Missing or malformed 'confs' in file: {conf.get('title', 'Unknown')}")
 
     # Convert dictionary back to a list and sort by deadline
     sorted_conferences = sorted(unique_conferences.values(), key=lambda x: x["deadline"])
+    
+    #os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
 
-    # Save the cleaned YAML file
+    print("📁 Saving to:", os.path.abspath(OUTPUT_FILE))
+
+    print(f"🔍 sorted_conferences contiene {len(sorted_conferences)} elementi")
+    if len(sorted_conferences) > 0:
+        print("📄 Esempio primo elemento:", sorted_conferences[0])
+    else:
+        print("⚠️ Nessuna conferenza valida trovata")
+    
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         yaml.dump({"conferences": sorted_conferences}, f, default_flow_style=False, allow_unicode=True)
 
