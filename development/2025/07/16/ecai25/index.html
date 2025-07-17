@@ -1,0 +1,263 @@
+<!doctype html>
+
+<html dir="ltr" lang="en" class="has-navbar-fixed-top">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Preload critical assets for faster rendering -->
+    <link rel="preload" href="/assets/css/app.css" as="style">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- Favicon Handling --> 
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
+    <!-- Apple Touch Icon (For iOS Devices) -->
+    <link rel="apple-touch-icon" href="/assets/css/logo.png">
+    <!-- Mask Icon (For Safari Pinned Tabs) -->
+    <link rel="mask-icon" href="/assets/css/logo.svg" color="#000000">
+    <!-- Alternative SVG Icon for Browsers that Support It -->
+    <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
+    <!-- External JavaScript Libraries -->
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY5EYLDPK0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QY5EYLDPK0');
+    </script> -->
+    <!-- FontAwesome Icons (Optimized for Performance) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+</head>
+    <body>  
+            
+        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <div class="container navigation">  
+        <!-- Logo on the Left -->
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                <img 
+                    src="/assets/css/logo6.svg" 
+                    alt="Website Logo" 
+                    class="navbar-logo"
+                    loading="lazy"
+                >
+            </a>
+            <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <div class="navbar-end" style="margin-right: 1.5rem;">
+                
+                    
+                        
+                            <a 
+                                href="/people/" 
+                                class="navbar-item "
+                            >People</a>
+                        
+                    
+                        
+                            <a 
+                                href="/publications/" 
+                                class="navbar-item "
+                            >Publications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/applications/" 
+                                class="navbar-item "
+                            >Applications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/projects/" 
+                                class="navbar-item "
+                            >Projects</a>
+                        
+                    
+                        
+                            <a 
+                                href="/datasets/" 
+                                class="navbar-item "
+                            >Datasets</a>
+                        
+                    
+                        
+                            <a 
+                                href="/theses/" 
+                                class="navbar-item "
+                            >Theses</a>
+                        
+                    
+                        
+                            <a 
+                                href="/deadlines/" 
+                                class="navbar-item "
+                            >Deadlines</a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+
+<section 
+    class="hero 
+        is-medium 
+        is-bold is-primary 
+        "
+    
+>
+    <div class="hero-body ">
+        <div class="container">
+            
+                <h1 class="title is-2">ECAI 2025</h1>
+            
+                  
+            
+        </div>
+    </div>
+</section>     
+        <main class="section">
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column ">
+                        <div class="content">
+    
+        <p><i>Published: Jul 16, 2025</i></p>
+    
+    
+    
+    <p>We are proud to announce that our group will be at ECAI 2025 with <b>2 long papers in the Main track and 1 paper in the Demonstrations track!</b> Catch us in <b>Bologna, Italy</b> to learn more about <b>automatic prompt learning</b>, <b>hierarchical extreme multi-label text classification in the food domain</b>, and <b>protein language models</b>.</p>
+
+<hr />
+
+<h4>"Magic Mirror on the Wall, Which is the Fairest Prompt of All? A Survey on Automatic Prompt Learning</h4>
+<p style="color:gray; margin-top:-10px;">by S. Fantazzini, G. Frisoni, G. Moro, L. Ragazzi, M. Ciccioni, and C. Sartori</p>
+
+<p>
+Prompts direct the behavior of a model by conditioning its outputs on carefully designed instructions and examples, similar to setting the trajectory of an arrow before release. More broadly, prompt learning is the research area that aims to solve downstream tasks by directly leveraging the knowledge acquired by language models at pre-training time, removing the need for expensive fine-tuning stages with potentially different objective functions. While manual prompt engineering has enabled both small and large language models to achieve superhuman performance on numerous benchmarks, it remains a labor-intensive and suboptimal process. Recently, the field has shifted towards automating the search for prompts that effectively elicit the desired model responses. This survey presents the first systematic review of prompt learning for pre-trained language models operating on text inputs, with a particular focus on automatic methods. We critically analyze existing publications and organize them into a novel taxonomy, describing key aspects for practical usage. We finally discuss promising directions for future research. Our curated repository of annotated papers, continuously updated, is available at https://anonymous.4open.science/r/awesome-prompt-learning.
+</p>
+<p></p>
+<ul>
+  <li>
+    <p><i>The paper will be available soon!</i></p>
+  </li>
+</ul>
+
+<hr />
+
+<h4>FEAST: Retrieval-Augmented Multi-Hierarchical Food Classification for the FoodEx2 System</h4>
+<p style="color:gray; margin-top:-10px;">by L. Molfetta, A. Cocchieri, S. Fantazzini, G. Frisoni, L. Ragazzi, and G. Moro</p>
+
+<p>
+Hierarchical text classification (HTC) and extreme multi-label classification (XML) tasks face compounded challenges from complex label interdependencies, data sparsity, and extreme output dimensions. These challenges are exemplified in the European Food Safety Authority's FoodEx2 system—a standardized food classification framework essential for food consumption monitoring and contaminant exposure assessment across Europe. FoodEx2 coding transforms natural language food descriptions into a set of codes from multiple standardized hierarchies, but faces implementation barriers due to its complex structure. Given a food description (e.g., "organic yogurt"), the system identifies its base term ("yogurt"), all the applicable facet categories (e.g., "production method"), and then, every relevant facet descriptors to each category (e.g., "organic production"). While existing approaches perform adequately on well-balanced and semantically dense hierarchies, no work has been applied on the practical constraints imposed by the FoodEx2 system. The limited literature addressing such real-world scenarios further compounds these challenges. We propose FEAST (Food Embedding And Semantic Taxonomy), a novel retrieval-augmented framework that decomposes the FoodEx2 classification challenge into a three-stage approach: (1) base term identification, (2) multi-label facet prediction, and (3) facet descriptor assignment. By leveraging the system's hierarchical structure to guide training and performing deep metric learning, FEAST learns discriminative embeddings that mitigate data sparsity and improve generalization on rare and fine-grained labels. Evaluated on the multilingual FoodEx2 benchmark, FEAST outperforms the prior European's CNN baseline F1 scores by 12—38\% on rare classes. Code and models are released to support reproducibility at https://anonymous.4open.science/r/foodex2-coding-6741/
+</p>
+<p></p>
+<ul>
+  <li>
+    <p><i>The paper will be available soon!</i></p>
+  </li>
+</ul>
+
+<hr />
+
+<h4>Predicting Protein Functions with Ensemble Deep Learning and Protein Language Models</h4>
+<p style="color:gray; margin-top:-10px;">by G. Frisoni, M. Fuschi, and G. Moro</p>
+
+<p>
+Understanding protein functions enables deciphering cellular mechanisms and improving healthcare outcomes, from disease diagnosis to targeted therapy. We present GOMix, an ensemble learning method for predicting the functions of newly discovered proteins, packaged within an easy-to-use web application. By combining seven complementary base predictors---including sequence homology and protein language models, GOMix achieves competitive or state-of-the-art performance in the CAFA-3 challenge. Unlike existing solutions, GOMix is entirely open-source, modular, and computationally low-resource. The code is publicly available at https://github.com/disi-unibo-nlp/gomix (MIT License).
+</p>
+<p></p>
+<ul>
+  <li>
+    <p><i>The paper will be available soon!</i></p>
+  </li>
+</ul>
+
+</div>
+
+<div class="tags">
+    
+</div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="footer py-5 has-background-primary has-text-light">
+    <div class="container">
+        <div class="columns is-vcentered is-mobile">
+
+            <!-- Logo on the Left (Take Only Needed Space) -->
+            <div class="column is-narrow">
+                <a href="/">
+                    <img 
+                        src="/assets/css/logo.svg" 
+                        alt="UniboNLP Logo" 
+                        loading="lazy"
+                        class="navbar-logo"
+                    >
+                </a>
+            </div>
+
+            <!-- University Name on the Right -->
+            <div class="column has-text-right">
+                <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
+                    Department of Computer Science and Engineering (DISI),<br>
+                    University of Bologna,<br>
+                    Via dell'Università 50, I-47522 Cesena, Italy
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const footer = document.querySelector(".footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
+                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const viewportHeight = window.innerHeight;
+
+        if (pageHeight <= viewportHeight) {
+            document.body.classList.add("short-content");
+        } else {
+            document.body.classList.remove("short-content");
+        }
+    });
+</script>
+   
+        <script src="/assets/js/app.js" defer></script>
+        <script src="/assets/js/custom.js" defer></script>
+    </body>
+</html>
