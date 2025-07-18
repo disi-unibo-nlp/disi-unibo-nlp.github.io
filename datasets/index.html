@@ -239,6 +239,143 @@
 
 </div>
 
+
+<!-- <div class="content">
+  <h1 class="title">Datasets</h1>
+  <p class="subtitle">Explore our models and datasets organized by research theme.</p>
+</div>
+
+<div id="collections-container"></div>
+
+<style>
+  body {
+    padding-bottom: 6rem;
+  }
+
+  .collection-box {
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .dataset-card {
+    background-color: #fffbea;
+    border: 1px solid #f0e68c;
+  }
+
+  .model-card {
+    background-color: #eef8ff;
+    border: 1px solid #b3d8ff;
+  }
+</style>
+
+<script>
+  const orgName = "disi-unibo-nlp";
+
+  // Mappa delle collezioni: titolo, descrizione e prefisso nei nomi
+  const collections = {
+    foodex2: {
+      title: "🥗 FoodEx2 System",
+      description: "Datasets and Models for the FoodEx2 System Project",
+      match: name => name.includes("foodex2")
+    },
+    medgenie: {
+      title: "🧬 MedGENIE",
+      description: "MedGENIE models and datasets",
+      match: name => name.toLowerCase().includes("medgenie")
+    },
+    lam: {
+      title: "📩 LAM for Ticket Management",
+      description: "Datasets for the LAM lectures at UniBO",
+      match: name => name.includes("lam-customer-service")
+    },
+    summarization: {
+      title: "📝 LLMs for Summarization",
+      description: "Pre-trained models for summarization from AI Master sessions",
+      match: name => name.toLowerCase().includes("dialogs") || name.toLowerCase().includes("summar")
+    }
+  };
+
+  // Contenitore principale
+  const container = document.getElementById('collections-container');
+
+  // Funzione per creare una collection visuale
+  function renderCollection(key, items, type) {
+    const group = document.createElement('div');
+    group.className = 'collection-box';
+
+    const title = collections[key].title;
+    const desc = collections[key].description;
+
+    group.innerHTML = `
+      <h2 class="title is-4">${title}</h2>
+      <p class="subtitle is-6">${desc}</p>
+      <div class="columns is-multiline" id="group-${key}-${type}"></div>
+    `;
+
+    container.appendChild(group);
+
+    const grid = group.querySelector(`#group-${key}-${type}`);
+    items.forEach(item => {
+      const col = document.createElement('div');
+      col.className = 'column is-3-desktop is-6-tablet';
+
+      const isModel = type === "models";
+      const tag = isModel ? 'model-card' : 'dataset-card';
+      const url = isModel
+        ? `https://huggingface.co/${item.modelId}`
+        : `https://huggingface.co/datasets/${item.id}`;
+
+      const rawName = isModel ? item.modelId : item.id;
+      const title = rawName.replace("disi-unibo-nlp/", "");
+      const description = (item.description || item.cardData?.description || "").slice(0, 120);
+
+      col.innerHTML = `
+        <a href="${url}" target="_blank">
+          <div class="card ${tag}">
+            <div class="card-content">
+              <p class="title is-6">${title}</p>
+              
+            </div>
+          </div>
+        </a>
+      `;
+      grid.appendChild(col);
+    });
+  }
+
+  // Fetch datasets
+  fetch(`https://huggingface.co/api/datasets?author=${orgName}`)
+    .then(res => res.json())
+    .then(datasets => {
+      Object.keys(collections).forEach(key => {
+        const filtered = datasets.filter(ds => collections[key].match(ds.id));
+        if (filtered.length > 0) {
+          renderCollection(key, filtered, "datasets");
+        }
+      });
+    });
+
+    // 🔧 Forza il ricalcolo del layout
+    window.dispatchEvent(new Event('resize'));
+
+  // Fetch models
+  fetch(`https://huggingface.co/api/models?author=${orgName}`)
+    .then(res => res.json())
+    .then(models => {
+      Object.keys(collections).forEach(key => {
+        const filtered = models.filter(m => collections[key].match(m.modelId));
+        if (filtered.length > 0) {
+          renderCollection(key, filtered, "models");
+        }
+      });
+    });
+
+    // 🔧 Forza il ricalcolo del layout
+    window.dispatchEvent(new Event('resize'));
+</script> -->
                     </div>
                     
                 </div>
