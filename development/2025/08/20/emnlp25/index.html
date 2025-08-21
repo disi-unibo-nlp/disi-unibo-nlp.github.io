@@ -1,0 +1,249 @@
+<!doctype html>
+
+<html dir="ltr" lang="en" class="has-navbar-fixed-top">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Preload critical assets for faster rendering -->
+    <link rel="preload" href="/assets/css/app.css" as="style">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- Favicon Handling --> 
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
+    <!-- Apple Touch Icon (For iOS Devices) -->
+    <link rel="apple-touch-icon" href="/assets/css/logo.png">
+    <!-- Mask Icon (For Safari Pinned Tabs) -->
+    <link rel="mask-icon" href="/assets/css/logo.svg" color="#000000">
+    <!-- Alternative SVG Icon for Browsers that Support It -->
+    <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
+    <!-- External JavaScript Libraries -->
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY5EYLDPK0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QY5EYLDPK0');
+    </script> -->
+    <!-- FontAwesome Icons (Optimized for Performance) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+</head>
+    <body>  
+            
+        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <div class="container navigation">  
+        <!-- Logo on the Left -->
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                <img 
+                    src="/assets/css/logo6.svg" 
+                    alt="Website Logo" 
+                    class="navbar-logo"
+                    loading="lazy"
+                >
+            </a>
+            <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <div class="navbar-end" style="margin-right: 1.5rem;">
+                
+                    
+                        
+                            <a 
+                                href="/people/" 
+                                class="navbar-item "
+                            >People</a>
+                        
+                    
+                        
+                            <a 
+                                href="/publications/" 
+                                class="navbar-item "
+                            >Publications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/applications/" 
+                                class="navbar-item "
+                            >Applications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/projects/" 
+                                class="navbar-item "
+                            >Projects</a>
+                        
+                    
+                        
+                            <a 
+                                href="/datasets/" 
+                                class="navbar-item "
+                            >Datasets</a>
+                        
+                    
+                        
+                            <a 
+                                href="/theses/" 
+                                class="navbar-item "
+                            >Theses</a>
+                        
+                    
+                        
+                            <a 
+                                href="/deadlines/" 
+                                class="navbar-item "
+                            >Deadlines</a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+
+<section 
+    class="hero 
+        is-medium 
+        is-bold is-primary 
+        "
+    
+>
+    <div class="hero-body ">
+        <div class="container">
+            
+                <h1 class="title is-2">EMNLP 2025</h1>
+            
+                  
+            
+        </div>
+    </div>
+</section>     
+        <main class="section">
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column ">
+                        <div class="content">
+    
+        <p><i>Published: Aug 20, 2025</i></p>
+    
+    
+    
+    <p>We are happy to share that we will be at EMNLP 2025 with <b>2 long papers in the Main Track!</b> Catch us in <b>Suzhou, Cina</b> to learn more about <b>mathematical reasoning</b> and <b>tool retrieval</b>.</p>
+
+<hr />
+
+<h4>Can Large Language Models Win the International Mathematical Games?</h4>
+<p style="color:gray; margin-top:-10px;">by A. Cocchieri, L. Ragazzi, G. Tagliavini, L. Tordi, A. Carbonaro, and G. Moro</p>
+
+<p>
+Recent advances in large language models (LLMs) have demonstrated strong mathematical reasoning abilities, even in visual contexts, with some models surpassing human performance on existing benchmarks. However, these benchmarks lack structured age categorization, clearly defined skill requirements, and—crucially—were not designed to assess human performance in international competitions. To address these limitations, we introduce MathGames, a new benchmark of 2,183 high-quality mathematical problems (both text-only and multimodal) in an open-ended format, sourced from an international mathematical games championships. Spanning seven age groups and a skill-based taxonomy, MathGames enables a structured evaluation of LLMs' mathematical and logical reasoning abilities. Our experiments reveal a substantial gap between state-of-the-art LLMs and human participants—even 11-year-olds consistently outperform some of the strongest models—highlighting the need for advancements. Further, our detailed error analysis offers valuable insights to guide future research. The data is publicly available at https://anonymous.4open.science/r/math-games/.
+</p>
+<p></p>
+<ul>
+  <li>
+    <p>The paper will be available soon!</p>
+  </li>
+</ul>
+
+<hr />
+
+<h4>PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models</h4>
+<p style="color:gray; margin-top:-10px;">by L. Molfetta, G. Frisoni, N. Monaldini, and G. Moro</p>
+
+<p>
+Integrating external tools with Large Language Models (LLMs) has emerged as a promising paradigm for accomplishing complex tasks. Since LLMs still struggle to effectively manage large tool collections, researchers have begun exploring retrieval-based methods to pre-select the most relevant options, addressing input length and latency constraints. However, existing retrievers are often misaligned with tool-calling LLMs due to their separate training processes. This paper presents PORTS, a novel odds ratio preference optimization method for training retrievers aimed at tool selection. Using a perplexity-inspired preference signal from a frozen LLM, our approach fine-tunes a retriever to find helpful tools by optimizing the correlation between the selection probabilities and the downstream performances while jointly enforcing a contrastive semantic loss between documentation strings. The versatility of PORTS and its ability to significantly improve tool selection accuracy are demonstrated through extensive experiments on six datasets, two encoder models, and three LLMs with diverse prior knowledge. With low computational demands, our alignment process facilitates generalization to new queries and tools, proving valuable for practical applications with evolving toolsets.
+</p>
+<p></p>
+<ul>
+  <li>
+    <p>The paper will be available soon!</p>
+  </li>
+</ul>
+
+</div>
+
+<div class="tags">
+    
+</div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="footer py-5 has-background-primary has-text-light">
+    <div class="container">
+        <div class="columns is-vcentered is-mobile">
+
+            <!-- Logo on the Left (Take Only Needed Space) -->
+            <div class="column is-narrow">
+                <a href="/">
+                    <img 
+                        src="/assets/css/logo.svg" 
+                        alt="UniboNLP Logo" 
+                        loading="lazy"
+                        class="navbar-logo"
+                    >
+                </a>
+            </div>
+
+            <!-- University Name on the Right -->
+            <div class="column has-text-right">
+                <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
+                    Department of Computer Science and Engineering (DISI),<br>
+                    University of Bologna,<br>
+                    Via dell'Università 50, I-47522 Cesena, Italy
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const footer = document.querySelector(".footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
+                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const viewportHeight = window.innerHeight;
+
+        if (pageHeight <= viewportHeight) {
+            document.body.classList.add("short-content");
+        } else {
+            document.body.classList.remove("short-content");
+        }
+    });
+</script>
+   
+        <script src="/assets/js/app.js" defer></script>
+        <script src="/assets/js/custom.js" defer></script>
+    </body>
+</html>

@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://disi-unibo-nlp.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disi-unibo-nlp.github.io/" rel="alternate" type="text/html" /><updated>2025-07-23T07:59:03+00:00</updated><id>https://disi-unibo-nlp.github.io/feed.xml</id><title type="html">UniboNLP</title><subtitle>The Unibo Natural Language Processing Group</subtitle><entry><title type="html">ECAI 2025</title><link href="https://disi-unibo-nlp.github.io/development/2025/07/16/ecai25/" rel="alternate" type="text/html" title="ECAI 2025" /><published>2025-07-16T09:55:00+00:00</published><updated>2025-07-16T09:55:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/07/16/ecai25</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/07/16/ecai25/">&lt;p&gt;We are proud to announce that our group will be at ECAI 2025 with &lt;b&gt;3 long papers: 2 works in the Main track and 1 in the Demonstrations track!&lt;/b&gt; Catch us in &lt;b&gt;Bologna, Italy&lt;/b&gt; to learn more about &lt;b&gt;automatic prompt learning&lt;/b&gt;, &lt;b&gt;hierarchical extreme multi-label text classification in the food domain&lt;/b&gt;, and &lt;b&gt;protein language models&lt;/b&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://disi-unibo-nlp.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disi-unibo-nlp.github.io/" rel="alternate" type="text/html" /><updated>2025-08-21T07:10:34+00:00</updated><id>https://disi-unibo-nlp.github.io/feed.xml</id><title type="html">UniboNLP</title><subtitle>The Unibo Natural Language Processing Group</subtitle><entry><title type="html">EMNLP 2025</title><link href="https://disi-unibo-nlp.github.io/development/2025/08/20/emnlp25/" rel="alternate" type="text/html" title="EMNLP 2025" /><published>2025-08-20T07:55:00+00:00</published><updated>2025-08-20T07:55:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/08/20/emnlp25</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/08/20/emnlp25/">&lt;p&gt;We are happy to share that we will be at EMNLP 2025 with &lt;b&gt;2 long papers in the Main Track!&lt;/b&gt; Catch us in &lt;b&gt;Suzhou, Cina&lt;/b&gt; to learn more about &lt;b&gt;mathematical reasoning&lt;/b&gt; and &lt;b&gt;tool retrieval&lt;/b&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;Can Large Language Models Win the International Mathematical Games?&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by A. Cocchieri, L. Ragazzi, G. Tagliavini, L. Tordi, A. Carbonaro, and G. Moro&lt;/p&gt;
+
+&lt;p&gt;
+Recent advances in large language models (LLMs) have demonstrated strong mathematical reasoning abilities, even in visual contexts, with some models surpassing human performance on existing benchmarks. However, these benchmarks lack structured age categorization, clearly defined skill requirements, and—crucially—were not designed to assess human performance in international competitions. To address these limitations, we introduce MathGames, a new benchmark of 2,183 high-quality mathematical problems (both text-only and multimodal) in an open-ended format, sourced from an international mathematical games championships. Spanning seven age groups and a skill-based taxonomy, MathGames enables a structured evaluation of LLMs' mathematical and logical reasoning abilities. Our experiments reveal a substantial gap between state-of-the-art LLMs and human participants—even 11-year-olds consistently outperform some of the strongest models—highlighting the need for advancements. Further, our detailed error analysis offers valuable insights to guide future research. The data is publicly available at https://anonymous.4open.science/r/math-games/.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The paper will be available soon!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by L. Molfetta, G. Frisoni, N. Monaldini, and G. Moro&lt;/p&gt;
+
+&lt;p&gt;
+Integrating external tools with Large Language Models (LLMs) has emerged as a promising paradigm for accomplishing complex tasks. Since LLMs still struggle to effectively manage large tool collections, researchers have begun exploring retrieval-based methods to pre-select the most relevant options, addressing input length and latency constraints. However, existing retrievers are often misaligned with tool-calling LLMs due to their separate training processes. This paper presents PORTS, a novel odds ratio preference optimization method for training retrievers aimed at tool selection. Using a perplexity-inspired preference signal from a frozen LLM, our approach fine-tunes a retriever to find helpful tools by optimizing the correlation between the selection probabilities and the downstream performances while jointly enforcing a contrastive semantic loss between documentation strings. The versatility of PORTS and its ability to significantly improve tool selection accuracy are demonstrated through extensive experiments on six datasets, two encoder models, and three LLMs with diverse prior knowledge. With low computational demands, our alignment process facilitates generalization to new queries and tools, proving valuable for practical applications with evolving toolsets.
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The paper will be available soon!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are happy to share that we will be at EMNLP 2025 with 2 long papers in the Main Track! Catch us in Suzhou, Cina to learn more about mathematical reasoning and tool retrieval.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://2025.emnlp.org/assets/images/suzhou_city/emnlp_2025_background.jpg" /><media:content medium="image" url="https://2025.emnlp.org/assets/images/suzhou_city/emnlp_2025_background.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">ECAI 2025</title><link href="https://disi-unibo-nlp.github.io/development/2025/07/16/ecai25/" rel="alternate" type="text/html" title="ECAI 2025" /><published>2025-07-16T09:55:00+00:00</published><updated>2025-07-16T09:55:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/07/16/ecai25</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/07/16/ecai25/">&lt;p&gt;We are proud to announce that our group will be at ECAI 2025 with &lt;b&gt;3 long papers: 2 works in the Main track and 1 in the Demonstrations track!&lt;/b&gt; Catch us in &lt;b&gt;Bologna, Italy&lt;/b&gt; to learn more about &lt;b&gt;automatic prompt learning&lt;/b&gt;, &lt;b&gt;hierarchical extreme multi-label text classification in the food domain&lt;/b&gt;, and &lt;b&gt;protein language models&lt;/b&gt;.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -205,41 +235,4 @@ Scientific document summarization aims to condense complex and long articles in 
   &lt;li&gt;
     &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://aclanthology.org/2024.findings-acl.561/&quot;&gt;Check out the paper!&lt;/a&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are delighted to announce that we will be at ACL 2024 with 2 long papers in the Main and Findings Track! Catch us in Bangkok, Thailand to learn more about open-domain QA and scientific text summarization.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://github.com/acl-org/acl-2024/blob/main/assets/images/bangkok/bangkok-banner.jpeg?raw=true" /><media:content medium="image" url="https://github.com/acl-org/acl-2024/blob/main/assets/images/bangkok/bangkok-banner.jpeg?raw=true" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">LLM Slide Deck</title><link href="https://disi-unibo-nlp.github.io/development/2024/04/17/llm-slides/" rel="alternate" type="text/html" title="LLM Slide Deck" /><published>2024-04-17T00:00:00+00:00</published><updated>2024-04-17T00:00:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2024/04/17/llm-slides</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2024/04/17/llm-slides/">&lt;p&gt;🤖 We are proud to share that our group has curated a &lt;b&gt;short review of the state-of-the-art within the Large Language Model (LLM) literature&lt;/b&gt;. Dive into the cutting-edge world of LLMs with our latest slide deck!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Developed in Text Mining and NLP, LLMs are driving a breakthrough in AI and human-machine interaction. They impact a multitude of tasks and domains and are poised to revolutionize society as a whole. In a future where tokens function as currency, mastering and implementing these subjects is an imperative skill in academic and industrial contexts.&lt;/p&gt;
-
-&lt;p&gt;🔎 In our review, explore topics such as:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;LLM applications&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Preliminaries&lt;/strong&gt; (e.g., transformers, scaling laws, emerging abilities)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Open issues&lt;/strong&gt; (e.g., black-box behavior, training costs, hallucinations, knowledge recency and editing, lexical superficiality, human reporting bias, reasoning inconsistency)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Developer perspective&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;Models&lt;/em&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Datasets&lt;/em&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Prompting&lt;/em&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Training techniques&lt;/em&gt; (e.g., instruction fine-tuning, adapter fine-tuning, mixture-of-experts)&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Optimization&lt;/em&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;Retrieval-augmented generation&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Finally, we briefly introduce the contributions of our group in the last three years.&lt;/p&gt;
-
-&lt;p&gt;Ready to level up your understanding of LLMs?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;a class=&quot;link&quot; href=&quot;https://www.dropbox.com/scl/fi/hdn98k7paq0yca91zovow/LLM_NLP_Group_DISI_UniBO_Cesena_Campus_v2.pdf?rlkey=d2yw9x8l25glo3317i7cznov4&amp;amp;dl=0&quot;&gt;Link to the slides&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a class=&quot;link&quot; href=&quot;https://www.dropbox.com/scl/fi/rtry6md8xzasr9lsyxv88/LLM_NLP_Group_DISI_UniBO_Cesena_Campus_2x.pdf?rlkey=5xb27etx4o4xfle94ubn0cu2p&amp;amp;dl=0&quot;&gt;Compact printable version&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;#NLP #AI #GenerativeAI #LLMs #Research #Innovation&lt;/p&gt;</content><author><name></name></author><summary type="html">🤖 We are proud to share that our group has curated a short review of the state-of-the-art within the Large Language Model (LLM) literature. Dive into the cutting-edge world of LLMs with our latest slide deck!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://drive.google.com/thumbnail?sz=w1920&amp;id=1eVN7Cw3mBZfrQXwYGT0jNjoAMMfPsnt5" /><media:content medium="image" url="https://drive.google.com/thumbnail?sz=w1920&amp;id=1eVN7Cw3mBZfrQXwYGT0jNjoAMMfPsnt5" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are delighted to announce that we will be at ACL 2024 with 2 long papers in the Main and Findings Track! Catch us in Bangkok, Thailand to learn more about open-domain QA and scientific text summarization.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://github.com/acl-org/acl-2024/blob/main/assets/images/bangkok/bangkok-banner.jpeg?raw=true" /><media:content medium="image" url="https://github.com/acl-org/acl-2024/blob/main/assets/images/bangkok/bangkok-banner.jpeg?raw=true" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
