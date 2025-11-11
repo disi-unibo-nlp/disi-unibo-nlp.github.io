@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://disi-unibo-nlp.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disi-unibo-nlp.github.io/" rel="alternate" type="text/html" /><updated>2025-11-09T21:07:06+00:00</updated><id>https://disi-unibo-nlp.github.io/feed.xml</id><title type="html">UniboNLP</title><subtitle>The Unibo Natural Language Processing Group</subtitle><entry><title type="html">PhD Course</title><link href="https://disi-unibo-nlp.github.io/development/2025/10/22/phd/" rel="alternate" type="text/html" title="PhD Course" /><published>2025-10-22T00:00:00+00:00</published><updated>2025-10-22T00:00:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/10/22/phd</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/10/22/phd/">&lt;p&gt;Cutting-Edge Text Mining: from Consolidated Natural Language Processing Methods to Advanced Large Language Models.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://disi-unibo-nlp.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://disi-unibo-nlp.github.io/" rel="alternate" type="text/html" /><updated>2025-11-11T11:08:38+00:00</updated><id>https://disi-unibo-nlp.github.io/feed.xml</id><title type="html">UniboNLP</title><subtitle>The Unibo Natural Language Processing Group</subtitle><entry><title type="html">AAAI 2026</title><link href="https://disi-unibo-nlp.github.io/development/2025/11/10/aaai26/" rel="alternate" type="text/html" title="AAAI 2026" /><published>2025-11-10T10:50:07+00:00</published><updated>2025-11-10T10:50:07+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/11/10/aaai26</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/11/10/aaai26/">&lt;p&gt;We are proud to share that our group will be at AAAI 2026 with &lt;b&gt;1 long paper in the Main Track!&lt;/b&gt; Get in touch with us to learn more on &lt;b&gt;graph-based visual prompting&lt;/b&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting&lt;/h4&gt;
+&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Frisoni, L. Molfetta, M. Buzzoni, and G. Moro&lt;/p&gt;
+
+&lt;p&gt;
+Recent advances in training-free visual prompting, such as Set-of-Mark, have emerged as a promising direction for enhancing the grounding capabilities of multimodal language models (MLMs). These techniques operate by partitioning the input image into object regions and annotating them with marks—predominantly boxes with numeric identifiers—before feeding the augmented image to the MLM. However, these approaches treat marked objects as isolated entities, failing to capture the relationships between them. On these premises, we propose Graph-of-Mark (GoM), the first pixel-level visual prompting technique that overlays scene graphs onto the input image for spatial reasoning tasks. We evaluate GoM across 3 open-source MLMs and 4 different datasets, conducting extensive ablations on drawn components and investigating the impact of auxiliary graph descriptions in the text prompt. Our results demonstrate that GoM consistently improves the zero-shot capability of MLMs in interpreting object positions and relative directions, improving base accuracy in visual question answering and localization up to 11 percentage points
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The paper will be available soon!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;hr /&gt;</content><author><name></name></author><summary type="html">We are proud to share that our group will be at AAAI 2026 with 1 long paper in the Main Track! Get in touch with us to learn more on graph-based visual prompting.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://aaai.org/wp-content/uploads/2025/01/iStock-491056644-60dpi.jpg" /><media:content medium="image" url="https://aaai.org/wp-content/uploads/2025/01/iStock-491056644-60dpi.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">PhD Course</title><link href="https://disi-unibo-nlp.github.io/development/2025/10/22/phd/" rel="alternate" type="text/html" title="PhD Course" /><published>2025-10-22T00:00:00+00:00</published><updated>2025-10-22T00:00:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2025/10/22/phd</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2025/10/22/phd/">&lt;p&gt;Cutting-Edge Text Mining: from Consolidated Natural Language Processing Methods to Advanced Large Language Models.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -201,34 +218,4 @@ Computational fact-checking (FC) relies on supervised models to verify claims ba
   &lt;li&gt;
     &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://aclanthology.org/2024.emnlp-main.675/&quot;&gt;Check out the paper!&lt;/a&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are glad to share that that our group will be at EMNLP 2024 with 1 long paper in the Main Track! Catch us in Miami, Florida to learn more about data generation for multimodal computational fact-checking.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://github.com/acl-org/emnlp-2024/blob/main/assets/images/miami/EMNLP_2024_Website_Image.png?raw=true" /><media:content medium="image" url="https://github.com/acl-org/emnlp-2024/blob/main/assets/images/miami/EMNLP_2024_Website_Image.png?raw=true" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI and Law</title><link href="https://disi-unibo-nlp.github.io/development/2024/09/29/ailaw/" rel="alternate" type="text/html" title="AI and Law" /><published>2024-09-29T00:00:00+00:00</published><updated>2024-09-29T00:00:00+00:00</updated><id>https://disi-unibo-nlp.github.io/development/2024/09/29/ailaw</id><content type="html" xml:base="https://disi-unibo-nlp.github.io/development/2024/09/29/ailaw/">&lt;p&gt;UniboNLP has &lt;b&gt;2 long papers published in Artificial Intelligence and Law 2024.&lt;/b&gt; Read to learn more on &lt;b&gt;Italian text summarization of constitutional articles&lt;/b&gt; and &lt;b&gt;multilingual case summarization&lt;/b&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4&gt;LAWSUIT: a LArge expert-Written SUmmarization dataset of ITalian constitutional court verdicts&lt;/h4&gt;
-&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by L. Ragazzi, G. Moro, S. Guidi, and G. Frisoni&lt;/p&gt;
-
-&lt;p&gt;
-Large-scale public datasets are vital for driving the progress of abstractive summarization, especially in law, where documents have highly specialized jargon. However, the available resources are English-centered, limiting research advancements in other languages. This paper introduces LAWSUIT, a collection of 14K Italian legal verdicts with expert-authored abstractive maxims drawn from the Constitutional Court of the Italian Republic. LAWSUIT presents an arduous task with lengthy source texts and evenly distributed salient content. We offer extensive experiments with sequence-to-sequence and segmentation-based approaches, revealing that the latter achieve better results in full and few-shot settings. We openly release LAWSUIT to foster the development and automation of real-world legal applications.
-&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://link.springer.com/article/10.1007/s10506-024-09414-w&quot;&gt;Check out the paper!&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h4&gt;Multi-Language Transfer Learning for Low-Resource Legal Case Summarization&lt;/h4&gt;
-&lt;p style=&quot;color:gray; margin-top:-10px;&quot;&gt;by G. Moro, N. Piscaglia, L. Ragazzi, and P. Italiani&lt;/p&gt;
-
-&lt;p&gt;
-Analyzing and evaluating legal case reports are labor-intensive tasks for judges and lawyers, who usually base their decisions on report abstracts, legal principles, and commonsense reasoning. Thus, summarizing legal documents is time-consuming and requires excellent human expertise. Moreover, public legal corpora of specific languages are almost unavailable. This paper proposes a transfer learning approach with extractive and abstractive techniques to cope with the lack of labeled legal summarization datasets, namely a low-resource scenario. In particular, we conducted extensive multi- and cross-language experiments. The proposed work outperforms the state-of-the-art results of extractive summarization on the Australian Legal Case Reports dataset and sets a new baseline for abstractive summarization. Finally, syntactic and semantic metrics assessments have been carried out to evaluate the accuracy and the factual consistency of the machine-generated legal summaries.
-&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;a target=&quot;_blank&quot; class=&quot;link&quot; href=&quot;https://link.springer.com/article/10.1007/s10506-023-09373-8&quot;&gt;Check out the paper!&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">UniboNLP has 2 long papers published in Artificial Intelligence and Law 2024. Read to learn more on Italian text summarization of constitutional articles and multilingual case summarization.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i0.wp.com/algorithmxlab.com/wp-content/uploads/2019/06/Top-10-Applications-of-Artificial-Intelligence-in-Law.jpg?fit=1900%2C1055&amp;ssl=1" /><media:content medium="image" url="https://i0.wp.com/algorithmxlab.com/wp-content/uploads/2019/06/Top-10-Applications-of-Artificial-Intelligence-in-Law.jpg?fit=1900%2C1055&amp;ssl=1" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We are glad to share that that our group will be at EMNLP 2024 with 1 long paper in the Main Track! Catch us in Miami, Florida to learn more about data generation for multimodal computational fact-checking.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://github.com/acl-org/emnlp-2024/blob/main/assets/images/miami/EMNLP_2024_Website_Image.png?raw=true" /><media:content medium="image" url="https://github.com/acl-org/emnlp-2024/blob/main/assets/images/miami/EMNLP_2024_Website_Image.png?raw=true" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

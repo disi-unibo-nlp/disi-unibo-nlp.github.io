@@ -1,0 +1,237 @@
+<!doctype html>
+
+<html dir="ltr" lang="en" class="has-navbar-fixed-top">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Preload critical assets for faster rendering -->
+    <link rel="preload" href="/assets/css/app.css" as="style">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- Favicon Handling --> 
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
+    <!-- Apple Touch Icon (For iOS Devices) -->
+    <link rel="apple-touch-icon" href="/assets/css/logo.png">
+    <!-- Mask Icon (For Safari Pinned Tabs) -->
+    <link rel="mask-icon" href="/assets/css/logo.svg" color="#000000">
+    <!-- Alternative SVG Icon for Browsers that Support It -->
+    <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
+    <!-- External JavaScript Libraries -->
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY5EYLDPK0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QY5EYLDPK0');
+    </script> -->
+    <!-- FontAwesome Icons (Optimized for Performance) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+</head>
+    <body>  
+            
+        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <div class="container navigation">  
+        <!-- Logo on the Left -->
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                <img 
+                    src="/assets/css/logo6.svg" 
+                    alt="Website Logo" 
+                    class="navbar-logo"
+                    loading="lazy"
+                >
+            </a>
+            <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <div class="navbar-end" style="margin-right: 1.5rem;">
+                
+                    
+                        
+                            <a 
+                                href="/people/" 
+                                class="navbar-item "
+                            >People</a>
+                        
+                    
+                        
+                            <a 
+                                href="/publications/" 
+                                class="navbar-item "
+                            >Publications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/applications/" 
+                                class="navbar-item "
+                            >Applications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/projects/" 
+                                class="navbar-item "
+                            >Projects</a>
+                        
+                    
+                        
+                            <a 
+                                href="/datasets/" 
+                                class="navbar-item "
+                            >Datasets</a>
+                        
+                    
+                        
+                            <a 
+                                href="/theses/" 
+                                class="navbar-item "
+                            >Theses</a>
+                        
+                    
+                        
+                            <a 
+                                href="/deadlines/" 
+                                class="navbar-item "
+                            >Deadlines</a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+
+<section 
+    class="hero 
+        is-medium 
+        is-bold is-primary 
+        "
+    
+>
+    <div class="hero-body ">
+        <div class="container">
+            
+                <h1 class="title is-2">AAAI 2026</h1>
+            
+                  
+            
+        </div>
+    </div>
+</section>     
+        <main class="section">
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column ">
+                        <div class="content">
+    
+        <p><i>Published: Nov 10, 2025</i></p>
+    
+    
+    
+    <p>We are proud to share that our group will be at AAAI 2026 with <b>1 long paper in the Main Track!</b> Get in touch with us to learn more on <b>graph-based visual prompting</b>.</p>
+
+<hr />
+
+<h4>Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting</h4>
+<p style="color:gray; margin-top:-10px;">by G. Frisoni, L. Molfetta, M. Buzzoni, and G. Moro</p>
+
+<p>
+Recent advances in training-free visual prompting, such as Set-of-Mark, have emerged as a promising direction for enhancing the grounding capabilities of multimodal language models (MLMs). These techniques operate by partitioning the input image into object regions and annotating them with marks—predominantly boxes with numeric identifiers—before feeding the augmented image to the MLM. However, these approaches treat marked objects as isolated entities, failing to capture the relationships between them. On these premises, we propose Graph-of-Mark (GoM), the first pixel-level visual prompting technique that overlays scene graphs onto the input image for spatial reasoning tasks. We evaluate GoM across 3 open-source MLMs and 4 different datasets, conducting extensive ablations on drawn components and investigating the impact of auxiliary graph descriptions in the text prompt. Our results demonstrate that GoM consistently improves the zero-shot capability of MLMs in interpreting object positions and relative directions, improving base accuracy in visual question answering and localization up to 11 percentage points
+</p>
+<p></p>
+<ul>
+  <li>
+    <p>The paper will be available soon!</p>
+  </li>
+</ul>
+<p></p>
+<hr />
+
+
+</div>
+
+<div class="tags">
+    
+</div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="footer py-5 has-background-primary has-text-light">
+    <div class="container">
+        <div class="columns is-vcentered is-mobile">
+
+            <!-- Logo on the Left (Take Only Needed Space) -->
+            <div class="column is-narrow">
+                <a href="/">
+                    <img 
+                        src="/assets/css/logo.svg" 
+                        alt="UniboNLP Logo" 
+                        loading="lazy"
+                        class="navbar-logo"
+                    >
+                </a>
+            </div>
+
+            <!-- University Name on the Right -->
+            <div class="column has-text-right">
+                <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
+                    Department of Computer Science and Engineering (DISI),<br>
+                    University of Bologna,<br>
+                    Via dell'Università 50, I-47522 Cesena, Italy
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const footer = document.querySelector(".footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
+                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const viewportHeight = window.innerHeight;
+
+        if (pageHeight <= viewportHeight) {
+            document.body.classList.add("short-content");
+        } else {
+            document.body.classList.remove("short-content");
+        }
+    });
+</script>
+   
+        <script src="/assets/js/app.js" defer></script>
+        <script src="/assets/js/custom.js" defer></script>
+    </body>
+</html>
