@@ -1,0 +1,249 @@
+<!doctype html>
+
+<html dir="ltr" lang="en" class="has-navbar-fixed-top">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Preload critical assets for faster rendering -->
+    <link rel="preload" href="/assets/css/app.css" as="style">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- Favicon Handling --> 
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
+    <!-- Apple Touch Icon (For iOS Devices) -->
+    <link rel="apple-touch-icon" href="/assets/css/logo.png">
+    <!-- Mask Icon (For Safari Pinned Tabs) -->
+    <link rel="mask-icon" href="/assets/css/logo.svg" color="#000000">
+    <!-- Alternative SVG Icon for Browsers that Support It -->
+    <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
+    <!-- External JavaScript Libraries -->
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY5EYLDPK0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QY5EYLDPK0');
+    </script> -->
+    <!-- FontAwesome Icons (Optimized for Performance) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+</head>
+    <body>  
+            
+        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <div class="container navigation">  
+        <!-- Logo on the Left -->
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                <img 
+                    src="/assets/css/logo6.svg" 
+                    alt="Website Logo" 
+                    class="navbar-logo"
+                    loading="lazy"
+                >
+            </a>
+            <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <div class="navbar-end" style="margin-right: 1.5rem;">
+                
+                    
+                        
+                            <a 
+                                href="/people/" 
+                                class="navbar-item "
+                            >People</a>
+                        
+                    
+                        
+                            <a 
+                                href="/publications/" 
+                                class="navbar-item "
+                            >Publications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/applications/" 
+                                class="navbar-item "
+                            >Applications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/projects/" 
+                                class="navbar-item "
+                            >Projects</a>
+                        
+                    
+                        
+                            <a 
+                                href="/datasets/" 
+                                class="navbar-item "
+                            >Datasets</a>
+                        
+                    
+                        
+                            <a 
+                                href="/theses/" 
+                                class="navbar-item "
+                            >Theses</a>
+                        
+                    
+                        
+                            <a 
+                                href="/deadlines/" 
+                                class="navbar-item "
+                            >Deadlines</a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+
+<section 
+    class="hero 
+        is-medium 
+        is-bold is-primary 
+        "
+    
+>
+    <div class="hero-body ">
+        <div class="container">
+            
+                <h1 class="title is-2">EACL 2026</h1>
+            
+                  
+            
+        </div>
+    </div>
+</section>     
+        <main class="section">
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column ">
+                        <div class="content">
+    
+        <p><i>Published: Jan 3, 2026</i></p>
+    
+    
+    
+    <p>We are delighted to announce that we will be at EACL 2026 with <b>2 long papers in the Main and Findings Track!</b> Catch us in <b>Rabat, Morocco</b> to learn more about <b>medical reliability</b> and <b>multimodal hate speech detection</b>.</p>
+
+<hr />
+
+<h4>"ReMedQA: Are We Done With Medical Multiple-Choice Benchmarks?</h4>
+<p style="color:gray; margin-top:-10px;">by A. Cocchieri, L. Ragazzi, G. Tagliavini, and G. Moro</p>
+
+<p>
+Medical multiple-choice question answering (MCQA) benchmarks report near-human accuracy, with some approaching saturation and fueling claims of clinical readiness. Yet a single accuracy score is a poor proxy for competence: models that change answers under minor perturbations cannot be considered reliable. We argue that reliability underpins accuracy–only consistent predictions make correctness meaningful. To address this, we release ReMedQA, a benchmark suite that augments three standard medical MCQA datasets with open-answer variants and systematically perturbed items. Building on this design, we introduce ReAcc and ReCon, two reliability metrics: ReAcc measures the proportion of questions answered correctly across all variations, while ReCon measures the proportion answered consistently regardless of correctness. Our evaluation shows that high MCQA accuracy masks low reliability: models remain sensitive to format and perturbation changes, and domain specialization offers no robustness gain. MCQA further underestimates smaller models while inflating large ones that exploit structural cues–with some producing correct answers without seeing the question. These findings show that, despite near-saturated accuracy, we are not yet done with medical multiple-choice benchmarks.
+</p>
+<p></p>
+<ul>
+  <li>
+    <p>The paper will be available soon!</p>
+  </li>
+</ul>
+
+<hr />
+
+<h4>MemeWeaver: Inter-Meme Graph Reasoning for Sexism and Misogyny Detection</h4>
+<p style="color:gray; margin-top:-10px;">by P. Italiani, D. G. Gómez, L. Ragazzi, G. Moro, and P. Rosso</p>
+
+<p>
+Women are twice as likely as men to face online harassment due to their gender. Despite recent advances in multimodal content moderation, most approaches still overlook the social dynamics behind this phenomenon, where perpetrators reinforce prejudices and group identity within like-minded communities. Graph-based methods offer a promising way to capture such interactions, yet existing solutions remain limited by heuristic graph construction, shallow modality fusion, and instance-level reasoning. In this work, we present MemeWeaver, an end-to-end trainable multimodal framework for detecting sexism and misogyny through a novel inter-meme graph reasoning mechanism. We systematically evaluate multiple visual-textual fusion strategies and show that our approach consistently outperforms state-of-the-art baselines on the MAMI and EXIST benchmarks, while achieving faster training convergence. Further analyses reveal that the learned graph structure captures semantically meaningful patterns, offering valuable insights into the relational nature of online hate.
+</p>
+<p></p>
+<ul>
+  <li>
+    <p>The paper will be available soon!</p>
+  </li>
+</ul>
+
+</div>
+
+<div class="tags">
+    
+</div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="footer py-5 has-background-primary has-text-light">
+    <div class="container">
+        <div class="columns is-vcentered is-mobile">
+
+            <!-- Logo on the Left (Take Only Needed Space) -->
+            <div class="column is-narrow">
+                <a href="/">
+                    <img 
+                        src="/assets/css/logo.svg" 
+                        alt="UniboNLP Logo" 
+                        loading="lazy"
+                        class="navbar-logo"
+                    >
+                </a>
+            </div>
+
+            <!-- University Name on the Right -->
+            <div class="column has-text-right">
+                <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
+                    Department of Computer Science and Engineering (DISI),<br>
+                    University of Bologna,<br>
+                    Via dell'Università 50, I-47522 Cesena, Italy
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const footer = document.querySelector(".footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
+                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const viewportHeight = window.innerHeight;
+
+        if (pageHeight <= viewportHeight) {
+            document.body.classList.add("short-content");
+        } else {
+            document.body.classList.remove("short-content");
+        }
+    });
+</script>
+   
+        <script src="/assets/js/app.js" defer></script>
+        <script src="/assets/js/custom.js" defer></script>
+    </body>
+</html>
