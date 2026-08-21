@@ -1,0 +1,226 @@
+<!doctype html>
+
+<html dir="ltr" lang="en" class="has-navbar-fixed-top">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Preload critical assets for faster rendering -->
+    <link rel="preload" href="/assets/css/app.css" as="style">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- Favicon Handling --> 
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
+    <!-- Apple Touch Icon (For iOS Devices) -->
+    <link rel="apple-touch-icon" href="/assets/css/logo.png">
+    <!-- Mask Icon (For Safari Pinned Tabs) -->
+    <link rel="mask-icon" href="/assets/css/logo.svg" color="#000000">
+    <!-- Alternative SVG Icon for Browsers that Support It -->
+    <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
+    <!-- External JavaScript Libraries -->
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY5EYLDPK0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QY5EYLDPK0');
+    </script> -->
+    <!-- FontAwesome Icons (Optimized for Performance) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+</head>
+    <body>  
+            
+        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <div class="container navigation">  
+        <!-- Logo on the Left -->
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                <img 
+                    src="/assets/css/logo6.svg" 
+                    alt="Website Logo" 
+                    class="navbar-logo"
+                    loading="lazy"
+                >
+            </a>
+            <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navMenu"
+                :class="{ 'is-active': openNav }"
+                x-on:click="openNav = !openNav"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <div class="navbar-end" style="margin-right: 1.5rem;">
+                
+                    
+                        
+                            <a 
+                                href="/people/" 
+                                class="navbar-item "
+                            >People</a>
+                        
+                    
+                        
+                            <a 
+                                href="/publications/" 
+                                class="navbar-item "
+                            >Publications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/applications/" 
+                                class="navbar-item "
+                            >Applications</a>
+                        
+                    
+                        
+                            <a 
+                                href="/projects/" 
+                                class="navbar-item "
+                            >Projects</a>
+                        
+                    
+                        
+                            <a 
+                                href="/theses/" 
+                                class="navbar-item "
+                            >Theses</a>
+                        
+                    
+                        
+                            <a 
+                                href="/deadlines/" 
+                                class="navbar-item "
+                            >Deadlines</a>
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+
+<section 
+    class="hero 
+        is-medium 
+        is-bold is-primary 
+        "
+    
+>
+    <div class="hero-body ">
+        <div class="container">
+            
+                <h1 class="title is-2">CIKM 2026 - Rome 🇮🇹</h1>
+            
+                  
+            
+        </div>
+    </div>
+</section>     
+        <main class="section">
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column ">
+                        <div class="content">
+    
+        <p><i>Published: Jul 8, 2026</i></p>
+    
+    
+    
+    <p>We are delighted to announce that the <b>Third Workshop on Knowledge-Enhanced Information Retrieval (KEIR)</b> has been accepted at <b>CIKM 2026</b>! Join us in <b>Rome, Italy</b>, on <b>November 8, 2026</b>, for a half-day, in-person workshop bringing together researchers and practitioners from IR, NLP, data mining, and knowledge management.</p>
+
+<hr />
+
+<h4>KEIR @ CIKM 2026: The Third Workshop on Knowledge-Enhanced Information Retrieval</h4>
+<p style="color:gray; margin-top:-10px;">organized by G. Frisoni, L. Ragazzi, G. Moro, Z. Meng, J. Fang, and Y. Hou</p>
+
+<p> Much of modern information retrieval (IR) now relies on pretrained language models whose parametric knowledge has driven strong gains in semantic understanding. Yet, this knowledge is frozen at training time, opaque, and limited in its coverage of long-tail, domain-specific, and fast-changing information, yielding imprecise, factually inaccurate, or poorly grounded results. Knowledge-enhanced IR addresses this by augmenting retrieval systems—and the language models that power them—with external knowledge: unstructured or structured, gold or synthetic, increasingly across modalities. Large language models are now reshaping how this knowledge is acquired and integrated—for example, autonomous agents that plan, reason, and decide what to search; automated knowledge curation and linking; and systems that interleave retrieval and generation, learning when to consult external evidence and when to answer from parametric knowledge. The Third Workshop on Knowledge-Enhanced Information Retrieval (KEIR @ CIKM 2026) gathers researchers and practitioners from IR, natural language processing, data mining, and knowledge management to advance the principled integration of external knowledge into IR. KEIR welcomes both methodological and applied contributions, with particular attention to knowledge-intensive, domain-sensitive fields such as science, medicine, law, and finance, where factuality, trust, and discovery are paramount.
+</p>
+
+<p> The program will combine invited keynote talks, poster presentations, and a closing community panel with a live survey. We welcome short and long submissions, including original and work-in-progress research, position and applied papers, resources, and demos. Submissions will undergo double-blind review, with each paper evaluated by at least three reviewers. </p>
+<h4>Important dates</h4>
+<ul> <li><b>Paper submission:</b> September 13, 2026</li> <li><b>Notification:</b> September 23, 2026</li> <li><b>Workshop:</b> November 8, 2026</li> </ul>
+<p> Workshop papers will not appear in the CIKM proceedings, allowing authors to submit extended versions elsewhere. Authors may also opt for consideration of extended and revised versions in a Springer LNCS post-proceedings volume. </p>
+<ul> <li><a href="https://keir-workshop.github.io">Workshop website and Call for Papers</a></li> <li><a href="https://cikm2026.diag.uniroma1.it">CIKM 2026 website</a></li> </ul>
+
+</div>
+
+<div class="tags">
+    
+</div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="footer py-5 has-background-primary has-text-light">
+    <div class="container">
+        <div class="columns is-vcentered is-mobile">
+
+            <!-- Logo on the Left (Take Only Needed Space) -->
+            <div class="column is-narrow">
+                <a href="/">
+                    <img 
+                        src="/assets/css/logo.svg" 
+                        alt="UniboNLP Logo" 
+                        loading="lazy"
+                        class="navbar-logo"
+                    >
+                </a>
+            </div>
+
+            <!-- University Name on the Right -->
+            <div class="column has-text-right">
+                <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
+                    Department of Computer Science and Engineering (DISI),<br>
+                    University of Bologna,<br>
+                    Via dell'Università 50, I-47522 Cesena, Italy
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const footer = document.querySelector(".footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
+                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const viewportHeight = window.innerHeight;
+
+        if (pageHeight <= viewportHeight) {
+            document.body.classList.add("short-content");
+        } else {
+            document.body.classList.remove("short-content");
+        }
+    });
+</script>
+   
+        <script src="/assets/js/app.js" defer></script>
+        <script src="/assets/js/custom.js" defer></script>
+    </body>
+</html>
