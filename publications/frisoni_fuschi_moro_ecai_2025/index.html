@@ -248,6 +248,135 @@
     
         <li class="publication-item 2026 conference" id="111">
             <!-- PUBLICATION TITLE -->
+            <h1 class="publication-title">Paint It, Black: Evaluating LLMs for De-Identification of Multimodal Clinical Documents</h1>
+            <!-- PUBLICATION AUTHORS -->
+            <div class="authors">
+                
+                
+                <span class="author">Francesco Zangrillo,</span>
+                
+                <span class="author">Alessio Cocchieri,</span>
+                
+                <span class="author">Giacomo Frisoni,</span>
+                
+                <span class="author">Davide Freddi,</span>
+                
+                <span class="author">Luca Ragazzi,</span>
+                
+                <span class="author">Alberto Aguzzi,</span>
+                
+                <span class="author">Diego Raimondo,</span>
+                
+                <span class="author">Renato Seracchioli,</span>
+                
+                <span class="author">Gianluca Moro</span>
+                
+            </div>
+            <!-- PUBLICATION BADGE - VENUE - BUTTONS -->
+            <div class="venue-container">
+                <div class="venue-info">
+                    <span class="venue-year">EMNLP 2026</span>
+                    <span class="venue_complete">Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing</span>
+                </div>
+                <div class="publication-details  q1 ">
+                    <div class="buttons-div">
+                        <!-- WEBAPP -->
+                        
+                        <!-- CODE -->
+                        
+                        <!-- CITE -->
+                        
+                        <!-- READ -->
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="abstract-content">
+                <p class="short-text">
+                    Secondary use of clinical data is strictly conditioned on prior removal of Protected Health Information (PHI) under regulatory frameworks such as HIPAA. While the NLP community has made considerable progress on text-based de-identification, clinical records in practice arrive as structured PDF documents, whose PHI is distributed across heterogeneous visual layouts, multi-column tables, and letterheads. Current benchmarks are exclusively textual, and the few multimodal pipelines proposed to date rely on intermediate OCR stages rather than evaluating the raw spatial-grounding capability that modern Multimodal Large Language Models (MLLMs) now claim to possess. We introduce Paint-It-Black (PIB), the first benchmark designed to evaluate MLLMs on end-to-end, pixel-level PHI de-identification in clinical PDF documents. Because real medical records cannot be shared and no synthetic substitute currently exists, we develop a corpus of physician-validated clinical PDFs spanning multiple document types, diverse visual layouts, and controlled visual degradation tiers, with manually curated bounding-box annotations following a HIPAA-aligned taxonomy. On PIB, we conduct the first systematic evaluation of privacy-safe, open-source MLLMs, revealing that even the strongest models fall short of the reliability threshold required for clinical deployment. <!-- Full abstract -->
+                    <a href="#" class="read-more">More</a>
+                </p>
+                <p class="full-text" style="display: none;">
+                    Secondary use of clinical data is strictly conditioned on prior removal of Protected Health Information (PHI) under regulatory frameworks such as HIPAA. While the NLP community has made considerable progress on text-based de-identification, clinical records in practice arrive as structured PDF documents, whose PHI is distributed across heterogeneous visual layouts, multi-column tables, and letterheads. Current benchmarks are exclusively textual, and the few multimodal pipelines proposed to date rely on intermediate OCR stages rather than evaluating the raw spatial-grounding capability that modern Multimodal Large Language Models (MLLMs) now claim to possess. We introduce Paint-It-Black (PIB), the first benchmark designed to evaluate MLLMs on end-to-end, pixel-level PHI de-identification in clinical PDF documents. Because real medical records cannot be shared and no synthetic substitute currently exists, we develop a corpus of physician-validated clinical PDFs spanning multiple document types, diverse visual layouts, and controlled visual degradation tiers, with manually curated bounding-box annotations following a HIPAA-aligned taxonomy. On PIB, we conduct the first systematic evaluation of privacy-safe, open-source MLLMs, revealing that even the strongest models fall short of the reliability threshold required for clinical deployment. <!-- Full abstract -->
+                    <a href="#" class="read-less">Less</a>
+                </p>
+            </div>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+    
+        <li class="publication-item 2026 conference" id="222">
+            <!-- PUBLICATION TITLE -->
+            <h1 class="publication-title">Lost in Choice: Evaluating LLMs Under Extreme Multiple-Choice Scaling</h1>
+            <!-- PUBLICATION AUTHORS -->
+            <div class="authors">
+                
+                
+                <span class="author">Alessio Cocchieri,</span>
+                
+                <span class="author">Luca Ragazzi,</span>
+                
+                <span class="author">Giuseppe Tagliavini,</span>
+                
+                <span class="author">Gianluca Moro</span>
+                
+            </div>
+            <!-- PUBLICATION BADGE - VENUE - BUTTONS -->
+            <div class="venue-container">
+                <div class="venue-info">
+                    <span class="venue-year">EMNLP 2026</span>
+                    <span class="venue_complete">Findings of the 2026 Conference on Empirical Methods in Natural Language Processing: EMNLP 2026</span>
+                </div>
+                <div class="publication-details  q1 ">
+                    <div class="buttons-div">
+                        <!-- WEBAPP -->
+                        
+                        <!-- CODE -->
+                        
+                        <a target="_blank" href="https://github.com/disi-unibo-nlp/lost-in-choice">
+                            <div class="document-icon-container">
+                                <i class="fa-brands fa-github" style="color: #181717; font-size: 26px;"></i>
+                                <span class="label">Code</span>
+                            </div>
+                        </a>
+                        
+                        <!-- CITE -->
+                        
+                        <!-- READ -->
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="abstract-content">
+                <p class="short-text">
+                    While LLMs are increasingly analyzed in multiple-choice scenarios, current studies rely on small option sets, failing to capture their real-world behavior. This paper provides the first systematic investigation of LLM selection dynamics under extreme candidate cardinality. We stress-test models by scaling the candidate space up to 1,000 options while manipulating their layout within the context window. Importantly, to distinguish model failures, we categorize questions solvable via internal knowledge from those requiring exhaustive option comparison. Our results uncover a systematic, layout-driven degradation of global comparative reasoning—a failure mode we define as the Lost-in-Choice phenomenon. By auditing Chain-of-Thought paths, we establish a taxonomy of the heuristics and shortcuts models adopt as the candidate space expands. <!-- Full abstract -->
+                    <a href="#" class="read-more">More</a>
+                </p>
+                <p class="full-text" style="display: none;">
+                    While LLMs are increasingly analyzed in multiple-choice scenarios, current studies rely on small option sets, failing to capture their real-world behavior. This paper provides the first systematic investigation of LLM selection dynamics under extreme candidate cardinality. We stress-test models by scaling the candidate space up to 1,000 options while manipulating their layout within the context window. Importantly, to distinguish model failures, we categorize questions solvable via internal knowledge from those requiring exhaustive option comparison. Our results uncover a systematic, layout-driven degradation of global comparative reasoning—a failure mode we define as the Lost-in-Choice phenomenon. By auditing Chain-of-Thought paths, we establish a taxonomy of the heuristics and shortcuts models adopt as the candidate space expands. <!-- Full abstract -->
+                    <a href="#" class="read-less">Less</a>
+                </p>
+            </div>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+    
+        <li class="publication-item 2026 conference" id="333">
+            <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">LLMs (Almost) Never Abstain Under Medical Uncertainty</h1>
             <!-- PUBLICATION AUTHORS -->
             <div class="authors">
@@ -307,7 +436,7 @@
         
         
     
-        <li class="publication-item 2026 conference" id="333">
+        <li class="publication-item 2026 conference" id="555">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Sycophants in the Courtroom: Are LLMs Fragile to Juridical Authority and Evolving Legal Standards?</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -372,7 +501,7 @@
         
         
     
-        <li class="publication-item 2026 conference" id="555">
+        <li class="publication-item 2026 conference" id="777">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">ReMedQA: Are We Done With Medical Multiple-Choice Benchmarks?</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -454,7 +583,7 @@
         
         
     
-        <li class="publication-item 2026 conference" id="777">
+        <li class="publication-item 2026 conference" id="999">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">MemeWeaver: Inter-Meme Graph Reasoning for Sexism and Misogyny Detection</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -530,13 +659,8 @@
         
         
         
-        
-        
-        
-        
-        
     
-        <li class="publication-item 2026 conference" id="101010">
+        <li class="publication-item 2026 conference" id="111111">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -592,6 +716,11 @@
             </div>
             
         </li>
+        
+        
+        
+        
+        
         
         
         
@@ -2893,8 +3022,18 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
-        <li class="publication-item 2026 journal" id="222">
+        <li class="publication-item 2026 journal" id="444">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Java Academic Benchmark: Exam-Based Evaluation of LLMs on Object-Oriented Programming</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -2961,7 +3100,7 @@
         
         
     
-        <li class="publication-item 2026 journal" id="444">
+        <li class="publication-item 2026 journal" id="666">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">COMMA: A Multi-Task and Multi-Lingual Dataset of Constitutional Verdicts</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -3033,7 +3172,7 @@
         
         
     
-        <li class="publication-item 2026 journal" id="666">
+        <li class="publication-item 2026 journal" id="888">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">OpenBioNER-v2: A Suite of Lightweight Models for Zero-Shot Medical Named Entity Recognition via Type Descriptions</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -3107,77 +3246,7 @@
         
         
     
-        <li class="publication-item 2026 journal" id="888">
-            <!-- PUBLICATION TITLE -->
-            <h1 class="publication-title">Clash-of-Leges: A Bilingual Dataset for Conflict Detection and Explanation in Statutory Law</h1>
-            <!-- PUBLICATION AUTHORS -->
-            <div class="authors">
-                
-                
-                <span class="author">Paolo Italiani,</span>
-                
-                <span class="author">Gianluca Moro,</span>
-                
-                <span class="author">Luca Ragazzi</span>
-                
-            </div>
-            <!-- PUBLICATION BADGE - VENUE - BUTTONS -->
-            <div class="venue-container">
-                <div class="venue-info">
-                    <span class="venue-year">ESWA 2026</span>
-                    <span class="venue_complete">Expert Systems with Applications</span>
-                </div>
-                <div class="publication-details  q1 ">
-                    <div class="buttons-div">
-                        <!-- WEBAPP -->
-                        
-                        <!-- CODE -->
-                        
-                        <!-- CITE -->
-                        
-                        <a target="_blank" href="https://dblp.uni-trier.de/rec/journals/eswa/ItalianiMR26.html?view=bibtex">
-                            <div class="document-icon-container">
-                                <img class="buttons-icon" style="width: 23px;"
-                                    src="https://cdn.iconscout.com/icon/free/png-256/free-dblp-3521374-2944818.png"
-                                    alt="Cite Icon">
-                                <span class="label">Cite</span>
-                            </div>
-                        </a>
-                        
-                        <!-- READ -->
-                        
-                        <a target="_blank" href="https://doi.org/10.1016/j.eswa.2025.130182">
-                            <div class="document-icon-container">
-                                <i class="fa-solid fa-file-pdf" style="font-size: 24px;" alt="Document Icon"></i>
-                                <span class="label">Read</span>
-                            </div>
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="abstract-content">
-                <p class="short-text">
-                    Legal conflicts between statutes or constitutional articles present a significant challenge in maintaining consistency and coherence within legal systems. Addressing these conflicts requires extensive human expertise, making the process labor-intensive and time-consuming. In this paper, we introduce Clash-of-Leges, a novel multilingual dataset derived from rulings by the Constitutional Court of the Italian Republic, designed to aid the automation of conflict detection and explanation between legal articles. We identify three key tasks: Conflict Classification, which determines whether two legal articles are in conflict; Conflict Explanation Generation, which provides detailed explanations for identified conflicts; and Reference Retrieval, which sources relevant legal bases and precedents to substantiate interpretations. These tasks are intended to facilitate the development of AI models that can automatically identify and explain contradictions between legal provisions. <!-- Full abstract -->
-                    <a href="#" class="read-more">More</a>
-                </p>
-                <p class="full-text" style="display: none;">
-                    Legal conflicts between statutes or constitutional articles present a significant challenge in maintaining consistency and coherence within legal systems. Addressing these conflicts requires extensive human expertise, making the process labor-intensive and time-consuming. In this paper, we introduce Clash-of-Leges, a novel multilingual dataset derived from rulings by the Constitutional Court of the Italian Republic, designed to aid the automation of conflict detection and explanation between legal articles. We identify three key tasks: Conflict Classification, which determines whether two legal articles are in conflict; Conflict Explanation Generation, which provides detailed explanations for identified conflicts; and Reference Retrieval, which sources relevant legal bases and precedents to substantiate interpretations. These tasks are intended to facilitate the development of AI models that can automatically identify and explain contradictions between legal provisions. <!-- Full abstract -->
-                    <a href="#" class="read-less">Less</a>
-                </p>
-            </div>
-            
-        </li>
-        
-        
-        
-        
-        
-        
-    
-        <li class="publication-item 2026 journal" id="999">
+        <li class="publication-item 2026 journal" id="101010">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Abstractive Summarization through the Prism of Decoding Strategies</h1>
             <!-- PUBLICATION AUTHORS -->
@@ -3249,7 +3318,77 @@
         
         
     
-        <li class="publication-item 2026 journal" id="111111">
+        <li class="publication-item 2026 journal" id="121212">
+            <!-- PUBLICATION TITLE -->
+            <h1 class="publication-title">Clash-of-Leges: A Bilingual Dataset for Conflict Detection and Explanation in Statutory Law</h1>
+            <!-- PUBLICATION AUTHORS -->
+            <div class="authors">
+                
+                
+                <span class="author">Paolo Italiani,</span>
+                
+                <span class="author">Gianluca Moro,</span>
+                
+                <span class="author">Luca Ragazzi</span>
+                
+            </div>
+            <!-- PUBLICATION BADGE - VENUE - BUTTONS -->
+            <div class="venue-container">
+                <div class="venue-info">
+                    <span class="venue-year">ESWA 2026</span>
+                    <span class="venue_complete">Expert Systems with Applications</span>
+                </div>
+                <div class="publication-details  q1 ">
+                    <div class="buttons-div">
+                        <!-- WEBAPP -->
+                        
+                        <!-- CODE -->
+                        
+                        <!-- CITE -->
+                        
+                        <a target="_blank" href="https://dblp.uni-trier.de/rec/journals/eswa/ItalianiMR26.html?view=bibtex">
+                            <div class="document-icon-container">
+                                <img class="buttons-icon" style="width: 23px;"
+                                    src="https://cdn.iconscout.com/icon/free/png-256/free-dblp-3521374-2944818.png"
+                                    alt="Cite Icon">
+                                <span class="label">Cite</span>
+                            </div>
+                        </a>
+                        
+                        <!-- READ -->
+                        
+                        <a target="_blank" href="https://doi.org/10.1016/j.eswa.2025.130182">
+                            <div class="document-icon-container">
+                                <i class="fa-solid fa-file-pdf" style="font-size: 24px;" alt="Document Icon"></i>
+                                <span class="label">Read</span>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="abstract-content">
+                <p class="short-text">
+                    Legal conflicts between statutes or constitutional articles present a significant challenge in maintaining consistency and coherence within legal systems. Addressing these conflicts requires extensive human expertise, making the process labor-intensive and time-consuming. In this paper, we introduce Clash-of-Leges, a novel multilingual dataset derived from rulings by the Constitutional Court of the Italian Republic, designed to aid the automation of conflict detection and explanation between legal articles. We identify three key tasks: Conflict Classification, which determines whether two legal articles are in conflict; Conflict Explanation Generation, which provides detailed explanations for identified conflicts; and Reference Retrieval, which sources relevant legal bases and precedents to substantiate interpretations. These tasks are intended to facilitate the development of AI models that can automatically identify and explain contradictions between legal provisions. <!-- Full abstract -->
+                    <a href="#" class="read-more">More</a>
+                </p>
+                <p class="full-text" style="display: none;">
+                    Legal conflicts between statutes or constitutional articles present a significant challenge in maintaining consistency and coherence within legal systems. Addressing these conflicts requires extensive human expertise, making the process labor-intensive and time-consuming. In this paper, we introduce Clash-of-Leges, a novel multilingual dataset derived from rulings by the Constitutional Court of the Italian Republic, designed to aid the automation of conflict detection and explanation between legal articles. We identify three key tasks: Conflict Classification, which determines whether two legal articles are in conflict; Conflict Explanation Generation, which provides detailed explanations for identified conflicts; and Reference Retrieval, which sources relevant legal bases and precedents to substantiate interpretations. These tasks are intended to facilitate the development of AI models that can automatically identify and explain contradictions between legal provisions. <!-- Full abstract -->
+                    <a href="#" class="read-less">Less</a>
+                </p>
+            </div>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+    
+        <li class="publication-item 2026 journal" id="131313">
             <!-- PUBLICATION TITLE -->
             <h1 class="publication-title">Legal Lay Summarization: Exploring Methods and Data Generation with Large Language Models</h1>
             <!-- PUBLICATION AUTHORS -->
