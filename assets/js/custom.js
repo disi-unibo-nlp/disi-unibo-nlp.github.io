@@ -130,3 +130,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 })();
+
+(() => {
+  const typeSelect = document.querySelector('#type-dropdown');
+  const venueSelect = document.querySelector('#venue-dropdown');
+  const resetButton = document.querySelector('#reset-publications');
+
+  if (!typeSelect || !venueSelect) return;
+
+  function syncVenueGroups() {
+    venueSelect.querySelectorAll('[data-venue-type]').forEach(group => {
+      group.disabled =
+        typeSelect.value !== 'all' &&
+        group.dataset.venueType !== typeSelect.value;
+    });
+
+    const selectedGroup =
+      venueSelect.selectedOptions[0]?.closest('optgroup');
+
+    // Rimuove una venue incompatibile con il tipo selezionato.
+    if (selectedGroup?.disabled) {
+      venueSelect.value = 'all';
+      venueSelect.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+  }
+
+  typeSelect.addEventListener('change', syncVenueGroups);
+  resetButton?.addEventListener('click', syncVenueGroups);
+
+  syncVenueGroups();
+})();
