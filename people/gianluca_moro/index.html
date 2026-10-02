@@ -3,12 +3,22 @@
 <html dir="ltr" lang="en" class="has-navbar-fixed-top">
     <head>
     <meta charset="utf-8">
+    <title>Gianluca_moro | UniboNLP</title>
+    
+    <meta property="og:title" content="Gianluca_moro | UniboNLP">
+    <meta property="og:description" content="Gianluca Moro, Ph.D., is an associate professor in natural language processing, text mining and big data analytics, directing the NLP research group at Bologna’s Cesena campus. He co-organized workshops at major conferences like VLDB, AAMAS, ECIR etc. and has published over 110 papers in leading AI journals and conferences, including AAAI, EMNLP, IJCAI, ECAI, ACL, ICLR, etc., serving also on conference program committees and journal editorial boards. Prof. Moro has led multiple national and international AI projects in partnership with public and private research institutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://disi-unibo-nlp.github.io/people/gianluca_moro/">
+    <meta property="og:image" content="https://disi-unibo-nlp.github.io/assets/css/logo_v2.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://disi-unibo-nlp.github.io/people/gianluca_moro/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="description" content="Gianluca Moro, Ph.D., is an associate professor in natural language processing, text mining and big data analytics, directing the NLP research group at Bologna’s Cesena campus. He co-organized workshops at major conferences like VLDB, AAMAS, ECIR etc. and has published over 110 papers in leading AI journals and conferences, including AAAI, EMNLP, IJCAI, ECAI, ACL, ICLR, etc., serving also on conference program committees and journal editorial boards. Prof. Moro has led multiple national and international AI projects in partnership with public and private research institutions.">
     <meta name="theme-color" content="#ffffff">
     <!-- Preload critical assets for faster rendering -->
     <link rel="preload" href="/assets/css/app.css" as="style">
     <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/refinements.css">
     <!-- Favicon Handling --> 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
@@ -20,7 +30,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
     <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    
     <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     <!--
@@ -35,80 +45,81 @@
     <!-- FontAwesome Icons (Optimized for Performance) -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+<noscript><style>@media(max-width:1023px){.navbar.is-fixed-top{position:relative;left:auto;transform:none;top:0;margin:1rem auto}.navbar-menu{display:block}.navbar-burger{display:none}.home-hero .hero-body,.hero.is-medium .hero-body{padding-top:2rem}}</style></noscript>
 </head>
-    <body>  
-            
-        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>  
+    
+        <nav class="navbar is-primary is-fixed-top" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
     <div class="container navigation">  
         <!-- Logo on the Left -->
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
                 <img 
                     src="/assets/css/logo6.svg" 
-                    alt="Website Logo" 
+                    alt="UniboNLP home" 
                     class="navbar-logo"
-                    loading="lazy"
+                    loading="eager"
                 >
             </a>
-            <a
-                role="button"
+            <button
+                type="button"
                 class="navbar-burger burger"
-                aria-label="menu"
+                aria-label="Open navigation" aria-controls="navMenu"
                 aria-expanded="false"
                 data-target="navMenu"
-                :class="{ 'is-active': openNav }"
-                x-on:click="openNav = !openNav"
+                id="navigation-toggle"
             >
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </button>
         </div>
 
         <!-- Navigation Menu -->
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <div class="navbar-menu" id="navMenu" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             <div class="navbar-end" style="margin-right: 1.5rem;">
                 
                     
                         
                             <a 
                                 href="/people/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >People</a>
                         
                     
                         
                             <a 
                                 href="/publications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Publications</a>
                         
                     
                         
                             <a 
                                 href="/applications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Applications</a>
                         
                     
                         
                             <a 
                                 href="/projects/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Projects</a>
                         
                     
                         
                             <a 
                                 href="/theses/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Theses</a>
                         
                     
                         
                             <a 
                                 href="/deadlines/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Deadlines</a>
                         
                     
@@ -120,991 +131,2029 @@
 
         
 
-<section 
-    class="hero 
-        is-medium 
-        is-bold is-primary 
-        "
-    
+
+
+<section
+  class="hero is-medium is-bold is-primary"
+  
 >
-    <div class="hero-body ">
-        <div class="container">
-            
-                <h1 class="title is-2">Gianluca_moro</h1>
-            
-                  
-            
-        </div>
+  <div class="hero-body ">
+    <div class="container">
+
+      
+        <h1 class="title is-2">Gianluca_moro</h1>
+      
+
+      
+
+      
+
     </div>
-</section>     
-        <main class="section">
+  </div>
+</section>
+
+     
+        <main class="section" id="main-content" tabindex="-1">
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column ">
-                        <div class="columns is-multiline">
-  <div class="column is-12">
+                    <div class="column is-12">
+                        <style id="people-styles">/* Included by the People layout: no separate stylesheet URL or cache. */
+.people-section .people-grid { display: grid; align-items: stretch; }
+.people-section .person-card { display: flex; flex-direction: column; min-width: 0; }
+.people-section .person-overview { flex: 1; padding-bottom: 1rem; }
+.people-section .person-photo-frame {
+  width: 128px; height: 128px; overflow: hidden; border-radius: 50%;
+  background: #f3f2f0; margin: 0 0 1.3rem;
+}
+.people-section .person-photo-frame .person-photo {
+  display: block; width: 100%; height: 100%; max-width: none;
+  margin: 0; border-radius: 0; object-fit: cover; object-position: center;
+  background: transparent; filter: grayscale(100%);
+  transform: scale(var(--portrait-zoom, 1)); transform-origin: center top;
+}
+.people-section .portrait-frisoni { --portrait-zoom: 1.35; }
+.people-section .portrait-lodi { --portrait-zoom: 1.45; }
+.people-section .person-bio { margin-top: 0; }
+.people-section .person-topics span { overflow-wrap: anywhere; }
+.people-section .resource-links { min-height: 1.5rem; flex-wrap: wrap; }
+.people-section .person-bio > summary:focus-visible {
+  outline: 2px solid var(--brand-dark); outline-offset: 4px; border-radius: 3px;
+}
+/* Shared rows keep Biography controls aligned, including expanded cards. */
+@supports (grid-template-rows: subgrid) {
+  .people-section .person-card {
+    display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 0;
+  }
+  .people-section .person-overview { grid-row: 1; }
+  .people-section .person-bio { grid-row: 2; }
+  .people-section .resource-links { grid-row: 3; align-self: end; margin-top: 1rem; }
+}
+@media (max-width: 768px) {
+  .people-section .person-card { text-align: center; }
+  .people-section .person-photo-frame { margin-left: auto; margin-right: auto; }
+  .people-section .person-topics, .people-section .resource-links { justify-content: center; }
+  .people-section .person-bio > p { text-align: left; }
+}
+
+@media (max-width: 768px) {
+  .people-section .people-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem;
+  }
+
+  .people-section .person-card {
+    padding: .75rem;
+  }
+
+  .people-section .person-photo-frame {
+    width: 88px;
+    height: 88px;
+    margin-bottom: .8rem;
+  }
+
+  .people-section .person-card h3 {
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .people-section .person-role {
+    font-size: .8rem;
+  }
+
+  .people-section .person-topics span {
+    font-size: .68rem;
+    padding: .15rem .3rem;
+  }
+
+  .people-section .resource-links {
+    font-size: .75rem;
+    gap: .4rem;
+  }
+}
+
+.people-section .person-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+}
+
+.people-section .person-topics span {
+  display: inline-block;
+  padding: .2rem .45rem;
+  background: #f7f7f8;
+  border: 1px solid #ececef;
+  border-radius: 6px;
+  color: #555;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .people-section .person-topics span {
+    padding: .15rem .3rem;
+  }
+}
+
+.deadlines-grid .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.deadlines-grid .card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.deadlines-grid .card-content > * {
+  flex-shrink: 0;
+}
+
+.deadlines-grid .card-content > p:last-child {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  @supports (grid-template-rows: subgrid) {
+    .people-section .person-card {
+      grid-row: span 7;
+      grid-template-rows: subgrid;
+    }
+
+    .people-section .person-overview {
+      display: contents;
+    }
+
+    .people-section .person-photo-frame { grid-row: 1; }
+    .people-section .person-card h3     { grid-row: 2; }
+    .people-section .person-role        { grid-row: 3; }
+    .people-section .person-dates       { grid-row: 4; }
+    .people-section .person-topics      { grid-row: 5; }
+    .people-section .person-bio         { grid-row: 6; }
+    .people-section .resource-links    { grid-row: 7; }
+  }
+
+  .people-section .person-bio {
+    margin-top: 1rem;
+  }
+}
+
+.people-section .person-topics {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.people-section .person-topics span {
+  flex: 0 1 auto;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .people-section .person-topics {
+    display: none;
+  }
+
+  .people-section .person-overview {
+    padding-bottom: 0;
+  }
+
+  .people-section .person-bio {
+    margin-top: .75rem;
+  }
+
+  @supports (grid-template-rows: subgrid) {
+    .people-section .people-grid {
+      row-gap: 0;
+    }
+
+    .people-section .person-card {
+      grid-row: span 6;
+      margin-bottom: .75rem;
+    }
+
+    .people-section .person-bio {
+      grid-row: 5;
+    }
+
+    .people-section .resource-links {
+      grid-row: 6;
+    }
+  }
+}
+
+.people-section .person-links {
+  gap: .4rem;
+}
+
+.people-section .person-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.people-section .person-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.people-section .person-meta .person-dates {
+  margin: 0;
+}
+
+.people-section .person-meta .person-links {
+  margin: 0 0 0 auto;
+}
+
+/* Overview e Biography: nessuna riga finale per le icone */
+@supports (grid-template-rows: subgrid) {
+  .people-section .person-card {
+    grid-row: span 2;
+  }
+
+  .people-section .person-bio {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .people-section .person-meta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .people-section .person-meta .person-links {
+    margin: 0;
+    justify-content: center;
+  }
+
+  @supports (grid-template-rows: subgrid) {
+    .people-section .person-card {
+      grid-row: span 6;
+    }
+
+    .people-section .person-meta {
+      display: grid;
+      grid-row: 4 / span 2;
+      grid-template-rows: subgrid;
+      justify-content: stretch;
+    }
+
+    .people-section .person-meta .person-dates {
+      grid-row: 1;
+    }
+
+    .people-section .person-meta .person-links {
+      grid-row: 2;
+    }
+
+    .people-section .person-bio {
+      grid-row: 6;
+    }
+  }
+}
+
+.people-section .person-meta .person-role {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  @supports (grid-template-rows: subgrid) {
+    .people-section .person-meta {
+      grid-row: 3 / span 2;
+    }
+
+    .people-section .person-meta .person-role {
+      grid-row: 1;
+    }
+
+    .people-section .person-meta .person-links {
+      grid-row: 2;
+    }
+
+    .people-section .person-dates {
+      grid-row: 5;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .people-section .person-name,
+  .people-section .person-surname {
+    display: block;
+  }
+
+  /* Ordine mobile, anche senza subgrid */
+  .people-section .person-overview {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .people-section .person-meta {
+    display: contents;
+  }
+
+  .people-section .person-photo-frame { order: 1; }
+  .people-section .person-card h3 { order: 2; }
+  .people-section .person-meta .person-role { order: 3; }
+  .people-section .person-dates { order: 4; }
+  .people-section .person-meta .person-links { order: 5; }
+
+  /* Mantiene gli elementi allineati tra le due schede */
+  @supports (grid-template-rows: subgrid) {
+    .people-section .person-overview {
+      display: contents;
+    }
+
+    .people-section .person-meta .person-role {
+      grid-row: 3;
+    }
+
+    .people-section .person-dates {
+      grid-row: 4;
+    }
+
+    .people-section .person-meta .person-links {
+      grid-row: 5;
+    }
+
+    .people-section .person-bio {
+      grid-row: 6;
+    }
+  }
+}</style>
+
+
+
+
+
+
+
+<section class="people-section">
+<h2>Group leadership</h2>
+<div class="people-grid"><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/gianluca_moro.webp"
+        alt="Gianluca Moro"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Gianluca</span>
+        <span class="person-surname">Moro</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">Head of the Group</p>
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/gianluca.moro"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=QOfSGKkAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/gianluca-moro-54a2511/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+
+    
+
     
 
   </div>
 
   
+    <details class="person-bio">
+      <summary aria-label="Biography of Gianluca Moro">
+        Biography
+      </summary>
+      <p>Gianluca Moro, Ph.D., is an associate professor in natural language processing, text mining and big data analytics, directing the NLP research group at Bologna’s Cesena campus. He co-organized workshops at major conferences like VLDB, AAMAS, ECIR etc. and has published over 110 papers in leading AI journals and conferences, including AAAI, EMNLP, IJCAI, ECAI, ACL, ICLR, etc., serving also on conference program committees and journal editorial boards. Prof. Moro has led multiple national and international AI projects in partnership with public and private research institutions.</p>
+    </details>
   
+</article></div>
+</section>
 
-  
-  <div class="column is-4-desktop is-6-tablet">
-      <div class="card card-team card-animation-team">
-        
-        <!-- Profile Image -->
-        <figure>
-          <img 
-            class="img-circle" 
-            src="https://drive.google.com/thumbnail?sz=w1920&id=1DVtPlLimkwFew4-y3NPyfcr1K3yFj0en" 
-            alt="Gianluca" 
-            loading="lazy"
-          />
-        </figure>
 
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Gianluca Moro</p>
-		      <p class="team-member-label team-member-role">Head of the Group</p><br> 
-        </div>
-		
+
+
+<section class="people-section">
+<h2>Postdoctoral researchers</h2>
+<div class="people-grid"><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame portrait-frisoni">
+      <img
+        class="person-photo"
+        src="/assets/images/people/giacomo_frisoni.webp"
+        alt="Giacomo Frisoni"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Giacomo</span>
+        <span class="person-surname">Frisoni</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PostDoc</p>
+      
+
+      <div class="resource-links person-links">
         
-          <p class="team-member-description">Gianluca Moro, Ph.D., is an associate professor in natural language processing, text mining and big data analytics, directing the NLP research group at Bologna’s Cesena campus. He co-organized workshops at major conferences like VLDB, AAMAS, ECIR etc. and has published over 110 papers in leading AI journals and conferences, including AAAI, EMNLP, IJCAI, ECAI, ACL, ICLR, etc., serving also on conference program committees and journal editorial boards. Prof. Moro has led multiple national and international AI projects in partnership with public and private research institutions.</p>
-        
+          <a href="https://www.unibo.it/sitoweb/giacomo.frisoni"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
         
 
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/gianluca.moro" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/gianluca-moro-54a2511/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=QOfSGKkAAAAJ&hl=it&oi=ao" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
+        
+          <a href="https://scholar.google.com/citations?user=BEZlFiAAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/giacomo-frisoni-3b97a8129/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
       </div>
-  </div>
-  
+    </div>
 
-  
-  <div class="column is-4-desktop is-6-tablet">
+    
+      <p class="person-dates">
+        2024, Jan.
+        
+          – present
+        
+      </p>
+    
 
-      <div class="card card-team card-animation-team">
+    
+      <div class="person-topics">
         
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1h4XfLmcyHc2ALH3-svslYFEyvkPUx1_R" alt="Giacomo" />
-          </figure>
-        </div>
+          <span>Semantic Parsing</span>
         
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Giacomo Frisoni</p>
-		      <p class="team-member-start-end"><time>2024, Jan.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PostDoc</span><br>
-			      
-			      <span class="team-member-label">Semantic Parsing</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Graph Neural Networks</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Retrieval Augmented Generation</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Giacomo Frisoni, Ph.D., is a postdoctoral researcher in Computer Science and Engineering at the University of Bologna. His research interests lie in NLP, LLMs, and GNNs, particularly for medical applications. He has co-authored over 25 papers in prestigious conferences and journals, including ACL, NAACL, EMNLP, and AAAI, receiving two best paper awards. He has served in various scientific roles, including session chair, program committee member, editorial board member, and workshop organizer for many international venues.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/giacomo.frisoni" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/giacomo-frisoni-3b97a8129/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=BEZlFiAAAAAJ&hl=it&oi=ao" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
+          <span>Graph Neural Networks</span>
+        
+          <span>Retrieval Augmented Generation</span>
+        
       </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1nXFeucXbXuagEcS3he6zOrRv9KIftam7" alt="Luca" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Luca Ragazzi</p>
-		      <p class="team-member-start-end"><time>2024, Jan.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PostDoc</span><br>
-			      
-			      <span class="team-member-label">Summarization</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Low-Resource Regimes</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Benchmarking</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Luca Ragazzi, Ph.D. (2024), is a postdoctoral researcher in Computer Science and Engineering at the University of Bologna, specializing in NLP for impactful domains such as law and biomedicine. He has presented numerous papers at top international conferences including AAAI, ACL, EMNLP, and ICLR, chaired a session at AAAI 2023 in Washington, and completed an internship at EURECOM, France. He also serves as Reviewing Editor for Springer Nature and Area Chair for ACL ARR.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/l.ragazzi" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/luca-ragazzi-38557316b/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=BmaBHcAAAAAJ&hl=it&oi=ao" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1qZgkHES223glL15EX43zBivpccsYxZh6" alt="Paolo" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Paolo Italiani</p>
-		      <p class="team-member-start-end"><time>2022, Nov.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PhD Student</span><br>
-			      
-			      <span class="team-member-label">Graph-Augmented Language Models</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Knowledge Representation Learning</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Differentiable Operators</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Paolo Italiani received the B.S. and M.S. degrees in Statistical Sciences from the University of Bologna, Italy, in 2019 and 2022. He is currently a third-year Ph.D. student at the Department of Computer Science and Engineering, University of Bologna (scholarship co-funded by Maggioli Group). His research activity mainly centers on generative language models with a focus on legal applications.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://paoloitaliani.github.io/" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/paolo-italiani-957913203/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=hmVkN7QAAAAJ&hl=it&oi=ao" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1QBWNBZ20ulvRKQcSHjvqyyZVdoDHxygf" alt="Alessio" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Alessio Cocchieri</p>
-		      <p class="team-member-start-end"><time>2023, Nov.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PhD Student</span><br>
-			      
-			      <span class="team-member-label">Large Language Models</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Multimodal Language models</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Language Models Affordability</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Alessio Cocchieri earned his B.S. degree in Computer Science and M.S. degree in Artificial Intelligence from the University of Bologna in 2023. He is currently a first-year Ph.D. student in Computer Science and Engineering, University of Bologna. During his academic journey, Alessio undertaked an internship at IBM Research Europe, which played a pivotal role in shaping his upcoming research endeavors.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/a.cocchieri" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/alessio-cocchieri-8aa082271/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=GAyIzPMAAAAJ&hl=it&oi=ao" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1TjObQA-GVCZj2iRY2JLHt_j7P_JzYj1F" alt="Lorenzo" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Lorenzo Molfetta</p>
-		      <p class="team-member-start-end"><time>2023, Nov.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PhD Student</span><br>
-			      
-			      <span class="team-member-label">Knowledge-Enhanced Generation</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Knowledge Representation Learning</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Neuro-Symbolic AI</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Lorenzo Molfetta received his B.S. degree in Computer Science and M.S. degree in Artificial Intelligence from the University of Bologna, Italy, in 2021 and 2023. He is currently a second-year Ph.D. student at the Department of Computer Science and Engineering, University of Bologna. His research activity mainly focuses on knowledge representation learning and neural reasoning.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/lorenzo.molfetta" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/lorenzo-molfetta/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=cyOS_J0AAAAJ&hl=it&oi=ao" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=10jR2TZRNlkPY0TK08Mw6q-HJIkdUxYVt" alt="Giovanni Pio" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Giovanni Pio Delvecchio</p>
-		      <p class="team-member-start-end"><time>2024, Nov.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PhD Student</span><br>
-			      
-			      <span class="team-member-label">Neuro-Symbolic AI</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Legal NLP</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Giovanni Pio Delvecchio received his B.S. degree in Computer Science from the University of Bari in 2021 and M.S. degree in Artificial Intelligence from the University of Bologna in 2024. He developed his M.S. thesis at the National Institute of Informatics in Tokyo. He is currently a first-year Ph.D. student at the Department of Computer Science and Engineering, University of Bologna.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/g.delvecchio" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/giovanni-pio-delvecchio-09a069259/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=jrr7O7EAAAAJ&hl=en" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1qlzFJ7e_NpTPaC4P4KYpgVkT8TQaIeMD" alt="Stefano" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Stefano Fantazzini</p>
-		      <p class="team-member-start-end"><time>2024, Nov.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PhD Student</span><br>
-			      
-			      <span class="team-member-label">Prompt Learning</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Generative Language Models</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Stefano Fantazzini received his B.S. degree in Computer Science and M.S. degree in Artificial Intelligence from the University of Bologna, Italy, in 2021 and 2024. He is currently a first-year Ph.D. student at the Department of Computer Science and Engineering, University of Bologna. His research activity mainly focuses on generative language models concentrated on model's compliance.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/stefano.fantazzini" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/stefano-fantazzini-760214278/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=lFahIjcAAAAJ&hl=it&oi=ao" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1FqyiYJTAfFGKdIPHfPAXd43tc-dktM56" alt="Davide" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Davide Freddi</p>
-		      <p class="team-member-start-end"><time>2024, Nov.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PhD Student</span><br>
-			      
-			      <span class="team-member-label">Generative Language Models</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Reinforcement Learning</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Davide Freddi is a Ph.D. student at the University of Bologna, where he explores the intersection of reinforcement learning, generative language models, and low-resource regimes. He earned both his B.S. in Computer Science and Engineering and M.S. in Artificial Intelligence with honors from the same university. His early research has been showcased at venues such as ACL 2021 and ICLR 2024.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/d.freddi" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/davide-freddi-b69a65225/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=HYDx68MAAAAJ&hl=it&oi=ao" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1uAKfFAsZPTi4ebeg9wUh7LqfsM0k6SsY" alt="Francesco" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Francesco Zangrillo</p>
-		      <p class="team-member-start-end"><time>2024, Nov.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PhD Student</span><br>
-			      
-			      <span class="team-member-label">Neuro-Symbolic AI</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Agents</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Francesco Zangrillo earned his BSc in Computer Science from the University of Naples Federico II (2021) and an MSc in Artificial Intelligence from the University of Bologna (2024). Now he is a first-year PhD student at the University of Bologna. His research explores neurosymbolic representations in generative language models, focusing on legal and administrative applications with AI agents.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/f.zangrillo" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/francesco-zangrillo-44661b2aa/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=ZuVN0MgAAAAJ&hl=it&oi=ao" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1JqEN01NVHu6qJnf06LQuLEjwxvRX_qAJ" alt="Yiran" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Yiran Zeng</p>
-		      <p class="team-member-start-end"><time>2024, Nov.</time> ~ Now</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PhD Student</span><br>
-			      
-			      <span class="team-member-label">Knowledge Graph Representation Learning</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Large Language Models</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Yiran Zeng earned his M.S. degree in Artificial Intelligence from the University of Bologna, Italy, in 2024. He is currently a first-year Ph.D. student in the Department of Computer Science and Engineering at the University of Bologna. His research primarily centers on knowledge graph representation learning and knowledge grounding using large language models.</p>
-		    
-        <!-- Social Links -->
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/yiran.zeng" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/yiran-zeng-yyy/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" href="https://scholar.google.com/citations?user=kZXtK-MAAAAJ&hl=en" class="icon-button">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>
-          
-        </div>	    
-     
-      </div>
-
-  </div>
-  
-
-</div>
-
-<br>
-<br>
-<h2 class="people-header">Faculty Members</h2>
-
-<div class="columns is-multiline">
-
-  <div class="column is-12">
     
 
   </div>
 
   
-
+    <details class="person-bio">
+      <summary aria-label="Biography of Giacomo Frisoni">
+        Biography
+      </summary>
+      <p>Giacomo Frisoni, Ph.D., is a postdoctoral researcher in Computer Science and Engineering at the University of Bologna. His research interests lie in NLP, LLMs, and GNNs, particularly for medical applications. He has co-authored over 25 papers in prestigious conferences and journals, including ACL, NAACL, EMNLP, and AAAI, receiving two best paper awards. He has served in various scientific roles, including session chair, program committee member, editorial board member, and workshop organizer for many international venues.</p>
+    </details>
   
-  <div class="column is-4-desktop is-6-tablet">
+</article><article class="person-card">
+  <div class="person-overview">
 
-      <div class="card card-team card-animation-team">
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/luca_ragazzi.webp"
+        alt="Luca Ragazzi"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Luca</span>
+        <span class="person-surname">Ragazzi</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PostDoc</p>
+      
+
+      <div class="resource-links person-links">
         
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=15aZWg1qD96Z0IJ2XU-xCEHxsZ9--yQ25" alt="Claudio" />
-          </figure>
-        </div>
+          <a href="https://www.unibo.it/sitoweb/l.ragazzi"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
         
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Claudio Sartori</p>
-        </div>
-		
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/claudio.sartori" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-		    </div>
-     
+
+        
+          <a href="https://scholar.google.com/citations?user=BmaBHcAAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/luca-ragazzi-38557316b/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
       </div>
+    </div>
 
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
+    
+      <p class="person-dates">
+        2024, Jan.
+        
+          – present
+        
+      </p>
+    
 
-      <div class="card card-team card-animation-team">
+    
+      <div class="person-topics">
         
-        <div>
-          <figure>
-            <img class="img-circle" src="https://www.unibo.it/uniboweb/utils/UserImage.aspx?IdAnagrafica=345481&IdFoto=e192bbc3" alt="Stefano" />
-          </figure>
-        </div>
+          <span>Summarization</span>
         
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Stefano Lodi</p>
-        </div>
-		
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/stefano.lodi" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-		    </div>
-     
+          <span>Low-Resource Regimes</span>
+        
+          <span>Benchmarking</span>
+        
       </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1bOy2QAkXcGmO7bfNt0KScij8icMdg5An" alt="Antonella" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Antonella Carbonaro</p>
-        </div>
-		
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/antonella.carbonaro" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-		    </div>
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1JTbXDNgBfzSkI406ZRAHE1dybXNvE82u" alt="Giuseppe" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Giuseppe Tagliavini</p>
-        </div>
-		
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/giuseppe.tagliavini" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-		    </div>
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1Fsbs8UrlifoypOsom-h2DtvfmP9428bk" alt="Ilaria" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Ilaria Bartolini</p>
-        </div>
-		
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/ilaria.bartolini" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-		    </div>
-     
-      </div>
-
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
-
-      <div class="card card-team card-animation-team">
-        
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1RSjcRQnT1NT5zPQyq64aMfoIdmrhft4v" alt="Marco Antonio" />
-          </figure>
-        </div>
-        
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Marco Antonio Boschetti</p>
-        </div>
-		
-        <div class="team-member-refs">
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/marco.boschetti" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-		    </div>
-     
-      </div>
-
-  </div>
-  
-
-</div>
-
-<br>
-<br>
-<h2 class="people-header">International Research Members</h2>
-
-<div class="columns is-multiline">
-
-  <div class="column is-12">
     
 
   </div>
 
   
-
+    <details class="person-bio">
+      <summary aria-label="Biography of Luca Ragazzi">
+        Biography
+      </summary>
+      <p>Luca Ragazzi, Ph.D. (2024), is a postdoctoral researcher in Computer Science and Engineering at the University of Bologna, specializing in NLP for impactful domains such as law and biomedicine. He has presented numerous papers at top international conferences including AAAI, ACL, EMNLP, and ICLR, chaired a session at AAAI 2023 in Washington, and completed an internship at EURECOM, France. He also serves as Reviewing Editor for Springer Nature and Area Chair for ACL ARR.</p>
+    </details>
   
-  <div class="column is-4-desktop is-6-tablet">
+</article></div>
+</section>
 
-      <div class="card card-team card-animation-team">
+
+
+
+<section class="people-section">
+<h2>PhD students</h2>
+<div class="people-grid"><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/alessio_cocchieri.webp"
+        alt="Alessio Cocchieri"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Alessio</span>
+        <span class="person-surname">Cocchieri</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PhD Student</p>
+      
+
+      <div class="resource-links person-links">
         
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1asCjOglgxon3P0B6pQRJEk1MSLjPUDkx" alt="Zaiqiao" />
-          </figure>
-        </div>
+          <a href="https://www.unibo.it/sitoweb/a.cocchieri"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
         
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Zaiqiao Meng</p>
-        </div>
-		
-        <div class="team-member-refs">
-			    
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://mengzaiqiao.github.io/" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-		    </div>
-     
+
+        
+          <a href="https://scholar.google.com/citations?user=GAyIzPMAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/alessio-cocchieri-8aa082271/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
       </div>
+    </div>
 
-  </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
+    
+      <p class="person-dates">
+        2023, Nov.
+        
+          – present
+        
+      </p>
+    
 
-      <div class="card card-team card-animation-team">
+    
+      <div class="person-topics">
         
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1-V4UXwv4XofLK9XzewTj8IySaR7Kg329" alt="Paolo" />
-          </figure>
-        </div>
+          <span>Large Language Models</span>
         
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Paolo Papotti</p>
-        </div>
-		
-        <div class="team-member-refs">
-			    
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.eurecom.fr/~papotti/" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-		    </div>
-     
+          <span>Multimodal Language Models</span>
+        
+          <span>Language Models Affordability</span>
+        
       </div>
-
-  </div>
-  
-
-</div>
-
-<br>
-<br>
-<h2 class="people-header">Previous Collaborators</h2>
-
-<div class="columns is-multiline">
-
-  <div class="column is-12">
     
 
   </div>
 
   
-
+    <details class="person-bio">
+      <summary aria-label="Biography of Alessio Cocchieri">
+        Biography
+      </summary>
+      <p>Alessio Cocchieri earned his B.S. degree in Computer Science and M.S. degree in Artificial Intelligence from the University of Bologna in 2023. He is currently a Ph.D. student in Computer Science and Engineering, University of Bologna. During his academic journey, Alessio undertook an internship at IBM Research Europe, which played a pivotal role in shaping his upcoming research endeavors.</p>
+    </details>
   
-  <div class="column is-4-desktop is-6-tablet">
+</article><article class="person-card">
+  <div class="person-overview">
 
-      <div class="card card-team card-animation-team">
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/lorenzo_molfetta.webp"
+        alt="Lorenzo Molfetta"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Lorenzo</span>
+        <span class="person-surname">Molfetta</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PhD Student</p>
+      
+
+      <div class="resource-links person-links">
         
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1mP3eJW1Ku15pP9vJpMjQLNBNOocI5FjB" alt="Nicola" />
-          </figure>
-        </div>
+          <a href="https://www.unibo.it/sitoweb/lorenzo.molfetta"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
         
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Nicola Poggialini</p>
-		      <p class="team-member-start-end"><time>2022, Dec.</time> - 2023, Dec.</p>
-		      <p>
-			      <span class="team-member-label team-member-role">Research Fellow</span><br>
-			      
-			      <span class="team-member-label">Topic Modeling</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Semantic Parsing</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Nicola Poggialini received the B.S. degree (with honors) in Statistics at the University of Florence in 2019 and the M.S. degree in Artificial Intelligence at the University of Bologna. Since 2022, he was a research fellow in NLP for the Department of Computer Science and Engineering at the University of Bologna with a special focus on topic modeling and semantic parsing.</p>
-		    
-        <div class="team-member-refs">
-			    
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://github.com/nicolapoggialini" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="www.linkedin.com/in/nicola-poggialini-134b66232" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-		    </div>
-     
+
+        
+          <a href="https://scholar.google.com/citations?user=cyOS_J0AAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/lorenzo-molfetta/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
       </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2023, Nov.
+        
+          – present
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Knowledge-Enhanced Generation</span>
+        
+          <span>Knowledge Representation Learning</span>
+        
+          <span>Neuro-Symbolic AI</span>
+        
+      </div>
+    
 
   </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
 
-      <div class="card card-team card-animation-team">
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Lorenzo Molfetta">
+        Biography
+      </summary>
+      <p>Lorenzo Molfetta received his B.S. degree in Computer Science and M.S. degree in Artificial Intelligence from the University of Bologna, Italy, in 2021 and 2023. He is currently a Ph.D. student at the Department of Computer Science and Engineering, University of Bologna. His research activity mainly focuses on knowledge representation learning and neural reasoning.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/giovanni_pio_delvecchio.webp"
+        alt="Giovanni Pio Delvecchio"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Giovanni Pio</span>
+        <span class="person-surname">Delvecchio</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PhD Student</p>
+      
+
+      <div class="resource-links person-links">
         
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1xNir42IYMKq1NeiRo4sFGO-0qP-bLGcB" alt="Stefano" />
-          </figure>
-        </div>
+          <a href="https://www.unibo.it/sitoweb/g.delvecchio"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
         
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Stefano Salvatori</p>
-		      <p class="team-member-start-end"><time>2020, Jun.</time> - 2023, Mar.</p>
-		      <p>
-			      <span class="team-member-label team-member-role">Post-graduate Researcher</span><br>
-			      
-			      <span class="team-member-label">Cross-Modal Retrieval</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Vision-and-Language Transformers</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Stefano Salvatori received the B.S. degree and M.S. degree with honors in computer science and engineering from the University of Bologna, Italy, in 2018 and 2021. His research interests include natural language processing, information retrieval, vision-language models and their applications. He is the author of several papers published and presented at international conferences such as AAAI and SISAP.</p>
-		    
-        <div class="team-member-refs">
-			    
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://github.com/Stefano-Salvatori" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/stefano-salvatori-44194020a/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-		    </div>
-     
+
+        
+          <a href="https://scholar.google.com/citations?user=jrr7O7EAAAAJ&hl=en"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/giovanni-pio-delvecchio-09a069259/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
       </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2024, Nov.
+        
+          – present
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Neuro-Symbolic AI</span>
+        
+          <span>Legal NLP</span>
+        
+      </div>
+    
 
   </div>
-  
-  <div class="column is-4-desktop is-6-tablet">
 
-      <div class="card card-team card-animation-team">
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Giovanni Pio Delvecchio">
+        Biography
+      </summary>
+      <p>Giovanni Pio Delvecchio received his B.S. degree in Computer Science from the University of Bari in 2021 and M.S. degree in Artificial Intelligence from the University of Bologna in 2024. He developed his M.S. thesis at the National Institute of Informatics in Tokyo. He is currently a Ph.D. student at the Department of Computer Science and Engineering, University of Bologna.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/stefano_fantazzini.webp"
+        alt="Stefano Fantazzini"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Stefano</span>
+        <span class="person-surname">Fantazzini</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PhD Student</p>
+      
+
+      <div class="resource-links person-links">
         
-        <div>
-          <figure>
-            <img class="img-circle" src="https://drive.google.com/thumbnail?sz=w1920&id=1MNbMcWS2REV3oUherJ1Nibys7H5wtLh3" alt="Lorenzo" />
-          </figure>
-        </div>
+          <a href="https://www.unibo.it/sitoweb/stefano.fantazzini"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
         
-        <div class="card-content team-card-content">
-          <p class="team-member-title is-4">Lorenzo Valgimigli</p>
-		      <p class="team-member-start-end"><time>2020, Oct.</time> - 2024, Jan.</p>
-		      <p>
-			      <span class="team-member-label team-member-role">PhD Student</span><br>
-			      
-			      <span class="team-member-label">Information Retrieval</span>
-		        <p></p>
-            
-			      <span class="team-member-label">Memory-Augmented Transformer</span>
-		        <p></p>
-            
-          </p>
-        </div>
-		
-        <p>Lorenzo Valgimigli received his Ph.D. in Computer Science and Engineering from the University of Bologna in 2024 (scholarship funded by Maggioli Group). His contributions to AI and NLP are evidenced by publications in esteemed conferences like AAAI, ACL, ECAI, and EMNLP, advancing machine language processing to enhance AI’s human-like interaction capabilities.</p>
-		    
-        <div class="team-member-refs">
-			    
-            <a target="_blank" rel="noopener noreferrer" aria-label="Website" href="https://www.unibo.it/sitoweb/lorenzo.valgimigli/" class="icon-button">
-              <i class="fa-solid fa-user"></i>
-            </a>
-          
-          
-            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/lorenzo-valgimigli-6b21281b7/" class="icon-button">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a> 
-          
-		    </div>
-     
+
+        
+          <a href="https://scholar.google.com/citations?user=lFahIjcAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/stefano-fantazzini-760214278/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
       </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2024, Nov.
+        
+          – present
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Prompt Learning</span>
+        
+          <span>Generative Language Models</span>
+        
+      </div>
+    
 
   </div>
-  
 
-</div>
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Stefano Fantazzini">
+        Biography
+      </summary>
+      <p>Stefano Fantazzini received his B.S. degree in Computer Science and M.S. degree in Artificial Intelligence from the University of Bologna, Italy, in 2021 and 2024. He is currently a Ph.D. student at the Department of Computer Science and Engineering, University of Bologna. His research activity mainly focuses on generative language models concentrated on model's compliance.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/davide_freddi.webp"
+        alt="Davide Freddi"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Davide</span>
+        <span class="person-surname">Freddi</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PhD Student</p>
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/d.freddi"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=HYDx68MAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/davide-freddi-b69a65225/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2024, Nov.
+        
+          – present
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Generative Language Models</span>
+        
+          <span>Reinforcement Learning</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Davide Freddi">
+        Biography
+      </summary>
+      <p>Davide Freddi is a Ph.D. student at the University of Bologna, where he explores the intersection of reinforcement learning, generative language models, and low-resource regimes. He earned both his B.S. in Computer Science and Engineering and M.S. in Artificial Intelligence with honors from the same university. His early research has been showcased at venues such as ACL 2021 and ICLR 2024.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/francesco_zangrillo.webp"
+        alt="Francesco Zangrillo"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Francesco</span>
+        <span class="person-surname">Zangrillo</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PhD Student</p>
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/f.zangrillo"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=ZuVN0MgAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/francesco-zangrillo-44661b2aa/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2024, Nov.
+        
+          – present
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Neuro-Symbolic AI</span>
+        
+          <span>Agents</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Francesco Zangrillo">
+        Biography
+      </summary>
+      <p>Francesco Zangrillo earned his BSc in Computer Science from the University of Naples Federico II (2021) and an MSc in Artificial Intelligence from the University of Bologna (2024). Now he is a PhD student at the University of Bologna. His research explores neurosymbolic representations in generative language models, focusing on legal and administrative applications with AI agents.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/yiran_zeng.webp"
+        alt="Yiran Zeng"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Yiran</span>
+        <span class="person-surname">Zeng</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PhD Student</p>
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/yiran.zeng"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=kZXtK-MAAAAJ&hl=en"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/yiran-zeng-yyy/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2024, Nov.
+        
+          – present
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Knowledge Graph Representation Learning</span>
+        
+          <span>Large Language Models</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Yiran Zeng">
+        Biography
+      </summary>
+      <p>Yiran Zeng earned his M.S. degree in Artificial Intelligence from the University of Bologna, Italy, in 2024. He is currently a Ph.D. student in the Department of Computer Science and Engineering at the University of Bologna. His research primarily centers on knowledge graph representation learning and knowledge grounding using large language models.</p>
+    </details>
+  
+</article></div>
+</section>
+
+
+
+
+<section class="people-section">
+<h2>Faculty members</h2>
+<div class="people-grid"><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/claudio_sartori.webp"
+        alt="Claudio Sartori"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Claudio</span>
+        <span class="person-surname">Sartori</span>
+    </h3>
+
+    <div class="person-meta">
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/claudio.sartori"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=BfulzOcAAAAJ&hl=it"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Claudio Sartori">
+        Biography
+      </summary>
+      <p>Claudio Sartori is a Full Professor in the Department of Computer Science and Engineering at the University of Bologna. His research covers data mining, machine learning, data science and quantum machine learning, with a focus on extracting knowledge from data. He is also the scientific director of the Master in Data Science offered by Bologna Business School and the University of Bologna.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame portrait-lodi">
+      <img
+        class="person-photo"
+        src="/assets/images/people/stefano_lodi.webp"
+        alt="Stefano Lodi"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Stefano</span>
+        <span class="person-surname">Lodi</span>
+    </h3>
+
+    <div class="person-meta">
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/stefano.lodi"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+
+        
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Stefano Lodi">
+        Biography
+      </summary>
+      <p>Stefano Lodi is an Associate Professor in the Department of Computer Science and Engineering at the University of Bologna. He earned a degree in Electronic Engineering in 1988 and a PhD in Computer Science and Electronic Engineering in 1993 at the same university. His teaching includes computer science foundations, information systems and information systems for decision support.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/antonella_carbonaro.webp"
+        alt="Antonella Carbonaro"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Antonella</span>
+        <span class="person-surname">Carbonaro</span>
+    </h3>
+
+    <div class="person-meta">
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/antonella.carbonaro"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=TsJoqIUAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Antonella Carbonaro">
+        Biography
+      </summary>
+      <p>Antonella Carbonaro is an Associate Professor in the Department of Computer Science and Engineering at the University of Bologna. She holds a PhD in Intelligent Artificial Systems from the University of Ancona. Her research studies data and knowledge modeling, including the representation of entities and their relationships, with applications to healthcare. Her current projects include digital prevention and knowledge graphs for cancer research.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/giuseppe_tagliavini.webp"
+        alt="Giuseppe Tagliavini"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Giuseppe</span>
+        <span class="person-surname">Tagliavini</span>
+    </h3>
+
+    <div class="person-meta">
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/giuseppe.tagliavini"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=gwf83zEAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Giuseppe Tagliavini">
+        Biography
+      </summary>
+      <p>Giuseppe Tagliavini is a tenure-track researcher in the Department of Computer Science and Engineering at the University of Bologna. He earned his MSc in Computer Engineering in 2010 and his PhD in Electronic Engineering in 2017 at the same university. His academic work is in information processing systems.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/ilaria_bartolini.webp"
+        alt="Ilaria Bartolini"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Ilaria</span>
+        <span class="person-surname">Bartolini</span>
+    </h3>
+
+    <div class="person-meta">
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/ilaria.bartolini"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=FErx39oAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Ilaria Bartolini">
+        Biography
+      </summary>
+      <p>Ilaria Bartolini is a Full Professor of Multimedia Data Management in the Department of Computer Science and Engineering at the University of Bologna. Her research addresses the retrieval, analysis and organization of multimedia data, including similarity search and the learning of user preferences. She leads research activities within the MultiMedia DataBase Group at DISI.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/marco_antonio_boschetti.webp"
+        alt="Marco Antonio Boschetti"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Marco Antonio</span>
+        <span class="person-surname">Boschetti</span>
+    </h3>
+
+    <div class="person-meta">
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/marco.boschetti"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=NEPvhEcAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Marco Antonio Boschetti">
+        Biography
+      </summary>
+      <p>Marco Antonio Boschetti is a Full Professor of Operational Research in the Department of Mathematics at the University of Bologna. He received his PhD in Operational Research from Imperial College London in 1999. His research develops optimization models and algorithms for complex problems in management and computer science, including logistics, production, project management and mobility.</p>
+    </details>
+  
+</article></div>
+</section>
+
+
+
+
+<section class="people-section">
+<h2>International research members</h2>
+<div class="people-grid"><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/zaiqiao_meng.webp"
+        alt="Zaiqiao Meng"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Zaiqiao</span>
+        <span class="person-surname">Meng</span>
+    </h3>
+
+    <div class="person-meta">
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://mengzaiqiao.github.io/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=5jJKFVcAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Zaiqiao Meng">
+        Biography
+      </summary>
+      <p>Zaiqiao Meng researches natural language processing, information retrieval and knowledge graphs, with a particular focus on biomedical applications. He received his PhD in Computer Science from Sun Yat-sen University in 2018 and has held research positions at the universities of Glasgow and Cambridge. His work includes knowledge extraction, representation and reasoning with language models.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/paolo_papotti.webp"
+        alt="Paolo Papotti"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Paolo</span>
+        <span class="person-surname">Papotti</span>
+    </h3>
+
+    <div class="person-meta">
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.eurecom.fr/~papotti/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=YwoezYX7JVgJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Paolo Papotti">
+        Biography
+      </summary>
+      <p>Paolo Papotti is a Professor in the Data Science Department at EURECOM, France. He received his PhD from Roma Tre University in 2007 and previously worked at the Qatar Computing Research Institute and Arizona State University. His research spans data management and natural language processing, with particular interests in data integration and information quality.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/pasquale_minervini.webp"
+        alt="Pasquale Minervini"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Pasquale</span>
+        <span class="person-surname">Minervini</span>
+    </h3>
+
+    <div class="person-meta">
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://neuralnoise.com/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=9sk6CSgAAAAJ"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Pasquale Minervini">
+        Biography
+      </summary>
+      <p>Pasquale Minervini is a Lecturer in Natural Language Processing at the School of Informatics, University of Edinburgh, and an ELLIS Scholar. His research interests include knowledge-intensive natural language processing, relational learning, neuro-symbolic models and data-efficient, robust deep learning. He is also a co-founder and CTO of Miniml.AI.</p>
+    </details>
+  
+</article></div>
+</section>
+
+
+
+
+<section class="people-section">
+<h2>Past collaborators</h2>
+<div class="people-grid"><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/paolo_italiani.webp"
+        alt="Paolo Italiani"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Paolo</span>
+        <span class="person-surname">Italiani</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PhD Student</p>
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://paoloitaliani.github.io/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=hmVkN7QAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/paolo-italiani-957913203/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2022, Nov.
+        
+          – 2026
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Graph-Augmented Language Models</span>
+        
+          <span>Knowledge Representation Learning</span>
+        
+          <span>Differentiable Operators</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Paolo Italiani">
+        Biography
+      </summary>
+      <p>Paolo Italiani received the B.S. and M.S. degrees in Statistical Sciences from the University of Bologna, Italy, in 2019 and 2022. He worked with the group from 2022 to 2026 as a PhD student in the Department of Computer Science and Engineering at the University of Bologna, with a scholarship co-funded by Maggioli Group. His research focuses on generative language models and legal applications.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/nicola_poggialini.webp"
+        alt="Nicola Poggialini"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Nicola</span>
+        <span class="person-surname">Poggialini</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">Research Fellow</p>
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://github.com/nicolapoggialini"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+
+        
+          <a href="www.linkedin.com/in/nicola-poggialini-134b66232"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2022, Dec.
+        
+          – 2023
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Topic Modeling</span>
+        
+          <span>Semantic Parsing</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Nicola Poggialini">
+        Biography
+      </summary>
+      <p>Nicola Poggialini received the B.S. degree (with honors) in Statistics at the University of Florence in 2019 and the M.S. degree in Artificial Intelligence at the University of Bologna. Since 2022, he was a research fellow in NLP for the Department of Computer Science and Engineering at the University of Bologna with a special focus on topic modeling and semantic parsing.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/stefano_salvatori.webp"
+        alt="Stefano Salvatori"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Stefano</span>
+        <span class="person-surname">Salvatori</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">Research Fellow</p>
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://github.com/Stefano-Salvatori"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=1jcv7IsAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/stefano-salvatori-44194020a/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2020, Jun.
+        
+          – 2023
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Cross-Modal Retrieval</span>
+        
+          <span>Vision-and-Language Transformers</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Stefano Salvatori">
+        Biography
+      </summary>
+      <p>Stefano Salvatori received the B.S. degree and M.S. degree with honors in computer science and engineering from the University of Bologna, Italy, in 2018 and 2021. His research interests include natural language processing, information retrieval, vision-language models and their applications. He is the author of several papers published and presented at international conferences such as AAAI and SISAP.</p>
+    </details>
+  
+</article><article class="person-card">
+  <div class="person-overview">
+
+    <div class="person-photo-frame">
+      <img
+        class="person-photo"
+        src="/assets/images/people/lorenzo_valgimigli.webp"
+        alt="Lorenzo Valgimigli"
+        loading="lazy"
+        width="128"
+        height="128"
+      >
+    </div>
+
+    <h3>
+        <span class="person-name">Lorenzo</span>
+        <span class="person-surname">Valgimigli</span>
+    </h3>
+
+    <div class="person-meta">
+      
+        <p class="person-role">PhD Student</p>
+      
+
+      <div class="resource-links person-links">
+        
+          <a href="https://www.unibo.it/sitoweb/lorenzo.valgimigli/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Website" title="Website">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://scholar.google.com/citations?user=h6jngsQAAAAJ&hl=it&oi=ao"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Google Scholar" title="Google Scholar">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          </a>
+        
+
+        
+          <a href="https://www.linkedin.com/in/lorenzo-valgimigli-6b21281b7/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+
+    
+      <p class="person-dates">
+        2020, Oct.
+        
+          – 2024
+        
+      </p>
+    
+
+    
+      <div class="person-topics">
+        
+          <span>Information Retrieval</span>
+        
+          <span>Memory-Augmented Transformer</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+    <details class="person-bio">
+      <summary aria-label="Biography of Lorenzo Valgimigli">
+        Biography
+      </summary>
+      <p>Lorenzo Valgimigli received his Ph.D. in Computer Science and Engineering from the University of Bologna in 2024 (scholarship funded by Maggioli Group). His contributions to AI and NLP are evidenced by publications in esteemed conferences like AAAI, ACL, ECAI, and EMNLP, advancing machine language processing to enhance AI’s human-like interaction capabilities.</p>
+    </details>
+  
+</article></div>
+</section>
+
                     </div>
                     
                 </div>
@@ -1112,21 +2161,19 @@
         </main>
         <footer class="footer py-5 has-background-primary has-text-light">
     <div class="container">
-        <div class="columns is-vcentered is-mobile">
 
-            <!-- Logo on the Left (Take Only Needed Space) -->
+        <div class="columns is-vcentered is-mobile footer-main">
             <div class="column is-narrow">
                 <a href="/">
-                    <img 
-                        src="/assets/css/logo.svg" 
-                        alt="UniboNLP Logo" 
+                    <img
+                        src="/assets/css/logo.svg"
+                        alt="UniboNLP Logo"
                         loading="lazy"
-                        class="navbar-logo"
+                        class="footer-logo"
                     >
                 </a>
             </div>
 
-            <!-- University Name on the Right -->
             <div class="column has-text-right">
                 <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
                     Department of Computer Science and Engineering (DISI),<br>
@@ -1134,28 +2181,22 @@
                     Via dell'Università 50, I-47522 Cesena, Italy
                 </p>
             </div>
-
         </div>
+
+        <div class="footer-bottom">
+            <p class="footer-contact">
+                <a href="mailto:gianluca.moro@unibo.it">Contact</a>
+                · <a href="https://github.com/disi-unibo-nlp">GitHub</a>
+            </p>
+
+            <p class="footer-credit">
+                Website by
+                <a href="https://scholar.google.com/citations?user=BmaBHcAAAAAJ&amp;hl=it">Luca Ragazzi</a>
+            </p>
+        </div>
+
     </div>
-</footer>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const footer = document.querySelector(".footer");
-        const body = document.body;
-        const html = document.documentElement;
-        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
-                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
-        const viewportHeight = window.innerHeight;
-
-        if (pageHeight <= viewportHeight) {
-            document.body.classList.add("short-content");
-        } else {
-            document.body.classList.remove("short-content");
-        }
-    });
-</script>
-   
+</footer>   
         <script src="/assets/js/app.js" defer></script>
         <script src="/assets/js/custom.js" defer></script>
     </body>

@@ -3,12 +3,22 @@
 <html dir="ltr" lang="en" class="has-navbar-fixed-top">
     <head>
     <meta charset="utf-8">
+    <title>Research and Industrial Applications | UniboNLP</title>
+    
+    <meta property="og:title" content="Research and Industrial Applications | UniboNLP">
+    <meta property="og:description" content="We developed several web applications to support the theoretical contributions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://disi-unibo-nlp.github.io/applications/">
+    <meta property="og:image" content="https://disi-unibo-nlp.github.io/assets/css/logo_v2.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://disi-unibo-nlp.github.io/applications/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="description" content="We developed several web applications to support the theoretical contributions.">
     <meta name="theme-color" content="#ffffff">
     <!-- Preload critical assets for faster rendering -->
     <link rel="preload" href="/assets/css/app.css" as="style">
     <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/refinements.css">
     <!-- Favicon Handling --> 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
@@ -20,7 +30,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
     <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    
     <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     <!--
@@ -35,80 +45,81 @@
     <!-- FontAwesome Icons (Optimized for Performance) -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+<noscript><style>@media(max-width:1023px){.navbar.is-fixed-top{position:relative;left:auto;transform:none;top:0;margin:1rem auto}.navbar-menu{display:block}.navbar-burger{display:none}.home-hero .hero-body,.hero.is-medium .hero-body{padding-top:2rem}}</style></noscript>
 </head>
-    <body>  
-            
-        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>  
+    
+        <nav class="navbar is-primary is-fixed-top" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
     <div class="container navigation">  
         <!-- Logo on the Left -->
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
                 <img 
                     src="/assets/css/logo6.svg" 
-                    alt="Website Logo" 
+                    alt="UniboNLP home" 
                     class="navbar-logo"
-                    loading="lazy"
+                    loading="eager"
                 >
             </a>
-            <a
-                role="button"
+            <button
+                type="button"
                 class="navbar-burger burger"
-                aria-label="menu"
+                aria-label="Open navigation" aria-controls="navMenu"
                 aria-expanded="false"
                 data-target="navMenu"
-                :class="{ 'is-active': openNav }"
-                x-on:click="openNav = !openNav"
+                id="navigation-toggle"
             >
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </button>
         </div>
 
         <!-- Navigation Menu -->
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <div class="navbar-menu" id="navMenu" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             <div class="navbar-end" style="margin-right: 1.5rem;">
                 
                     
                         
                             <a 
                                 href="/people/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >People</a>
                         
                     
                         
                             <a 
                                 href="/publications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Publications</a>
                         
                     
                         
                             <a 
                                 href="/applications/" 
-                                class="navbar-item is-active"
+                                class="navbar-item is-active" aria-current="page"
                             >Applications</a>
                         
                     
                         
                             <a 
                                 href="/projects/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Projects</a>
                         
                     
                         
                             <a 
                                 href="/theses/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Theses</a>
                         
                     
                         
                             <a 
                                 href="/deadlines/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Deadlines</a>
                         
                     
@@ -120,315 +131,145 @@
 
         
 
-<section 
-    class="hero 
-        is-medium 
-        is-bold is-primary 
-        "
-    
+
+
+<section
+  class="hero is-medium is-bold is-primary"
+  
 >
-    <div class="hero-body ">
-        <div class="container">
-            
-                <h1 class="title is-2">Research and Industrial Applications</h1>
-            
-            
-                <p class="subtitle is-3">We developed several web applications to support the theoretical contributions.</p>
-                  
-            
-        </div>
+  <div class="hero-body ">
+    <div class="container">
+
+      
+        <h1 class="title is-2">Research and Industrial Applications</h1>
+      
+
+      
+        <p class="subtitle is-3">We developed several web applications to support the theoretical contributions.</p>
+      
+
+      
+
     </div>
-</section>     
-        <main class="section">
+  </div>
+</section>
+
+     
+        <main class="section" id="main-content" tabindex="-1">
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column ">
-                        <div class="columns is-multiline">
+                    <div class="column is-12">
+                        
 
-  <div class="column is-12">
+
+<div class="catalog-grid applications-grid">
+  
+  
     
-  </div>
+      <article class="card catalog-card">
+        <div class="card-content">
+          <h2>
+            <a href="/applications/chatbot_afam/">
+              AFAM Institutes Conversational Assistant
+            </a>
+          </h2>
 
+          <p class="catalog-summary">
+            Prototype Chatbot Assistant for AFAM Institutes
+          </p>
+
+          
+            <p class="catalog-authors">UniboNLP</p>
+          
+
+          <a class="text-link" href="/applications/chatbot_afam/">
+            Explore application
+            <span class="visually-hidden">: AFAM Institutes Conversational Assistant</span>
+            →
+          </a>
+        </div>
+      </article>
+    
   
+    
+      <article class="card catalog-card">
+        <div class="card-content">
+          <h2>
+            <a href="/applications/chatbot_psr/">
+              Regional Tenders Conversational Assistant
+            </a>
+          </h2>
 
+          <p class="catalog-summary">
+            Prototype Chatbot Assistant for Regional Tenders
+          </p>
+
+          
+            <p class="catalog-authors">UniboNLP</p>
+          
+
+          <a class="text-link" href="/applications/chatbot_psr/">
+            Explore application
+            <span class="visually-hidden">: Regional Tenders Conversational Assistant</span>
+            →
+          </a>
+        </div>
+      </article>
+    
   
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/chatbot_afam/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://i0.wp.com/sinusoidalmusic.com/wp-content/uploads/2024/04/1_3DxVbu9L8OxTPJbVGayAGg.webp?resize=828%2C770&ssl=1" alt="AFAM Institutes Conversational Assistant" />
-          </figure>
-        </div>
-        
+    
+      <article class="card catalog-card">
         <div class="card-content">
+          <h2>
+            <a href="/applications/chatbot_turismo/">
+              Tourism Regulations Conversational Assistant
+            </a>
+          </h2>
 
-          <p class="title is-4">AFAM Institutes Conversational Assistant</h2> 
-          <p class="is-italic is-3">UniboNLP</p>
+          <p class="catalog-summary">
+            Prototype Chatbot Assistant for Tourism regulations
+          </p>
 
+          
+            <p class="catalog-authors">UniboNLP</p>
+          
+
+          <a class="text-link" href="/applications/chatbot_turismo/">
+            Explore application
+            <span class="visually-hidden">: Tourism Regulations Conversational Assistant</span>
+            →
+          </a>
         </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/chatbot_turismo/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://www.ecostampa.it/wp-content/uploads/2019/10/chatbot-turismo.png" alt="Tourism Regulations Conversational Assistant" />
-          </figure>
-        </div>
-        
+      </article>
+    
+  
+    
+      <article class="card catalog-card">
         <div class="card-content">
+          <h2>
+            <a href="/applications/codice_appalti/">
+              Legal Conversational Assistant
+            </a>
+          </h2>
 
-          <p class="title is-4">Tourism Regulations Conversational Assistant</h2> 
-          <p class="is-italic is-3">UniboNLP</p>
+          <p class="catalog-summary">
+            Prototype Chatbot Assistant for the Italian Procurement Code
+          </p>
 
+          
+            <p class="catalog-authors">Lorenzo Molfetta, Gianluca Moro</p>
+          
+
+          <a class="text-link" href="/applications/codice_appalti/">
+            Explore application
+            <span class="visually-hidden">: Legal Conversational Assistant</span>
+            →
+          </a>
         </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/chatbot_psr/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4nIzJpUYDRMSKAgVqVJT8_O5qIeOiYX8ghL1c54kF0zw27UZZqZPLNOS5&s=10" alt="Regional Tenders Conversational Assistant" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">Regional Tenders Conversational Assistant</h2> 
-          <p class="is-italic is-3">UniboNLP</p>
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/codice_appalti/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://botnation.ai/wp-content/uploads/2024/01/legalbot.webp" alt="Legal Conversational Assistant" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">Legal Conversational Assistant</h2> 
-          <p class="is-italic is-3">Lorenzo Molfetta, Gianluca Moro</p>
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/bioqagnn/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://snap.stanford.edu/qagnn/qagnn_files/fig_task.png" alt="BioQAGNN" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">BioQAGNN</h2> 
-          <p class="is-italic is-3">Giacomo Frisoni, Enrico Gnagnarella, Luca Ragazzi, Gianluca Moro, Antonella Carbonaro</p>
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/SelfIRSisap2022/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.themcsgroup.com%2Fhs-fs%2Fhub%2F423025%2Ffile-2515973627.jpg%3Fwidth%3D750%26name%3Dfile-2515973627.jpg&f=1&nofb=1" alt="SelfIR" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">SelfIR</h2> 
-          <p class="is-italic is-3">Gianluca Moro, Lorenzo Valgimigli, Alex Rossi, Cristiano Casadei, Andrea Montefiori</p>
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/fashion_retrieval/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://i.ibb.co/KXL00m6/full-architecture-w-img.png" alt="Fashion Retrieval" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">Fashion Retrieval</h2> 
-          <p class="is-italic is-3">Gianluca Moro, Stefano Salvatori, Giacomo Frisoni</p>
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/lawsuit/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://media.springernature.com/lw1200/springer-static/image/art%3A10.1007%2Fs10506-024-09414-w/MediaObjects/10506_2024_9414_Fig2_HTML.png" alt="LAWSUIT" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">LAWSUIT</h2> 
-          <p class="is-italic is-3">Luca Ragazzi, Gianluca Moro, Stefano Guidi, Giacomo Frisoni</p>
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/radiography_retrieval/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41597-019-0322-0/MediaObjects/41597_2019_322_Fig1_HTML.png" alt="Radiography Retrieval" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">Radiography Retrieval</h2> 
-          <p class="is-italic is-3">Gianluca Moro, Stefano Salvatori, Lorenzo Zanetti</p>
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/se3/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://i.ibb.co/0ntnWLV/se3-overview.png" alt="Se3" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">Se3</h2> 
-          <p class="is-italic is-3">Gianluca Moro, Luca Ragazzi</p>
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-
-  <div class="column is-4-desktop is-6-tablet">
-
-    <a href="/applications/sublimer/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/8512538/bin/sensors-21-06430-g003.jpg" alt="Sublimer" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">Sublimer</h2> 
-          <p class="is-italic is-3">Gianluca Moro, Lorenzo Valgimigli</p>
-
-        </div>
-      </div>
-
-    </a>
-
-  </div>
-
+      </article>
+    
+  
 </div>
-
                     </div>
                     
                 </div>
@@ -436,21 +277,19 @@
         </main>
         <footer class="footer py-5 has-background-primary has-text-light">
     <div class="container">
-        <div class="columns is-vcentered is-mobile">
 
-            <!-- Logo on the Left (Take Only Needed Space) -->
+        <div class="columns is-vcentered is-mobile footer-main">
             <div class="column is-narrow">
                 <a href="/">
-                    <img 
-                        src="/assets/css/logo.svg" 
-                        alt="UniboNLP Logo" 
+                    <img
+                        src="/assets/css/logo.svg"
+                        alt="UniboNLP Logo"
                         loading="lazy"
-                        class="navbar-logo"
+                        class="footer-logo"
                     >
                 </a>
             </div>
 
-            <!-- University Name on the Right -->
             <div class="column has-text-right">
                 <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
                     Department of Computer Science and Engineering (DISI),<br>
@@ -458,28 +297,22 @@
                     Via dell'Università 50, I-47522 Cesena, Italy
                 </p>
             </div>
-
         </div>
+
+        <div class="footer-bottom">
+            <p class="footer-contact">
+                <a href="mailto:gianluca.moro@unibo.it">Contact</a>
+                · <a href="https://github.com/disi-unibo-nlp">GitHub</a>
+            </p>
+
+            <p class="footer-credit">
+                Website by
+                <a href="https://scholar.google.com/citations?user=BmaBHcAAAAAJ&amp;hl=it">Luca Ragazzi</a>
+            </p>
+        </div>
+
     </div>
-</footer>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const footer = document.querySelector(".footer");
-        const body = document.body;
-        const html = document.documentElement;
-        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
-                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
-        const viewportHeight = window.innerHeight;
-
-        if (pageHeight <= viewportHeight) {
-            document.body.classList.add("short-content");
-        } else {
-            document.body.classList.remove("short-content");
-        }
-    });
-</script>
-   
+</footer>   
         <script src="/assets/js/app.js" defer></script>
         <script src="/assets/js/custom.js" defer></script>
     </body>

@@ -1,0 +1,21 @@
+/* Scoped to People. Works with the existing refinements.css. */
+.people-grid { align-items: stretch; }
+.person-card { display: flex; flex-direction: column; min-width: 0; }
+.person-overview { flex: 1; padding-bottom: 1rem; }
+.person-card .person-photo { background: #f3f2f0; filter: grayscale(100%); object-position: center; }
+.person-card .person-bio { margin-top: 0; }
+.person-card .person-topics span { overflow-wrap: anywhere; }
+.person-card .resource-links { min-height: 1.5rem; flex-wrap: wrap; }
+.person-bio > summary:focus-visible { outline: 2px solid var(--brand-dark); outline-offset: 4px; border-radius: 3px; }
+/* Share the overview, biography and links rows across adjacent cards.
+   Expanding a biography keeps all Biography controls in that row aligned. */
+@supports (grid-template-rows: subgrid) {
+  .person-card { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 0; }
+  .person-card .resource-links { align-self: end; margin-top: 1rem; }
+}
+@media (max-width: 768px) {
+  .person-card { text-align: center; }
+  .person-card .person-photo { margin-left: auto; margin-right: auto; }
+  .person-card .person-topics, .person-card .resource-links { justify-content: center; }
+  .person-card .person-bio > p { text-align: left; }
+}

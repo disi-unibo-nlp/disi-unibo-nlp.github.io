@@ -3,12 +3,22 @@
 <html dir="ltr" lang="en" class="has-navbar-fixed-top">
     <head>
     <meta charset="utf-8">
+    <title>Research and Industrial Projects | UniboNLP</title>
+    
+    <meta property="og:title" content="Research and Industrial Projects | UniboNLP">
+    <meta property="og:description" content="We work on several national projects on AI and NLP.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://disi-unibo-nlp.github.io/projects/">
+    <meta property="og:image" content="https://disi-unibo-nlp.github.io/assets/css/logo_v2.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://disi-unibo-nlp.github.io/projects/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="description" content="We work on several national projects on AI and NLP.">
     <meta name="theme-color" content="#ffffff">
     <!-- Preload critical assets for faster rendering -->
     <link rel="preload" href="/assets/css/app.css" as="style">
     <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/refinements.css">
     <!-- Favicon Handling --> 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
@@ -20,7 +30,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
     <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    
     <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     <!--
@@ -35,80 +45,81 @@
     <!-- FontAwesome Icons (Optimized for Performance) -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+<noscript><style>@media(max-width:1023px){.navbar.is-fixed-top{position:relative;left:auto;transform:none;top:0;margin:1rem auto}.navbar-menu{display:block}.navbar-burger{display:none}.home-hero .hero-body,.hero.is-medium .hero-body{padding-top:2rem}}</style></noscript>
 </head>
-    <body>  
-            
-        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>  
+    
+        <nav class="navbar is-primary is-fixed-top" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
     <div class="container navigation">  
         <!-- Logo on the Left -->
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
                 <img 
                     src="/assets/css/logo6.svg" 
-                    alt="Website Logo" 
+                    alt="UniboNLP home" 
                     class="navbar-logo"
-                    loading="lazy"
+                    loading="eager"
                 >
             </a>
-            <a
-                role="button"
+            <button
+                type="button"
                 class="navbar-burger burger"
-                aria-label="menu"
+                aria-label="Open navigation" aria-controls="navMenu"
                 aria-expanded="false"
                 data-target="navMenu"
-                :class="{ 'is-active': openNav }"
-                x-on:click="openNav = !openNav"
+                id="navigation-toggle"
             >
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </button>
         </div>
 
         <!-- Navigation Menu -->
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <div class="navbar-menu" id="navMenu" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             <div class="navbar-end" style="margin-right: 1.5rem;">
                 
                     
                         
                             <a 
                                 href="/people/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >People</a>
                         
                     
                         
                             <a 
                                 href="/publications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Publications</a>
                         
                     
                         
                             <a 
                                 href="/applications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Applications</a>
                         
                     
                         
                             <a 
                                 href="/projects/" 
-                                class="navbar-item is-active"
+                                class="navbar-item is-active" aria-current="page"
                             >Projects</a>
                         
                     
                         
                             <a 
                                 href="/theses/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Theses</a>
                         
                     
                         
                             <a 
                                 href="/deadlines/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Deadlines</a>
                         
                     
@@ -120,168 +131,64 @@
 
         
 
-<section 
-    class="hero 
-        is-medium 
-        is-bold is-primary 
-        "
-    
+
+
+<section
+  class="hero is-medium is-bold is-primary"
+  
 >
-    <div class="hero-body ">
-        <div class="container">
-            
-                <h1 class="title is-2">Research and Industrial Projects</h1>
-            
-            
-                <p class="subtitle is-3">We work on several national projects on AI and NLP.</p>
-                  
-            
-        </div>
+  <div class="hero-body ">
+    <div class="container">
+
+      
+        <h1 class="title is-2">Research and Industrial Projects</h1>
+      
+
+      
+        <p class="subtitle is-3">We work on several national projects on AI and NLP.</p>
+      
+
+      
+
     </div>
-</section>     
-        <main class="section">
+  </div>
+</section>
+
+     
+        <main class="section" id="main-content" tabindex="-1">
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column ">
-                        <div class="columns is-multiline">
+                    <div class="column is-12">
+                        
 
-  <div class="column is-12">
-    
-  </div>
+<div class="catalog-grid projects-grid">
 
-  
 
-  
-  
-  <div class="column is-3-desktop is-6-tablet">
-    <a href="/projects/aipact/">
+<article class="card catalog-card">
+<a class="project-image" href="/projects/aipact/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-a8dde6967418.webp" alt="" loading="lazy" width="480" height="240"></a>
+<div class="card-content"><h2><a href="/projects/aipact/">AI-PACT</a></h2><p class="catalog-summary">AI Solutions for Public Administration and Digital Public Services</p><a class="text-link" href="/projects/aipact/">Explore<span class="visually-hidden"> AI-PACT</span> →</a></div>
+</article>
 
-      <div class="card">
+<article class="card catalog-card">
+<a class="project-image" href="/projects/dare/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-24bd4aa9d599.webp" alt="" loading="lazy" width="480" height="240"></a>
+<div class="card-content"><h2><a href="/projects/dare/">DARE</a></h2><p class="catalog-summary">Digital Technologies for Lifelong Health and Prevention</p><a class="text-link" href="/projects/dare/">Explore<span class="visually-hidden"> DARE</span> →</a></div>
+</article>
 
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://futurium.ec.europa.eu/sites/default/files/2020-06/eu-ai-alliance-3_0.png" alt="AI-PACT" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
+<article class="card catalog-card">
+<a class="project-image" href="/projects/fair/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-3a8d49a6a207.webp" alt="" loading="lazy" width="480" height="240"></a>
+<div class="card-content"><h2><a href="/projects/fair/">FAIR</a></h2><p class="catalog-summary">Human-Centered, Trustworthy, and Sustainable Artificial Intelligence</p><a class="text-link" href="/projects/fair/">Explore<span class="visually-hidden"> FAIR</span> →</a></div>
+</article>
 
-          <p class="title is-4">AI-PACT</h2>
-          <p class="is-italic is-3"></p>
+<article class="card catalog-card">
+<a class="project-image" href="/projects/carisbo/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-29a4c601cd58.webp" alt="" loading="lazy" width="480" height="240"></a>
+<div class="card-content"><h2><a href="/projects/carisbo/">AI-SLN</a></h2><p class="catalog-summary">AI for Sentinel Lymph Node Assessment in Fluorescence-Guided Surgery</p><a class="text-link" href="/projects/carisbo/">Explore<span class="visually-hidden"> AI-SLN</span> →</a></div>
+</article>
 
-        </div>
-      </div>
-    </a>
-  </div>
-  
-  
-  
-  <div class="column is-3-desktop is-6-tablet">
-    <a href="/projects/carisbo/">
+<article class="card catalog-card">
+<a class="project-image" href="/projects/valwarp/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-2b7be934ee42.webp" alt="" loading="lazy" width="480" height="240"></a>
+<div class="card-content"><h2><a href="/projects/valwarp/">VALWARP</a></h2><p class="catalog-summary">AI-Assisted Design of Sustainable Biofuel Value Chains</p><a class="text-link" href="/projects/valwarp/">Explore<span class="visually-hidden"> VALWARP</span> →</a></div>
+</article>
 
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://drive.google.com/thumbnail?sz=w1920&id=14Kq0bQ9Kz9Rs7LS5m5XpMbIEFG3_9Q6x" alt="AI-SLN" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">AI-SLN</h2>
-          <p class="is-italic is-3"></p>
-
-        </div>
-      </div>
-    </a>
-  </div>
-  
-  
-  
-  
-  
-  <div class="column is-3-desktop is-6-tablet">
-    <a href="/projects/dare/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://www.fondazionedare.it/wp-content/uploads/2024/05/DARE_logo_2.0.png" alt="DARE" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">DARE</h2>
-          <p class="is-italic is-3"></p>
-
-        </div>
-      </div>
-    </a>
-  </div>
-  
-  
-  
-  <div class="column is-3-desktop is-6-tablet">
-    <a href="/projects/fair/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://ai.dii.unipi.it/wp-content/uploads/2023/07/Senza-titolo.png" alt="FAIR" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">FAIR</h2>
-          <p class="is-italic is-3"></p>
-
-        </div>
-      </div>
-    </a>
-  </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <div class="column is-3-desktop is-6-tablet">
-    <a href="/projects/valwarp/">
-
-      <div class="card">
-
-        
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="https://drive.google.com/thumbnail?sz=w1920&id=1jxmIBLUv6Vd6tfgj4DGUPp7AHWL7rzbU" alt="VALWARP" />
-          </figure>
-        </div>
-        
-        <div class="card-content">
-
-          <p class="title is-4">VALWARP</h2>
-          <p class="is-italic is-3"></p>
-
-        </div>
-      </div>
-    </a>
-  </div>
-  
-  
 </div>
 
                     </div>
@@ -291,21 +198,19 @@
         </main>
         <footer class="footer py-5 has-background-primary has-text-light">
     <div class="container">
-        <div class="columns is-vcentered is-mobile">
 
-            <!-- Logo on the Left (Take Only Needed Space) -->
+        <div class="columns is-vcentered is-mobile footer-main">
             <div class="column is-narrow">
                 <a href="/">
-                    <img 
-                        src="/assets/css/logo.svg" 
-                        alt="UniboNLP Logo" 
+                    <img
+                        src="/assets/css/logo.svg"
+                        alt="UniboNLP Logo"
                         loading="lazy"
-                        class="navbar-logo"
+                        class="footer-logo"
                     >
                 </a>
             </div>
 
-            <!-- University Name on the Right -->
             <div class="column has-text-right">
                 <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
                     Department of Computer Science and Engineering (DISI),<br>
@@ -313,28 +218,22 @@
                     Via dell'Università 50, I-47522 Cesena, Italy
                 </p>
             </div>
-
         </div>
+
+        <div class="footer-bottom">
+            <p class="footer-contact">
+                <a href="mailto:gianluca.moro@unibo.it">Contact</a>
+                · <a href="https://github.com/disi-unibo-nlp">GitHub</a>
+            </p>
+
+            <p class="footer-credit">
+                Website by
+                <a href="https://scholar.google.com/citations?user=BmaBHcAAAAAJ&amp;hl=it">Luca Ragazzi</a>
+            </p>
+        </div>
+
     </div>
-</footer>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const footer = document.querySelector(".footer");
-        const body = document.body;
-        const html = document.documentElement;
-        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
-                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
-        const viewportHeight = window.innerHeight;
-
-        if (pageHeight <= viewportHeight) {
-            document.body.classList.add("short-content");
-        } else {
-            document.body.classList.remove("short-content");
-        }
-    });
-</script>
-   
+</footer>   
         <script src="/assets/js/app.js" defer></script>
         <script src="/assets/js/custom.js" defer></script>
     </body>

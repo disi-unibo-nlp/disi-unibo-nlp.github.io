@@ -3,12 +3,22 @@
 <html dir="ltr" lang="en" class="has-navbar-fixed-top">
     <head>
     <meta charset="utf-8">
+    <title>Health | UniboNLP</title>
+    
+    <meta property="og:title" content="Health | UniboNLP">
+    <meta property="og:description" content="The Unibo Natural Language Processing Group">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://disi-unibo-nlp.github.io/datasets/health/">
+    <meta property="og:image" content="https://disi-unibo-nlp.github.io/assets/css/logo_v2.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://disi-unibo-nlp.github.io/datasets/health/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="description" content="The Unibo Natural Language Processing Group">
     <meta name="theme-color" content="#ffffff">
     <!-- Preload critical assets for faster rendering -->
     <link rel="preload" href="/assets/css/app.css" as="style">
     <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/refinements.css">
     <!-- Favicon Handling --> 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
@@ -20,7 +30,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
     <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    
     <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     <!--
@@ -35,80 +45,81 @@
     <!-- FontAwesome Icons (Optimized for Performance) -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+<noscript><style>@media(max-width:1023px){.navbar.is-fixed-top{position:relative;left:auto;transform:none;top:0;margin:1rem auto}.navbar-menu{display:block}.navbar-burger{display:none}.home-hero .hero-body,.hero.is-medium .hero-body{padding-top:2rem}}</style></noscript>
 </head>
-    <body>  
-            
-        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>  
+    
+        <nav class="navbar is-primary is-fixed-top" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
     <div class="container navigation">  
         <!-- Logo on the Left -->
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
                 <img 
                     src="/assets/css/logo6.svg" 
-                    alt="Website Logo" 
+                    alt="UniboNLP home" 
                     class="navbar-logo"
-                    loading="lazy"
+                    loading="eager"
                 >
             </a>
-            <a
-                role="button"
+            <button
+                type="button"
                 class="navbar-burger burger"
-                aria-label="menu"
+                aria-label="Open navigation" aria-controls="navMenu"
                 aria-expanded="false"
                 data-target="navMenu"
-                :class="{ 'is-active': openNav }"
-                x-on:click="openNav = !openNav"
+                id="navigation-toggle"
             >
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </button>
         </div>
 
         <!-- Navigation Menu -->
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <div class="navbar-menu" id="navMenu" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             <div class="navbar-end" style="margin-right: 1.5rem;">
                 
                     
                         
                             <a 
                                 href="/people/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >People</a>
                         
                     
                         
                             <a 
                                 href="/publications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Publications</a>
                         
                     
                         
                             <a 
                                 href="/applications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Applications</a>
                         
                     
                         
                             <a 
                                 href="/projects/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Projects</a>
                         
                     
                         
                             <a 
                                 href="/theses/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Theses</a>
                         
                     
                         
                             <a 
                                 href="/deadlines/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Deadlines</a>
                         
                     
@@ -120,27 +131,32 @@
 
         
 
-<section 
-    class="hero 
-        is-medium 
-        is-bold is-primary 
-        "
-    
+
+
+<section
+  class="hero is-medium is-bold is-primary"
+  
 >
-    <div class="hero-body ">
-        <div class="container">
-            
-                <h1 class="title is-2">Health</h1>
-            
-                  
-            
-        </div>
+  <div class="hero-body ">
+    <div class="container">
+
+      
+        <h1 class="title is-2">Health</h1>
+      
+
+      
+
+      
+
     </div>
-</section>     
-        <main class="section">
+  </div>
+</section>
+
+     
+        <main class="section" id="main-content" tabindex="-1">
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column ">
+                    <div class="column is-12">
                         <div class="content">
     <p>Datasets for Biomedical Text Summarization:</p>
 <ul>
@@ -159,21 +175,19 @@
         </main>
         <footer class="footer py-5 has-background-primary has-text-light">
     <div class="container">
-        <div class="columns is-vcentered is-mobile">
 
-            <!-- Logo on the Left (Take Only Needed Space) -->
+        <div class="columns is-vcentered is-mobile footer-main">
             <div class="column is-narrow">
                 <a href="/">
-                    <img 
-                        src="/assets/css/logo.svg" 
-                        alt="UniboNLP Logo" 
+                    <img
+                        src="/assets/css/logo.svg"
+                        alt="UniboNLP Logo"
                         loading="lazy"
-                        class="navbar-logo"
+                        class="footer-logo"
                     >
                 </a>
             </div>
 
-            <!-- University Name on the Right -->
             <div class="column has-text-right">
                 <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
                     Department of Computer Science and Engineering (DISI),<br>
@@ -181,28 +195,22 @@
                     Via dell'Università 50, I-47522 Cesena, Italy
                 </p>
             </div>
-
         </div>
+
+        <div class="footer-bottom">
+            <p class="footer-contact">
+                <a href="mailto:gianluca.moro@unibo.it">Contact</a>
+                · <a href="https://github.com/disi-unibo-nlp">GitHub</a>
+            </p>
+
+            <p class="footer-credit">
+                Website by
+                <a href="https://scholar.google.com/citations?user=BmaBHcAAAAAJ&amp;hl=it">Luca Ragazzi</a>
+            </p>
+        </div>
+
     </div>
-</footer>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const footer = document.querySelector(".footer");
-        const body = document.body;
-        const html = document.documentElement;
-        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
-                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
-        const viewportHeight = window.innerHeight;
-
-        if (pageHeight <= viewportHeight) {
-            document.body.classList.add("short-content");
-        } else {
-            document.body.classList.remove("short-content");
-        }
-    });
-</script>
-   
+</footer>   
         <script src="/assets/js/app.js" defer></script>
         <script src="/assets/js/custom.js" defer></script>
     </body>

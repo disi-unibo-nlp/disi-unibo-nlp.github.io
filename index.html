@@ -3,12 +3,22 @@
 <html dir="ltr" lang="en" class="has-navbar-fixed-top">
     <head>
     <meta charset="utf-8">
+    <title>UniboNLP</title>
+    
+    <meta property="og:title" content="UniboNLP">
+    <meta property="og:description" content="Natural language processing research at the University of Bologna, Cesena. We study language models, structured knowledge, and trustworthy AI for medicine, law, and science.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://disi-unibo-nlp.github.io/">
+    <meta property="og:image" content="https://disi-unibo-nlp.github.io/assets/css/logo_v2.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://disi-unibo-nlp.github.io/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="description" content="Natural language processing research at the University of Bologna, Cesena. We study language models, structured knowledge, and trustworthy AI for medicine, law, and science.">
     <meta name="theme-color" content="#ffffff">
     <!-- Preload critical assets for faster rendering -->
     <link rel="preload" href="/assets/css/app.css" as="style">
     <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/refinements.css">
     <!-- Favicon Handling --> 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
@@ -20,7 +30,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
     <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    
     <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     <!--
@@ -35,93 +45,81 @@
     <!-- FontAwesome Icons (Optimized for Performance) -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+<noscript><style>@media(max-width:1023px){.navbar.is-fixed-top{position:relative;left:auto;transform:none;top:0;margin:1rem auto}.navbar-menu{display:block}.navbar-burger{display:none}.home-hero .hero-body,.hero.is-medium .hero-body{padding-top:2rem}}</style></noscript>
 </head>
-    <body>  
-        
-        <div id="intro-overlay">
-            <img 
-                src="/assets/css/logo2.png" 
-                alt="UniboNLP Logo1" 
-                id="intro-logo" 
-                loading="lazy">
-            <img 
-                src="/assets/css/logo.svg" 
-                alt="UniboNLP Logo2" 
-                id="intro-logo2" 
-                loading="lazy">
-        </div>
-            
-        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>  
+    
+        <nav class="navbar is-primary is-fixed-top" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
     <div class="container navigation">  
         <!-- Logo on the Left -->
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
                 <img 
                     src="/assets/css/logo6.svg" 
-                    alt="Website Logo" 
+                    alt="UniboNLP home" 
                     class="navbar-logo"
-                    loading="lazy"
+                    loading="eager"
                 >
             </a>
-            <a
-                role="button"
+            <button
+                type="button"
                 class="navbar-burger burger"
-                aria-label="menu"
+                aria-label="Open navigation" aria-controls="navMenu"
                 aria-expanded="false"
                 data-target="navMenu"
-                :class="{ 'is-active': openNav }"
-                x-on:click="openNav = !openNav"
+                id="navigation-toggle"
             >
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </button>
         </div>
 
         <!-- Navigation Menu -->
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <div class="navbar-menu" id="navMenu" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             <div class="navbar-end" style="margin-right: 1.5rem;">
                 
                     
                         
                             <a 
                                 href="/people/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >People</a>
                         
                     
                         
                             <a 
                                 href="/publications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Publications</a>
                         
                     
                         
                             <a 
                                 href="/applications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Applications</a>
                         
                     
                         
                             <a 
                                 href="/projects/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Projects</a>
                         
                     
                         
                             <a 
                                 href="/theses/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Theses</a>
                         
                     
                         
                             <a 
                                 href="/deadlines/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Deadlines</a>
                         
                     
@@ -133,808 +131,201 @@
 
         
 
-<section 
-    class="hero 
-        is-medium 
-        is-bold is-primary 
-         hero-icon-bg "
-    
->
-    <div class="hero-body ">
-        <div class="container">
-            
-                  
-            
-                <div class="columns is-multiline is-centered">
-                    
-                        <div class="column is-12-mobile is-3-tablet has-text-left callout-container">
-                            <div class="callout-flex">
-                                
-                                    <div class="icon callout-icon">
-                                        <i class="fas fad fa-users fa-4x" aria-hidden="true"></i>
-                                    </div>
-                                
-                                <div class="callout-content">
-                                    <p class="title is-4 call-title">UniboNLP</p>
-                                    <p class="subtitle is-5"><p>The <b>UniBo Natural Language Processing Group</b> at Cesena, led by Prof. Gianluca Moro, comprises researchers from the <b>University of Bologna</b>’s Department of Computer Science and Engineering</p></p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                            <hr class="mobile-separator"> 
-                        
-                    
-                        <div class="column is-12-mobile is-3-tablet has-text-left callout-container">
-                            <div class="callout-flex">
-                                
-                                    <div class="icon callout-icon">
-                                        <i class="fas fad fa-microchip fa-4x" aria-hidden="true"></i>
-                                    </div>
-                                
-                                <div class="callout-content">
-                                    <p class="title is-4 call-title">Tasks</p>
-                                    <p class="subtitle is-5"><p>Chatbots, Document Summarization, Information Extraction/Retrieval, Question Answering, Text-Image Processing and Search, Fact-Checking, Classification</p></p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                            <hr class="mobile-separator"> 
-                        
-                    
-                        <div class="column is-12-mobile is-3-tablet has-text-left callout-container">
-                            <div class="callout-flex">
-                                
-                                    <div class="icon callout-icon">
-                                        <i class="fab fad fa-brain fa-4x" aria-hidden="true"></i>
-                                    </div>
-                                
-                                <div class="callout-content">
-                                    <p class="title is-4 call-title">Topics</p>
-                                    <p class="subtitle is-5"><p>Large Language Models, Graph Neural Networks, End-to-end Differentiability, Agents, Vision-Language Models, Deep Metric Learning, Knowledge Injection, Prompt Learning, Explainable and Trustworthy AI, Sparse Autoencoders, Neuro-Symbolic AI, Multi-Modal AI</p></p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                            <hr class="mobile-separator"> 
-                        
-                    
-                        <div class="column is-12-mobile is-3-tablet has-text-left callout-container">
-                            <div class="callout-flex">
-                                
-                                    <div class="icon callout-icon">
-                                        <i class="fas fad fa-solar-system fa-4x" aria-hidden="true"></i>
-                                    </div>
-                                
-                                <div class="callout-content">
-                                    <p class="title is-4 call-title">Domains</p>
-                                    <p class="subtitle is-5"><p>Long-time experience in <b>biomedical, clinical, and legal applications</b>, collaborating with leading companies and research groups</p></p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    
-                </div>
-            
+<section class="hero is-primary home-hero">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="home-hero-top">
+        <h1 class="visually-hidden">UniboNLP</h1>
+
+        <div class="home-hero-emblem">
+          <div class="home-logo-stage" aria-hidden="true">
+            <img
+              class="home-logo-towers"
+              src="/assets/css/logo2.svg"
+              alt=""
+              width="350"
+              height="402"
+            >
+            <img
+              class="home-logo-complete"
+              src="/assets/css/logo.svg"
+              alt=""
+              width="350"
+              height="402"
+            >
+          </div>
+
+          <p class="home-lead">
+            Natural Language Processing<br>
+            for reliable, efficient, real-world AI.
+          </p>
         </div>
+
+        <div class="home-hero-copy">
+          <p class="home-intro">
+            We are the Natural Language Processing group at the
+            University of Bologna’s Department of Computer Science
+            and Engineering, led by Prof. Gianluca Moro.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="button hero-primary"
+              href="/publications/"
+            >
+              Explore our research
+            </a>
+            <a
+              class="button hero-secondary"
+              href="/people/"
+            >
+              Meet the team
+            </a>
+          </div>
+            <details class="home-research-details" open>
+            <summary>Research areas</summary>
+          <div class="research-areas">
+            <div>
+              <h2>Language &amp; multimodal models</h2>
+              <p>
+                Understanding, generation, and rigorous evaluation
+                of language and vision-language models.
+              </p>
+            </div>
+
+            <div>
+              <h2>Knowledge &amp; reasoning</h2>
+              <p>
+                Retrieval, structured knowledge, graph learning,
+                and reliable AI agents.
+              </p>
+            </div>
+
+            <div>
+              <h2>High-impact applications</h2>
+              <p>
+                Research for biomedical, clinical, legal,
+                and scientific settings.
+              </p>
+            </div>
+          </div>
+          </details>
+        </div>
+      </div>
+
     </div>
-</section>     
-        <main class="section">
+  </div>
+</section>
+
+     
+        <main class="section" id="main-content" tabindex="-1">
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column ">
-                        
-<div class="content">
+                    <div class="column is-12">
+                        <section class="home-section" aria-labelledby="research-heading">
+  <div class="section-heading"><div><p class="eyebrow">Our research</p><h2 id="research-heading">Research highlights</h2></div><a class="text-link" href="/publications/">All publications →</a></div>
+  <div class="highlight-grid">
     
+    
+    <article class="research-card">
+      <span class="venue-tag">EMNLP 2026</span>
+      <h3>Paint It, Black: Evaluating LLMs for De-Identification of Multimodal Clinical Documents</h3>
+      <div class="resource-links"><a href="/publications/#zangrillo_cocchieri_frisoni_freddi_ragazzi_aguzzi_raimondo_seracchioli_moro_emnlp_2026">Details</a></div>
+    </article>
+    
+    <article class="research-card">
+      <span class="venue-tag">EMNLP 2026</span>
+      <h3>Lost in Choice: Evaluating LLMs Under Extreme Multiple-Choice Scaling</h3>
+      <div class="resource-links"><a href="/publications/#cocchieri_ragazzi_tagliavini_moro_emnlp_2026">Details</a><a href="https://github.com/disi-unibo-nlp/lost-in-choice" target="_blank" rel="noopener noreferrer">Code</a></div>
+    </article>
+    
+    <article class="research-card">
+      <span class="venue-tag">EACL 2026</span>
+      <h3>ReMedQA: Are We Done With Medical Multiple-Choice Benchmarks?</h3>
+      <div class="resource-links"><a href="/publications/#cocchieri_ragazzi_tagliavini_moro_eacl_2026">Details</a><a href="https://aclanthology.org/2026.eacl-long.124/" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/disi-unibo-nlp/remedqa" target="_blank" rel="noopener noreferrer">Code</a></div>
+    </article>
+    
+  </div>
+</section>
 
-</div>
+
+
+
+<section class="home-section" aria-labelledby="spotlight-heading"><div class="section-heading"><div><p class="eyebrow">Resources &amp; teaching</p><h2 id="spotlight-heading">Spotlight</h2></div></div>
+<div class="spotlight-grid"><article class="card news-card compact-card">
+<a class="news-image" href="/development/2025/10/22/phd/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-63030c39e238.webp" alt="" loading="lazy" width="640" height="360"></a>
+<div class="card-content"><time datetime="2025-10-22">Oct 22, 2025</time><h3><a href="/development/2025/10/22/phd/">PhD Course</a></h3>
+<p>Cutting-Edge Text Mining: from Consolidated Natural Language Processing Methods to Advanced Large Language Models.
+
+</p><a class="text-link" href="/development/2025/10/22/phd/">Read more<span class="visually-hidden"> about PhD Course</span> →</a></div>
+</article>
+<article class="card news-card compact-card">
+<a class="news-image" href="/development/2024/04/17/llm-slides/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-6002ce9fe99f.webp" alt="" loading="lazy" width="640" height="360"></a>
+<div class="card-content"><time datetime="2024-04-17">Apr 17, 2024</time><h3><a href="/development/2024/04/17/llm-slides/">LLM Slide Deck</a></h3>
+<p>🤖 We are proud to share that our group has curated a short review of the state-of-the-art within the Large Language Model (LLM) literature. Dive into the cutting-edge world of LLMs with our latest...</p><a class="text-link" href="/development/2024/04/17/llm-slides/">Read more<span class="visually-hidden"> about LLM Slide Deck</span> →</a></div>
+</article>
+</div></section>
+
+<section class="home-section" aria-labelledby="news-heading"><div class="section-heading"><div><p class="eyebrow">From the group</p><h2 id="news-heading">Latest news</h2></div><a class="text-link" href="/news/">News archive →</a></div>
+<div class="news-grid"><article class="card news-card ">
+<a class="news-image" href="/development/2026/08/20/emnlp26/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-f043afd2d67d.webp" alt="" loading="lazy" width="640" height="360"></a>
+<div class="card-content"><time datetime="2026-08-20">Aug 20, 2026</time><h3><a href="/development/2026/08/20/emnlp26/">EMNLP 2026 - Budapest 🇭🇺</a></h3>
+<p>We are delighted to announce that we will be at EMNLP 2026 with 2 long papers in the Main and Findings Track! Catch us in Budapest, Hungary to learn more about medical de-identification and...</p><a class="text-link" href="/development/2026/08/20/emnlp26/">Read more<span class="visually-hidden"> about EMNLP 2026 - Budapest 🇭🇺</span> →</a></div>
+</article>
+<article class="card news-card ">
+<a class="news-image" href="/development/2026/07/08/cikm26/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-60422d21c04b.webp" alt="" loading="lazy" width="640" height="360"></a>
+<div class="card-content"><time datetime="2026-07-08">Jul 8, 2026</time><h3><a href="/development/2026/07/08/cikm26/">CIKM 2026 - Rome 🇮🇹</a></h3>
+<p>We are delighted to announce that the Third Workshop on Knowledge-Enhanced Information Retrieval (KEIR) has been accepted at CIKM 2026! Join us in Rome, Italy, on November 8, 2026, for a half-day, in-person workshop...</p><a class="text-link" href="/development/2026/07/08/cikm26/">Read more<span class="visually-hidden"> about CIKM 2026 - Rome 🇮🇹</span> →</a></div>
+</article>
+<article class="card news-card ">
+<a class="news-image" href="/development/2026/04/07/acl26/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-4ebbcacd134c.webp" alt="" loading="lazy" width="640" height="360"></a>
+<div class="card-content"><time datetime="2026-04-07">Apr 7, 2026</time><h3><a href="/development/2026/04/07/acl26/">ACL 2026 - San Diego 🇺🇸</a></h3>
+<p>We are proud to share that we will be at ACL 2026 with 2 long papers in the Main Track! Catch us in San Diego, California to learn more about medical uncertainty of LLMs...</p><a class="text-link" href="/development/2026/04/07/acl26/">Read more<span class="visually-hidden"> about ACL 2026 - San Diego 🇺🇸</span> →</a></div>
+</article>
+<article class="card news-card ">
+<a class="news-image" href="/development/2026/01/03/eacl26/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-6ed301624d27.webp" alt="" loading="lazy" width="640" height="360"></a>
+<div class="card-content"><time datetime="2026-01-03">Jan 3, 2026</time><h3><a href="/development/2026/01/03/eacl26/">EACL 2026 - Rabat 🇲🇦</a></h3>
+<p>We are delighted to announce that we will be at EACL 2026 with 2 long papers in the Main and Findings Track! Catch us in Rabat, Morocco to learn more about medical reliability and...</p><a class="text-link" href="/development/2026/01/03/eacl26/">Read more<span class="visually-hidden"> about EACL 2026 - Rabat 🇲🇦</span> →</a></div>
+</article>
+<article class="card news-card ">
+<a class="news-image" href="/development/2025/11/10/aaai26/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-7f35f9ff5390.webp" alt="" loading="lazy" width="640" height="360"></a>
+<div class="card-content"><time datetime="2025-11-10">Nov 10, 2025</time><h3><a href="/development/2025/11/10/aaai26/">AAAI 2026 - Singapore 🇸🇬</a></h3>
+<p>We are proud to share that our group will be at AAAI 2026 in Singapore with 1 long paper in the Main Track! Get in touch with us to learn more on graph-based visual...</p><a class="text-link" href="/development/2025/11/10/aaai26/">Read more<span class="visually-hidden"> about AAAI 2026 - Singapore 🇸🇬</span> →</a></div>
+</article>
+<article class="card news-card ">
+<a class="news-image" href="/development/2025/08/20/emnlp25/" tabindex="-1" aria-hidden="true"><img src="/assets/images/site-6170012015d9.webp" alt="" loading="lazy" width="640" height="360"></a>
+<div class="card-content"><time datetime="2025-08-20">Aug 20, 2025</time><h3><a href="/development/2025/08/20/emnlp25/">EMNLP 2025 - Suzhou 🇨🇳</a></h3>
+<p>We are happy to share that we will be at EMNLP 2025 with 2 long papers in the Main Track! Catch us in Suzhou, China to learn more about mathematical reasoning and tool retrieval....</p><a class="text-link" href="/development/2025/08/20/emnlp25/">Read more<span class="visually-hidden"> about EMNLP 2025 - Suzhou 🇨🇳</span> →</a></div>
+</article>
+</div></section>
+
+
+<section class="contact-panel" aria-labelledby="contact-heading">
+  <div><p class="eyebrow">Work with us</p><h2 id="contact-heading">Collaborations and thesis opportunities</h2><p>Interested in our research? Explore thesis topics or get in touch with the group.</p></div>
+  <div class="contact-actions"><a class="button is-primary" href="/theses/">Explore theses</a><a class="button is-outlined" href="mailto:l.ragazzi@unibo.it">Contact us</a></div>
+</section>
+
                     </div>
-                    
-                        <aside class="column is-4-desktop is-4-tablet">
-                            
-    
-    <!-- 1. FEATURED POSTS SECTION -->
-    
-    
-        <!-- Section Title -->
-        <div class="block">
-            <h2 class="title is-4">📌 Spotlight</h2>
-        </div>
-
-        <div class="columns is-multiline">
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="pinned-post-wrapper">
-                        <div class="card">
-    
-        <div class="card-image">
-            <img src="https://www.bbs.unibo.it/wp-content/uploads/2021/09/GRADUATION-NUOVA-1200-1.jpg" alt="PhD Course" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2025/10/22/phd/">PhD Course</a>
-            
-            
-                <p><p>Cutting-Edge Text Mining: from Consolidated Natural Language Processing Methods to Advanced Large Language Models.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2025/10/22/phd/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Oct 22, 2025</p>
-    </footer>
-</div>
-
-                    </div>
-                </div>
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="pinned-post-wrapper">
-                        <div class="card">
-    
-        <div class="card-image">
-            <img src="https://drive.google.com/thumbnail?sz=w1920&id=1eVN7Cw3mBZfrQXwYGT0jNjoAMMfPsnt5" alt="LLM Slide Deck" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2024/04/17/llm-slides/">LLM Slide Deck</a>
-            
-            
-                <p><p>🤖 We are proud to share that our group has curated a <b>short review of the state-of-the-art within the Large Language Model (LLM) literature</b>. Dive into the cutting-edge world of LLMs with our latest slide deck!</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2024/04/17/llm-slides/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Apr 17, 2024</p>
-    </footer>
-</div>
-
-                    </div>
-                </div>
-            
-        </div>
-        
-        <hr style="margin: 3rem 0 2rem 0; border-top: 1px solid #eaeaea;">
-    
-
-    <!-- 2. RECENT POSTS SECTION -->
-    <!-- Section Title -->
-    <div class="block">
-        <h2 class="title is-4">📢 On the Road</h2>
-    </div>
-
-    <div class="columns is-multiline">
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://2026.emnlp.org/assets/images/logos/emnlp_2026_background_v0.jpg" alt="EMNLP 2026 - Budapest 🇭🇺" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2026/08/20/emnlp26/">EMNLP 2026 - Budapest 🇭🇺</a>
-            
-            
-                <p><p>We are delighted to announce that we will be at EMNLP 2026 with <b>2 long papers in the Main and Findings Track!</b> Catch us in <b>Budapest, Hungary</b> to learn more about <b>medical de-identification</b> and <b>multimodal hate speech detection</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2026/08/20/emnlp26/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Aug 20, 2026</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://cikm2026.diag.uniroma1.it/wp-content/uploads/2026/02/CIMK26_solo_scritta.png" alt="CIKM 2026 - Rome 🇮🇹" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2026/07/08/cikm26/">CIKM 2026 - Rome 🇮🇹</a>
-            
-            
-                <p><p>We are delighted to announce that the <b>Third Workshop on Knowledge-Enhanced Information Retrieval (KEIR)</b> has been accepted at <b>CIKM 2026</b>! Join us in <b>Rome, Italy</b>, on <b>November 8, 2026</b>, for a half-day, in-person workshop bringing together researchers and practitioners from IR, NLP, data mining, and knowledge management.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2026/07/08/cikm26/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Jul 8, 2026</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://2026.aclweb.org/assets/images/san_diego.jpg" alt="ACL 2026 - San Diego 🇺🇸" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2026/04/07/acl26/">ACL 2026 - San Diego 🇺🇸</a>
-            
-            
-                <p><p>We are proud to share that we will be at ACL 2026 with <b>2 long papers in the Main Track!</b> Catch us in <b>San Diego, California</b> to learn more about <b>medical uncertainty of LLMs</b> and <b>legal question answering</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2026/04/07/acl26/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Apr 7, 2026</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://2026.eacl.org//assets/images/new_header.png" alt="EACL 2026 - Rabat 🇲🇦" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2026/01/03/eacl26/">EACL 2026 - Rabat 🇲🇦</a>
-            
-            
-                <p><p>We are delighted to announce that we will be at EACL 2026 with <b>2 long papers in the Main and Findings Track!</b> Catch us in <b>Rabat, Morocco</b> to learn more about <b>medical reliability</b> and <b>multimodal hate speech detection</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2026/01/03/eacl26/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Jan 3, 2026</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://aaai.org/wp-content/uploads/2025/01/iStock-491056644-60dpi.jpg" alt="AAAI 2026 - Singapore 🇸🇬" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2025/11/10/aaai26/">AAAI 2026 - Singapore 🇸🇬</a>
-            
-            
-                <p><p>We are proud to share that our group will be at AAAI 2026 in Singapore with <b>1 long paper in the Main Track!</b> Get in touch with us to learn more on <b>graph-based visual prompting</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2025/11/10/aaai26/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Nov 10, 2025</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://2025.emnlp.org/assets/images/suzhou_city/emnlp_2025_background.jpg" alt="EMNLP 2025 - Suzhou 🇨🇳" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2025/08/20/emnlp25/">EMNLP 2025 - Suzhou 🇨🇳</a>
-            
-            
-                <p><p>We are happy to share that we will be at EMNLP 2025 with <b>2 long papers in the Main Track!</b> Catch us in <b>Suzhou, China</b> to learn more about <b>mathematical reasoning</b> and <b>tool retrieval</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2025/08/20/emnlp25/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Aug 20, 2025</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://actanonverba.it/wp-content/uploads/2025/10/ECAI.png" alt="ECAI 2025 - Bologna 🇮🇹" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2025/07/16/ecai25/">ECAI 2025 - Bologna 🇮🇹</a>
-            
-            
-                <p><p>We are proud to announce that our group will be at ECAI 2025 with <b>3 long papers: 2 works in the Main track and 1 in the Demonstrations track!</b> Catch us in <b>Bologna, Italy</b> to learn more about <b>automatic prompt learning</b>, <b>hierarchical extreme multi-label text classification in the food domain</b>, and <b>protein language models</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2025/07/16/ecai25/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Jul 16, 2025</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://nlp.jhu.edu/multivent/resources/acl.png" alt="ACL 2025 - Vienna 🇦🇹" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2025/05/20/acl25/">ACL 2025 - Vienna 🇦🇹</a>
-            
-            
-                <p><p>We are delighted to announce that we will be at ACL 2025 with <b>2 long papers in the Main and Findings Track!</b> Catch us in <b>Vienna, Austria</b> to learn more about <b>humor QA</b> and <b>biomedical NER</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2025/05/20/acl25/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: May 20, 2025</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://aihub.org/wp-content/uploads/2025/08/Screenshot-2025-08-11-at-15.46.41.png" alt="IJCAI 2025 - Montreal 🇨🇦" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2025/04/29/ijcai25/">IJCAI 2025 - Montreal 🇨🇦</a>
-            
-            
-                <p><p>We are glad to share that our group will be at IJCAI 2025 with <b>1 long paper in the Survey Track!</b> Catch us in <b>Montreal, Canada</b> to learn more about <b>neuro-symbolic artificial intelligence</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2025/04/29/ijcai25/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Apr 29, 2025</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://2025.naacl.org/assets/images/venue/balloons.jpg" alt="NAACL 2025 - Albuquerque 🇺🇸" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2025/01/23/naacl25/">NAACL 2025 - Albuquerque 🇺🇸</a>
-            
-            
-                <p><p>We are proud to announce that our group will be at NAACL 2025 with <b>1 long paper in the Findings Track!</b> Catch us in <b>Albuquerque, New Mexico</b> to learn more about <b>open-domain biomedical NER</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2025/01/23/naacl25/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Jan 23, 2025</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://github.com/acl-org/emnlp-2024/blob/main/assets/images/miami/EMNLP_2024_Website_Image.png?raw=true" alt="EMNLP 2024 - Miami 🇺🇸" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2024/10/17/emnlp24/">EMNLP 2024 - Miami 🇺🇸</a>
-            
-            
-                <p><p>We are glad to share that that our group will be at EMNLP 2024 with <b>1 long paper in the Main Track!</b> Catch us in <b>Miami, Florida</b> to learn more about <b>data generation for multimodal computational fact-checking</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2024/10/17/emnlp24/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Oct 17, 2024</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://github.com/acl-org/acl-2024/blob/main/assets/images/bangkok/bangkok-banner.jpeg?raw=true" alt="ACL 2024 - Bangkok 🇹🇭" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2024/05/17/acl24/">ACL 2024 - Bangkok 🇹🇭</a>
-            
-            
-                <p><p>We are delighted to announce that we will be at ACL 2024 with <b>2 long papers in the Main and Findings Track!</b> Catch us in <b>Bangkok, Thailand</b> to learn more about <b>open-domain QA</b> and <b>scientific text summarization</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2024/05/17/acl24/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: May 17, 2024</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://media.iclr.cc/Conferences/ICLR2024/img/prater.jpg" alt="ICLR 2024" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2024/02/16/iclr24/">ICLR 2024</a>
-            
-            
-                <p><p>We are proud to share that our group will be at ICLR 2024 with <b>1 paper in the Tiny Track!</b> Get in touch with us to learn more about <b>interpretable long-form question answering</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2024/02/16/iclr24/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Feb 16, 2024</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://ecai2023.eu/conf-data/ecai2023/images/Ulotka.png" alt="ECAI 2023 - Kraków 🇵🇱" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2023/09/30/ecai23/">ECAI 2023 - Kraków 🇵🇱</a>
-            
-            
-                <p><p>We are happy to announce that we will be at ECAI 2023 with <b>1 long paper in the Main Track!</b> Catch us in <b>Kraków, Poland</b> to learn more about <b>graph-enhanced abstractive summarization for low-resource scenarios</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2023/09/30/ecai23/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Sep 30, 2023</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://aaai-23.aaai.org/wp-content/uploads/2022/12/AAAI-23-Website-Banner_2560x593-min.png" alt="AAAI 2023 - Washington 🇺🇸" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2023/02/07/aaai23/">AAAI 2023 - Washington 🇺🇸</a>
-            
-            
-                <p><p>We are proud to share that we will be at AAAI 2023 with <b>2 long papers in the Main and AI for Social Impact Track!</b> Catch us in <b>Washington, USA</b> to learn more on <b>medical summarization</b> and <b>ecosustainability</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2023/02/07/aaai23/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Feb 7, 2023</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://www.vinai.io/wp-content/uploads/2022/10/EMNLP.png" alt="EMNLP 2022 - Abu Dhabi 🇦🇪" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2022/12/07/emnlp22/">EMNLP 2022 - Abu Dhabi 🇦🇪</a>
-            
-            
-                <p><p>We are glad to announce that our group will be at EMNLP 2022 with <b>1 long paper in the Main Track!</b> Catch us in <b>Abu Dhabi, UAE</b> to learn more on <b>retrieval-enhanced transformers for biomedicine</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2022/12/07/emnlp22/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Dec 7, 2022</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://static1.s123-cdn-static-a.com/uploads/4165719/800_62fc19c314a5c.jpg" alt="COLING 2022" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2022/09/30/coling22/">COLING 2022</a>
-            
-            
-                <p><p>We are proud to share that our group will be at COLING 2022 with <b>1 long paper in the Main Track!</b> Get in touch with us to learn more on <b>biomedical event extraction and graph verbalization</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2022/09/30/coling22/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Sep 30, 2022</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://static.wixstatic.com/media/ecf06f_f7fcea7d442e4d06ad7d85226c1a42c8~mv2.jpg/v1/fill/w_1920,h_724,al_c,q_85,enc_auto/ecf06f_f7fcea7d442e4d06ad7d85226c1a42c8~mv2.jpg" alt="ACL 2022" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2022/05/10/acl22/">ACL 2022</a>
-            
-            
-                <p><p>We are happy to announce that our group will be at ACL 2022 with <b>1 long paper in the Main Track!</b> Get in touch with us to learn more on <b>multi-document summarization of biomedical articles</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2022/05/10/acl22/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: May 10, 2022</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-            
-                <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                    <div class="card">
-    
-        <div class="card-image">
-            <img src="https://static1.s123-cdn-static-a.com/uploads/4165719/800_61a9409b89872.jpg" alt="AAAI 2022" style="width: 451px; height: 300px;">
-        </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-                <a class="title is-4" href="/development/2022/02/08/aaai22/">AAAI 2022</a>
-            
-            
-                <p><p>We are proud to share that our group will be at AAAI 2022 with <b>1 long paper in the Main Track!</b> Get in touch with us to learn more on <b>long document summarization in a low-resource scenario</b>.</p>
-
-</p>
-            
-        </div>
-        <div class="has-text-centered">
-            <a href="/development/2022/02/08/aaai22/" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Feb 8, 2022</p>
-    </footer>
-</div>
-
-                </div>
-            
-        
-    </div>
-
-
-                        </aside>
                     
                 </div>
             </div>
         </main>
         <footer class="footer py-5 has-background-primary has-text-light">
     <div class="container">
-        <div class="columns is-vcentered is-mobile">
 
-            <!-- Logo on the Left (Take Only Needed Space) -->
+        <div class="columns is-vcentered is-mobile footer-main">
             <div class="column is-narrow">
                 <a href="/">
-                    <img 
-                        src="/assets/css/logo.svg" 
-                        alt="UniboNLP Logo" 
+                    <img
+                        src="/assets/css/logo.svg"
+                        alt="UniboNLP Logo"
                         loading="lazy"
-                        class="navbar-logo"
+                        class="footer-logo"
                     >
                 </a>
             </div>
 
-            <!-- University Name on the Right -->
             <div class="column has-text-right">
                 <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
                     Department of Computer Science and Engineering (DISI),<br>
@@ -942,28 +333,22 @@
                     Via dell'Università 50, I-47522 Cesena, Italy
                 </p>
             </div>
-
         </div>
+
+        <div class="footer-bottom">
+            <p class="footer-contact">
+                <a href="mailto:gianluca.moro@unibo.it">Contact</a>
+                · <a href="https://github.com/disi-unibo-nlp">GitHub</a>
+            </p>
+
+            <p class="footer-credit">
+                Website by
+                <a href="https://scholar.google.com/citations?user=BmaBHcAAAAAJ&amp;hl=it">Luca Ragazzi</a>
+            </p>
+        </div>
+
     </div>
-</footer>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const footer = document.querySelector(".footer");
-        const body = document.body;
-        const html = document.documentElement;
-        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
-                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
-        const viewportHeight = window.innerHeight;
-
-        if (pageHeight <= viewportHeight) {
-            document.body.classList.add("short-content");
-        } else {
-            document.body.classList.remove("short-content");
-        }
-    });
-</script>
-   
+</footer>   
         <script src="/assets/js/app.js" defer></script>
         <script src="/assets/js/custom.js" defer></script>
     </body>

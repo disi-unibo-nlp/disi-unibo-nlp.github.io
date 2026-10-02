@@ -3,12 +3,22 @@
 <html dir="ltr" lang="en" class="has-navbar-fixed-top">
     <head>
     <meta charset="utf-8">
+    <title>Deadlines | UniboNLP</title>
+    
+    <meta property="og:title" content="Deadlines | UniboNLP">
+    <meta property="og:description" content="Countdown to top AI conference submission deadlines.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://disi-unibo-nlp.github.io/deadlines/">
+    <meta property="og:image" content="https://disi-unibo-nlp.github.io/assets/css/logo_v2.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://disi-unibo-nlp.github.io/deadlines/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="UniBoNLP is the Natural Language Processing research group at the University of Bologna, Cesena Campus, focusing on computational linguistics and artificial intelligence.">
+    <meta name="description" content="Countdown to top AI conference submission deadlines.">
     <meta name="theme-color" content="#ffffff">
     <!-- Preload critical assets for faster rendering -->
     <link rel="preload" href="/assets/css/app.css" as="style">
     <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/refinements.css">
     <!-- Favicon Handling --> 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/png" href="/assets/css/logo.png" sizes="32x32">
@@ -20,7 +30,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/css/logo.svg">
     <!-- External JavaScript Libraries -->
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    
     <script data-goatcounter="https://disi-unibo-nlp.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     <!--
@@ -35,80 +45,81 @@
     <!-- FontAwesome Icons (Optimized for Performance) -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+<noscript><style>@media(max-width:1023px){.navbar.is-fixed-top{position:relative;left:auto;transform:none;top:0;margin:1rem auto}.navbar-menu{display:block}.navbar-burger{display:none}.home-hero .hero-body,.hero.is-medium .hero-body{padding-top:2rem}}</style></noscript>
 </head>
-    <body>  
-            
-        <nav class="navbar is-primary is-fixed-top" x-data="{ openNav: false }" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>  
+    
+        <nav class="navbar is-primary is-fixed-top" style="background-color: rgba(187, 46, 41, 0.9) !important; backdrop-filter: blur(10px);">
     <div class="container navigation">  
         <!-- Logo on the Left -->
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
                 <img 
                     src="/assets/css/logo6.svg" 
-                    alt="Website Logo" 
+                    alt="UniboNLP home" 
                     class="navbar-logo"
-                    loading="lazy"
+                    loading="eager"
                 >
             </a>
-            <a
-                role="button"
+            <button
+                type="button"
                 class="navbar-burger burger"
-                aria-label="menu"
+                aria-label="Open navigation" aria-controls="navMenu"
                 aria-expanded="false"
                 data-target="navMenu"
-                :class="{ 'is-active': openNav }"
-                x-on:click="openNav = !openNav"
+                id="navigation-toggle"
             >
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </button>
         </div>
 
         <!-- Navigation Menu -->
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+        <div class="navbar-menu" id="navMenu" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             <div class="navbar-end" style="margin-right: 1.5rem;">
                 
                     
                         
                             <a 
                                 href="/people/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >People</a>
                         
                     
                         
                             <a 
                                 href="/publications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Publications</a>
                         
                     
                         
                             <a 
                                 href="/applications/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Applications</a>
                         
                     
                         
                             <a 
                                 href="/projects/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Projects</a>
                         
                     
                         
                             <a 
                                 href="/theses/" 
-                                class="navbar-item "
+                                class="navbar-item " 
                             >Theses</a>
                         
                     
                         
                             <a 
                                 href="/deadlines/" 
-                                class="navbar-item is-active"
+                                class="navbar-item is-active" aria-current="page"
                             >Deadlines</a>
                         
                     
@@ -120,2251 +131,1743 @@
 
         
 
-<section 
-    class="hero 
-        is-medium 
-        is-bold is-primary 
-        "
-    
+
+
+<section
+  class="hero is-medium is-bold is-primary"
+  
 >
-    <div class="hero-body ">
-        <div class="container">
-            
-                <h1 class="title is-2">Deadlines</h1>
-            
-            
-                <p class="subtitle is-3">Countdown to top AI conference submission deadlines.</p>
-                  
-            
-        </div>
+  <div class="hero-body ">
+    <div class="container">
+
+      
+        <h1 class="title is-2">Deadlines</h1>
+      
+
+      
+        <p class="subtitle is-3">Countdown to top AI conference submission deadlines.</p>
+      
+
+      
+
     </div>
-</section>     
-        <main class="section">
+  </div>
+</section>
+
+     
+        <main class="section" id="main-content" tabindex="-1">
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column ">
-                        <div class="columns is-multiline">
-    <div class="legend-container column is-12">
-        <span class="legend-item"><span class="legend-color NLP"></span> Natural Language Processing</span>
-        <span class="legend-item"><span class="legend-color ML"></span> Machine Learning</span>
-        <span class="legend-item"><span class="legend-color CV"></span> Computer Vision</span>
-        <span class="legend-item"><span class="legend-color KR"></span> Knowledge Representation</span>
-        <span class="legend-item"><span class="legend-color SP"></span> Speech Processing</span>
+                    <div class="column is-12">
+                        <link rel="stylesheet" href="/assets/css/deadlines.css">
+<div class="deadlines-page deadlines-grid">
+  <div class="deadline-toolbar" hidden>
+    <label for="deadline-search">Find a conference</label>
+    <input type="search" id="deadline-search" placeholder="Conference, location or topic…" autocomplete="off">
+    <div class="deadline-filters" role="group" aria-label="Research area">
+      <button type="button" data-deadline-filter="ALL" aria-pressed="true">All areas</button>
+      
+      
+      
+      <button type="button" data-deadline-filter="NLP" aria-pressed="false" title="Natural Language Processing" aria-label="Natural Language Processing">NLP</button>
+      
+      <button type="button" data-deadline-filter="ML" aria-pressed="false" title="Machine Learning" aria-label="Machine Learning">ML</button>
+      
+      <button type="button" data-deadline-filter="CV" aria-pressed="false" title="Computer Vision" aria-label="Computer Vision">CV</button>
+      
+      <button type="button" data-deadline-filter="KR" aria-pressed="false" title="Knowledge Representation" aria-label="Knowledge Representation">KR</button>
+      
+      <button type="button" data-deadline-filter="SP" aria-pressed="false" title="Speech Processing" aria-label="Speech Processing">SP</button>
+      
     </div>
-    
-    
-
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-        
+    <p id="deadline-search-status" role="status" aria-live="polite"></p>
+  </div>
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    <section class="deadline-section" aria-labelledby="deadline-upcoming-heading">
+      <h2 id="deadline-upcoming-heading">Upcoming deadlines<span class="deadline-section-count">8</span></h2>
+      <div class="deadline-cards">
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-                
-                    
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="ML,NLP,SP">
-                            <a target="_blank" rel="noopener noreferrer" href="https://virtual.aistats.org/Conferences/2027" class="card-link">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title">AISTATS</h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle silver">
-                                                        A
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">International Conference on Artificial Intelligence and Statistics</p>                                
-                                        <p style="margin-top: 5px;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Montréal,
-                                                
-                                                
-                                            
-                                                
-                                                    Canada
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                May 3-6, 2027
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="ML">ML</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="NLP">NLP</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="SP">SP</span>
-                                                
-                                            
-                                        </div>
-                                        
-                                        
-                                        
-
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px;"></i>
-                                            <strong> October 06, 2026 <span style="color: gray; font-weight: bold;">
-                                                [UTC-12]
-                                            </span>
-                                            </strong>
-                                            
-                                            
-
-                                            <span class="mobile-newline" style="color: red; font-weight: bold;">
-                                                
-                                                    (in 5 days)
-                                                
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card" data-deadline-topics="ML,NLP,SP">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://virtual.aistats.org/Conferences/2027" target="_blank" rel="noopener noreferrer">AISTATS <span class="deadline-year">2027</span></a></h3>
+    <span class="deadline-rank" aria-label="CORE ranking A">A</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">International Conference on Artificial Intelligence and Statistics</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Montréal, Canada</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>May 3-6, 2027</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>ML</span><span>NLP</span><span>SP</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-10-06" aria-label="Submission deadline 6 October 2026">6 Oct 2026</time></p>
+    <p class="deadline-countdown deadline-soon">4 days left</p>
+  </div>
+  <span class="deadline-search-data" hidden>AISTATS International Conference on Artificial Intelligence and Statistics 2027 Montréal, Canada ML NLP SP</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-                
-                    
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="Other">
-                            <a target="_blank" rel="noopener noreferrer" href="https://warwick.ac.uk/fac/sci/dcs/aamas2027/" class="card-link">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title">AAMAS</h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle gold">
-                                                        A*
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">International Conference on Autonomous Agents and Multiagent Systems</p>                                
-                                        <p style="margin-top: 5px;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Hanoi,
-                                                
-                                                
-                                            
-                                                
-                                                    Vietnam
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                May 3-7, 2027
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                <span class="tag subtopic-tag" data-topic="Other">Other</span>
-                                            
-                                        </div>
-                                        
-                                        
-                                        
-
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px;"></i>
-                                            <strong> October 08, 2026 <span style="color: gray; font-weight: bold;">
-                                                [AoE]
-                                            </span>
-                                            </strong>
-                                            
-                                            
-
-                                            <span class="mobile-newline" style="color: red; font-weight: bold;">
-                                                
-                                                    (in 7 days)
-                                                
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card" data-deadline-topics="Other">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://warwick.ac.uk/fac/sci/dcs/aamas2027/" target="_blank" rel="noopener noreferrer">AAMAS <span class="deadline-year">2027</span></a></h3>
+    <span class="deadline-rank deadline-rank-star" aria-label="CORE ranking A*">A*</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">International Conference on Autonomous Agents and Multiagent Systems</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Hanoi, Vietnam</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>May 3-7, 2027</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>Other</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-10-08" aria-label="Submission deadline 8 October 2026">8 Oct 2026</time></p>
+    <p class="deadline-countdown deadline-soon">6 days left</p>
+  </div>
+  <span class="deadline-search-data" hidden>AAMAS International Conference on Autonomous Agents and Multiagent Systems 2027 Hanoi, Vietnam Other</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-        
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card" data-deadline-topics="NLP">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://2027.naacl.org/" target="_blank" rel="noopener noreferrer">NAACL <span class="deadline-year">2027</span></a></h3>
+    <span class="deadline-rank" aria-label="CORE ranking A">A</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">The Annual Conference of the North American Chapter of the Association for Computational Linguistics</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>San Francisco, California, USA</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>June 1-5, 2027</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>NLP</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-10-12" aria-label="Submission deadline 12 October 2026">12 Oct 2026</time></p>
+    <p class="deadline-countdown deadline-soon">10 days left</p>
+  </div>
+  <span class="deadline-search-data" hidden>NAACL The Annual Conference of the North American Chapter of the Association for Computational Linguistics 2027 San Francisco, California, USA NLP</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-                
-                    
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="NLP">
-                            <a target="_blank" rel="noopener noreferrer" href="https://2027.naacl.org/" class="card-link">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title">NAACL</h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle silver">
-                                                        A
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">The Annual Conference of the North American Chapter of the Association for Computational Linguistics</p>                                
-                                        <p style="margin-top: 5px;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    San
-                                                
-                                                
-                                            
-                                                
-                                                    Francisco,
-                                                
-                                                
-                                            
-                                                
-                                                    California,
-                                                
-                                                
-                                            
-                                                
-                                                    USA
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                June 1-5, 2027
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="NLP">NLP</span>
-                                                
-                                            
-                                        </div>
-                                        
-                                        
-                                        
-
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px;"></i>
-                                            <strong> October 12, 2026 <span style="color: gray; font-weight: bold;">
-                                                [UTC-12]
-                                            </span>
-                                            </strong>
-                                            
-                                            
-
-                                            <span class="mobile-newline" style="color: red; font-weight: bold;">
-                                                
-                                                    (in 11 days)
-                                                
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card" data-deadline-topics="CV">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://cvpr.thecvf.com/Conferences/2027" target="_blank" rel="noopener noreferrer">CVPR <span class="deadline-year">2027</span></a></h3>
+    <span class="deadline-rank deadline-rank-star" aria-label="CORE ranking A*">A*</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">IEEE/CVF Conference on Computer Vision and Pattern Recognition</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Seattle, WA, United States</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>June 20-24, 2027</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>CV</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-11-16" aria-label="Submission deadline 16 November 2026">16 Nov 2026</time></p>
+    <p class="deadline-countdown deadline-soon">45 days left</p>
+  </div>
+  <span class="deadline-search-data" hidden>CVPR IEEE/CVF Conference on Computer Vision and Pattern Recognition 2027 Seattle, WA, United States CV</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-        
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card" data-deadline-topics="Other">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://icaps27.icaps-conference.org/" target="_blank" rel="noopener noreferrer">ICAPS <span class="deadline-year">2027</span></a></h3>
+    <span class="deadline-rank deadline-rank-star" aria-label="CORE ranking A*">A*</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">International Conference on Automated Planning and Scheduling</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Columbia, SC, USA</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>June 27 - July 2, 2027</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>Other</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-12-14" aria-label="Submission deadline 14 December 2026">14 Dec 2026</time></p>
+    <p class="deadline-countdown deadline-far">73 days left</p>
+  </div>
+  <span class="deadline-search-data" hidden>ICAPS International Conference on Automated Planning and Scheduling 2027 Columbia, SC, USA Other</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-        
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card" data-deadline-topics="NLP">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://2027.aclweb.org/" target="_blank" rel="noopener noreferrer">ACL <span class="deadline-year">2027</span></a></h3>
+    <span class="deadline-rank deadline-rank-star" aria-label="CORE ranking A*">A*</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">Annual Meeting of the Association for Computational Linguistics</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Kyoto, Japan</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>August 17-22, 2027</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>NLP</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2027-01-04" aria-label="Submission deadline 4 January 2027">4 Jan 2027</time></p>
+    <p class="deadline-countdown deadline-far">94 days left</p>
+  </div>
+  <span class="deadline-search-data" hidden>ACL Annual Meeting of the Association for Computational Linguistics 2027 Kyoto, Japan NLP</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-        
             
-                
-                    
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="CV">
-                            <a target="_blank" rel="noopener noreferrer" href="https://cvpr.thecvf.com/Conferences/2027" class="card-link">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title">CVPR</h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle gold">
-                                                        A*
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">IEEE/CVF Conference on Computer Vision and Pattern Recognition</p>                                
-                                        <p style="margin-top: 5px;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Seattle,
-                                                
-                                                
-                                            
-                                                
-                                                    Wa,
-                                                
-                                                
-                                            
-                                                
-                                                    United
-                                                
-                                                
-                                            
-                                                
-                                                    States
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                June 20-25, 2027
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
-                                                
-                                            
-                                        </div>
-                                        
-                                        
-                                        
 
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px;"></i>
-                                            <strong> November 16, 2026 <span style="color: gray; font-weight: bold;">
-                                                [UTC-12]
-                                            </span>
-                                            </strong>
-                                            
-                                            
 
-                                            <span class="mobile-newline" style="color: red; font-weight: bold;">
-                                                
-                                                    (in 46 days)
-                                                
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
+
+
+
+
+
+
+<article class="deadline-card" data-deadline-topics="NLP,CV,ML">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://icdar2027.org/" target="_blank" rel="noopener noreferrer">ICDAR <span class="deadline-year">2027</span></a></h3>
+    <span class="deadline-rank" aria-label="CORE ranking A">A</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">International Conference on Document Analysis and Recognition</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Kuala Lumpur, Malaysia</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>August 18 - 22, 2027</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>NLP</span><span>CV</span><span>ML</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2027-02-20" aria-label="Submission deadline 20 February 2027">20 Feb 2027</time></p>
+    <p class="deadline-countdown deadline-far">141 days left</p>
+  </div>
+  <span class="deadline-search-data" hidden>ICDAR International Conference on Document Analysis and Recognition 2027 Kuala Lumpur, Malaysia NLP CV ML</span>
+</article>
+
+          
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-        
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card" data-deadline-topics="ML,NLP,CV,KR">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://ecai2027.org/" target="_blank" rel="noopener noreferrer">ECAI <span class="deadline-year">2027</span></a></h3>
+    <span class="deadline-rank" aria-label="CORE ranking A">A</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">European Conference on Artificial Intelligence</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Athens, Greece</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>October 2-7, 2027</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>ML</span><span>NLP</span><span>CV</span><span>KR</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2027-04-14" aria-label="Submission deadline 14 April 2027">14 Apr 2027</time></p>
+    <p class="deadline-countdown deadline-far">194 days left</p>
+  </div>
+  <span class="deadline-search-data" hidden>ECAI European Conference on Artificial Intelligence 2027 Athens, Greece ML NLP CV KR</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    </div>
+    </section>
+    
+  
+    
+    
+    
+    <section class="deadline-section" aria-labelledby="deadline-expired-heading">
+      <h2 id="deadline-expired-heading">Past deadlines · 2026<span class="deadline-section-count">8</span></h2>
+      <div class="deadline-cards">
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-                
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card deadline-card-expired" data-deadline-topics="ML">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://icml.cc/Conferences/2026" target="_blank" rel="noopener noreferrer">ICML <span class="deadline-year">2026</span></a></h3>
+    <span class="deadline-rank deadline-rank-star" aria-label="CORE ranking A*">A*</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">International Conference on Machine Learning</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Seoul, Korea</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>July 6-11, 2026</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>ML</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-01-29" aria-label="Submission deadline 29 January 2026">29 Jan 2026</time></p>
+    <p class="deadline-countdown deadline-passed">Expired</p>
+  </div>
+  <span class="deadline-search-data" hidden>ICML International Conference on Machine Learning 2026 Seoul, Korea ML</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-        
             
-                
-                    
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="Other">
-                            <a target="_blank" rel="noopener noreferrer" href="https://icaps27.icaps-conference.org/" class="card-link">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title">ICAPS</h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle gold">
-                                                        A*
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">International Conference on Automated Planning and Scheduling</p>                                
-                                        <p style="margin-top: 5px;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Columbia,
-                                                
-                                                
-                                            
-                                                
-                                                    Sc,
-                                                
-                                                
-                                            
-                                                
-                                                    USA
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                June 27 - July 2, 2027
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                <span class="tag subtopic-tag" data-topic="Other">Other</span>
-                                            
-                                        </div>
-                                        
-                                        
-                                        
 
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px;"></i>
-                                            <strong> December 14, 2026 <span style="color: gray; font-weight: bold;">
-                                                [UTC-12]
-                                            </span>
-                                            </strong>
-                                            
-                                            
 
-                                            <span class="mobile-newline" style="color: green; font-weight: bold;">
-                                                
-                                                    (in 74 days)
-                                                
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
+
+
+
+
+
+
+<article class="deadline-card deadline-card-expired" data-deadline-topics="KR,ML,NLP">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://kr.org/KR2026/" target="_blank" rel="noopener noreferrer">KR <span class="deadline-year">2026</span></a></h3>
+    <span class="deadline-rank deadline-rank-star" aria-label="CORE ranking A*">A*</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">International Conference on Principles of Knowledge Representation and Reasoning</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Lisbon, Portugal</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>July 20-23, 2026</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>KR</span><span>ML</span><span>NLP</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-02-13" aria-label="Submission deadline 13 February 2026">13 Feb 2026</time></p>
+    <p class="deadline-countdown deadline-passed">Expired</p>
+  </div>
+  <span class="deadline-search-data" hidden>KR International Conference on Principles of Knowledge Representation and Reasoning 2026 Lisbon, Portugal KR ML NLP</span>
+</article>
+
+          
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-        
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card deadline-card-expired" data-deadline-topics="ML,KR">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://www.auai.org/uai2026/" target="_blank" rel="noopener noreferrer">UAI <span class="deadline-year">2026</span></a></h3>
+    <span class="deadline-rank" aria-label="CORE ranking A">A</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">Conference on Uncertainty in Artificial Intelligence</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Amsterdam, Netherlands (Hybrid)</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>August 18-20, 2026</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>ML</span><span>KR</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-02-25" aria-label="Submission deadline 25 February 2026">25 Feb 2026</time></p>
+    <p class="deadline-countdown deadline-passed">Expired</p>
+  </div>
+  <span class="deadline-search-data" hidden>UAI Conference on Uncertainty in Artificial Intelligence 2026 Amsterdam, Netherlands (Hybrid) ML KR</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-                
-                    
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="NLP,CV,ML">
-                            <a target="_blank" rel="noopener noreferrer" href="https://icdar2027.org/" class="card-link">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title">ICDAR</h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle silver">
-                                                        A
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">International Conference on Document Analysis and Recognition</p>                                
-                                        <p style="margin-top: 5px;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Kuala
-                                                
-                                                
-                                            
-                                                
-                                                    Lumpur,
-                                                
-                                                
-                                            
-                                                
-                                                    Malaysia
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                August 18 - 22, 2027
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="NLP">NLP</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="ML">ML</span>
-                                                
-                                            
-                                        </div>
-                                        
-                                        
-                                        
-
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px;"></i>
-                                            <strong> February 20, 2027 <span style="color: gray; font-weight: bold;">
-                                                [AoE]
-                                            </span>
-                                            </strong>
-                                            
-                                            
-
-                                            <span class="mobile-newline" style="color: green; font-weight: bold;">
-                                                
-                                                    (in 142 days)
-                                                
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
             
-              
-    
 
-                    
-        
-    
-        
-        
-        
 
+
+
+
+
+
+
+<article class="deadline-card deadline-card-expired" data-deadline-topics="CV">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://eccv.ecva.net/" target="_blank" rel="noopener noreferrer">ECCV <span class="deadline-year">2026</span></a></h3>
+    <span class="deadline-rank deadline-rank-star" aria-label="CORE ranking A*">A*</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">European Conference on Computer Vision</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Malmö, Sweden</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>September 8 - 13, 2026</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>CV</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-03-05" aria-label="Submission deadline 5 March 2026">5 Mar 2026</time></p>
+    <p class="deadline-countdown deadline-passed">Expired</p>
+  </div>
+  <span class="deadline-search-data" hidden>ECCV European Conference on Computer Vision 2026 Malmö, Sweden CV</span>
+</article>
+
+          
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-        
             
-                
-                    
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="ML,NLP,CV,KR">
-                            <a target="_blank" rel="noopener noreferrer" href="https://ecai2027.org/" class="card-link">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title">ECAI</h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle silver">
-                                                        A
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">European Conference on Artificial Intelligence</p>                                
-                                        <p style="margin-top: 5px;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Athens,
-                                                
-                                                
-                                            
-                                                
-                                                    Greece
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                October 2-7, 2027
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="ML">ML</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="NLP">NLP</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="KR">KR</span>
-                                                
-                                            
-                                        </div>
-                                        
-                                        
-                                        
 
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px;"></i>
-                                            <strong> April 14, 2027 <span style="color: gray; font-weight: bold;">
-                                                [AoE]
-                                            </span>
-                                            </strong>
-                                            
-                                            
 
-                                            <span class="mobile-newline" style="color: green; font-weight: bold;">
-                                                
-                                                    (in 195 days)
-                                                
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
+
+
+
+
+
+
+<article class="deadline-card deadline-card-expired" data-deadline-topics="Other">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://ppsn2026.disi.unitn.it/" target="_blank" rel="noopener noreferrer">PPSN <span class="deadline-year">2026</span></a></h3>
+    <span class="deadline-rank" aria-label="CORE ranking A">A</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">International Conference on Parallel Problem Solving From Nature</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>University of Trento, Trento, Italy</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>August 31-September 2, 2026</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>Other</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-03-28" aria-label="Submission deadline 28 March 2026">28 Mar 2026</time></p>
+    <p class="deadline-countdown deadline-passed">Expired</p>
+  </div>
+  <span class="deadline-search-data" hidden>PPSN International Conference on Parallel Problem Solving From Nature 2026 University of Trento, Trento, Italy Other</span>
+</article>
+
+          
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+    
+      
+      
+      
+      
+      
+      
+      
+        
+          
             
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-                    
-        
-    
-        
-        
-        
-
-              
-    
-
-
-    
-    
-
-    
-        
-        
-
-         
-
-        
             
+
+
+
+
+
+
+
+
+<article class="deadline-card deadline-card-expired" data-deadline-topics="ML,NLP,CV,SP">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://neurips.cc/Conferences/2026" target="_blank" rel="noopener noreferrer">NeurIPS <span class="deadline-year">2026</span></a></h3>
+    <span class="deadline-rank deadline-rank-star" aria-label="CORE ranking A*">A*</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">Conference on Neural Information Processing Systems</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Sydney, Australia</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>December 8-10 (Sydney), December 9-11 (Atlanta and Paris), 2026</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>ML</span><span>NLP</span><span>CV</span><span>SP</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-05-07" aria-label="Submission deadline 7 May 2026">7 May 2026</time></p>
+    <p class="deadline-countdown deadline-passed">Expired</p>
+  </div>
+  <span class="deadline-search-data" hidden>NeurIPS Conference on Neural Information Processing Systems 2026 Sydney, Australia ML NLP CV SP</span>
+</article>
+
+          
         
+      
     
+      
+      
+      
+      
+      
+      
+      
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
         
-
-         
-
-        
+          
             
-                
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="ML">
-                            <a target="_blank" rel="noopener noreferrer" href="https://icml.cc/Conferences/2026">
-                                <div class="card" style="background-color: #f5f5f5; opacity: 0.35; pointer-events: none;">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title" style="display: inline-block; color: #999;">
-                                                ICML
-                                            </h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle gold">
-                                                        A*
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">
-                                            International Conference on Machine Learning
-                                        </p>
-                                        <p style="margin-top: 5px; color: #777;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Seoul,
-                                                
-                                                
-                                            
-                                                
-                                                    Korea
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px; color: #777;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                July 6-11, 2026
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="ML">ML</span>
-                                                
-                                            
-                                        </div>
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px; color: #777;"></i>
-                                            <strong style="color: #777;"> 
-                                                <del>
-                                                    January 29, 2026 
-                                                    <span style="color: gray; font-weight: bold;">
-                                                        [UTC+0]
-                                                    </span>
-                                                </del>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
             
+
+
+
+
+
+
+
+
+<article class="deadline-card deadline-card-expired" data-deadline-topics="NLP">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://2026.emnlp.org/" target="_blank" rel="noopener noreferrer">EMNLP <span class="deadline-year">2026</span></a></h3>
+    <span class="deadline-rank deadline-rank-star" aria-label="CORE ranking A*">A*</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">The annual Conference on Empirical Methods in Natural Language Processing</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Budapest, Hungary (Hybrid)</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>October 25-27, 2026</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>NLP</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-05-25" aria-label="Submission deadline 25 May 2026">25 May 2026</time></p>
+    <p class="deadline-countdown deadline-passed">Expired</p>
+  </div>
+  <span class="deadline-search-data" hidden>EMNLP The annual Conference on Empirical Methods in Natural Language Processing 2026 Budapest, Hungary (Hybrid) NLP</span>
+</article>
+
+          
         
+      
     
+      
+      
+      
+      
+      
+      
+      
         
+      
+    
+      
+      
+      
+      
+      
+      
+      
         
-
-         
-
+      
+    
+      
+      
+      
+      
+      
+      
+      
         
+          
             
-        
-    
-        
-        
-
-         
-
-        
             
-                
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="ML,KR">
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.auai.org/uai2026/">
-                                <div class="card" style="background-color: #f5f5f5; opacity: 0.35; pointer-events: none;">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title" style="display: inline-block; color: #999;">
-                                                UAI
-                                            </h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle silver">
-                                                        A
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">
-                                            Conference on Uncertainty in Artificial Intelligence
-                                        </p>
-                                        <p style="margin-top: 5px; color: #777;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Amsterdam,
-                                                
-                                                
-                                            
-                                                
-                                                    Netherlands
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px; color: #777;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                August 17-21, 2026
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="ML">ML</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="KR">KR</span>
-                                                
-                                            
-                                        </div>
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px; color: #777;"></i>
-                                            <strong style="color: #777;"> 
-                                                <del>
-                                                    February 25, 2026 
-                                                    <span style="color: gray; font-weight: bold;">
-                                                        [AoE]
-                                                    </span>
-                                                </del>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-            
+
+
+
+
+
+
+
+
+<article class="deadline-card deadline-card-expired" data-deadline-topics="CV">
+  <div class="deadline-card-header" data-deadline-slot="header">
+    <h3><a href="https://bmvc2026.bmva.org/" target="_blank" rel="noopener noreferrer">BMVC <span class="deadline-year">2026</span></a></h3>
+    <span class="deadline-rank" aria-label="CORE ranking A">A</span>
+  </div>
+  <p class="deadline-description" data-deadline-slot="description">British Machine Vision Conference</p>
+  <p class="deadline-info" data-deadline-slot="location"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+</span><span>Lancaster, UK</span></p>
+  <p class="deadline-info" data-deadline-slot="dates"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+</span><span>November 23-26, 2026</span></p>
+  <div class="deadline-topics" data-deadline-slot="topics">
+    <span>CV</span>
+  </div>
+  <div class="deadline-card-footer">
+    <p class="deadline-submission"><span class="deadline-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 14h8M8 18h5"/></svg>
+</span><time datetime="2026-05-29" aria-label="Submission deadline 29 May 2026">29 May 2026</time></p>
+    <p class="deadline-countdown deadline-passed">Expired</p>
+  </div>
+  <span class="deadline-search-data" hidden>BMVC British Machine Vision Conference 2026 Lancaster, UK CV</span>
+</article>
+
+          
         
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-        
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-                
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="CV">
-                            <a target="_blank" rel="noopener noreferrer" href="https://eccv.ecva.net/">
-                                <div class="card" style="background-color: #f5f5f5; opacity: 0.35; pointer-events: none;">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title" style="display: inline-block; color: #999;">
-                                                ECCV
-                                            </h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle gold">
-                                                        A*
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">
-                                            European Conference on Computer Vision
-                                        </p>
-                                        <p style="margin-top: 5px; color: #777;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Malmö,
-                                                
-                                                
-                                            
-                                                
-                                                    Sweden
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px; color: #777;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                September 8 - 12, 2026
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
-                                                
-                                            
-                                        </div>
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px; color: #777;"></i>
-                                            <strong style="color: #777;"> 
-                                                <del>
-                                                    March 05, 2026 
-                                                    <span style="color: gray; font-weight: bold;">
-                                                        [UTC-8]
-                                                    </span>
-                                                </del>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-            
-        
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-        
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-        
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-                
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="Other">
-                            <a target="_blank" rel="noopener noreferrer" href="https://ppsn2026.disi.unitn.it/">
-                                <div class="card" style="background-color: #f5f5f5; opacity: 0.35; pointer-events: none;">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title" style="display: inline-block; color: #999;">
-                                                PPSN
-                                            </h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle silver">
-                                                        A
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">
-                                            International Conference on Parallel Problem Solving From Nature
-                                        </p>
-                                        <p style="margin-top: 5px; color: #777;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    University
-                                                
-                                                
-                                            
-                                                
-                                                    Of
-                                                
-                                                
-                                            
-                                                
-                                                    Trento,
-                                                
-                                                
-                                            
-                                                
-                                                    Trento,
-                                                
-                                                
-                                            
-                                                
-                                                    Italy
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px; color: #777;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                August 29-September 2, 2026
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                <span class="tag subtopic-tag" data-topic="Other">Other</span>
-                                            
-                                        </div>
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px; color: #777;"></i>
-                                            <strong style="color: #777;"> 
-                                                <del>
-                                                    March 28, 2026 
-                                                    <span style="color: gray; font-weight: bold;">
-                                                        [AoE]
-                                                    </span>
-                                                </del>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-            
-        
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-        
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-        
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-                
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="ML,NLP,CV,SP">
-                            <a target="_blank" rel="noopener noreferrer" href="https://neurips.cc/Conferences/2026">
-                                <div class="card" style="background-color: #f5f5f5; opacity: 0.35; pointer-events: none;">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title" style="display: inline-block; color: #999;">
-                                                NeurIPS
-                                            </h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle gold">
-                                                        A*
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">
-                                            Conference on Neural Information Processing Systems
-                                        </p>
-                                        <p style="margin-top: 5px; color: #777;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Sydney,
-                                                
-                                                
-                                            
-                                                
-                                                    Australia;
-                                                
-                                                
-                                            
-                                                
-                                                    Atlanta,
-                                                
-                                                
-                                            
-                                                
-                                                    Usa;
-                                                
-                                                
-                                            
-                                                
-                                                    Paris,
-                                                
-                                                
-                                            
-                                                
-                                                    France
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px; color: #777;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                December 6-12 (Sydney), December 9-13 (Atlanta and Paris), 2026
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="ML">ML</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="NLP">NLP</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="SP">SP</span>
-                                                
-                                            
-                                        </div>
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px; color: #777;"></i>
-                                            <strong style="color: #777;"> 
-                                                <del>
-                                                    May 07, 2026 
-                                                    <span style="color: gray; font-weight: bold;">
-                                                        [UTC+0]
-                                                    </span>
-                                                </del>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-            
-        
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-        
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-                
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="NLP">
-                            <a target="_blank" rel="noopener noreferrer" href="https://2026.emnlp.org/">
-                                <div class="card" style="background-color: #f5f5f5; opacity: 0.35; pointer-events: none;">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title" style="display: inline-block; color: #999;">
-                                                EMNLP
-                                            </h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle gold">
-                                                        A*
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">
-                                            The annual Conference on Empirical Methods in Natural Language Processing
-                                        </p>
-                                        <p style="margin-top: 5px; color: #777;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Budapest,
-                                                
-                                                
-                                            
-                                                
-                                                    Hungary
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px; color: #777;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                October 24 - 29, 2026
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="NLP">NLP</span>
-                                                
-                                            
-                                        </div>
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px; color: #777;"></i>
-                                            <strong style="color: #777;"> 
-                                                <del>
-                                                    May 25, 2026 
-                                                    <span style="color: gray; font-weight: bold;">
-                                                        [UTC-12]
-                                                    </span>
-                                                </del>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-            
-        
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-        
+      
     
-        
-        
-
-         
-
-        
-            
-                
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <div class="conference-card" data-subtopics="CV">
-                            <a target="_blank" rel="noopener noreferrer" href="https://bmvc2026.bmva.org/">
-                                <div class="card" style="background-color: #f5f5f5; opacity: 0.35; pointer-events: none;">
-                                    <div class="card-content">
-                                        <div class="venue-container">
-                                            <h1 class="conf-title" style="display: inline-block; color: #999;">
-                                                BMVC
-                                            </h1>
-                                            <p>
-                                                
-                                                    <span class="rank-circle silver">
-                                                        A
-                                                    </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <p class="conf-description">
-                                            British Machine Vision Conference
-                                        </p>
-                                        <p style="margin-top: 5px; color: #777;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>
-                                            
-                                            
-                                                
-                                                    Lancaster,
-                                                
-                                                
-                                            
-                                                
-                                                    UK
-                                                
-                                                
-                                            
-                                        </p>
-                                        <p style="margin-bottom: 10px; color: #777;">
-                                            <i class="fa-solid fa-calendar-days" style="margin-right: 4px;"></i>
-                                            
-                                                November 23-26, 2026
-                                            
-                                        </p>
-                                        <div class="tags" style="margin-top: 10px;">
-                                            
-                                                
-                                                    <span class="tag subtopic-tag" data-topic="CV">CV</span>
-                                                
-                                            
-                                        </div>
-                                        <p>
-                                            <i class="fa-solid fa-file-import" style="margin-left: -2px; margin-right: 3px; color: #777;"></i>
-                                            <strong style="color: #777;"> 
-                                                <del>
-                                                    May 29, 2026 
-                                                    <span style="color: gray; font-weight: bold;">
-                                                        [AoE]
-                                                    </span>
-                                                </del>
-                                            </strong>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
+      
+      
+      
+      
+      
+      
+      
         
-        
-
-         
-
-        
-            
-        
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
-            
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+      
+      
+      
+      
+      
+      
+      
     
-        
-        
-
-         
-
-        
+    </div>
+    </section>
     
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-    
-        
-        
-
-         
-
-        
-     
+  
+  <p class="deadline-empty" hidden>No conferences match your search.</p>
 </div>
+<script src="/assets/js/deadlines.js" defer></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const buttons = document.querySelectorAll(".filter-btn");
-        const conferences = document.querySelectorAll(".conference-card");
-    
-        buttons.forEach(button => {
-            button.addEventListener("click", function() {
-                document.querySelector(".filter-btn.active").classList.remove("active");
-                this.classList.add("active");
-                filterConferences();
-            });
-        });
-    
-        document.getElementById("searchBar").addEventListener("keyup", filterConferences);
-    
-        function filterConferences() {
-            let selectedTopic = document.querySelector(".filter-btn.active").getAttribute("data-filter");
-            let searchQuery = document.getElementById("searchBar").value.toLowerCase();
-
-            conferences.forEach(conf => {
-                let confTopics = conf.getAttribute("data-subtopics").split(",");
-                let confTitle = conf.querySelector(".conf-title").innerText.toLowerCase();
-                let confDescription = conf.querySelector(".conf-description").innerText.toLowerCase();
-                
-                let topicMatch = (selectedTopic === "ALL") || confTopics.includes(selectedTopic);
-                let searchMatch = confTitle.includes(searchQuery) || confDescription.includes(searchQuery);
-
-                conf.style.display = (topicMatch && searchMatch) ? "block" : "none";
-            });
-        }
-    });
-</script>
                     </div>
                     
                 </div>
@@ -2372,21 +1875,19 @@
         </main>
         <footer class="footer py-5 has-background-primary has-text-light">
     <div class="container">
-        <div class="columns is-vcentered is-mobile">
 
-            <!-- Logo on the Left (Take Only Needed Space) -->
+        <div class="columns is-vcentered is-mobile footer-main">
             <div class="column is-narrow">
                 <a href="/">
-                    <img 
-                        src="/assets/css/logo.svg" 
-                        alt="UniboNLP Logo" 
+                    <img
+                        src="/assets/css/logo.svg"
+                        alt="UniboNLP Logo"
                         loading="lazy"
-                        class="navbar-logo"
+                        class="footer-logo"
                     >
                 </a>
             </div>
 
-            <!-- University Name on the Right -->
             <div class="column has-text-right">
                 <p class="has-text-light has-text-weight-semibold is-size-7 footer-text">
                     Department of Computer Science and Engineering (DISI),<br>
@@ -2394,28 +1895,22 @@
                     Via dell'Università 50, I-47522 Cesena, Italy
                 </p>
             </div>
-
         </div>
+
+        <div class="footer-bottom">
+            <p class="footer-contact">
+                <a href="mailto:gianluca.moro@unibo.it">Contact</a>
+                · <a href="https://github.com/disi-unibo-nlp">GitHub</a>
+            </p>
+
+            <p class="footer-credit">
+                Website by
+                <a href="https://scholar.google.com/citations?user=BmaBHcAAAAAJ&amp;hl=it">Luca Ragazzi</a>
+            </p>
+        </div>
+
     </div>
-</footer>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const footer = document.querySelector(".footer");
-        const body = document.body;
-        const html = document.documentElement;
-        const pageHeight = Math.max(body.scrollHeight, body.offsetHeight, 
-                                    html.clientHeight, html.scrollHeight, html.offsetHeight);
-        const viewportHeight = window.innerHeight;
-
-        if (pageHeight <= viewportHeight) {
-            document.body.classList.add("short-content");
-        } else {
-            document.body.classList.remove("short-content");
-        }
-    });
-</script>
-   
+</footer>   
         <script src="/assets/js/app.js" defer></script>
         <script src="/assets/js/custom.js" defer></script>
     </body>
