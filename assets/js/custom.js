@@ -160,3 +160,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
   syncVenueGroups();
 })();
+
+(() => {
+  const stage = document.querySelector('.home-logo-stage');
+  if (!stage || stage.dataset.logoInitialized) return;
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const images = [...stage.querySelectorAll('img')];
+  if (images.length !== 2) return;
+
+  stage.dataset.logoInitialized = 'true';
+  stage.classList.add('logo-loading');
+
+  function waitForImage(image) {
+    return new Promise((resolve, reject) => {
+      if (image.complete) {
+        if (image.naturalWidth > 0) {
+          resolve();
+        } else {
+          reject(new Error('Logo could not be loaded'));
+        }
+        return;
+      }
+
+      image.addEventListener('load', resolve, { once: true });
+      image.addEventListener('error', reject, { once: true });
+    }).then(() => {
+      if (typeof image.decode === 'function') {
+        return image.decode().catch(() => {});
+      }
+    });
+  }
+
+  Promise.all(images.map(waitForImage))
+    .then(() => {
+      requestAnimationFrame(() => {
+        stage.classList.remove('logo-loading');
+        stage.classList.add('logo-ready');
+      });
+    })
+    .catch(() => {
+      stage.classList.remove('logo-loading');
+    });
+})();

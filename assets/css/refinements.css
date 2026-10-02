@@ -2436,3 +2436,55 @@ body:has(.deadlines-grid) .footer {
     opacity: 1;
   }
 }
+
+/* Logo statico finché lo script non avvia l’animazione */
+.home-hero .home-logo-stage .home-logo-towers {
+  opacity: 0;
+  animation: none;
+}
+
+.home-hero .home-logo-stage .home-logo-complete {
+  opacity: 1;
+  animation: none;
+}
+
+/* Durante il caricamento mostra le torri */
+.home-hero .home-logo-stage.logo-loading .home-logo-towers {
+  opacity: 1;
+}
+
+.home-hero .home-logo-stage.logo-loading .home-logo-complete {
+  opacity: 0;
+}
+
+/* Parte soltanto quando entrambe le immagini sono pronte */
+@media (prefers-reduced-motion: no-preference) {
+  .home-hero .home-logo-stage.logo-ready .home-logo-towers {
+    animation: home-ready-towers 3s ease-in-out both;
+  }
+
+  .home-hero .home-logo-stage.logo-ready .home-logo-complete {
+    animation: home-ready-wordmark 3s ease-in-out both;
+  }
+}
+
+@keyframes home-ready-towers {
+  0%, 65% { opacity: 1; }
+  80%, 100% { opacity: 0; }
+}
+
+@keyframes home-ready-wordmark {
+  0%, 30% { opacity: 0; }
+  65%, 100% { opacity: 1; }
+}
+
+.people-section .person-photo-frame:has(
+  img[src*="alessio_cocchieri"]
+) {
+  background: #f3f2f0;
+  isolation: isolate;
+}
+
+.people-section .person-photo[src*="alessio_cocchieri"] {
+  mix-blend-mode: multiply;
+}
