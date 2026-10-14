@@ -214,6 +214,10 @@
         
       
         
+          <option value="LOG">LOG</option>
+        
+      
+        
           <option value="NAACL">NAACL</option>
         
       
@@ -285,7 +289,7 @@
 </label>
     <button type="button" id="reset-publications">Reset filters</button>
 </div>
-<p class="publication-counter" role="status" aria-live="polite"><span id="publication-count">57</span> publications</p>
+<p class="publication-counter" role="status" aria-live="polite"><span id="publication-count">58</span> publications</p>
 </div>
 <p class="previous-works">Earlier publications are available on <a href="https://dblp.org/pid/m/GianlucaMoro.html" target="_blank" rel="noopener noreferrer">DBLP</a>.</p>
 <p id="publication-empty" hidden>No publications match these filters. Try another search or reset the filters.</p>
@@ -390,6 +394,42 @@
 
 
 <details class="publication-abstract"><summary>Abstract</summary><p>While LLMs are increasingly analyzed in multiple-choice scenarios, current studies rely on small option sets, failing to capture their real-world behavior. This paper provides the first systematic investigation of LLM selection dynamics under extreme candidate cardinality. We stress-test models by scaling the candidate space up to 1,000 options while manipulating their layout within the context window. Importantly, to distinguish model failures, we categorize questions solvable via internal knowledge from those requiring exhaustive option comparison. Our results uncover a systematic, layout-driven degradation of global comparative reasoning—a failure mode we define as the Lost-in-Choice phenomenon. By auditing Chain-of-Thought paths, we establish a taxonomy of the heuristics and shortcuts models adopt as the candidate space expands.</p></details>
+</li>
+
+<li class="publication-item" id="cagiano_molfetta_moro_zignani_minervini_log_2026" data-year="2026" data-type="conference" data-venue="LOG">
+<h3 class="publication-title">
+  
+    Graph-to-Table Interfaces Control Relational Generalisation
+  
+</h3>
+<p class="authors">
+  
+    <span class="author">Alessandro Cagiano</span>, 
+  
+    <span class="author">Lorenzo Molfetta</span>, 
+  
+    <span class="author">Gianluca Moro</span>, 
+  
+    <span class="author">Matteo Zignani</span>, 
+  
+    <span class="author">Pasquale Minervini</span>
+  
+</p>
+<div class="publication-venue-row">
+<div class="publication-meta"><span class="venue-tag">LOG 2026</span><span class="venue-description">Proceedings of the 2026 Learning on Graph Conference</span></div>
+<div class="resource-links publication-links">
+  
+
+  
+
+  
+
+  
+</div>
+</div>
+
+
+<details class="publication-abstract"><summary>Abstract</summary><p></p></details>
 </li>
 
 <li class="publication-item" id="cocchieri_ragazzi_tagliavini_moro_acl_2026" data-year="2026" data-type="conference" data-venue="ACL">
@@ -556,6 +596,11 @@
   </a>
   
 
+  
+  <a href="https://dblp.uni-trier.de/rec/conf/eacl/CocchieriRTM26.html?view=bibtex" target="_blank" rel="noopener noreferrer"
+     aria-label="BibTeX" title="BibTeX">
+    <i class="fa-solid fa-quote-right" aria-hidden="true"></i>
+  </a>
   
 </div>
 </div>
@@ -2419,6 +2464,55 @@
 <details class="publication-abstract"><summary>Abstract</summary><p>Named entity recognition (NER) in medicine is challenging due to specialized terminology, inconsistent annotation guidelines, and the continuous emergence of new entity types—requiring models that can adapt to unseen targets. Large language models (LLMs) exhibit strong generalization but are impractical for scalable deployment, whereas recent encoder-only approaches leverage entity names for zero-shot inference but struggle with disambiguation in complex domains. We introduce OpenBioNER-v2, a family of lightweight transformer encoders (15M-110M parameters) designed for zero-shot recognition of biomedical and clinical entities by conditioning on natural language descriptions of target types. Our cross-encoder architecture jointly models input text and entity-type descriptions, enabling semantic matches. Pretrained on LLM-generated silver annotations and multi-view descriptions covering thousands of medical types, OpenBioNER-v2 achieves state-of-the-art results across 11 benchmarks—including a new dataset for personal de-identification. Variants with <56M parameters outperform both large and small language models, such as UniversalNER and GliNER. Ablation studies reveal effective strategies for formulating descriptions. All data, code, and model checkpoints are publicly released under open-science principles.</p></details>
 </li>
 
+<li class="publication-item" id="moro_magnani_ragazzi_air_2025" data-year="2026" data-type="journal" data-venue="AIR">
+<h3 class="publication-title">
+  
+    <a href="https://doi.org/10.1007/s10462-025-11392-7"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Read paper: Legal Lay Summarization: Exploring Methods and Data Generation with Large Language Models"
+       title="Read paper">
+      Legal Lay Summarization: Exploring Methods and Data Generation with Large Language Models
+      <span class="publication-paper-arrow" aria-hidden="true">↗</span>
+    </a>
+  
+</h3>
+<p class="authors">
+  
+    <span class="author">Gianluca Moro</span>, 
+  
+    <span class="author">Leonardo David Matteo Magnani</span>, 
+  
+    <span class="author">Luca Ragazzi</span>
+  
+</p>
+<div class="publication-venue-row">
+<div class="publication-meta"><span class="venue-tag">AIR 2026</span><span class="venue-description">Artificial Intelligence Review</span></div>
+<div class="resource-links publication-links">
+  
+  <a href="https://doi.org/10.1007/s10462-025-11392-7" target="_blank" rel="noopener noreferrer"
+     aria-label="Paper" title="Paper">
+    <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+  <a href="https://dblp.uni-trier.de/rec/journals/air/MoroMR26.html?view=bibtex" target="_blank" rel="noopener noreferrer"
+     aria-label="BibTeX" title="BibTeX">
+    <i class="fa-solid fa-quote-right" aria-hidden="true"></i>
+  </a>
+  
+</div>
+</div>
+
+
+<details class="publication-abstract"><summary>Abstract</summary><p>This paper explores advancements in Natural Language Processing (NLP) for legal lay summarization by systematically analyzing existing methodologies, datasets, and research findings. We review current literature, highlighting key challenges such as data scarcity and the complexity of legal language. A primary contribution of this study is the development of LegalEase, a specialized dataset designed to improve model training for summarizing legal documents in layman’s terms. Our findings demonstrate that subdomain-specific datasets within the legal domain outperform general legal datasets in enhancing NLP model performance for generating accurate and comprehensible legal summaries. The insights and methodologies presented provide a foundation for future research in legal lay summarization.</p></details>
+</li>
+
 <li class="publication-item" id="frisoni_ragazzi_cohen_moro_carbonaro_sartori_neuralnetworks_2025" data-year="2026" data-type="journal" data-venue="Neural Networks">
 <h3 class="publication-title">
   
@@ -2531,55 +2625,6 @@
 
 
 <details class="publication-abstract"><summary>Abstract</summary><p>Legal conflicts between statutes or constitutional articles present a significant challenge in maintaining consistency and coherence within legal systems. Addressing these conflicts requires extensive human expertise, making the process labor-intensive and time-consuming. In this paper, we introduce Clash-of-Leges, a novel multilingual dataset derived from rulings by the Constitutional Court of the Italian Republic, designed to aid the automation of conflict detection and explanation between legal articles. We identify three key tasks: Conflict Classification, which determines whether two legal articles are in conflict; Conflict Explanation Generation, which provides detailed explanations for identified conflicts; and Reference Retrieval, which sources relevant legal bases and precedents to substantiate interpretations. These tasks are intended to facilitate the development of AI models that can automatically identify and explain contradictions between legal provisions.</p></details>
-</li>
-
-<li class="publication-item" id="moro_magnani_ragazzi_air_2025" data-year="2026" data-type="journal" data-venue="AIR">
-<h3 class="publication-title">
-  
-    <a href="https://doi.org/10.1007/s10462-025-11392-7"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Read paper: Legal Lay Summarization: Exploring Methods and Data Generation with Large Language Models"
-       title="Read paper">
-      Legal Lay Summarization: Exploring Methods and Data Generation with Large Language Models
-      <span class="publication-paper-arrow" aria-hidden="true">↗</span>
-    </a>
-  
-</h3>
-<p class="authors">
-  
-    <span class="author">Gianluca Moro</span>, 
-  
-    <span class="author">Leonardo David Matteo Magnani</span>, 
-  
-    <span class="author">Luca Ragazzi</span>
-  
-</p>
-<div class="publication-venue-row">
-<div class="publication-meta"><span class="venue-tag">AIR 2026</span><span class="venue-description">Artificial Intelligence Review</span></div>
-<div class="resource-links publication-links">
-  
-  <a href="https://doi.org/10.1007/s10462-025-11392-7" target="_blank" rel="noopener noreferrer"
-     aria-label="Paper" title="Paper">
-    <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
-  </a>
-  
-
-  
-
-  
-
-  
-  <a href="https://dblp.uni-trier.de/rec/journals/air/MoroMR26.html?view=bibtex" target="_blank" rel="noopener noreferrer"
-     aria-label="BibTeX" title="BibTeX">
-    <i class="fa-solid fa-quote-right" aria-hidden="true"></i>
-  </a>
-  
-</div>
-</div>
-
-
-<details class="publication-abstract"><summary>Abstract</summary><p>This paper explores advancements in Natural Language Processing (NLP) for legal lay summarization by systematically analyzing existing methodologies, datasets, and research findings. We review current literature, highlighting key challenges such as data scarcity and the complexity of legal language. A primary contribution of this study is the development of LegalEase, a specialized dataset designed to improve model training for summarizing legal documents in layman’s terms. Our findings demonstrate that subdomain-specific datasets within the legal domain outperform general legal datasets in enhancing NLP model performance for generating accurate and comprehensible legal summaries. The insights and methodologies presented provide a foundation for future research in legal lay summarization.</p></details>
 </li>
 
 <li class="publication-item" id="italiani_ragazzi_moro_ieeetaslp_2025" data-year="2025" data-type="journal" data-venue="IEEE TASLP">
